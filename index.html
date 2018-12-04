@@ -4,7 +4,7 @@
 <head>
 	<title>B</title>
 	<meta charset="utf-8"/>
-	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 	<style>
 		body {
 			background-image: url("mistersuuns.github.io/bear.jpg");
@@ -13,8 +13,6 @@
 			height: 802px;
 			background-repeat: no-repeat;
 			background-position: center;
-			font-family: helvetica;
-			font-size: 100px;
 		}
 		h1 {
 			display: inline;
@@ -28,44 +26,48 @@
 			color: rgb(44, 49, 56);
 			overflow: scroll;
 		}
-		.nav {
+
+		.concept {
 			font-size: 0.25em;
 			color: rgb(86, 95, 104);
             float: left;
-		}
-		.concept {
 			position: relative;
+			padding: 1em;
+			display: inline;
+			cursor: pointer;
 		}
 		.concept:active {
 			top: 3px;
 		}
 		.contact {
+			font-size: 0.25em;
+			color: rgb(86, 95, 104);
+            float: left;
 			position: relative;
-		}
-		.contact:active {
-			top: 3px;
-		}
-		li {
 			padding: 1em;
 			display: inline;
 			cursor: pointer;
 		}
-
+		.contact:active {
+			top: 3px;
+		}
+		
 	</style>
 </head>
 
 <body>
-	<div class="container">	
-		<div class="nav">
-				<ul>
-					<li class="concept" href="https://mistersuuns.github.io/">concept</li>
-					<li class="contact" href="https://mistersuuns.github.io/">contact</li>
-				</ul>
-		</div>
-		<div class="main">
-			<h1>B</h1>
-			<p class = "description">B is a consulting company specializing in product and project management: design, market/context research, product vision, demos, app testing, and user feedback.</p>
-		</div>
+	<div class="container-fluid">	
+		<div class="row"></div>
+			<div class=col-sm-2>
+				<p class="concept" href="https://mistersuuns.github.io/">concept</p>
+				</div>
+			</div>
+			<div class=col-sm-2></div>
+				<p class="contact" href="https://mistersuuns.github.io/">contact</p>
+			<div class="main">
+				<h1>B</h1>
+				<p class = "description">B is a consulting company specializing in product and project management: design, market/context research, product vision, demos, app testing, and user feedback.</p>
+			</div>
 	</div>
 </body>
 
