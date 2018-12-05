@@ -2,97 +2,71 @@
 <html>
 
 <head>
-
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"/>
-	
 	<title>B</title>
-
+	<meta charset="utf-8"/>
+	<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
 	<style>
-		html {
-		box-sizing: border-box;
-		}
-		*, *:before, *:after {
-		box-sizing: inherit;
-		}
-
 		body {
 			background-image: url("mistersuuns.github.io/bear.jpg");
 			background-size: cover;
-			width: auto;
-			height: 60%;
+			width: 880px;
+			height: 802px;
 			background-repeat: no-repeat;
 			background-position: center;
+			font-family: helvetica;
+			font-size: 100px;
 		}
-
-		header nav {
-			font-size: 2.5rem;
-			color: rgb(86, 95, 104);
-			position: relative;
-			padding-left: 5rem;
-			display: inline-flex;
-			justify-content: flex-start;
-			cursor: pointer;
+		h1 {
+			display: inline;
+			margin-left: 1.75em;
 		}
-		.concept {
-			padding: 3rem;
-		}
-		.contact {
-			padding: 3rem;
-		}
-		.concept:active {
-			top: 5px;
-		}
-		.contact:active {
-			top: 5px;
-		}
-
-		header > div > div > h1 {
-			font-size: 12.5rem;
-			display: inline-flex;
-			margin-left: 3rem;
-		}
-
-		.description {
-			margin-left: 5rem;
-			margin-top: 30rem;
-			font-size: 2.5rem;
+		p {
+			margin-left: 2em;
+			margin-top: 18em;
+			font-size: 0.25em;
 			text-align: left;
 			color: rgb(44, 49, 56);
 			overflow: scroll;
 		}
-		footer {
-			padding: 5rem;
+		.nav {
+			font-size: 0.25em;
+			color: rgb(86, 95, 104);
+            float: left;
 		}
-		
-	</style>	
+		.concept {
+			position: relative;
+		}
+		.concept:active {
+			top: 3px;
+		}
+		.contact {
+			position: relative;
+		}
+		.contact:active {
+			top: 3px;
+		}
+		li {
+			padding: 1em;
+			display: inline;
+			cursor: pointer;
+		}
+
+	</style>
 </head>
 
 <body>
-	<header>
-		<div class="container-fluid">
-			<div class="row">
-				<nav class="col-sm-4 text-left">
-					<a href="#" class="concept">concept</a>
-					<a href="#" class="contact">contact</a>
-				</nav>
-				<h1 class="col-sm-8 text-center">B</h1>
-			</div>
-	</header>
-	<section class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<p class = "description">B is a consulting company specializing in product and project management: design, market/context research, product vision, demos, app testing, and user feedback.</p>
-			</div>
+	<div class="container">	
+		<div class="nav">
+				<ul>
+					<li class="concept" href="https://mistersuuns.github.io/">concept</li>
+					<li class="contact" href="https://mistersuuns.github.io/">contact</li>
+				</ul>
 		</div>
-	</section>
-	<footer class="container">
-		<div class="row">
-			<p class="col-sm-4">&copy; 2018 B</p>
+		<div class="main">
+			<h1>B</h1>
+			<p class = "description">B is a consulting company specializing in product and project management: design, market/context research, product vision, demos, app testing, and user feedback.</p>
 		</div>
-	</footer>
+	</div>
 </body>
 
 </html>
