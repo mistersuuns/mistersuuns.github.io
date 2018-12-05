@@ -9,28 +9,29 @@
 		body {
 			background-image: url("mistersuuns.github.io/bear.jpg");
 			background-size: cover;
-			width: 880px;
-			height: 822px;
+			width: 100%;
+			height: auto;
 			background-repeat: no-repeat;
 			background-position: center;
 		}
 
-		.col-2 {
+		header nav {
 			font-size: 4rem;
 			color: rgb(86, 95, 104);
 			position: relative;
 			padding-left: 10rem;
 			padding-top: 10rem;
-			display: inline;
+			display: inline-flex;
+			justify-content: flex-start;
 			cursor: pointer;
 		}
 		.col-2:active {
 			top: 5px;
 		}
 
-		.col-12 {
+		header > div > div > h1 {
 			font-size: 25rem;
-			display: inline;
+			display: inline-flex;
 			margin-left: 3rem;
 		}
 
@@ -47,24 +48,28 @@
 </head>
 
 <body>
-	<div class="container-fluid">	
-		<div class="row">
-			<div class=col-2>
-				<a href="https://mistersuuns.github.io/">concept</a>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="col-sm-4 text-left">
+					<a href="#">concept</a>
+					<a href="#">contact</a>
+				</nav>
+				<h1 class="col-sm-8 text-center">B</h1>
 			</div>
-			<div class=col-2>
-				<a href="https://mistersuuns.github.io/">contact</a>
-			</div>
-			<div class=col-12>
-				B
-			</div>	
-		</div>
+	</header>
+	<section class="container">
 		<div class="row">
-			<div class=col-10>
+			<div class="col-sm-12">
 				<p class = "description">B is a consulting company specializing in product and project management: design, market/context research, product vision, demos, app testing, and user feedback.</p>
 			</div>
 		</div>
-	</div>
+	</section>
+	<footer class="container">
+		<div class="row">
+			<p class="col-sm-4">&copy; 2018 B</p>
+		</div>
+	</footer>
 </body>
 
 </html>
