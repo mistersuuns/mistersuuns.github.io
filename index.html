@@ -10,14 +10,13 @@
 			background-size: cover;
 			min-width: 300px;
 			min-height: 200px;
-			height: auto;
 			background-repeat: no-repeat;
 			background-position: center;
 			font-family: helvetica;
 			font-size: 100px;
 		}
 		h1 {
-			display: inline;
+			display: block;
 			margin-left: 1.75em;
 		}
 		p {
@@ -33,16 +32,16 @@
 			color: rgb(86, 95, 104);
             float: left;
 		}
-		.concept {
+		#concept {
 			position: relative;
 		}
-		.concept:active {
+		#concept:active {
 			top: 3px;
 		}
-		.contact {
+		#contact {
 			position: relative;
 		}
-		.contact:active {
+		#contact:active {
 			top: 3px;
 		}
 		li {
@@ -58,8 +57,8 @@
 	<div class="container">	
 		<div class="nav">
 				<ul>
-					<li class="concept" href="https://mistersuuns.github.io/">concept</li>
-					<li class="contact" href="https://mistersuuns.github.io/">contact</li>
+					<li id="concept" href="https://mistersuuns.github.io/">concept</li>
+					<li id="contact" href="https://mistersuuns.github.io/">contact</li>
 				</ul>
 		</div>
 		<div class="main">
