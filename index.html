@@ -4,6 +4,7 @@
 <head>
 	<title>B</title>
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<style>
 		body {
 			background-image: url("mistersuuns.github.io/bear.jpg");
@@ -15,59 +16,58 @@
 			font-family: helvetica;
 			font-size: 100px;
 		}
-		h1 {
-			display: block;
-			margin-left: 1.75em;
-		}
-		p {
-			margin-left: 2em;
-			margin-top: 18em;
-			font-size: 0.25em;
-			text-align: left;
-			color: rgb(44, 49, 56);
-			overflow: scroll;
-		}
-		.nav {
+		header {
 			font-size: 0.25em;
 			color: rgb(86, 95, 104);
             float: left;
-		}
-		#concept {
-			position: relative;
-		}
-		#concept:active {
-			top: 3px;
-		}
-		#contact {
-			position: relative;
-		}
-		#contact:active {
-			top: 3px;
 		}
 		li {
 			padding: 1em;
 			display: inline;
 			cursor: pointer;
+			position: relative;
 		}
-
+		li:active {
+			top: 3px;
+		}
+		#logo {
+			font-size: 2em;
+			color: rgb(56, 54, 54);
+		}
+		main {
+			margin-top: 10em;
+			margin-left: 2em;
+			padding: 1em;
+			font-size: 0.25em;
+			text-align: left;
+			color: rgb(44, 49, 56);
+		}
+		footer {
+			font-size: 0.2em;
+			float: left;
+			margin-left: 2em;
+			padding: 1em; 
+		}
 	</style>
 </head>
 
 <body>
-	<div class="container-nav">	
-		<div class="nav">
-				<ul>
-					<li id="concept" href="https://mistersuuns.github.io/">concept</li>
-					<li id="contact" href="https://mistersuuns.github.io/">contact</li>
-				</ul>
-		</div>
-		<div class="container-h1">
-			<h1>B</h1>
-		</div>
-		<div class="container-p">
-			<p class = "description">B is a consulting company specializing in project and product management: market/context research, product vision, design, demos, app testing, and user feedback.</p>
-		</div>
-	</div>
+	<header>
+		<nav>
+			<ul>
+				<li id="concept" href="https://mistersuuns.github.io/">concept</li>
+				<li id="contact" href="https://mistersuuns.github.io/">contact</li>
+				<li id="logo" href="https://mistersuuns.github.io/">B</li>
+			</ul>
+		</nav>
+	</header>
+	<br>
+	<main>
+		<p id="description">B is a consulting company specializing in project and product management: market/context research, product vision, design, demos, app testing, and user feedback.</p>
+	</main>
+	<footer>
+		<p>&copy; B 2018</p>
+	</footer>
 </body>
 
 </html>
