@@ -1,0 +1,62 @@
+
+body {
+    background-image: url("#");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 300px;
+    min-height: 200px;
+    font-family: helvetica;
+    font-size: 100px;
+}
+header {
+    font-size: 0.25em;
+    color: rgb(86, 95, 104);
+    float: left;
+}
+li {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+    margin-left: 1em;
+}
+li:active {
+    top: 2px;
+}
+li:hover {
+    color: black;
+    transform:scale(1.05);
+}
+
+#logo {
+    margin-top: 2em;
+    margin-left: 1em;
+    font-size: 2em;
+    color: rgb(56, 54, 54);
+}
+
+logo:hover {
+    animation-name: color;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}   
+@keyframes color {
+    100% {
+        color: mediumseagreen;
+    }
+}
+
+main {
+    margin-top: 8em;
+    margin-left: 2em;
+    padding: 0.5em;
+    font-size: 0.25em;
+    float: left;
+    color: rgb(44, 49, 56);
+}
+footer {
+    font-size: 0.2em;
+    float: left;
+    margin-left: 2em;
+    padding: 1em; 
+}
