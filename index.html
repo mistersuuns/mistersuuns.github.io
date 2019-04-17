@@ -2,30 +2,130 @@
 <html>
 
 <head>
-	<title>B</title>
 	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" href="https://mistersuuns.github.io/index.css"/>
-</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<title>B</title>
 
+	<style>
+
+		body {
+			font-family: "noto sans JP";
+			font-size: 1.5em;
+		}
+
+		.container {
+		}
+
+		.nav {
+			margin-top: 2%;
+			font-size: 100%;
+			color: rgb(56, 54, 54);
+			padding: 0 0 0 1em;
+			}
+		.home {
+			padding: 0 0 0 2em;
+		}
+
+		.home:hover {
+			color: black;
+			transform:scale(1.5) perspective(5em) rotateY(8deg);
+			transition: all 5s ease-out;
+		}
+
+		.concept:hover {
+			color: black;
+			transform:scale(1.5) rotate(-10deg) scale(1.05);
+			transition: all 5s ease-out;
+		}		
+
+		.contact:hover {
+			color: black;
+			transform:scale(1.5) rotate(10deg) scale(1.05);
+			transition: all 5s ease-out;
+		}
+
+
+		.navR {
+			padding: 0 0 0 0;
+		}
+
+		#B {
+			font-size: 800%;
+			color: rgb(56, 54, 54);
+		}
+
+		#B:hover {
+			transform: perspective(20em) rotateY(90deg);
+			transition: all 6s ease-in-out;
+		}   
+
+		#description {
+			padding: 0.5em;
+			font-size: .5em;
+			float: right;
+			color: rgb(44, 49, 56);
+			border: black solid 1px;
+		}
+
+		#description:hover {
+			transform:  scale(1.25) perspective(4em) rotateY(2deg);
+			transition: all 1s linear;
+		}
+
+
+		.copyright {
+			align-content: right;
+		}
+
+		footer {
+			margin: none;
+			font-size: .75em;
+			padding: 0.5em;
+		}
+
+	</style>
+
+</head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li id="home" href="https://mistersuuns.github.io/">home</li>
-				<li id="concept" href="https://mistersuuns.github.io/">concept</li>
-				<li id="contact" href="https://mistersuuns.github.io/">contact</li>
-				<li id="logo" href="https://mistersuuns.github.io/">B</li>
-			</ul>
-		</nav>
-	</header>
-	<br>
-	<main>
-		<p id="description">B is a consulting company specializing in project and product management: market/context research, product vision, design, demos, app testing, and user feedback.</p>
-	</main>
-	<footer>
-		<p>&copy; B 2019</p>
-	</footer>
-</body>
+<div class="container">
+
+	<div class="row">
+			<div class="col-2 nav home">
+				<p><a style="color: black !important;" href="#">home</a></p>
+			</div>
+			<div class="col-2 nav concept">
+				<p><a style="color: black !important;" href="#">concept</a></p>
+			</div>
+			<div class="col-2 nav contact">
+				<p><a style="color: black !important;" href="#">contact</a></p>
+			</div>
+			<div class="col-6 navR">
+			</div>
+	</div>
+	<div class="row">
+		<div class="col-6"></div>
+		<div class="col-6">
+			<p id="B" href="#">B</p>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-6"></div>
+		<div class="col-6">
+			<p id="description">WARNING: B is a consulting company specializing in project and product management:<br>
+		market/context research, product vision, design, demos, app testing, and user feedback.</p>
+		</div>
+	</div>
+
+<footer>
+		<div class="row">
+			<div class="col copyright">&copy; B 2019</div>
+			<div class="col"></div>
+		</div>
+</footer>
+</div>
+</body>	
 
 </html>

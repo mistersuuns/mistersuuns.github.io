@@ -1,34 +1,14 @@
 
-body {
-    background-image: url("#");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 300px;
-    min-height: 200px;
-    font-family: helvetica;
-    font-size: 100px;
-}
-header {
-    font-size: 0.25em;
-    color: rgb(86, 95, 104);
-    float: left;
-}
-li {
-    display: inline-flex;
-    cursor: pointer;
-    position: relative;
-    margin-left: 1em;
-}
-li:active {
+#nav:active {
     top: 2px;
 }
-li:hover {
+
+#nav:hover {
     color: black;
     transform:scale(1.05);
 }
 
-#logo {
+#B {
     margin-top: 2em;
     margin-left: 1em;
     font-size: 2em;
