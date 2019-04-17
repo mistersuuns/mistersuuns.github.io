@@ -22,11 +22,9 @@
 			margin-top: 2%;
 			font-size: 100%;
 			color: rgb(56, 54, 54);
-			padding: 0 0 0 1em;
+			padding: 1em;
 			}
-		.home {
-			padding: 0 0 0 2em;
-		}
+
 
 		.home:hover {
 			color: black;
@@ -67,23 +65,19 @@
 			float: right;
 			color: rgb(44, 49, 56);
 			border: black solid 1px;
+			transform:  scale(1.25) perspective(4em) rotateY(2deg);
 		}
 
 		#description:hover {
-			transform:  scale(1.25) perspective(4em) rotateY(2deg);
+			transform: ;
 			transition: all 1s linear;
 		}
 
-
 		.copyright {
 			align-content: right;
+			padding: 1em;
 		}
 
-		footer {
-			margin: none;
-			font-size: .75em;
-			padding: 0.5em;
-		}
 
 	</style>
 
@@ -92,20 +86,23 @@
 <div class="container">
 
 	<div class="row">
-			<div class="col-2 nav home">
+			<div class="col-1-sm nav home">
 				<p><a style="color: black !important;" href="#">home</a></p>
 			</div>
-			<div class="col-2 nav concept">
+			<div class="col-1-sm nav concept">
 				<p><a style="color: black !important;" href="#">concept</a></p>
 			</div>
-			<div class="col-2 nav contact">
+			<div class="col-1-sm nav contact">
 				<p><a style="color: black !important;" href="#">contact</a></p>
 			</div>
-			<div class="col-6 navR">
+			<div class="col-1-sm copyright nav">
+				<p>&copy; B 2019</p>
+			</div>
+			<div class="col-6-sm navR">
 			</div>
 	</div>
 	<div class="row">
-		<div class="col-6"></div>
+		<div class="col-6"></div>	
 		<div class="col-6">
 			<p id="B" href="#">B</p>
 		</div>
@@ -121,7 +118,6 @@
 
 <footer>
 		<div class="row">
-			<div class="col copyright">&copy; B 2019</div>
 			<div class="col"></div>
 		</div>
 </footer>
