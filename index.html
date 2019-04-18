@@ -14,47 +14,46 @@
 			font-family: "noto sans JP";
 		}
 
-		.container {
-		}
-
 		.nav {
-			margin-top: 2vw;
-			font-size: 2vw;
+			margin: 5vh 2vh 2vh 2vh;
+			font-size: 3vh;
 			color: rgb(56, 54, 54);
-			padding: 1vw 0 0 4vw;
+			border: solid white 0px;
+			transition: all 3s ease-out;
 			}
 
-
 		.home:hover {
-			color: black;
 			transform:scale(1.5) perspective(5em) rotateY(8deg);
-			transition: all 5s ease-out;
+			border: solid black .75px;
+			transition: all 3s ease-in;
 		}
 
 		.concept:hover {
-			color: black;
-			transform:scale(1.5) rotate(-10deg) scale(1.05);
-			transition: all 5s ease-out;
+			transform:scale(1.5) rotate(-10deg);
+			border: solid black .75px;
+			transition: all 3s ease-in;
 		}		
 
 		.contact:hover {
-			color: black;
-			transform:scale(1.5) rotate(10deg) scale(1.05);
-			transition: all 5s ease-out;
+			transform:scale(1.5) rotate(10deg);
+			border: solid black .75px;
+			transition: all 3s ease-in;
 		}
-
 
 		.navR {
 			padding: 0 0 0 0;
 		}
 
 		#B {
-			font-size: 800%;
+			font-size: 25vh;
 			color: rgb(56, 54, 54);
+			transition: 10s ease-in-out;
 		}
 
 		#B:hover {
-			transform: 			
+			transform: scale(1.5) translateX(.1);
+			transition: 4s ease-in-out;
+			color: white;
 		}   
 
 		#description {
@@ -63,16 +62,16 @@
 			float: right;
 			color: rgb(44, 49, 56);
 			border: black solid 1px;
+			transition: 3s ease-in-out;
 		}
 
 		#description:hover {
-			transform: scale(2) perspective(5em) rotateY(5deg) translateY(3em);
-			transition: all 1s linear;
+			transform: scale(2) perspective(5em) rotateY(5deg);
+			transition: all 3s ease-in-out;
 		}
 
 		.copyright {
 			align-content: right;
-			padding: 1vw 0 0 6vw;
 		}
 
 
@@ -83,17 +82,17 @@
 <div class="container">
 
 	<div class="row">
-			<div class="col-1-sm nav home">
-				<p><a style="color: black !important;" href="#">home</a></p>
+			<div class="col-sm-1 nav home">
+				<p><a style="color: black;" href="#">home</a></p>
 			</div>
-			<div class="col-1-sm nav concept">
-				<p><a style="color: black !important;" href="#">concept</a></p>
+			<div class="col-sm-1 nav concept">
+				<p><a style="color: black;" href="#">concept</a></p>
 			</div>
-			<div class="col-1-sm nav contact">
-				<p><a style="color: black !important;" href="#">contact</a></p>
+			<div class="col-sm-1 nav contact">
+				<p><a style="color: black;" href="#">contact</a></p>
 			</div>
-			<div class="col-1-sm copyright nav">
-				<p>&copy; B 2019</p>
+			<div class="col-sm-1 nav copyright">
+				<p><a style="color: black;">&copy;&nbsp;B&nbsp;2019</a></p>
 			</div>
 			<div class="col-8-sm navR">
 			</div>
