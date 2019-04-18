@@ -13,31 +13,41 @@
 		body {
 			font-family: "noto sans JP";
 		}
+		* {
+			border: solid black .5px;
+		}
 
 		.nav {
-			margin: 5vh 2vh 2vh 2vh;
+			margin: 2vh 2vh 2vh 2vh;
 			font-size: 1.5em;
 			color: rgb(56, 54, 54);
 			border: solid white 0px;
 			transition: all 3s ease-out;
 			}
+		
+		.copyright {
+			font-size: 1.5em;
+			color: rgb(56, 54, 54);
+			text-align: bottom;
+			border: solid black 1px;
+		}
 
 		.home:hover {
-			transform:scale(1.5) perspective(5em) rotateY(8deg);
-			border: solid black .75px;
-			transition: all 3s ease-in;
+			transform:scale(1.25) perspective(1em) rotateY(8deg);
+			border: solid black .5px;
+			transition: all 2s ease-in;
 		}
 
 		.concept:hover {
 			transform:scale(1.5) rotate(-10deg);
-			border: solid black .75px;
-			transition: all 3s ease-in;
+			border: solid black .5px;
+			transition: all 2s ease-in;
 		}		
 
-		.contact:hover {
+		.coffee:hover {
 			transform:scale(1.5) rotate(10deg);
-			border: solid black .75px;
-			transition: all 3s ease-in;
+			border: solid black .5px;
+			transition: all 2s ease-in;
 		}
 
 		.navR {
@@ -45,9 +55,12 @@
 		}
 
 		#B {
-			font-size: 20vh;
+			padding: 0 0 0 0;
+			margin: 0 0 0 0;
+			font-size: 40vh;
 			color: rgb(56, 54, 54);
 			transition: color 10s ease-in-out;
+			border: solid black 1px;
 		}
 
 		#B:hover {
@@ -56,9 +69,13 @@
 			color: white;
 		}   
 
+		.warning {
+			margin: 2vh 2vw 2vh 2vw;
+		}
+
 		#description {
-			padding: 0.5em;
-			font-size: .75em;
+			padding: .75em;
+			font-size: .9em;
 			float: right;
 			color: rgb(44, 49, 56);
 			border: black solid 1px;
@@ -70,52 +87,45 @@
 			transition: all 3s ease-in-out;
 		}
 
-		.copyright {
-			align-content: right;
-		}
 
 
 	</style>
 
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
 
 	<div class="row">
-			<div class="col-1 nav home">
-				<p><a style="color: black;" href="#">home</a></p>
+			<div class="col-1-sm nav home">
+				<a style="color: black;" href="#">home</a>
 			</div>
-			<div class="col-sm-1 nav concept">
-				<p><a style="color: black;" href="#">concept</a></p>
+			<div class="col-1-sm nav concept">
+				<a style="color: black;" href="#">concept</a>
 			</div>
-			<div class="col-sm-1 nav contact">
-				<p><a style="color: black;" href="#">contact</a></p>
+			<div class="col-1-sm nav coffee">
+				<a style="color: black;" href="https://mistersuuns.github.io/whiterabbit.github.io/">coffee</a>			
 			</div>
-			<div class="col-sm-1 nav copyright">
-				<p><a style="color: black;">&copy;&nbsp;B&nbsp;2019</a></p>
-			</div>
-			<div class="col-8-sm navR">
+			<div class="col-0-sm col-9-md navR">
 			</div>
 	</div>
 	<div class="row">
-		<div class="col-6"></div>	
-		<div class="col-6">
-			<p id="B" href="#">B</p>
+		<div class="col-sm-1 col-md-6"></div>	
+		<div class="col-sm-11 col-md-6">
+			<a id="B">B</a>
 		</div>
-
+		</div>
 	</div>
-	<div class="row">
-		<div class="col-6"></div>
-		<div class="col-4">
-			<p id="description">WARNING: B specializes in design, product vision, market research, project management, demos, app testing, and user feedback.</p>
-		</div>
-		<div class="col-4-sm"></div>
+	<div class="row warning">
+		<div class="col-sm-1 col-md-6"></div>
+		<div class="col-sm-10 col-md-5" id="description">WARNING: B specializes in design, product vision, market research, project management, demos, app testing, and user feedback.</div>
+		<div class="col-sm-1 col-md-1"></div>
 
 	</div>
 
 <footer>
-		<div class="row">
-			<div class="col"></div>
+		<div class="row-1">
+			<div class="col-1-sm col-md-3 copyright">
+				<a style="color: black;">&copy;&nbsp;B&nbsp;2019</a>
 		</div>
 </footer>
 </div>
