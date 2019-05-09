@@ -14,45 +14,41 @@
 		body {
 			font-family: "noto sans JP";
 		}
-
 		/*
 		* {
 			border: solid black .5px;
 		}
 		*/
-
-		.space {
-		}
-
 		.nav {
 			margin: 2vh 2vh 2vh 2vh;
-			font-size: 3vh;
+			font-size: 1.5em;
 			color: rgb(56, 54, 54);
 			border: solid white 0px;
 			transition: all 3s ease-out;
 			}
 		
 		.copyright {
-			font-size: 3vh;
+			font-size: 1.5em;
 			color: rgb(56, 54, 54);
-			position: relative;
-			float: right;
-			margin-right: 3vw;
+			text-align: bottom;
 		}
 
 		.home:hover {
-			transform:scale(1.1);
-			transition: all 1s ease-in;
+			transform:scale(1.25) perspective(1em) rotateY(8deg);
+			border: solid black .5px;
+			transition: all 2s ease-in;
 		}
 
 		.concept:hover {
-			transform:scale(1.1);
-			transition: all 1s ease-in;
+			transform:scale(1.5) rotate(-10deg);
+			border: solid black .5px;
+			transition: all 2s ease-in;
 		}		
 
 		.coffee:hover {
-			transform:scale(1.1);
-			transition: all 1s ease-in;
+			transform:scale(1.5) rotate(10deg);
+			border: solid black .5px;
+			transition: all 2s ease-in;
 		}
 
 		.navR {
@@ -87,7 +83,7 @@
 		}
 
 		#description:hover {
-			transform: scale(1.75) perspective(5em) rotateY(5deg);
+			transform: scale(2) perspective(5em) rotateY(5deg);
 			transition: all 3s ease-in-out;
 		}
 		@media (max-width: 775px) {
@@ -103,17 +99,16 @@
 <div class="container-fluid">
 	<div class="row">
 			
-			<div class="col-sm-1 space"></div>
-			<div class="col-sm-1 nav home">
+			<div class="col-1-sm nav home">
 				<a style="color: black;" href="#">home</a>
 			</div>
-			<div class="col-sm-1 nav concept">
+			<div class="col-1-sm nav concept">
 				<a style="color: black;" href="#">concept</a>
 			</div>
-			<div class="col-sm-1 nav coffee">
+			<div class="col-1-sm nav coffee">
 				<a style="color: black;" href="https://mistersuuns.github.io/whiterabbit.github.io/">coffee</a>			
 			</div>
-			<div class="col-sm-0 col-md-8 navR">
+			<div class="col-0-sm col-9-md navR">
 			</div>
 	</div>
 	<div class="row">
@@ -129,14 +124,13 @@
 		<div class="col-sm-1 col-md-1"></div>
 
 	</div>
-<!--
+
 <footer>
 		<div class="row-1 footer">
-			<div class="col-md-2 copyright">
+			<div class="col-1-sm col-md-3 copyright">
 				<a style="color: black;">&copy;&nbsp;B&nbsp;2019</a>
-			</div>
+		</div>
 </footer>
--->
 </div>
 </body>	
 
