@@ -21,7 +21,8 @@
 		}
 		*/
 
-		.space {
+		.header {
+			height: 3vh;
 		}
 
 		.nav {
@@ -41,17 +42,13 @@
 		}
 
 		.home:hover {
-			transform:scale(1.1);
+			transform:scale(1.25) translateX(1vw);
 			transition: all 1s ease-in;
 		}
-
-		.concept:hover {
-			transform:scale(1.1);
-			transition: all 1s ease-in;
-		}		
+	
 
 		.coffee:hover {
-			transform:scale(1.1);
+			transform:scale(1.1) translateX(1vw);
 			transition: all 1s ease-in;
 		}
 
@@ -101,19 +98,18 @@
 </head>
 <body>
 <div class="container-fluid">
+	<div class="row-span header"></div>
 	<div class="row">
 			
 			<div class="col-sm-1 space"></div>
 			<div class="col-sm-1 nav home">
 				<a style="color: black;" href="#">home</a>
 			</div>
-			<div class="col-sm-1 nav concept">
-				<a style="color: black;" href="#">concept</a>
-			</div>
+
 			<div class="col-sm-1 nav coffee">
 				<a style="color: black;" href="https://mistersuuns.github.io/whiterabbit.github.io/">coffee</a>			
 			</div>
-			<div class="col-sm-0 col-md-8 navR">
+			<div class="col-sm-0 col-md-9 navR">
 			</div>
 	</div>
 	<div class="row">
@@ -125,7 +121,7 @@
 	</div>
 	<div class="row warning">
 		<div class="col-sm-1 col-md-6"></div>
-		<div class="col-sm-10 col-md-5" id="description">WARNING: B specializes in design, product vision, market research, project management, demos, app testing, and user feedback.</div>
+		<div class="col-sm-10 col-md-5" id="description">WARNING: B specializes in design, product vision, market research, project management, demos, app testing, user feedback, and bicycles.</div>
 		<div class="col-sm-1 col-md-1"></div>
 
 	</div>
