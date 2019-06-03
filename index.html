@@ -27,7 +27,7 @@
 
 		.nav {
 			margin: 3vh;
-			font-size: 3vh;
+			font-size: 4vh;
 			color: rgb(56, 54, 54);
 			border: solid white 0px;
 			transition: all 3s ease-out;
@@ -41,17 +41,36 @@
 			margin-right: 3vw;
 		}
 
-		.home:hover {
-			transform:scale(1.2) translateX(1vw);
+		.img {
+			display: block;
+			align-items: top;
+		}
+
+		#coffee {
+			max-height: 11vh;
+		}
+
+		.coffee:hover {
+			transform:scale(1.05);
+			transition: all 1s ease-in;
+		}
+
+		#hand2 {
+			padding-top: 3vh;
+			max-height: 11vh;
+		}
+		
+		#hand2:hover {
+			transform:scale(1.05);
+			transition: all 1s ease-in;
+		}
+
+
+		.hand2:hover {
+			transform:scale(1.1);
 			transition: all 1s ease-in;
 		}
 	
-
-		.coffee:hover {
-			transform:scale(1.2) translateX(1vw);
-			transition: all 1s ease-in;
-		}
-
 		.navR {
 			padding: 0 0 0 0;
 		}
@@ -67,7 +86,7 @@
 		#B:hover {
 			transform: scale(1.5) translateX(.1);
 			transition: color 2.5s ease-in-out;
-			color: white;
+			color: whitesmoke;
 		}   
 
 		.warning {
@@ -102,12 +121,16 @@
 	<div class="row">
 			
 			<div class="col-sm-1 space"></div>
-			<div class="col-xs-1 nav home">
-				<a style="color: black;" href="#">home</a>
-			</div>
 
 			<div class="col-xs-1 nav coffee">
-				<a style="color: black;" href="https://mistersuuns.github.io/whiterabbit.github.io/">coffee</a>			
+				<a href="https://mistersuuns.github.io/whiterabbit.github.io/">
+					<img src="blackCupWhiteRabbit.svg" id="coffee">
+				</a>
+			</div>
+			<div class="col-xs-1 nav contact">
+				<a href="#">
+					<img src="hand2.jpg" id="hand2">
+				</a>
 			</div>
 			<div class="col-sm-0 col-md-9 navR">
 			</div>
