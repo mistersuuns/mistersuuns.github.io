@@ -1,42 +1,109 @@
 
-#nav:active {
-    top: 2px;
+body {
+    font-family: "noto sans JP";
 }
-
-#nav:hover {
-    color: black;
-    transform:scale(1.05);
+* {
+    border: solid black .5px;
 }
-
-#B {
-    margin-top: 2em;
-    margin-left: 1em;
-    font-size: 2em;
+.header {
+    height: 3vh;
+}
+.nav {
+    margin: 2.5vh;
+    font-size: 3vh;
     color: rgb(56, 54, 54);
-}
-
-logo:hover {
-    animation-name: color;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}   
-@keyframes color {
-    100% {
-        color: mediumseagreen;
+    border: solid white 0px;
     }
+/*
+.img {
+    display: block;
+    align-items: top;
 }
+#coffee {
+    max-height: 5vh;
+}
+.coffee:hover {
+    transform:scale(1.1);
+    transition: all 1s ease-in;
+}
+.contact:hover {
+    transform:scale(1.1);
+    transition: all 1s ease-in;
+}
+#hand2 {
+    padding-top: 3vh;
+    max-height: 5vh;
+    padding: 0;
+}
+#hand2:hover {
+    transform:scale(1.1);
+    transition: all 1s ease-in;	
+}
+.hand2:hover {
+    transform:scale(1.1);
+    transition: all 1s ease-in;
+}
+*/
 
-main {
-    margin-top: 8em;
-    margin-left: 2em;
-    padding: 0.5em;
-    font-size: 0.25em;
-    float: left;
-    color: rgb(44, 49, 56);
+.navR {
+    padding: 0;
 }
-footer {
-    font-size: 0.2em;
-    float: left;
-    margin-left: 2em;
-    padding: 1em; 
+#B {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-size: 40vh;
+    color: rgb(56, 54, 54);
+    transition: color 5s ease-in-out;
+}
+#B:hover {
+    transform: scale(1.5) translateX(.1);
+    transition: color 2s ease-in-out;
+    color: white;
+}   
+.warning {
+    margin: 2vh 2vw 2vh 2vw;
+}
+#description {
+    padding: .75em;
+    font-size: .9em;
+    float: right;
+    color: rgb(44, 49, 56);
+    border: black solid 1px;
+    transition: 1s ease-in-out;
+}
+#description:hover {
+    transform: scale(1.75) perspective(5em) rotateY(5deg);
+    transition: all 2s ease-in-out;
+}
+@media (max-width: 775px) {
+    #description:hover { transform: scale(1.01) perspective(10em) rotateY(4deg);}
+}
+.footer {
+    bottom: 0;
+    margin: 0;
+    font-family: "Avenir";
+    padding: 2% 0 2% 0;
+}
+#instagram {
+    font-size: 140%;
+    color: black;
+}
+#facebook {
+    font-size: 140%;
+    color: black;
+}
+#icons {
+    padding: 0 0 .2% 0;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#email {
+    padding: .2% 0 0 0;
+    font-size: 90%;
+    color: black;
+    letter-spacing: 0.125em;
+    display: flex;
+    justify-content: center;
 }
