@@ -26,9 +26,9 @@
     margin: 0;
 }
 #B {
-    padding: 0;
+    padding: 5vw 0 4vw 0;
     margin: 0;
-    width: 40vw;
+    width: 25vw;
 }
 @media (max-width: 425px) {
     .nav {font-size: 1.3em;}
@@ -36,7 +36,7 @@
 }
 @keyframes pulse {
     from {
-        opacity: .1;
+        opacity: 0;
     }
     to {
         opacity: 1;
@@ -54,7 +54,7 @@
     animation: pulse 1s;
 }
 #B {
-    animation: pulse 3s ease-in-out 0s alternate infinite;
+    animation: pulse 8s ease-in-out 0s alternate infinite;
 }   
 
 .warning {
@@ -62,7 +62,8 @@
 }
 #description {
     padding: .75em;
-    font-size: .9em;
+    margin: .75vw;
+    font-size: 1.1em;
     float: right;
     color: rgb(44, 49, 56);
     border: black solid 1px;
@@ -77,9 +78,9 @@
 }
 
 .row.footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
-    margin: 10vh 0 0 0;
+    margin: 0 0 0 0;
     font-family: "Dosis";
     padding: 0;
 }
