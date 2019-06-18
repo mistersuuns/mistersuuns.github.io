@@ -1,67 +1,64 @@
 
-body {
-    font-family: "noto sans JP";
+.container-span {
+    font-family: "Dosis";
+    padding: 0; margin: 0;
 }
 * {
     border: solid black .5px;
 }
-.header {
-    height: 3vh;
+.row.navbar {
+    padding: 0; margin: 0;
+}
+.space {
+    visibility: hidden;
 }
 .nav {
-    margin: 2.5vh;
-    font-size: 3vh;
+    margin: .5em;
+    font-size: 2em;
     color: rgb(56, 54, 54);
-    border: solid white 0px;
-    }
-/*
-.img {
-    display: block;
-    align-items: top;
 }
-#coffee {
-    max-height: 5vh;
-}
-.coffee:hover {
-    transform:scale(1.1);
-    transition: all 1s ease-in;
-}
-.contact:hover {
-    transform:scale(1.1);
-    transition: all 1s ease-in;
-}
-#hand2 {
-    padding-top: 3vh;
-    max-height: 5vh;
-    padding: 0;
-}
-#hand2:hover {
-    transform:scale(1.1);
-    transition: all 1s ease-in;	
-}
-.hand2:hover {
-    transform:scale(1.1);
-    transition: all 1s ease-in;
-}
-*/
 
 .navR {
     padding: 0;
 }
-#B {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    font-size: 40vh;
-    color: rgb(56, 54, 54);
-    transition: color 5s ease-in-out;
+.B {
+    padding: 0;
+    margin: 0;
 }
-#B:hover {
-    transform: scale(1.5) translateX(.1);
-    transition: color 2s ease-in-out;
-    color: white;
+#B {
+    padding: 0;
+    margin: 0;
+    width: 40vw;
+}
+@media (max-width: 425px) {
+    .nav {font-size: 1.3em;}
+    #B {width:80vw}
+}
+@keyframes pulse {
+    from {
+        opacity: .1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.pulse {
+    animation: pulse 1s;
+}
+#B {
+    animation: pulse 3s ease-in-out 0s alternate infinite;
 }   
+
 .warning {
-    margin: 2vh 2vw 2vh 2vw;
+    margin: 2vh 2vw;
 }
 #description {
     padding: .75em;
@@ -78,11 +75,16 @@ body {
 @media (max-width: 775px) {
     #description:hover { transform: scale(1.01) perspective(10em) rotateY(4deg);}
 }
-.footer {
+
+.row.footer {
+    position: absolute;
     bottom: 0;
-    margin: 0;
-    font-family: "Avenir";
-    padding: 2% 0 2% 0;
+    margin: 10vh 0 0 0;
+    font-family: "Dosis";
+    padding: 0;
+}
+.col.footer {
+    margin: 0; padding: 0;
 }
 #instagram {
     font-size: 140%;
