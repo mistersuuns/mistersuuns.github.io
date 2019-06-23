@@ -2,83 +2,71 @@
 <html>
 
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="shortcut icon" type="image/png" href="plywood.png" />
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<link rel="shortcut icon" type="image/png" href="doginCupNara.png">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<title>B</title>
 </head>
 
 <body>
-	<div class="bg"></div>
 	<div class="container-span">
-		<div class="row navbar">
-			<div class="col-sm-1 space"></div>
-			<div class="col-sm-1 space"></div>
-			<div class="col-sm-1 space"></div>
-			<div class="col-sm-1 space"></div>
-			<div class="col-sm-1 space"></div>
-			<div class="col-sm-1 space"></div>
+		<input type="image" id="hamburger" src="hamburger.svg" onclick="openNav()">
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a id="coffee" href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank"
+				style="color:white !important;">coffee</a>
+			<a href="#work" style="color: white !important;">other work</a>
+			<a href="#bicycles" style="color: white !important;">bicycles</a>
+			<a href="mailto:robertdhayan@gmail.com" style="color:white !important;">contact</a>
+		</div>
 
-			<div class="col-xs-1 nav coffee">
-				<a href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank"
-					style="color:black !important;">coffee</a>
-					<!-- <img src="ceramicWhiteRabbit.png" id="coffee"> -->
-			</div>
-			<div class="col-xs-1 nav works">
-					<a href="#works" style="color: black !important;">works</a>
-			</div>
-			<div class="col-xs-1 nav bicycles">
-					<a href="#bicycles" style="color: black !important;">bicycles</a>
-			</div>
-			<div class="col-xs-1 nav contact">
-				<a href="mailto:robertdhayan@gmail.com" style="color:black !important;">contact&nbsp;&nbsp;&nbsp;</a>
-					<!-- <img src="hand2.png" id="hand2"> -->
-			</div>
-			<div class="col-sm-1 space"></div>
-			<div class="col-sm-0 col-md-8 navR">
-			</div>
+	</div>
+	<!--description:
+			I specialize in design, market research, product vision, 
+			project management, demos, app testing, user feedback, and bicycles.</div> -->
+
+	<div class="container sections">
+		<div class="row" id="work">
 		</div>
-		<div class="row B">
-			<div class="col-sm-1 col-md-6"></div>
-			<div class="col-sm-11 col-md-6">
-				<img id="B" src="B.svg">
-			</div>
+		<div class="row" id="bicycles">
 		</div>
-		<div class="row warning">
-			<div class="col-sm-1 col-md-6"></div>
-			<div class="col-sm-11 col-md-5" id="description">WARNING: B specializes in design, market
-				research, product vision, project management, demos, app testing, user feedback, and bicycles.</div>
-			<div class="col-sm-1 col-md-1"></div>
+	</div>
+	</div>
+	<div class="container-span footer">
+		<div class="row-span contact">
+			<div class="col icons">
+				<!-- instagram, facebook -->
+				<a href="https://www.linkedin.com/in/robertdhayanturner"><i class="fab fa-linkedin"
+						style="color: white !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.instagram.com/bobrobertturner"><i class="fab fa-instagram"
+						style="color: white !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.facebook.com/robertdhayan"><i class="fab fa-facebook-f"
+						style="color: white !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="mailto:robertdhayan@gmail.com" style="color: white !important;"><i
+						class="far fa-envelope"></i></a>
+			</div>
 		</div>
 	</div>
 
-	<div class="container-span" id="works">
-		<img id="photo" src="BRflow.png">
-	</div>
-	<div class="container-span" id="bicycles">
-		<img id="photo" src="4bikes.png">
-	</div>
-	<div class="row footer">
-		<div class="col footer">
-			<!-- instagram, facebook -->
-			<div class="col"> </div>
-			<div class="col" id="icons">
-				<a href="www.linkedin.com/in/robertdhayanturner"><i class="fab fa-linkedin" id="linkedin"></i></a>&nbsp;&nbsp;</a>
-				<a href="https://www.instagram.com/bobrobertturner"><i class="fab fa-instagram" id="instagram"></i></a>&nbsp;&nbsp;
-				<a href="https://www.facebook.com/robertdhayan"><i class="fab fa-facebook-f" id="facebook"></i></a>
-			</div>
-			<div class="row-span">
-				<div class="col email">
-					<a href="mailto:robertdhayan@gmail.com" id="email">robertdhayan@gmail.com</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	<!-- js -->
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+
 </body>
 
 </html>
