@@ -1,28 +1,31 @@
-* {
+/* {
     border: solid black .5px;
 }
-
+*/
 body {
-    background: url("samurai.jpg");
+    background: url("steadAlice.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: 70%;
     z-index: -1;
     padding: 0;
     margin: 0;
+    font-family: Avenir;
 }
 
 #hamburger {
-    width: 5em;
+    width: 4em;
     cursor: pointer;
     padding: 0;
     margin: 3vh;
 }
-
+#hamburger:hover {
+    transform: scale(1.05);
+}
 #mySidenav{
-    margin: 0;
+    margin: 0; 
 }
 
 .sidenav {
@@ -42,7 +45,7 @@ body {
     padding: 2vh 0 0 3vh;
     text-decoration: none;
     font-size: 1.5em;
-    font-weight: thin;
+    font-weight: bold;
     letter-spacing: .15em;
     color: #818181;
     display: block;
@@ -61,11 +64,28 @@ body {
     color: white;
 }
 
+.row.space {
+    height: 20vh;
+}
+
+#hello {
+    padding-left: 16vw;
+    color: black;
+    font-size: 5em;
+    font-weight: 600;
+}
+#robert {
+    padding-left: 16vw;
+
+    color: black;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
     }
-
     .sidenav a {
         font-size: 18px;
     }
@@ -110,6 +130,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    background-image: ;
 }
 
 .icons {
@@ -119,4 +140,16 @@ body {
     width: 100vw;
     display: flex;
     justify-content: center;
+}
+.fab.fa-linkedin:hover {
+    transform: scale(1.2);
+}
+.fab.fa-instagram:hover {
+    transform: scale(1.2);
+}
+.fab.fa-facebook-f:hover {
+    transform: scale(1.2);
+}
+.gmail:hover {
+    transform: scale(1.2);
 }

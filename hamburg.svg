@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="122px" height="104px" viewBox="0 0 122 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(3.000000, 4.000000)" stroke="#FFFFFF" stroke-width="7">
+            <path d="M109,77 C106.448739,89.6666667 102.115406,96 96,96 C86.8268914,96 28.1538743,96 20,96 C14.5640838,96 10.2307504,89.6666667 7,77 L109,77 Z" id="Line" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M110.863916,48.7814761 C116.867684,49.8234443 115.00314,66.9580318 110,68 C104.99686,69.0419682 9,69 5,69 C1,69 -1.96234493,52.9811725 4,50 C6.30963638,48.8451818 11.3457195,48.8967778 18,48.7814761 C28.6322861,48.5972458 43.6295727,48.7659709 60,48.7814761 C84.2515096,48.8044459 108.000866,48.284587 110.863916,48.7814761 Z" id="Line" stroke-linecap="square"></path>
+            <path d="M109.638032,-6.39488462e-14 C110.965247,6.61417323 108.642621,13.3228346 102.670153,20.1259843 C93.7114502,30.3307087 76.3981481,40 57,40 C37.8299541,40 17.0647743,30.4724409 10.0968947,20.1259843 C5.45164159,13.2283465 3.46081884,6.51968504 4.12442642,-6.39488462e-14 L57,-3.19744231e-14 L109.638032,-6.39488462e-14 Z" id="Line" stroke-linecap="square" stroke-linejoin="round" transform="translate(57.000000, 20.000000) rotate(180.000000) translate(-57.000000, -20.000000) "></path>
+        </g>
+    </g>
+</svg>

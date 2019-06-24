@@ -10,63 +10,75 @@
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<link rel="shortcut icon" type="image/png" href="doginCupNara.png">
+	<link rel="icon" type="image/png" href="doginCupNara.png">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<title>B</title>
 </head>
 
 <body>
 	<div class="container-span">
-		<input type="image" id="hamburger" src="hamburger.svg" onclick="openNav()">
+		<input type="image" id="hamburger" src="blackBurger.svg" onclick="openNav()">
 		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: black !important; font-size: 1.6em; margin: 0; padding:0;"><br>CLOSE</a>
 			<a id="coffee" href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank"
-				style="color:white !important;">coffee</a>
-			<a href="#work" style="color: white !important;">other work</a>
-			<a href="#bicycles" style="color: white !important;">bicycles</a>
-			<a href="mailto:robertdhayan@gmail.com" style="color:white !important;">contact</a>
+				style="color:black !important;">coffee</a>
+			<a href="#work" style="color: black !important;">other work</a>
+			<a href="#bicycles" style="color: black !important;">bicycles</a>
+			<a href="mailto:robertdhayan@gmail.com" style="color:black !important;">contact</a>
 		</div>
-
+		<div class="row space"></div>
+		<div class="row text" style="text-align: center;">
+			<div class="col" style="display: inline-block; text-align: left;">
+				<a id="hello">Hello<br></a>
+				<a id="robert">&nbsp;I'm Robert, a random clever person<br></a>
+			</div>
+		</div>
+		<div class="row space"></div>
 	</div>
 	<!--description:
 			I specialize in design, market research, product vision, 
 			project management, demos, app testing, user feedback, and bicycles.</div> -->
 
-	<div class="container sections">
+	<div class="container work">
 		<div class="row" id="work">
 		</div>
+	</div>
+
+	<div class="container bicycles">
 		<div class="row" id="bicycles">
 		</div>
 	</div>
-	</div>
+</body>
+<footer>
 	<div class="container-span footer">
 		<div class="row-span contact">
 			<div class="col icons">
 				<!-- instagram, facebook -->
 				<a href="https://www.linkedin.com/in/robertdhayanturner"><i class="fab fa-linkedin"
-						style="color: white !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						style="color: black !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
 				<a href="https://www.instagram.com/bobrobertturner"><i class="fab fa-instagram"
-						style="color: white !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						style="color: black !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
 				<a href="https://www.facebook.com/robertdhayan"><i class="fab fa-facebook-f"
-						style="color: white !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="mailto:robertdhayan@gmail.com" style="color: white !important;"><i
+						style="color: black !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="mailto:robertdhayan@gmail.com" class="gmail" style="color: black !important;"><i
 						class="far fa-envelope"></i></a>
 			</div>
 		</div>
 	</div>
+</footer>
 
-	<!-- js -->
-	<script>
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "250px";
-		}
+<!-- js -->
+<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+	}
 
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-		}
-	</script>
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
 
 
-</body>
+
 
 </html>
