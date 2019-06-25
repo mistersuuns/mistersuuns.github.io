@@ -4,69 +4,82 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<link rel="icon" type="image/png" href="doginCupNara.png">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<title>B</title>
+
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
 </head>
 
-<body class="container">
-	<div class="bg"></div>
-
-	<div class="container-span">
-		<input type="image" id="hamburger" src="lumenBurger.svg" onclick="openNav()">
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-				style="color: black !important; font-size: 1.6em; margin: 0; padding:0;"><br>CLOSE</a>
-			<a id="coffee" href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank"
-				style="color:black !important;">coffee</a>
-			<a href="#work" style="color: black !important;">other work</a>
-			<a href="#bicycles" style="color: black !important;">bicycles</a>
-			<a href="mailto:robertdhayan@gmail.com" style="color:black !important;">contact</a>
-		</div>
-		<div class="row space1"></div>
-		<div class="row robert" style="text-align: center;">
-			<div class="col text" style="display: inline-block; text-align: left;">
-				<a id="hello">Hello.<br></a>
-				<a id="robert">&nbsp;I'm Robert, a random clever person</a>
+<body>
+	<div class="container">
+		<div class="bg"></div>
+		<div class="container-span">
+			<input type="image" id="hamburger" src="lumenBurger.svg" onclick="openNav()">
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+					style="color: black !important; font-size: 1.6em; margin: 0; padding:0;"><br>CLOSE</a>
+				<a id="coffee" href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank"
+					style="color:black !important;">coffee</a>
+				<a href="#work" style="color: black !important;">other work</a>
+				<a href="#bicycles" style="color: black !important;">bicycles</a>
+				<a href="mailto:robertdhayan@gmail.com" style="color:black !important;">contact</a>
 			</div>
-		</div>
-		<div class="row alice" style="text-align: center;">
-				<div class="col text" style="display: inline-block; text-align: left;">
-						<a id="alice">&nbsp;To your left is Alice, in another dimension, "-2"/a>
+			<div class="row space1"></div>
+			<div class="row">
+				<div class="col-6"> </div>
+				<div class="col-3 text" style="display: inline-block; text-align: left">
+					<a id="hello">Hello.<br></a>
+					<a id="robert">&nbsp;I'm Robert, a random clever person</a>
 				</div>
-		</div>
+				<div class="col-3"> </div>
+			</div>
+			<div class="row"> </div>
+			<div class="row">
+				<div class="col-6"> </div>
+				<div class="col-3 text" style="display: inline-block; text-align: left">
+					<a id="alice">To your left, Alice<br>She's in another dimension: -2</a>
+				</div>
+				<div class="col-3"> </div>
 
-		<div class="row space2"></div>
-	</div>
-	<!--description:
+			</div>
+
+			<div class="row space2"></div>
+		</div>
+		<!--description:
 			I specialize in design, market research, product vision, 
 			project management, demos, app testing, user feedback, and bicycles.</div> -->
-	<div class="container-span clever">
-		<div class="row space1"> </div>
-		<div class="row">
-			<div class="col text">
-				<div style="display: inline-block; text-align: left">Below you is the surface of Mars.<br><br>
-					And further down the page are <br>some of the random, clever things<br>I've done.</div>
+		<div class="container-span clever">
+			<div class="row">
+				<div class="col"> </div>
+				<div class="col text">
+					<div style="display: inline-block; text-align: left">Below you is the surface of Mars.<br><br>
+						And further down the page are <br>some of the random, clever things<br>I've done.</div>
+				</div>
+				<div class="col"> </div>
 			</div>
 		</div>
-		<div class="row space2"> </div>
-	</div>
-	<div class="container-span work">
-		<div class="row work">
-			<img id="work" src="BRflow.png">
+		<div class="container-span work">
+			<div class="row work">
+				<img id="work" src="BRflow.png">
+			</div>
 		</div>
-	</div>
 
-	<div class="container bicycles">
-		<div class="row" id="bicycles">
+		<div class="container bicycles">
+			<div class="row" id="bicycles">
+			</div>
 		</div>
-	</div>
 
 </body>
 
@@ -87,19 +100,7 @@
 		</div>
 	</div>
 </footer>
-
-<!-- js -->
-<script>
-	function openNav() {
-		document.getElementById("mySidenav").style.width = "250px";
-	}
-
-	function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-	}
-</script>
-
-
+</div>
 
 
 </html>
