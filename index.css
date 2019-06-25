@@ -1,44 +1,76 @@
-/* {
+* {
     border: solid black .5px;
 }
-*/
-body {
+
+@media (min-width: 426px) {
+    .container {
+        padding: 0;
+        margin: 0;
+        font-family: Avenir;
+        font-size: 1.5em;
+    }
+    #robert {
+        padding: 0;
+    }
+    #hamburger {
+        height: 5vh;
+    }
+}
+
+@media (max-width:425px) {
+    .container {
+        padding: 0;
+        margin: 0;
+        font-family: Avenir;
+        font-size: .75em;
+    }
+    #robert {
+        
+    }
+}
+
+.bg {
     background: url("steadAlice.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 70%;
-    z-index: -1;
+    position: fixed;
+    z-index: -2;
     padding: 0;
     margin: 0;
     font-family: Avenir;
 }
 
 #hamburger {
-    width: 4em;
+    height:5vh;
     cursor: pointer;
     padding: 0;
-    margin: 3vh;
+    margin: 1.5vh;
+    position: fixed;
+    z-index: 0;
 }
+/* exit menu with esc and click outside */
+
 #hamburger:hover {
     transform: scale(1.05);
 }
-#mySidenav{
-    margin: 0; 
+
+#mySidenav {
+    margin: 0;
 }
 
 .sidenav {
     height: 100%;
     width: 0;
+    z-index: 0;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     background-color: none;
     overflow-x: hidden;
     transition: .5s;
-    padding-top: 5em;
+    padding: 4vh 0 0 0;
 }
 
 .sidenav a {
@@ -56,43 +88,82 @@ body {
     transform: scale(1.1);
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 2em;
+.sizenav .closebtn {
+    z-index: 0; 
+    display: inline-block;
+    font-size: 2vh;
     color: white;
 }
 
-.row.space {
-    height: 20vh;
+.row.space1 {
+    height: 15vw;
+}
+
+.col.text {
+    margin: 0 0 0 40%;
+        font-size: .75em;
+        font-weight: 300;
+        text-align: center;
 }
 
 #hello {
-    padding-left: 16vw;
     color: black;
-    font-size: 5em;
+    font-size: 3.5em;
     font-weight: 600;
 }
-#robert {
-    padding-left: 16vw;
 
+#robert {
     color: black;
-    font-size: 1.5em;
-    font-weight: 800;
+    font-size: .9em;
+    font-weight: 500;
+    text-overflow: visible;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
     .sidenav {
         padding-top: 15px;
     }
+
     .sidenav a {
-        font-size: 18px;
+        font-size: 1em;
     }
 }
 
-.spacer {
-    margin: 0 0 45vh 0;
+.row.space2 {
+    height: 35vw;
+}
+
+.container-span.clever {
+    background: url("nili.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    font-family: Avenir;
+    font-size: 1.4em;
+    color: white;
+}
+
+
+
+.container-span.work {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    font-family: Avenir;
+}
+
+#work {
+    max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 425px) {
@@ -123,7 +194,7 @@ body {
 }
 
 .container-span.footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     margin: 0;
     font-family: "Dosis";
@@ -141,15 +212,19 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .fab.fa-linkedin:hover {
     transform: scale(1.2);
 }
+
 .fab.fa-instagram:hover {
     transform: scale(1.2);
 }
+
 .fab.fa-facebook-f:hover {
     transform: scale(1.2);
 }
+
 .gmail:hover {
     transform: scale(1.2);
 }

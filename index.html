@@ -15,32 +15,51 @@
 	<title>B</title>
 </head>
 
-<body>
+<body class="container">
+	<div class="bg"></div>
+
 	<div class="container-span">
-		<input type="image" id="hamburger" src="blackBurger.svg" onclick="openNav()">
+		<input type="image" id="hamburger" src="lumenBurger.svg" onclick="openNav()">
 		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: black !important; font-size: 1.6em; margin: 0; padding:0;"><br>CLOSE</a>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				style="color: black !important; font-size: 1.6em; margin: 0; padding:0;"><br>CLOSE</a>
 			<a id="coffee" href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank"
 				style="color:black !important;">coffee</a>
 			<a href="#work" style="color: black !important;">other work</a>
 			<a href="#bicycles" style="color: black !important;">bicycles</a>
 			<a href="mailto:robertdhayan@gmail.com" style="color:black !important;">contact</a>
 		</div>
-		<div class="row space"></div>
-		<div class="row text" style="text-align: center;">
-			<div class="col" style="display: inline-block; text-align: left;">
-				<a id="hello">Hello<br></a>
-				<a id="robert">&nbsp;I'm Robert, a random clever person<br></a>
+		<div class="row space1"></div>
+		<div class="row robert" style="text-align: center;">
+			<div class="col text" style="display: inline-block; text-align: left;">
+				<a id="hello">Hello.<br></a>
+				<a id="robert">&nbsp;I'm Robert, a random clever person</a>
 			</div>
 		</div>
-		<div class="row space"></div>
+		<div class="row alice" style="text-align: center;">
+				<div class="col text" style="display: inline-block; text-align: left;">
+						<a id="alice">&nbsp;To your left is Alice, in another dimension, "-2"/a>
+				</div>
+		</div>
+
+		<div class="row space2"></div>
 	</div>
 	<!--description:
 			I specialize in design, market research, product vision, 
 			project management, demos, app testing, user feedback, and bicycles.</div> -->
-
-	<div class="container work">
-		<div class="row" id="work">
+	<div class="container-span clever">
+		<div class="row space1"> </div>
+		<div class="row">
+			<div class="col text">
+				<div style="display: inline-block; text-align: left">Below you is the surface of Mars.<br><br>
+					And further down the page are <br>some of the random, clever things<br>I've done.</div>
+			</div>
+		</div>
+		<div class="row space2"> </div>
+	</div>
+	<div class="container-span work">
+		<div class="row work">
+			<img id="work" src="BRflow.png">
 		</div>
 	</div>
 
@@ -48,7 +67,9 @@
 		<div class="row" id="bicycles">
 		</div>
 	</div>
+
 </body>
+
 <footer>
 	<div class="container-span footer">
 		<div class="row-span contact">
