@@ -1,83 +1,89 @@
+/*
 * {
     border: solid black .5px;
 }
-
+*/
 @media (min-width: 426px) {
-    .container {
-        padding: 0;
-        margin: 0;
-        font-family: Avenir;
-        font-size: 1.5em;
-    }
+
     #robert {
-        padding: 
+        font-size: 1.25em; 
     }
     #hamburger {
-        height: 5vh;
+        height: 10vh;
     }
 }
 
 @media (max-width:425px) {
-    .container {
-        padding: 0;
-        margin: 0;
-        font-family: Avenir;
-        font-size: .75em;
+    .nav {
+        font-size: 1.3em;
+    }
+
+    .bg {
+        background-size: 100%;
+        background-position: center top;
     }
     #robert {
-        
+        font-size: 1em;
     }
+}
+
+@media (max-width: 425px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 1em;
+    }
+}
+ 
+body {
+    font-family: Avenir;
+    margin: 0; padding: 0;
 }
 
 .bg {
     background: url("steadAlice.jpg");
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
     z-index: -2;
-    padding: 0;
-    margin: 0;
-    font-family: Avenir;
 }
 
+
+/* sidenav */
 #hamburger {
-    height:5vh;
+    height:8vh;
     cursor: pointer;
     padding: 0;
-    margin: 1.5vh;
+    margin: 0;
     position: fixed;
     z-index: 0;
 }
-/* exit menu with esc and click outside */
-
 #hamburger:hover {
     transform: scale(1.05);
-}
-
-#mySidenav {
-    margin: 0;
 }
 
 .sidenav {
     height: 100%;
     width: 0;
-    z-index: 0;
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
     background-color: none;
     overflow-x: hidden;
     transition: .5s;
-    padding: 4vh 0 0 0;
+    padding: 1vw 0 0 1vw;
 }
 
 .sidenav a {
     padding: 2vh 0 0 3vh;
     text-decoration: none;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: .15em;
     color: #818181;
     display: block;
@@ -87,121 +93,135 @@
 .sidenav a:hover {
     transform: scale(1.1);
 }
-
-.sizenav .closebtn {
-    z-index: 0; 
-    display: inline-block;
-    font-size: 2vh;
-    color: white;
+#close {
+    padding: 0 1vw 1vw 8vw;
+}
+#nav {
+    padding: 1vw
 }
 
-.row.space1 {
-    height: 10vw;
+/* exit menu with esc and click outside */
+
+.row {
+    padding: 0; margin: 0;
+}
+
+.col-4.alice {
+    padding: 16vw 0;
 }
 
 #hello {
     color: black;
-    font-size: 4em;
+    font-size: 5em;
     font-weight: 500;
 }
 
-#robert {
+#alice {
     color: black;
-    font-size: .9em;
-    font-weight: 400;
+    font-size: 1.1em;
+    font-weight: 500;
     text-overflow: visible;
 }
 
-@media screen and (max-width: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 1em;
-    }
+.col-4.minus2 {
+    color: white;
+    font-size: .95em;
+    font-weight: 100;
+    text-overflow: visible;
+    z-index: 0;
+    padding: 0 0 50vw 0;
+    transform: rotate(26.75deg);
+    transform-origin: 1% 2%;
 }
 
-.row.space2 {
-    height: 35vw;
-}
-
-.container-span.clever {
+.container-span.mars {
     background: url("nili.jpg");
-    width: 100vw;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
     padding: 0;
     margin: 0;
-    font-family: Avenir;
-    font-size: 1.4em;
+    font-size: 1.25em;
+    text-shadow: black 5%;
     color: white;
 }
+.col-5.mars {
+    padding: 60vw 0 60vw 5vw;
+}
 
+#mars {
+    font-size: 5em;
+}
+
+.container-span.zero {
+    background: url("banksyRobot.jpg");
+    margin: 0; 
+    padding: 0;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    padding: 10.25vw 0;
+    margin: 0;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-shadow: black 5%;
+    color: black;
+}
+
+#zero {
+    font-size: 11em;
+}
+#welcome {
+    padding: 0 0 0 1.5vw;
+}
 
 
 .container-span.work {
-    background-color: white;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
+    background: url("kusamaYspots.jpg");
+    margin: 0; 
+    padding: 0;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0;
+    z-index: 0;
+    padding: 10.25vw 0;
     margin: 0;
-    font-family: Avenir;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-shadow: black 5%;
+    color: black;
 }
 
-#work {
-    max-width: 100%;
-    height: auto;
+#designs {
+    font-size: 2em;
+    font-weight: 500;
+    text-shadow: 20px 20px 20px white;
 }
 
-@media (max-width: 425px) {
-    .nav {
-        font-size: 1.3em;
-    }
-
-    .bg {
-        background-size: 100%;
-        background-position: center top;
-    }
-
-    #email {
-        font-size: .6em;
-        padding-left: 1em;
-    }
+.col-3.bor {
+    margin: 0;
+    padding: 0;
+}
+#bor {
+    width: 100%;
+    margin: 0;
+    padding: 1vw;
 }
 
-#description:hover {
-    transform: scale(1.75) perspective(5em) rotateY(5deg) translateX(-2em);
-    transition: all 2s ease-in-out;
-}
-
-@media (max-width: 775px) {
-    #description:hover {
-        transform: scale(1.01) perspective(10em) rotateY(4deg);
-    }
-}
-
-.container-span.footer {
-    position: relative;
+/* footer */
+.footer {
     bottom: 0;
     margin: 0;
-    font-family: "Dosis";
     padding: 0;
-    display: flex;
     justify-content: center;
-    background-image: ;
 }
 
 .icons {
     font-size: 2em;
     padding: .5em 0;
     margin: 0;
-    width: 100vw;
     display: flex;
     justify-content: center;
 }
