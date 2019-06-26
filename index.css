@@ -197,13 +197,14 @@ body {
     color: black;
 }
 
-.col-12.work {
-    padding: 20vw 10vw;
-}
 #designs {
     font-size: 2em;
     font-weight: 500;
     text-shadow: 20px 20px 20px white;
+}
+
+.col-12.work {
+    padding: 5vw 10vw;
 }
 
 .col-3.bor {
@@ -214,6 +215,12 @@ body {
     width: 100%;
     margin: 0;
     padding: 3vw;
+}
+
+#ps {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 10vw 0;
 }
 
 .container-span.alice {
