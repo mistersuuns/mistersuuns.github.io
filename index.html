@@ -18,16 +18,18 @@
 	<script>
 		function openNav() {
 			document.getElementById("mySidenav").style.width = "12em";
+			document.getElementById("hamburger").style.display = "none";
 		}
 
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("hamburger").style.display = "inline";
 		}
 	</script>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="icon" type="image/png" href="doginCupNara.png">
+	<link rel="shortcut icon" type="image/png" href="ali.png">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<title>B</title>
 </head>
@@ -37,109 +39,106 @@
 
 	<div id="mySidenav" class="sidenav">
 		<input type="image" id="hamburger" src="lumenBurger.svg" onclick="openNav()">
-		<i class="fas fa-chevron-left fa-lg" id="close" href="javascript:void(0)" class="closebtn"
-			onclick="closeNav()"></i>
+		<input type="image" id="close" src="exit.png" href="javascript:void(0)" class="closebtn" onclick="closeNav()">
 		<a id="nav" href="#mars" style="padding-top: 4svw;">home</a>
 		<a id="nav" href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank">coffee</a>
-		<a id="nav" href="#work">other work</a>
+		<a id="nav" href="#office">other work</a>
 		<a id="nav" href="#bicycles">bicycles</a>
-		<a id="nav" href="mailto:robertdhayan@gmail.com">contact</a>
+		<a id="nav" href="mailto:robertdhayan@gmail.com" target="_blank">contact</a>
 	</div>
-	<div class="container-span mars">
+
+	<div class="container mars">
 		<div class="row">
-			<div class="col-4"></div>
-			<div class="col-5 mars">
-				<a id="mars">Hello.<br></a>
+			<div class="col-md-4"> </div>
+			<div class="col-md-5 mars">
+				<a id="hello" style="color:white !important">Hello.<br></a>
 				<a>I'm Robert, a random clever person<br></a>
 				<a style="color: rgba(255, 255, 255, 0.363) !important">(That's Mars down there)</a>
 			</div>
-			<div class="col-3"></div>
+			<div class="col-md-3"></div>
 		</div>
 	</div>
 
-	<!--description:
+	<!--		breaking to 575, 540, 720, 960
+
 			I specialize in design, market research, product vision, 
-			project management, demos, app testing, user feedback, and bicycles.</div> -->
+			project management, demos, app testing, user feedback, and bicycles.</div> 
+		
+	-->
 
-	<div class="container-span one">
+	<div class="container hal">
 		<div class="row">
-			<div class="col-1"> </div>
-			<div class="col-3 one">
-				<a id="one"> </a>
-				<div><a> </a></div>
-			</div>
-			<div class="col-8"> </div>
+			<div class="col-md-12 hal"></div>
 		</div>
 	</div>
-	<div class="container-span red">
+
+
+	<div class="container red">
 		<div class="row">
-			<div class="col-9"> </div>
-			<div class="col-2 red">
+			<div class="col-md-9"></div>
+			<div class="col-md-2 red">
 				<p id="red"><br>Time to get serious.<br><br><br>
 					Let's take a look at some of my work, below.<br><br><br>
 					<i class="fas fa-angle-down fa-2x"></i></p>
-
 			</div>
-			<div class="col-1"></div>
+			<div class="col-md-1"></div>
 		</div>
 	</div>
 
-	<div class="container-span work">
-		<div class="row d-flex justify-content-center">
-			<div class="col-12"><p>the office</p></div>
-	</div>
+	<div class="container office">
+		<div class="row">
+			<div class="col-md-12 office">
+				<p id="office">the office</p>
+			</div>
+		</div>
 	</div>
 
-	<div class="container-span gallery">
+	<div class="container work">
 		<div class="row">
-			<div class="col-12 work">
+			<div class="col-md-12 work">
 				<div class="row" id="designs">
-					<div class="col-1"> </div>
-					<div class="col-2 designs">designs</div>
-					<div class="col-2 bor">
+					<div class="col-md-1"> </div>
+					<div class="col-md-2 designs">designs</div>
+					<div class="col-md-2 bor">
 						<img id="bor" src="1Lincoln.png">
 					</div>
-					<div class="col-2 bor">
+					<div class="col-md-2 bor">
 						<img id="bor" src="2Franklin.png">
 					</div>
-					<div class="col-2 bor">
+					<div class="col-md-2 bor">
 						<img id="bor" src="3Madison.png">
 					</div>
-					<div class="col-2 bor">
+					<div class="col-md-2 bor">
 						<img id="bor" src="4tomPaine.png">
 					</div>
-					<div class="col-1 bor"> </div>
-				</div>
-				<div class="row" id="designs">
-
+					<div class="col-md-1 bor"> </div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-span work2">
+	<div class="container works">
 		<div class="row">
-			<div class="col-12 work">
+			<div class="col-md-12 work">
+				<div class="row">
+					<div class="col-md-3">
+						<img id="ps" src="pinkyS.png">
+					</div>
+					<div class="col-md-9"></div>
+				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="row">
-		<div class="col-3 ps">
-			<img id="ps" src="pinkyS.png">
-		</div>
-	</div>
-
-
-	<div class="container-span bicycles">
+<!--
+	<div class="container bicycles">
 		<div class="row" id="bicycles">
 		</div>
 	</div>
-	<div class="container-span alice">
+	<div class="container alice">
 		<div class="row">
 			<div class="col-7"> </div>
 			<div class="col-4 alice">
-				<a id="hello">-2<br></a>
+				<a id="two">-2<br></a>
 				<a id="alice">&nbsp;&nbsp;This is Alice<br>&nbsp;&nbsp;She's in another dimension</a>
 			</div>
 			<div class="col-1"> </div>
@@ -152,26 +151,25 @@
 			<div class="col-1"> </div>
 		</div>
 	</div>
-</body>
+-->
 
-<footer>
-	<div class="container-span footer">
-		<div class="row contact">
-			<div class="col icons">
-				<!-- instagram, facebook -->
-				<a href="https://www.linkedin.com/in/robertdhayanturner"><i class="fab fa-linkedin"
-						style="color: black !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://www.instagram.com/bobrobertturner"><i class="fab fa-instagram"
-						style="color: black !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://www.facebook.com/robertdhayan"><i class="fab fa-facebook-f"
-						style="color: black !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="mailto:robertdhayan@gmail.com" class="gmail" style="color: black !important;"><i
-						class="far fa-envelope"></i></a>
-			</div>
+
+<div class="container footer">
+	<div class="row contact">
+		<div class="col icons">
+			<!-- instagram, facebook -->
+			<a href="https://www.linkedin.com/in/robertdhayanturner"><i class="fab fa-linkedin"
+					style="color: black !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://www.instagram.com/bobrobertturner"><i class="fab fa-instagram"
+					style="color: black !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://www.facebook.com/robertdhayan"><i class="fab fa-facebook-f"
+					style="color: black !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="mailto:robertdhayan@gmail.com" class="gmail" style="color: black !important;"><i
+					class="far fa-envelope"></i></a>
 		</div>
 	</div>
-</footer>
+</div>
 
-
+</body>
 
 </html>
