@@ -40,10 +40,10 @@
 	<div id="mySidenav" class="sidenav">
 		<input type="image" id="hamburger" src="lumenBurger.svg" onclick="openNav()">
 		<input type="image" id="close" src="exit.png" href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-		<a id="nav" href="#mars" style="padding-top: 4svw;">home</a>
+		<a id="nav" href="#hello" style="padding-top: 4svw;">home</a>
 		<a id="nav" href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank">coffee</a>
 		<a id="nav" href="#office">other work</a>
-		<a id="nav" href="#bicycles">bicycles</a>
+		<a id="nav" href="#pubs">publications</a>
 		<a id="nav" href="mailto:robertdhayan@gmail.com" target="_blank">contact</a>
 	</div>
 
@@ -68,7 +68,7 @@
 
 	<div class="container-fluid hal">
 		<div class="row">
-			<div class="col-xs-12 hal"></div>
+			<div id="hal" class="col-xs-12"></div>
 		</div>
 	</div>
 
@@ -95,19 +95,26 @@
 
 	<div class="container-fluid work">
 		<div class="row work1">
-			<div class="col-xs-1"> </div>
-			<div class="col-lg-2 title">designs</div>
-			<div class="col-xs-2">
-				<img id="bor" src="1Lincoln.png">
-			</div>
-			<div class="col-xs-2 bor">
-				<img id="bor" src="2Franklin.png">
-			</div>
-			<div class="col-xs-2 bor">
-				<img id="bor" src="3Madison.png">
-			</div>
-			<div class="col-xs-2 bor">
-				<img id="bor" src="4tomPaine.png">
+			<div class="col">
+				<div class="row">
+					<div class="col title" style="padding-left: 10vw;">designs</div>
+				</div>
+				<div class="row bor">
+					<div class="col-xs-2"> </div>
+					<div class="col-xs-2">
+						<img id="bor" src="1Lincoln.png">
+					</div>
+					<div class="col-xs-2 bor">
+						<img id="bor" src="2Franklin.png">
+					</div>
+					<div class="col-xs-2 bor">
+						<img id="bor" src="3Madison.png">
+					</div>
+					<div class="col-xs-2 bor">
+						<img id="bor" src="4tomPaine.png">
+					</div>
+					<div class="col-xs-2"> </div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -118,16 +125,12 @@
 
 	<div class="container-fluid works">
 		<div class="row works">
-				<div class="col works">
-						<img id="ali" src="ali.png">
-					</div>
-
 			<div class="col works">
 				<img id="sparko" src="ambassSparko.png">
 			</div>
 			<div class="col works">
-					<img id="pinky" src="pinkyS.png">
-				</div>
+				<img id="pinky" src="pinkyS.png">
+			</div>
 		</div>
 	</div>
 
@@ -137,23 +140,94 @@
 
 	<div class="container-fluid workss">
 		<div class="row">
-			<div class="col-md-12 workss">
-				<div class="row">
-					<div class="col">
-						<img id="sp" src="sparkoAppP.png">
-					</div>
-				</div>
+			<div class="col works">
+				<img id="ali" src="ali.png">
 			</div>
+		</div>
+	</div>
+
+	<div class="row space">
+		<div class="col space"> </div>
+	</div>
+
+	<div class="container-fluid worksss">
+		<div class="row">
+			<div class="col title">project mgmt</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<img id="mgmt" src="workuserflows.png">
+			</div>
+			<div class="col">
+				<img id="mgmt" src=".png">
+			</div>
+		</div>
+	</div>
+
+	<div class="row space">
+		<div class="col space"> </div>
+	</div>
+
+
+	<div class="container-fluid hal2">
+		<div class="row">
+			<div class="col"></div>
+		</div>
+	</div>
+
+
+	<div class="row space">
+		<div class="col space"> </div>
+	</div>
+
+
+	<div class="container-fluid pubs">
+		<div class="row">
+			<div class="col title" style="padding-top: 20vh; -webkit-filter: drop-shadow(3px 3px 10px white);
+			">publications</div>
+		</div>
+		<div class="row">
+				<div class="col journal">
+						<img id="hal8" src="hal8.png">
+		
+					</div>
+			<div class="col journal">
+				<img id="hal4" src="hal4.png">
+
+			</div>
+
+			<div class="col journal">
+					<input id="theory" type="image" href="https://muse.jhu.edu/article/448983" target="_blank" src="theoryEventArticle.png">
+			</div>
+			<div class="col journal">
+				<img id="hal6" src="hal6.png">
+			</div>
+			<div class="col journal">
+
+					<input id="tdr" type="image" href="https://muse.jhu.edu/article/390982" target="_blank" src="TDR.jpeg">
+				</div>
+	
+			<div class="col journal">
+				<input id="clin" type="image" href="https://academic.oup.com/cid/article/57/6/820/330306" target="_blank" src="clinInfectDis.png">
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="row space">
+		<div class="col space"> </div>
+	</div>
+
+	<div class="container-fluid pubs">
+		<div class="row" id="pubs">
+
 		</div>
 	</div>
 
 
 
 	<!--
-	<div class="container bicycles">
-		<div class="row" id="bicycles">
-		</div>
-	</div>
 	<div class="container alice">
 		<div class="row">
 			<div class="col-7"> </div>
