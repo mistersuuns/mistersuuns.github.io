@@ -3,34 +3,41 @@
     border: solid black .5px;
 }
 */
+@font-face {
+    font-family: Tron;
+    src: url(tron.ttf);
+}
 
 body {
     font-family: Avenir;
     color: white;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .bg {
     background: url("nili.jpg");
     width: 100vw;
     height: 100%;
-    padding: 0; margin: 0;
+    padding: 0;
+    margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
-    top:0; 
-    left:0;
+    top: 0;
+    left: 0;
     z-index: -1;
 }
 
 
-/* sidenav */
+/* SIDENAV */
 #hamburger {
     cursor: pointer;
     padding: 0;
     margin: 0;
     position: fixed;
 }
+
 #hamburger:hover {
     transform: scale(1.05);
 }
@@ -45,7 +52,7 @@ body {
     background-color: none;
     overflow-x: hidden;
     transition: .5s;
-    padding: .75vh 0 0 .75vh;
+    padding: .5vh 0 0 .75vh;
 }
 
 .sidenav a {
@@ -55,12 +62,13 @@ body {
     letter-spacing: .15em;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .sidenav a:hover {
     transform: scale(1.1);
 }
+
 #close {
     height: 6.5vh;
     padding: 1vh 4vh 1vh 1vh;
@@ -68,6 +76,7 @@ body {
     margin: 0;
     cursor: pointer;
 }
+
 #nav {
     color: white;
     font-weight: 100;
@@ -77,10 +86,13 @@ body {
 }
 
 .row {
-    padding: 0; margin: 0;
+    padding: 0;
+    margin: 0;
 }
+
+
+/* MARS */
 .container-fluid.mars {
-    padding: 0; margin: 0;
     width: 100vw;
     height: 100%;
     background-size: cover;
@@ -88,122 +100,144 @@ body {
     z-index: 0;
 }
 
-.col-md-5.mars {
-    padding: 30vh 0 70vh 0;
+.col-lg-5.mars {
+    font-weight: 400;
+    padding: 40vh 0 70vh 0;
+    -webkit-filter: drop-shadow(2px 2px 6px black);
 }
 
-.container-fluid.hal {
-    background: url("halRed1.png");
-    width: 100vw;
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-    padding: 0;
+
+/* HAL */
+.col-xs-12.hal {
     margin: 0;
+    padding: 30vw 0;
 }
 
-.col-md-12.hal {
-    margin: 0; padding: 30vw 0;    
-}
 
-.container-fluid.red {
-    background: url("redHall.jpg");
+/* WU */
+.container-fluid.wu {
+    background: url("wuRed.svg");
     width: 100vw;
     height: 100%;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     z-index: 0;
     margin: 0;
     padding: 0;
+    font-family: "Gill Sans";
     font-size: 1.3em;
     font-weight: 100;
     color: white;
 }
 
-.col-md-2.red {
-    padding: 23vh 0 23vh 1vh;
-    text-shadow: 0 0 0.2em hsl(56, 96%, 66%), 0 0 0.2em hsl(56, 96%, 66%), 0 0 0.2em hsl(56, 96%, 66%);
+#wu {
+    padding: 6vw 5vw 70vw 0;
+    margin: 0;
+    display: flex;
+    float: right;
+    width: 60vw;
+    -webkit-filter: drop-shadow(5px 5px 20px rgb(255, 251, 0));
 }
 
-#designs {
-    font-size: 12em;
-    padding: 0;
-}
-
-#welcome {
-    padding: 0;
-}
-
-
+/* OFFICE */
 .container-fluid.office {
     background: url("plume.png");
-    margin: 0; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
     padding: 0;
     width: 100vw;
     height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
     z-index: 0;
-    font-size: 6em;
-    font-weight: 500;
-    color: #e8b923;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-#office {
-    padding: 30vh 0 55vh 0;
+
+.office {
+    padding: 40vh 0 55vh 0;
     margin: 0;
 }
 
+#office {
+    width: 70vw;
+}
+
+.col.space {
+    height: 2vh;
+}
+
+/* WORK */
 .container-fluid.work {
     background: url("free.png");
-    margin: 0; 
-    padding: 0;
-    width: 100%;
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 40%;
+    background-position: left;
+    width: 100%;
+    height: 100vh;
     z-index: 0;
     font-size: 1.25em;
     font-weight: 500;
     color: black;
-}
-
-#designs {
-    font-size: 3vh;
-    font-weight: 400;
-}
-.col-md-2.designs {
-    padding: 0 0 0 4vh;
-}
-
-.col-md-12.work {
-    padding: 25vh 0 50vh 1vh;
+    padding: 35vh 0 110vh 1vh;
     margin: 0;
-    -webkit-filter: drop-shadow(10px 6px 10px darkslategrey);
+}
+.row.worksss {
+    margin: 0;
+    padding: 0;
+    -webkit-filter: drop-shadow(10px 6px 10px black);
+}
+
+.title {
+    padding: 5vw;
+    font-size:1.65em;
 }
 
 #bor {
     width: 100%;
     margin: 0;
+    padding: 2vw;
 }
 
-#ps {
-    width: 100%;
-    margin: 0;
-    padding: 0 0 10vh 0;
-}
-
+/* WORKS */
 .container-fluid.works {
+    background-image: url("freedomWall.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
     width: 100vw;
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    margin:0;padding:0;
+    margin: 0;
+    padding: 85vh 0 70vh 0;
     z-index: 0;
 }
+
+.row.works {
+    margin: 0;
+}
+
+#pinky {
+    width:30vw;
+    margin: 0;
+}
+#ali {
+    width: 20vw;
+}
+
+/* WORKS */
+.container-fluid.workss {
+    background-image: url("rauschWhitePanels.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 30vw 0;
+    z-index: 0;
+}
+
 
 /*
 .container.alice {
@@ -247,8 +281,7 @@ body {
 */
 
 
-
-/* footer */
+/* FOOTER */
 .container-fluid.footer {
     width: 100vw;
     height: 100%;
@@ -285,24 +318,83 @@ body {
 
 
 
+
+
+/* @MEDIA */
 @media (max-width:425px) {
     #hello {
-        font-size: 1em;
+        font-size: 3em;
     }
+
     #hamburger {
-        height: 9vh;
+        height: 11vw;
     }
-}
+
+    #hello {
+        font-size: 12vh;
+        color: white;
+    }
+    #robert {
+        font-size: 3vh;
+        font-weight: 400;
+    }
+
+    .container-fluid.hal {
+        background: url("animKubRed.gif");
+        width: 100vw;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-fluid.work {
+        background-position: -12vw;
+    }
+
+    #bor {
+        width: 46vw;
+    }
+    #pinky {
+        width:50vw;
+        margin: 4vh;
+    }
+    #ali {
+        width: 35vw;
+        margin: 4vh;
+    }
 
 @media (min-width: 426px) {
-    #hello {
-        font-size: 5em;
-    }
+
     #hamburger {
-        height: 8vh;
+        height:5vw;
     }
-    .container.mars {
-        font-size: 1.25em;
+
+    #hello {
+        font-size: 15vh;
         color: white;
+    }
+
+    #robert {
+        font-size: 3vh;
+    }
+
+    .container-fluid.hal {
+        background: url("halRed1.png");
+        width: 100vw;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    #bor {
+        width: 20vw;
     }
 }
