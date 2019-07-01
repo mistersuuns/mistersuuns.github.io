@@ -429,6 +429,7 @@ cursor: pointer;
     .container-fluid.designs {
         padding: 0;
         background-size: cover;
+        height: 370vh;
     }
     #designs {
         padding-bottom: 45vh;
