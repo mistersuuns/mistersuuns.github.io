@@ -15,37 +15,44 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
-	<script>
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "12em";
-			document.getElementById("hamburger").style.display = "none";
-		}
-
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-			document.getElementById("hamburger").style.display = "inline";
-		}
-	</script>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="shortcut icon" type="image/png" href="angel.png">
 	<link rel="stylesheet" type="text/css" href="index.css">
+
 	<title>bobrobert</title>
+	<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function () {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("navbar").style.top = "0";
+			} else {
+				document.getElementById("navbar").style.top = "-7.5vh";
+			}
+			prevScrollpos = currentScrollPos;
+		}
+	</script>
 </head>
 
 <body>
 	<div class="bg"></div>
 
-	<div id="mySidenav" class="sidenav">
+	<nav class="navbar" id="navbar">
+		<!--
 		<input type="image" id="hamburger" src="lumenBurger.svg" onclick="openNav()">
 		<input type="image" id="close" src="exit.png" href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-		<a id="nav" href="#home">home</a>
-		<a id="nav" href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank">coffee</a>
-		<a id="nav" href="#designs">work</a>
-		<a id="nav" href="#words">words</a>
-		<a id="nav" href="#footer" >contact</a>
-	</div>
+		-->
+		<div class="container-fluid">
+			<ul class="nav navbar-default">
+				<li><a href="#home" id="nav">home</a></li>
+				<li><a href="#designs" id="nav">work</a></li>
+				<li><a href="#words" id="nav">words</a></li>
+				<li><a href="#footer" id="nav">contact</a></li>
+			</ul>
+		</div>
+	</nav>
 
 	<div class="container-fluid mars" id="home">
 		<div class="row">
@@ -91,6 +98,19 @@
 		<div class="col space"> </div>
 	</div>
 
+	<div class="container-fluid coffee">
+		<div class="row">
+			<div class="col-xs coffee">
+				<a id="coffee" href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank">coffee</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row space">
+		<div class="col space"> </div>
+	</div>
+
 	<div class="container-fluid designs">
 		<div class="row">
 			<div id="designs" class="col title">DESIGNS</div>
@@ -99,16 +119,16 @@
 			<div class="col-sm-3"> </div>
 			<div class="col-sm-9 bor">
 				<div class="row">
-					<div class="col-xs-3">
+					<div class="col-lg-3 col-xs-6">
 						<img id="bor" src="1Lincoln.png">
 					</div>
-					<div class="col-xs-3">
+					<div class="col-lg-3 col-xs-6">
 						<img id="bor" src="2Franklin.png">
 					</div>
-					<div class="col-xs-3">
+					<div class="col-lg-3 col-xs-6">
 						<img id="bor" src="3Madison.png">
 					</div>
-					<div class="col-xs-3">
+					<div class="col-lg-3 col-xs-6">
 						<img id="bor" src="4tomPaine.png">
 					</div>
 				</div>
@@ -131,21 +151,21 @@
 	</div>
 
 	<div class="row space">
-			<div class="col space"> </div>
-		</div>
+		<div class="col space"> </div>
+	</div>
 
 
-<div class="container-fluid icon2">
+	<div class="container-fluid icon2">
 		<div class="row works">
-				<div class="col works">
-						<img id="sparko" src="ambassSparko.png">
-					</div>
+			<div class="col works">
+				<img id="sparko" src="ambassSparko.png">
+			</div>
 		</div>
 	</div>
 
 	<div class="row space">
-			<div class="col space"> </div>
-		</div>
+		<div class="col space"> </div>
+	</div>
 
 	<div class="container-fluid ali">
 		<div class="row">
@@ -210,9 +230,9 @@
 
 			<div class="col journal">
 				<a href="https://muse.jhu.edu/article/448983" target="_blank">
-				<img id="theory" src="theoryEventArticle.png">
+					<img id="theory" src="theoryEventArticle.png">
 				</a>
-					
+
 			</div>
 			<div class="col journal">
 				<img id="hal6" src="hal6.png">
@@ -221,15 +241,14 @@
 
 				<a href="https://muse.jhu.edu/article/390982" target="_blank">
 					<img id="tdr" src="TDR.jpeg">
-				</a> 
+				</a>
 			</div>
 
 			<div class="col journal">
 
-				<a href="https://academic.oup.com/cid/article/57/6/820/330306"
-					target="_blank">
-				<img id="clin" src="clinInfectDis.png">
-				</a> 
+				<a href="https://academic.oup.com/cid/article/57/6/820/330306" target="_blank">
+					<img id="clin" src="clinInfectDis.png">
+				</a>
 			</div>
 
 		</div>
@@ -279,8 +298,8 @@
 						style="color: white !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
 				<a href="https://www.facebook.com/robertdhayan" target="_blank"><i class="fab fa-facebook-f"
 						style="color: white !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="mailto:robertdhayan@gmail.com" target="_blank" class="gmail" style="color: white !important;"><i
-						class="far fa-envelope"></i></a>
+				<a href="mailto:robertdhayan@gmail.com" target="_blank" class="gmail"
+					style="color: white !important;"><i class="far fa-envelope"></i></a>
 			</div>
 		</div>
 	</div>

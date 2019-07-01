@@ -32,6 +32,7 @@ body {
 
 
 /* SIDENAV */
+/*
 #hamburger {
     cursor: pointer;
     padding: 0;
@@ -42,53 +43,53 @@ body {
 #hamburger:hover {
     transform: scale(1.05);
 }
+*/
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    z-index: 1;
+.navbar {
+    
+    background-color: black;
+    opacity: .5;
+    width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
-    background-color: none;
-    overflow-x: hidden;
-    transition: .5s;
-    padding: .5vh 0 0 .75vh;
-}
-
-.sidenav a {
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 500;
-    letter-spacing: .2em;
-    color: #818181;
     display: block;
-    transition: 0.5s;
+    transition: top .25s ease-in-out;
+    z-index: 1;
+
 }
 
-.sidenav a:hover {
-    transform: scale(1.05);
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    opacity: 1;
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: .1em;
+
 }
 
+.navbar a:hover {
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+
+
+/*
 #close {
     height: 6.5vh;
-    padding: 1vh 4vh 1vh 1vh;
+    padding: 2vh 4vh 1vh 2vh;
     overflow: hidden;
     margin: 0;
     cursor: pointer;
 }
-
+*/
 #nav {
     color: white;
     font-weight: 100;
-    padding: .5vh;
-    -webkit-filter: drop-shadow(2px 2px 6px black);
+    padding: 1vh 2vh;
+    filter: drop-shadow(2px 2px 6px white);
 }
 
-.row {
-    padding: 0;
-    margin: 0;
-}
 
 
 /* MARS */
@@ -100,11 +101,16 @@ body {
     z-index: 0;
 }
 
+.row {
+    padding: 0;
+    margin: 0;
+}
+
 .col-lg-5.mars {
     letter-spacing: .2em;
-    font-weight: 300;
+    font-weight: 340;
     padding: 40vh 0 70vh 0;
-    -webkit-filter: drop-shadow(2px 2px 6px black);
+    filter: drop-shadow(1px 1px 10px white);
 }
 
 
@@ -292,7 +298,7 @@ body {
 #tdr,
 #clin,
 #theory {
-cursor: pointer;
+    cursor: pointer;
 }
 
 /*
@@ -392,7 +398,9 @@ cursor: pointer;
     }
 
     #hamburger {
-        height: 11vw;
+        height: 15vw;
+        padding: 2vw;
+        opacity: 90%;
     }
 
     #hello {
@@ -431,8 +439,10 @@ cursor: pointer;
         background-size: cover;
         height: 370vh;
     }
+
     #designs {
         padding-bottom: 45vh;
+        font-size: 3em;
     }
 
     #bor {
@@ -441,18 +451,18 @@ cursor: pointer;
     }
 
 
-    .container-fluid.icon1, 
+    .container-fluid.icon1,
     .container-fluid.icon2 {
         text-align: center;
         padding: 15vw 0;
     }
 
     .title {
-    color: white;
-    padding: 15vh 0 15vh 6vw;
-    font-size: 3em;
-    letter-spacing: .55em;
-    filter: drop-shadow(10px 10px 10px white);
+        color: white;
+        padding: 15vh 0 15vh 6vw;
+        font-size: 3em;
+        letter-spacing: .55em;
+        filter: drop-shadow(10px 10px 10px white);
     }
 
     #sparko {
@@ -490,6 +500,7 @@ cursor: pointer;
         width: 70vw;
         padding: 6vh 0;
     }
+
     #timeline {
         width: 70vw;
         padding: 10vh 0 10vh 0;
@@ -506,7 +517,8 @@ cursor: pointer;
 @media (min-width: 426px) {
 
     #hamburger {
-        height: 5vw;
+        height: 8vw;
+        padding: 2vw;
     }
 
     #hello {
@@ -536,6 +548,10 @@ cursor: pointer;
         padding: 60vh 0 10vh 1vh;
     }
 
+    #designs {
+        font-size: 7em;
+    }
+
     .title {
         color: white;
         padding: 0 0 10vh 2vw;
@@ -551,7 +567,7 @@ cursor: pointer;
 
 
 
-    .container-fluid.icon1, 
+    .container-fluid.icon1,
     .container-fluid.icon2 {
         padding: 30vh 8vh;
         text-align: center;
@@ -585,6 +601,7 @@ cursor: pointer;
         width: 80vw;
         padding: 8vh 0;
     }
+
     #timeline {
         width: 25vw;
         padding: 10vh 0 5vh 0;
