@@ -40,14 +40,14 @@
 	<div id="mySidenav" class="sidenav">
 		<input type="image" id="hamburger" src="lumenBurger.svg" onclick="openNav()">
 		<input type="image" id="close" src="exit.png" href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-		<a id="nav" href="#hello" style="padding-top: 4svw;">home</a>
+		<a id="nav" href="#home" style="padding-top: 4svw;">home</a>
 		<a id="nav" href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank">coffee</a>
-		<a id="nav" href="#office">other work</a>
-		<a id="nav" href="#pubs">publications</a>
-		<a id="nav" href="mailto:robertdhayan@gmail.com" target="_blank">contact</a>
+		<a id="nav" href="#designs">other work</a>
+		<a id="nav" href="#words">publications</a>
+		<a id="nav" href="#footer" >contact</a>
 	</div>
 
-	<div class="container-fluid mars">
+	<div class="container-fluid mars" id="home">
 		<div class="row">
 			<div class="col-lg-4 col-xs-2"> </div>
 			<div class="col-lg-5 col-xs-10 mars">
@@ -94,7 +94,7 @@
 
 	<div class="container-fluid designs">
 		<div class="row">
-			<div class="col title">DESIGNS</div>
+			<div id="designs" class="col title">DESIGNS</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-3"> </div>
@@ -123,11 +123,8 @@
 		<div class="col space"> </div>
 	</div>
 
-	<div class="container-fluid icons">
+	<div class="container-fluid icon1">
 		<div class="row works">
-			<div class="col works">
-				<img id="sparko" src="ambassSparko.png">
-			</div>
 			<div class="col works">
 				<img id="pinky" src="pinkyS.png">
 			</div>
@@ -135,8 +132,21 @@
 	</div>
 
 	<div class="row space">
-		<div class="col space"> </div>
+			<div class="col space"> </div>
+		</div>
+
+
+<div class="container-fluid icon2">
+		<div class="row works">
+				<div class="col works">
+						<img id="sparko" src="ambassSparko.png">
+					</div>
+		</div>
 	</div>
+
+	<div class="row space">
+			<div class="col space"> </div>
+		</div>
 
 	<div class="container-fluid ali">
 		<div class="row">
@@ -152,14 +162,17 @@
 
 	<div class="container-fluid mgmt">
 		<div class="row">
-			<div class="col title" style="color: black; -webkit-filter: drop-shadow(10px 10px 10px black); padding-top: 20vh;">MGMT</div>
+			<div class="col title" style="color: black;
+			 filter: drop-shadow(10px 10px 10px black); padding-top: 20vh;">MGMT</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<img id="mgmt" src="workuserflows.png">
+				<img id="flow" src="workuserflows.png">
 			</div>
+		</div>
+		<div class="row">
 			<div class="col">
-				<img id="mgmt" src="timeline.png">
+				<img id="timeline" src="timeline.png">
 			</div>
 		</div>
 	</div>
@@ -183,7 +196,7 @@
 
 	<div class="container-fluid words">
 		<div class="row">
-			<div class="col title" style="letter-spacing: .4em; -webkit-filter: 
+			<div id="words" class="col title" style="letter-spacing: .4em; -webkit-filter: 
 			drop-shadow(3px 3px 10px white); padding-top: 20vh;">WORDS</div>
 		</div>
 		<div class="row">
@@ -250,7 +263,7 @@
 -->
 
 
-	<div class="container-fluid footer">
+	<div class="container-fluid footer" id="footer">
 		<div class="row contact">
 			<div class="col icons">
 				<!-- instagram, facebook -->
@@ -260,7 +273,7 @@
 						style="color: white !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
 				<a href="https://www.facebook.com/robertdhayan"><i class="fab fa-facebook-f"
 						style="color: white !important;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="mailto:robertdhayan@gmail.com" class="gmail" style="color: white !important;"><i
+				<a href="mailto:robertdhayan@gmail.com" target="_blank" class="gmail" style="color: white !important;"><i
 						class="far fa-envelope"></i></a>
 			</div>
 		</div>

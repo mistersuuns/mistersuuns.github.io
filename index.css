@@ -138,7 +138,7 @@ body {
     display: flex;
     float: right;
     width: 60vw;
-    -webkit-filter: drop-shadow(5px 5px 20px rgb(255, 251, 0));
+    filter: drop-shadow(5px 5px 20px rgb(255, 251, 0));
 }
 
 /* COMMUTE */
@@ -182,9 +182,9 @@ body {
 
 
 
-/* ICONS */
-.container-fluid.icons {
-    background-image: url("greyWallO.jpg");
+/* ICON1 */
+.container-fluid.icon1 {
+    background-image: url("concreteGrey2.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -194,6 +194,22 @@ body {
     padding: 0;
     z-index: 0;
 }
+
+
+
+/* ICON2 */
+.container-fluid.icon2 {
+    background-image: url("greyCement.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
 
 
 /* ALI */
@@ -227,10 +243,7 @@ body {
     text-align: center;
 }
 
-#mgmt {
-    width: 30vw;
-    padding: 5vh 0;
-}
+
 
 /* HAL2 */
 .container-fluid.hal2 {
@@ -373,7 +386,7 @@ body {
     }
 
     #robert {
-        font-size: 3vh;
+        font-size: 4vh;
         font-weight: 400;
     }
 
@@ -402,24 +415,28 @@ body {
         padding: 0;
         background-size: cover;
     }
-
+    #designs {
+        padding-bottom: 45vh;
+    }
 
     #bor {
         width: 75vw;
-        padding: 7.5vw 0 0 12.5vw;
+        padding: 7vh 0 0 12.5vw;
     }
 
 
-    .container-fluid.icons {
+    .container-fluid.icon1, 
+    .container-fluid.icon2 {
         text-align: center;
         padding: 15vw 0;
     }
+
     .title {
     color: white;
-    padding: 15vh 0 50vh 6vw;
+    padding: 15vh 0 15vh 6vw;
     font-size: 3em;
     letter-spacing: .55em;
-    -webkit-filter: drop-shadow(10px 10px 10px white);
+    filter: drop-shadow(10px 10px 10px white);
     }
 
     #sparko {
@@ -452,6 +469,16 @@ body {
     #hal6 {
         max-height: 300px;
     }
+
+    #flow {
+        width: 75vw;
+        padding: 10vh 0;
+    }
+    #timeline {
+        width: 75vw;
+        padding: 10vh 0 10vh 0;
+    }
+
 }
 
 
@@ -495,7 +522,7 @@ body {
 
     .title {
         color: white;
-        padding: 0 0 30vh 2vw;
+        padding: 0 0 10vh 2vw;
         font-size: 6em;
         letter-spacing: .55em;
         -webkit-filter: drop-shadow(10px 10px 10px white);
@@ -508,7 +535,8 @@ body {
 
 
 
-    .container-fluid.icons {
+    .container-fluid.icon1, 
+    .container-fluid.icon2 {
         padding: 30vh 8vh;
         text-align: center;
     }
@@ -536,4 +564,14 @@ body {
     .container-fluid.hal2 {
         padding: 35vh 0;
     }
+
+    #flow {
+        width: 80vw;
+        padding: 10vh 0;
+    }
+    #timeline {
+        width: 25vw;
+        padding: 20vh 0 5vh 0;
+    }
+
 }
