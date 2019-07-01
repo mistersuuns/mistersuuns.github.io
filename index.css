@@ -237,7 +237,7 @@ body {
     width: 100vw;
     height: 100%;
     margin: 0;
-    padding: 7vh 0 30vh 0;
+    padding: 0;
     z-index: 0;
     font-weight: 400;
     text-align: center;
@@ -401,7 +401,7 @@ cursor: pointer;
     }
 
     #robert {
-        font-size: 3vh;
+        font-size: 1.7em;
         font-weight: 400;
     }
 
@@ -487,11 +487,11 @@ cursor: pointer;
     }
 
     #flow {
-        width: 75vw;
-        padding: 10vh 0;
+        width: 70vw;
+        padding: 6vh 0;
     }
     #timeline {
-        width: 75vw;
+        width: 70vw;
         padding: 10vh 0 10vh 0;
     }
 
@@ -515,7 +515,7 @@ cursor: pointer;
     }
 
     #robert {
-        font-size: 4vh;
+        font-size: 2em;
     }
 
     .container-fluid.hal {
@@ -541,7 +541,7 @@ cursor: pointer;
         padding: 0 0 10vh 2vw;
         font-size: 6em;
         letter-spacing: .55em;
-        -webkit-filter: drop-shadow(10px 10px 10px white);
+        filter: drop-shadow(3px 3px 15px white);
     }
 
     #bor {
@@ -583,11 +583,11 @@ cursor: pointer;
 
     #flow {
         width: 80vw;
-        padding: 10vh 0;
+        padding: 8vh 0;
     }
     #timeline {
         width: 25vw;
-        padding: 20vh 0 5vh 0;
+        padding: 10vh 0 5vh 0;
     }
 
 }
