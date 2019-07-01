@@ -289,6 +289,12 @@ body {
     height: 50vh;
 }
 
+#tdr,
+#clin,
+#theory {
+cursor: pointer;
+}
+
 /*
 .container.alice {
     background: url("nili.jpg");
@@ -351,20 +357,29 @@ body {
 }
 
 .fab.fa-linkedin:hover {
+    cursor: pointer;
+
     transform: scale(1.2);
 }
 
 .fab.fa-instagram:hover {
+    cursor: pointer;
+
     transform: scale(1.2);
 }
 
 .fab.fa-facebook-f:hover {
+    cursor: pointer;
     transform: scale(1.2);
 }
 
 .gmail:hover {
+    cursor: pointer;
     transform: scale(1.2);
 }
+
+
+
 
 
 
