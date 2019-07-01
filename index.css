@@ -163,8 +163,8 @@ body {
     height: 2vh;
 }
 
-/* WORK */
-.container-fluid.work {
+/* DESIGNS */
+.container-fluid.designs {
     background: url("blueCam2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -179,17 +179,11 @@ body {
     padding: 0;
 }
 
-.title {
-    padding: 15vh 0 50vh 6vw;
-    font-size: 1.65em;
-    letter-spacing: .55em;
-    -webkit-filter: drop-shadow(10px 10px 10px black);
-}
 
 
 
-/* WORKS */
-.container-fluid.works {
+/* ICONS */
+.container-fluid.icons {
     background-image: url("greyWallO.jpg");
     background-repeat: no-repeat;
     background-position: left;
@@ -202,8 +196,8 @@ body {
 }
 
 
-/* WORKSS */
-.container-fluid.workss {
+/* ALI */
+.container-fluid.ali {
     background-image: url("whiteRoom.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -218,9 +212,9 @@ body {
 }
 
 
-/* WORKSSS */
-.container-fluid.worksss {
-    background-image: url("invertedWall.jpg");
+/* MGMT */
+.container-fluid.mgmt {
+    background-image: url("greyStrip.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -234,7 +228,7 @@ body {
 }
 
 #mgmt {
-    width: 65vw;
+    width: 30vw;
     padding: 5vh 0;
 }
 
@@ -253,7 +247,7 @@ body {
 
 
 /* PUBS */
-.container-fluid.pubs {
+.container-fluid.words {
     background-image: url("subCarbon.png");
     background-position: center;
     background-size: cover;
@@ -263,6 +257,10 @@ body {
     padding: 0;
     z-index: 0;
     text-align: center;
+}
+
+#words {
+    padding: 10vh 0 0 0;
 }
 
 .journal {
@@ -400,7 +398,7 @@ body {
         padding: 16vh 0 9vh 0;
     }
 
-    .container-fluid.work {
+    .container-fluid.designs {
         padding: 0;
         background-size: cover;
     }
@@ -412,16 +410,16 @@ body {
     }
 
 
-    .container-fluid.works {
+    .container-fluid.icons {
         text-align: center;
         padding: 15vw 0;
     }
-
     .title {
-        color: white;
-        font-size: 3em;
-        margin: 0;
-
+    color: white;
+    padding: 15vh 0 50vh 6vw;
+    font-size: 3em;
+    letter-spacing: .55em;
+    -webkit-filter: drop-shadow(10px 10px 10px white);
     }
 
     #sparko {
@@ -435,7 +433,7 @@ body {
         margin: 4vh;
     }
 
-    .container-fluid.workss {
+    .container-fluid.ali {
         text-align: center;
         padding: 40vw 0;
     }
@@ -455,6 +453,8 @@ body {
         max-height: 300px;
     }
 }
+
+
 
 
 
@@ -489,14 +489,16 @@ body {
 
 
 
-    .container-fluid.work {
+    .container-fluid.designs {
         padding: 60vh 0 10vh 1vh;
     }
 
     .title {
         color: white;
-        font-size: 6em;
         padding: 0 0 30vh 2vw;
+        font-size: 6em;
+        letter-spacing: .55em;
+        -webkit-filter: drop-shadow(10px 10px 10px white);
     }
 
     #bor {
@@ -506,7 +508,7 @@ body {
 
 
 
-    .container-fluid.works {
+    .container-fluid.icons {
         padding: 30vh 8vh;
         text-align: center;
     }
@@ -519,11 +521,11 @@ body {
         width: 30vw;
     }
 
-    .container-fluid.workss {
+    .container-fluid.ali {
         padding: 30vh 8vh;
     }
 
-    .row.worksss {
+    .row.mgmt {
         text-align: center;
     }
 
