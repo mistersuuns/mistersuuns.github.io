@@ -4,6 +4,10 @@
 }
 */
 
+@font-face {
+    font-family: Tron;
+    src: url("TRON.TTF");
+}
 
 body {
     font-family: "Gill Sans";
@@ -56,14 +60,14 @@ body {
     text-decoration: none;
     font-size: 1em;
     font-weight: 500;
-    letter-spacing: .15em;
+    letter-spacing: .2em;
     color: #818181;
     display: block;
     transition: 0.5s;
 }
 
 .sidenav a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 #close {
@@ -97,7 +101,8 @@ body {
 }
 
 .col-lg-5.mars {
-    font-weight: 400;
+    letter-spacing: .2em;
+    font-weight: 300;
     padding: 40vh 0 70vh 0;
     -webkit-filter: drop-shadow(2px 2px 6px black);
 }
@@ -136,29 +141,23 @@ body {
     -webkit-filter: drop-shadow(5px 5px 20px rgb(255, 251, 0));
 }
 
-/* OFFICE */
-.container-fluid.office {
-    background: url("plume.png");
+/* COMMUTE */
+.container-fluid.commute {
+    background: url("commuteB.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100%;
+    width: 100%;
     z-index: 0;
-    display: flex;
-    justify-content: center;
 }
 
-.office {
-    padding: 40vh 0 55vh 0;
+.commute {
+    padding: 30vh 0;
     margin: 0;
 }
 
-#office {
-    width: 70vw;
-}
 
 .col.space {
     height: 2vh;
@@ -166,45 +165,32 @@ body {
 
 /* WORK */
 .container-fluid.work {
-    background: url("dark.jpg");
+    background: url("blueCam2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 70%;
     width: 100%;
-    height: 100vh;
+    height: 350vh;
     z-index: 0;
-    font-size: 1.25em;
-    font-weight: 500;
+    font-size: .75em;
+    font-weight: thin;
     color: black;
     margin: 0;
     padding: 0;
-    -webkit-filter: drop-shadow(10px 10px 10px black);
-
 }
-
-
-.row.bor {
-    margin: 0;
-    padding: 0;
-}
-
 
 .title {
-    padding: 5vw 0;
+    padding: 15vh 0 50vh 6vw;
     font-size: 1.65em;
+    letter-spacing: .55em;
     -webkit-filter: drop-shadow(10px 10px 10px black);
-
 }
 
-#bor {
-    width: 100%;
-    margin: 0;
-    padding: 1vw;
-}
 
 
 /* WORKS */
 .container-fluid.works {
-    background-image: url("bluechalk.jpg");
+    background-image: url("greyWallO.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -234,7 +220,7 @@ body {
 
 /* WORKSSS */
 .container-fluid.worksss {
-    background-image: url("netBlue.jpg");
+    background-image: url("invertedWall.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -243,12 +229,12 @@ body {
     margin: 0;
     padding: 7vh 0 30vh 0;
     z-index: 0;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
 }
 
 #mgmt {
-    width: 80vw;
+    width: 65vw;
     padding: 5vh 0;
 }
 
@@ -268,7 +254,7 @@ body {
 
 /* PUBS */
 .container-fluid.pubs {
-    background-color: black;
+    background-image: url("subCarbon.png");
     background-position: center;
     background-size: cover;
     width: 100vw;
@@ -279,13 +265,16 @@ body {
     text-align: center;
 }
 
-
 .journal {
     padding: 10vh 3vh;
 }
-#hal8, #hal4, #hal6 {height: 50vh;}
 
-#tdr, #clin, #theory {
+#hal8,
+#hal4,
+#hal6,
+#tdr,
+#clin,
+#theory {
     height: 50vh;
 }
 
@@ -402,14 +391,24 @@ body {
         margin: 0;
     }
 
+    .container-fluid.commute {
+        background-image: url(commuteB.png);
+        position: left;
+    }
+
+    .commute {
+        padding: 16vh 0 9vh 0;
+    }
+
     .container-fluid.work {
-        background-position: 45%;
-        padding: 10vh 0 220vh 0;
+        padding: 0;
+        background-size: cover;
     }
 
 
     #bor {
-        width: 46vw;
+        width: 75vw;
+        padding: 7.5vw 0 0 12.5vw;
     }
 
 
@@ -445,13 +444,20 @@ body {
         width: 35vw;
         margin: 4vh;
     }
+
     .container-fluid.hal2 {
         padding: 10vh 0;
     }
-    #hal8, #hal4, #hal6 {
+
+    #hal8,
+    #hal4,
+    #hal6 {
         max-height: 300px;
     }
 }
+
+
+
 
 /* BIG */
 @media (min-width: 426px) {
@@ -481,24 +487,24 @@ body {
         margin: 0;
     }
 
+
+
     .container-fluid.work {
-        background-position: 70% 45%;
-        padding: 50vh 0 150vh 1vh;
+        padding: 60vh 0 10vh 1vh;
     }
 
     .title {
         color: white;
         font-size: 6em;
-        padding: 0 0 30vh 0;
-    }
-
-    .row.bor {
-        padding: 10vh 7.5vw 20vw 9vw;
+        padding: 0 0 30vh 2vw;
     }
 
     #bor {
-        width: 20vw;
+        width: 30vw;
+        padding: 5vw;
     }
+
+
 
     .container-fluid.works {
         padding: 30vh 8vh;
@@ -507,7 +513,6 @@ body {
 
     #sparko {
         width: 25vw;
-
     }
 
     #pinky {
@@ -516,8 +521,12 @@ body {
 
     .container-fluid.workss {
         padding: 30vh 8vh;
+    }
+
+    .row.worksss {
         text-align: center;
     }
+
     #ali {
         width: 20vw;
     }
