@@ -168,10 +168,24 @@ body {
     filter: drop-shadow(2px 2px 10px white);
     cursor: pointer;
 }
+
+#coffeeco {
+    width: 20vw;
+    display: none;
+    font-size: 1.3em;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+}
+.whiterabbit:hover #coffeeco {  
+    display: block;
+}
+
 #whiterabbit:hover {
     transform: scale(1.1);
-    transition: .25s ease-in-out;
 }
+
+
+
 
 /* DESIGNS */
 .container-fluid.designs {
@@ -568,7 +582,6 @@ body {
         color: white;
         filter: drop-shadow(2px 2px 6px white);
     }
-
 
 
 
