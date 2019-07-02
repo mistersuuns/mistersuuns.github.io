@@ -344,9 +344,7 @@ text-align: left;
 #colSparko:hover #sparko1 {
     display: block;
 }
-#sparko:hover {
-    transform: skewX(180deg);
-    transition: 10s ease-in-out;}
+
 
 
 /* ALI */
@@ -371,6 +369,7 @@ text-align: left;
     max-width: 30vw;
     color: white;
     text-align: left;
+
     filter: drop-shadow(1px 1px 10px white);
 }
 
@@ -396,6 +395,29 @@ text-align: left;
     font-weight: 400;
     text-align: center;
 }
+
+#mgmt {
+    color: black;
+    filter: drop-shadow(3px 3px 15px black);
+    padding: 15vh 0 0 0;
+}
+
+#mgmttext {
+    display:none;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    max-width: 30vw;
+    color: black;
+    text-align: left;
+    filter: drop-shadow(1px 1px 10px black);
+    padding: 10vh 5vh 0 0;
+}
+.row-mgmt:hover #mgmttext {
+    display: block;
+}
+
+
 
 
 
@@ -649,7 +671,7 @@ text-align: left;
 
     #flow {
         width: 70vw;
-        padding: 6vh 0;
+        padding: 10vh 0;
     }
 
     #timeline {
