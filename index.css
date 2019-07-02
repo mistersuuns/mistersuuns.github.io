@@ -448,7 +448,7 @@ body {
 
     #bor {
         width: 75vw;
-        padding: 7vh 0 0 12.5vw;
+        padding: 7vh 0 0 10vw;
         filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
 
     }
