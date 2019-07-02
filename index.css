@@ -173,13 +173,20 @@ body {
 }
 
 #coffeeco {
-    width: 20vw;
     display: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 200;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
+    max-width: 40vw;
 }
 
+#colcoffee:hover #coffeeco {
+    display: block;
+}
+#colcoffee:hover {
+    transform: rotate(-12deg);
+    transition: all 1s ease-in-out;
+}
 #whiterabbit:hover {
     transform: scale(1.1);
 }
@@ -216,7 +223,7 @@ body {
     display: block;
 }
 #designs:hover {
-    transform: skewY(10deg);
+    transform: skewY(5deg);
     transition: all 1s ease-in-out;
 }
 
@@ -436,13 +443,6 @@ body {
 
 
 
-    #coffee {
-        font-size: 2.25em;
-        font-weight: thin;
-        letter-spacing: .4em;
-        color: white;
-        filter: drop-shadow(2px 2px 6px white);
-    }
 
     .container-fluid.coffee {
         height: 60vh;
@@ -451,6 +451,16 @@ body {
     .coffee {
         padding: 25vh 0 0 6vw;
     }
+
+
+    #coffee {
+        font-size: 2.25em;
+        font-weight: thin;
+        letter-spacing: .4em;
+        color: white;
+        filter: drop-shadow(2px 2px 6px white);
+    }
+
 
     .whiterabbit {
         padding: 24.5vh 0 0 3vw;
@@ -543,21 +553,6 @@ body {
 
 
 
-/* IPAD PRO or SMALLER */
-
-
-
-
-/* BIGGER THAN
-IPAD PRO */
-@media (min-width: 1025px) {
-
-    .whiterabbit:hover #coffeeco {
-        display: block;
-    }
-
-}
-
 
 /* BIG */
 @media (min-width: 426px) {
@@ -611,6 +606,7 @@ IPAD PRO */
         letter-spacing: .5em;
         color: white;
         filter: drop-shadow(2px 2px 6px white);
+        cursor: pointer;
     }
 
 

@@ -34,6 +34,9 @@
 			prevScrollpos = currentScrollPos;
 		}
 	</script>
+
+
+
 </head>
 
 <body>
@@ -98,19 +101,38 @@
 
 	<div class="container-fluid coffee">
 		<div class="row">
-			<div class="col coffee">
-				<a id="coffee" style="color: white; opacity: .9;">COFFEE</a>
+			<div class="col coffee" id="colcoffee">
+			<span id="coffee">COFFEE</span>
+			<span id="coffeeco" style="width:60vw; font-size:1em; font-weight: 200; letter-spacing: 0.08em !important">
+					Click the white rabbit to see my first website, 
+					work in progress for my friends
+					Amy and Adrian
+					at White Rabbit Coffee Co. in British Columbia, Canada.</span>
 			</div>
 			<div class="col whiterabbit">
 				<a href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank">
 					<img id="whiterabbit" src="whiteRabbit.png">
 				</a>
-				<span id="coffeeco"><br>Click the white rabbit to see my first website, work in progress for my friends
-					Amy and Adrian
-					at White Rabbit Coffee Co. in British Columbia, Canada.</span>
+				
 			</div>
 		</div>
 	</div>
+
+	<!--
+	<script>
+		function showText() {
+			var x = document.getElementById("coffeeco");
+			if (x.style.display === "none") {
+				x.style.display = "block"; 
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
+	-->
+
+
+
 
 
 	<div class="row space">
@@ -120,9 +142,9 @@
 	<div class="container-fluid designs">
 		<div class="row row-designs">
 			<div id="designs" class="col title">DESIGNS</div>
-			<span class="col" id="designtext"><br><br><br>The following is work I did for 
-				a top secret :) silicon valley
-				startup from 2015-2019, where my roles included design, market research, product vision,
+			<span class="col" id="designtext"><br><br><br>The following is work I did from 2015-2019
+				 for a top secret silicon valley startup (shhh, don't tell anyone),
+				 where my roles included design, market research, product vision,
 				project and product management, app testing, user feedback, amateur psychologist, and really
 				just whatever needed to be done at any moment.
 			</span>
@@ -132,18 +154,16 @@
 			<div class="col-sm-9 bor">
 				<div class="row">
 					<div class="col-lg-6 col-xs-6">
-
 						<a><img id="bor" src="1Lincoln.png"></a>
-
 					</div>
 					<div class="col-lg-6 col-xs-6">
-						<img id="bor" src="2Franklin.png">
+						<a><img id="bor" src="2Franklin.png"></a>
 					</div>
 					<div class="col-lg-6 col-xs-6">
-						<img id="bor" src="3Madison.png">
+						<a><img id="bor" src="3Madison.png"></a>
 					</div>
 					<div class="col-lg-6 col-xs-6">
-						<img id="bor" src="4tomPaine.png">
+						<a><img id="bor" src="4tomPaine.png"></a>
 					</div>
 				</div>
 			</div>
