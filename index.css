@@ -189,6 +189,8 @@ body {
 }
 #whiterabbit:hover {
     transform: scale(1.1);
+    transition: all 1s ease-in-out;
+
 }
 
 
@@ -227,6 +229,63 @@ body {
     transition: all 1s ease-in-out;
 }
 
+
+#bor1 {
+    display: none;
+    font-size: 1.4em;
+    font-weight: 200;
+    letter-spacing: 0.08em;
+    max-width: 30vw;
+    color: white;
+}
+
+#colLincoln:hover #bor1 {
+    display: block;
+}
+
+
+#bor2 {
+    display: none;
+    font-size: 1.4em;
+    font-weight: 200;
+    letter-spacing: 0.08em;
+    max-width: 30vw;
+    color: white;
+}
+
+
+#colFranklin:hover #bor2 {
+    display: block;
+}
+
+#bor3 {
+    display: none;
+    font-size: 1.4em;
+    font-weight: 200;
+    letter-spacing: 0.08em;
+    max-width: 30vw;
+    color: white;
+}
+
+#colMadison:hover #bor3 {
+    display: block;
+}
+
+
+#bor4 {
+    display: none;
+    font-size: 1.4em;
+    font-weight: 200;
+    letter-spacing: 0.08em;
+    max-width: 30vw;
+    color: white;
+}
+
+#colPaine:hover #bor4 {
+    display: block;
+}
+
+
 /* ICON1 */
 .container-fluid.icon1 {
     background-image: url("concreteGrey2.jpg");
@@ -238,6 +297,21 @@ body {
     margin: 0;
     padding: 0;
     z-index: 0;
+}
+
+#pinky1 {
+    display: none;
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    max-width: 30vw;
+    color: white;
+    filter: drop-shadow(1px 1px 10px white);
+text-align: left;
+}
+
+#colPinky:hover #pinky1 {
+    display: block;
 }
 
 
@@ -255,6 +329,24 @@ body {
     z-index: 0;
 }
 
+#sparko1 {
+    display: none;
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    max-width: 30vw;
+    color: white;
+    text-align: left;
+
+    filter: drop-shadow(1px 1px 10px white);
+}
+
+#colSparko:hover #sparko1 {
+    display: block;
+}
+#sparko:hover {
+    transform: skewX(180deg);
+    transition: 10s ease-in-out;}
 
 
 /* ALI */
@@ -271,7 +363,24 @@ body {
     color: white;
     text-align: center;
 }
+#ali1 {
+    display: none;
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    max-width: 30vw;
+    color: white;
+    text-align: left;
+    filter: drop-shadow(1px 1px 10px white);
+}
 
+#colAli:hover #ali1 {
+    display: block;
+}
+#ali:hover {
+    transform: scale(1.2);
+    transition: 2s ease-in-out;
+}
 
 /* MGMT */
 .container-fluid.mgmt {
