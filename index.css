@@ -31,20 +31,6 @@ body {
 }
 
 
-/* SIDENAV */
-/*
-#hamburger {
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    position: fixed;
-}
-
-#hamburger:hover {
-    transform: scale(1.05);
-}
-*/
-
 .navbar {
     
     background-color: black;
@@ -54,7 +40,7 @@ body {
     display: block;
     transition: top .25s ease-in-out;
     z-index: 1;
-
+    margin: 0; padding: 0;
 }
 
 .navbar a {
@@ -74,15 +60,6 @@ body {
 }
 
 
-/*
-#close {
-    height: 6.5vh;
-    padding: 2vh 4vh 1vh 2vh;
-    overflow: hidden;
-    margin: 0;
-    cursor: pointer;
-}
-*/
 #nav {
     color: white;
     font-weight: 100;
@@ -393,6 +370,12 @@ body {
 
 /* @MEDIA SMALL */
 @media (max-width:425px) {
+    #nav {
+        padding: 1vh 1.2vh;
+        font-size: 1.2em;
+        filter: drop-shadow(2px 2px 6px white);
+    }
+
     #hello {
         font-size: 3em;
     }
@@ -409,8 +392,9 @@ body {
     }
 
     #robert {
-        font-size: 1.7em;
-        font-weight: 400;
+        font-size: 1.4em;
+        font-weight: 350;
+        letter-spacing: .02em;
     }
 
     .container-fluid.hal {
@@ -528,6 +512,8 @@ body {
 
     #robert {
         font-size: 2em;
+        font-weight: 340;
+        letter-spacing: .09em;
     }
 
     .container-fluid.hal {
