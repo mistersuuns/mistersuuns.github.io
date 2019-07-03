@@ -31,6 +31,7 @@ body {
 }
 
 
+
 .navbar {
 
     background-color: black;
@@ -399,7 +400,7 @@ text-align: left;
 #mgmt {
     color: black;
     filter: drop-shadow(3px 3px 15px black);
-    padding: 15vh 0 0 0;
+    padding: 15vh 0 14vh 0;
 }
 
 #mgmttext {
@@ -414,6 +415,38 @@ text-align: left;
     padding: 10vh 5vh 0 0;
 }
 .row-mgmt:hover #mgmttext {
+    display: block;
+}
+
+
+#flows1 {
+    display:none;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    max-width: 30vw;
+    color: black;
+    text-align: left;
+    filter: drop-shadow(1px 1px 10px black);
+    padding: 1vh 0 20vh 5vw;
+}
+#colFlows:hover #flows1 {
+    display: block;
+}
+
+
+#timeline1 {
+    display: none;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    max-width: 30vw;
+    color: black;
+    text-align: left;
+    filter: drop-shadow(1px 1px 10px black);
+    padding: 35vh 0 0 5vw;
+}
+#colTimeline:hover #timeline1 {
     display: block;
 }
 
@@ -446,6 +479,7 @@ text-align: left;
     padding: 0;
     z-index: 0;
     text-align: center;
+    color: white;
 }
 
 #words {
@@ -465,11 +499,90 @@ text-align: left;
     height: 50vh;
 }
 
+
 #tdr,
 #clin,
 #theory {
     cursor: pointer;
 }
+
+#theoryE1 {
+    display: none;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    max-width: 30vw;
+    color: white;
+    text-align: left;
+    filter: drop-shadow(1px 1px 10px white);
+    padding: 0 0 3vh 0;
+}
+#theoryE:hover #theoryE1 {
+    display: block;
+}
+
+#clinI1 {
+    display: none;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    max-width: 30vw;
+    color: white;
+    text-align: left;
+    filter: drop-shadow(1px 1px 10px white);
+    padding: 0 0 3vh 0;
+}
+#clinI:hover #clinI1 {
+    display: block;
+}
+
+#tdrMuse1 {
+    display: none;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    max-width: 30vw;
+    color: white;
+    text-align: left;
+    filter: drop-shadow(1px 1px 10px white);
+    padding: 0 0 3vh 0;
+}
+#tdrMuse:hover #tdrMuse1 {
+    display: block;
+}
+
+
+.container-fluid.cirque {
+    background-image: url("cirque2009.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 30vh 0;
+    z-index: 0;
+    text-align: center;
+    color: white;
+}
+
+
+#dance1 {
+    display: none;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    max-width: 30vw;
+    color: white;
+    text-align: left;
+    filter: drop-shadow(1px 1px 10px white);
+    padding: 0;
+}
+#dance:hover #dance1 {
+    display: block;
+    padding: 0 0 20vw 0;
+}
+
+
 
 
 
@@ -674,10 +787,11 @@ text-align: left;
         padding: 10vh 0;
     }
 
-    #timeline {
+    #timeline, #tl2 {
         width: 70vw;
         padding: 10vh 0 10vh 0;
     }
+    
 
 }
 
@@ -802,7 +916,7 @@ text-align: left;
         padding: 8vh 0;
     }
 
-    #timeline {
+    #timeline, #tl2 {
         width: 25vw;
         padding: 10vh 0 5vh 0;
     }
