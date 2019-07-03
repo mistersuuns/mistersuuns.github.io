@@ -12,16 +12,35 @@
 body {
     font-family: "Gill Sans";
     color: white;
+}
+
+.row,
+.col,
+.wu,
+.space,
+.coffee,
+.whiterabbit,
+.designs,
+.bor,
+.franklin,
+.madison,
+.paine,
+.works,
+.mgmt,
+.flows,
+.timeline,
+.pdv,
+.words,
+.journal {
     margin: 0;
     padding: 0;
 }
+
 
 .bg {
     background: url("nili.jpg");
     width: 100vw;
     height: 100%;
-    padding: 0;
-    margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
@@ -31,44 +50,32 @@ body {
 }
 
 
-
 .navbar {
-
     background-color: black;
     opacity: .5;
-    width: 100%;
     position: fixed;
-    display: block;
-    transition: top .25s ease-in-out;
     z-index: 1;
-    margin: 0;
-    padding: 0;
 }
 
 .navbar a {
     float: left;
-    display: block;
     color: white;
     opacity: 1;
     font-size: 1.3em;
     font-weight: 500;
     letter-spacing: .1em;
-
 }
 
 .navbar a:hover {
     transform: scale(1.1);
-    transition: .5s ease-in-out;
+    transition: .2s ease-in-out;
 }
-
 
 #nav {
     color: white;
     font-weight: 100;
-    padding: 1vh 2vh;
     filter: drop-shadow(2px 2px 6px white);
 }
-
 
 
 /* MARS */
@@ -78,25 +85,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
-}
-
-.row {
-    padding: 0;
-    margin: 0;
-}
-
-.col-lg-5.mars {
     letter-spacing: .2em;
     font-weight: 340;
     padding: 40vh 0 70vh 0;
     filter: drop-shadow(1px 1px 10px white);
-}
-
-
-/* HAL */
-#hal {
-    margin: 0;
-    padding: 30vw 0;
 }
 
 
@@ -109,12 +101,7 @@ body {
     background-position: center;
     background-size: cover;
     z-index: 0;
-    margin: 0;
-    padding: 0;
     font-family: "Gill Sans";
-    font-size: 1.3em;
-    font-weight: 100;
-    color: white;
 }
 
 #wu {
@@ -138,13 +125,7 @@ body {
     z-index: 0;
 }
 
-.commute {
-    padding: 30vh 0;
-    margin: 0;
-}
-
-
-.col.space {
+.space {
     height: 2vh;
 }
 
@@ -158,42 +139,28 @@ body {
     width: 100%;
     height: 100vh;
     z-index: 0;
-    margin: 0;
-    padding: 0;
+    padding: 40vh 3vw;
 }
 
-.coffee,
-.whiterabbit {
-    padding: 40vh 0 0 4vw;
+#coffeeTitle {
+    font-weight: thin;
+    letter-spacing: .5em;
+    color: white;
+    filter: drop-shadow(2px 2px 6px white);
 }
+
 
 #whiterabbit {
-    height: 8vh;
+    height: 7vh;
     filter: drop-shadow(2px 2px 10px white);
     cursor: pointer;
+    transition: 1s ease-in-out;
 }
 
-#coffeeco {
-    display: none;
-    font-size: 1.2em;
-    font-weight: 200;
-    letter-spacing: 0.08em;
-    max-width: 40vw;
-}
-
-#colcoffee:hover #coffeeco {
-    display: block;
-}
-#colcoffee:hover {
-    transform: rotate(-12deg);
-    transition: all 1s ease-in-out;
-}
 #whiterabbit:hover {
-    transform: scale(1.1);
-    transition: all 1s ease-in-out;
-
+    transform: scale(1.2);
+    transition: 1s ease-in-out;
 }
-
 
 
 
@@ -206,33 +173,22 @@ body {
     width: 100%;
     height: 350vh;
     z-index: 0;
-    font-size: .75em;
     font-weight: thin;
-    color: black;
-    margin: 0;
-    padding: 0;
-}
-
-#designtext {
-    width: 20vw;
-    display: none;
     color: white;
-    font-size: 1.3em;
+}
+
+#designsText {
     font-weight: 200;
-    letter-spacing: 0.1em;
-}
-
-.row-designs:hover #designtext {
-    display: block;
-}
-#designs:hover {
-    transform: skewY(5deg);
-    transition: all 1s ease-in-out;
 }
 
 
+#borText {
+    width: 75vw;
+    padding: 7vh 0 0 10vw;
+}
+
+/* bor */
 #bor1 {
-    display: none;
     font-size: 1.4em;
     font-weight: 200;
     letter-spacing: 0.08em;
@@ -240,13 +196,10 @@ body {
     color: white;
 }
 
-#colLincoln:hover #bor1 {
-    display: block;
-}
+
 
 
 #bor2 {
-    display: none;
     font-size: 1.4em;
     font-weight: 200;
     letter-spacing: 0.08em;
@@ -255,26 +208,17 @@ body {
 }
 
 
-#colFranklin:hover #bor2 {
-    display: block;
-}
 
 #bor3 {
-    display: none;
     font-size: 1.4em;
     font-weight: 200;
     letter-spacing: 0.08em;
     max-width: 30vw;
     color: white;
-}
-
-#colMadison:hover #bor3 {
-    display: block;
 }
 
 
 #bor4 {
-    display: none;
     font-size: 1.4em;
     font-weight: 200;
     letter-spacing: 0.08em;
@@ -282,9 +226,7 @@ body {
     color: white;
 }
 
-#colPaine:hover #bor4 {
-    display: block;
-}
+
 
 
 /* ICON1 */
@@ -301,19 +243,15 @@ body {
 }
 
 #pinky1 {
-    display: none;
     font-size: 1.4em;
     font-weight: 400;
     letter-spacing: 0.08em;
     max-width: 30vw;
     color: white;
     filter: drop-shadow(1px 1px 10px white);
-text-align: left;
+    text-align: left;
 }
 
-#colPinky:hover #pinky1 {
-    display: block;
-}
 
 
 
@@ -331,20 +269,15 @@ text-align: left;
 }
 
 #sparko1 {
-    display: none;
     font-size: 1.4em;
     font-weight: 400;
     letter-spacing: 0.08em;
     max-width: 30vw;
     color: white;
     text-align: left;
-
     filter: drop-shadow(1px 1px 10px white);
 }
 
-#colSparko:hover #sparko1 {
-    display: block;
-}
 
 
 
@@ -362,31 +295,23 @@ text-align: left;
     color: white;
     text-align: center;
 }
+
 #ali1 {
-    display: none;
     font-size: 1.4em;
     font-weight: 400;
     letter-spacing: 0.08em;
     max-width: 30vw;
     color: white;
     text-align: left;
-
     filter: drop-shadow(1px 1px 10px white);
 }
 
-#colAli:hover #ali1 {
-    display: block;
-}
-#ali:hover {
-    transform: scale(1.2);
-    transition: 2s ease-in-out;
-}
 
 /* MGMT */
 .container-fluid.mgmt {
-    background-image: url("greyStrip.jpg");
+    background-image: url("grad.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
     width: 100vw;
     height: 100%;
@@ -404,7 +329,6 @@ text-align: left;
 }
 
 #mgmttext {
-    display:none;
     font-size: 1.3em;
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -414,13 +338,9 @@ text-align: left;
     filter: drop-shadow(1px 1px 10px black);
     padding: 10vh 5vh 0 0;
 }
-.row-mgmt:hover #mgmttext {
-    display: block;
-}
 
 
 #flows1 {
-    display:none;
     font-size: 1.3em;
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -430,13 +350,11 @@ text-align: left;
     filter: drop-shadow(1px 1px 10px black);
     padding: 1vh 0 20vh 5vw;
 }
-#colFlows:hover #flows1 {
-    display: block;
-}
+
+
 
 
 #timeline1 {
-    display: none;
     font-size: 1.3em;
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -446,11 +364,25 @@ text-align: left;
     filter: drop-shadow(1px 1px 10px black);
     padding: 35vh 0 0 5vw;
 }
-#colTimeline:hover #timeline1 {
-    display: block;
+
+
+
+#pdv {
+    max-width: 25vw;
+    padding: 20vh 0 5vh 0;
 }
 
+#pdv1 {
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    max-width: 30vw;
+    color: black;
+    text-align: left;
+    filter: drop-shadow(1px 1px 10px black);
+    padding: 0 0 0 5vw;
 
+}
 
 
 
@@ -507,7 +439,6 @@ text-align: left;
 }
 
 #theoryE1 {
-    display: none;
     font-size: 1.3em;
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -517,12 +448,9 @@ text-align: left;
     filter: drop-shadow(1px 1px 10px white);
     padding: 0 0 3vh 0;
 }
-#theoryE:hover #theoryE1 {
-    display: block;
-}
+
 
 #clinI1 {
-    display: none;
     font-size: 1.3em;
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -531,13 +459,10 @@ text-align: left;
     text-align: left;
     filter: drop-shadow(1px 1px 10px white);
     padding: 0 0 3vh 0;
-}
-#clinI:hover #clinI1 {
-    display: block;
 }
 
+
 #tdrMuse1 {
-    display: none;
     font-size: 1.3em;
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -546,9 +471,6 @@ text-align: left;
     text-align: left;
     filter: drop-shadow(1px 1px 10px white);
     padding: 0 0 3vh 0;
-}
-#tdrMuse:hover #tdrMuse1 {
-    display: block;
 }
 
 
@@ -567,7 +489,6 @@ text-align: left;
 
 
 #dance1 {
-    display: none;
     font-size: 1em;
     font-weight: 200;
     letter-spacing: 0.05em;
@@ -577,10 +498,7 @@ text-align: left;
     filter: drop-shadow(1px 1px 10px white);
     padding: 0;
 }
-#dance:hover #dance1 {
-    display: block;
-    padding: 0 0 20vw 0;
-}
+
 
 
 
@@ -633,7 +551,9 @@ text-align: left;
 
 
 
-
+/* @MEDIA SMALL */
+/* @MEDIA SMALL */
+/* @MEDIA SMALL */
 /* @MEDIA SMALL */
 @media (max-width:425px) {
     #nav {
@@ -646,21 +566,11 @@ text-align: left;
         font-size: 3em;
     }
 
-    #hamburger {
-        height: 15vw;
-        padding: 2vw;
-        opacity: 90%;
-    }
-
-    #hello {
-        font-size: 12vh;
-        color: white;
-    }
-
     #robert {
         font-size: 1.4em;
         font-weight: 350;
         letter-spacing: .02em;
+        padding-left: 1vw;
     }
 
     .container-fluid.hal {
@@ -675,6 +585,12 @@ text-align: left;
         margin: 0;
     }
 
+    #hal {
+        margin: 0;
+        padding: 30vw 0;
+    }
+
+
     .container-fluid.commute {
         background-image: url(commuteB.png);
         position: left;
@@ -682,74 +598,108 @@ text-align: left;
 
     .commute {
         padding: 16vh 0 9vh 0;
+        margin: 0;
     }
 
+    /* @MEDIA SMALL.......... */
 
 
-
-
-    .container-fluid.coffee {
-        height: 60vh;
+    #coffeeTitle {
+        font-size: 2.7em;
+        letter-spacing: .3em;
     }
 
-    .coffee {
-        padding: 25vh 0 0 6vw;
-    }
+    #coffeeText {
+        font-size: 1.05em;
+        font-weight: 200;
+        letter-spacing: 0.08em;
+        padding-left: 2vw;
 
-
-    #coffee {
-        font-size: 2.25em;
-        font-weight: thin;
-        letter-spacing: .4em;
-        color: white;
-        filter: drop-shadow(2px 2px 6px white);
-    }
-
-
-    .whiterabbit {
-        padding: 24.5vh 0 0 3vw;
     }
 
     #whiterabbit {
-        height: 8vh;
-        filter: drop-shadow(2px 2px 10px white);
+        height: 12vh;
+        padding: 0 0 2vh 3vw;
+        margin: 0;
     }
 
+
+    /* @MEDIA SMALL.... */
 
 
 
     .container-fluid.designs {
-        padding: 0;
         background-size: cover;
-        height: 370vh;
+        background-position: left;
+        height: 730vh;
+        padding: 20vh 0 0 0;
     }
 
-    #designs {
-        padding-bottom: 45vh;
-        font-size: 3em;
-    }
-
-    #bor {
-        width: 75vw;
-        padding: 7vh 0 0 10vw;
-        filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
-
-    }
-
-
-    .container-fluid.icon1,
-    .container-fluid.icon2 {
-        text-align: center;
-        padding: 15vw 0;
-    }
-
-    .title {
+    #designsTitle {
         color: white;
-        padding: 15vh 0 15vh 6vw;
-        font-size: 3em;
+        font-size: 2.7em;
         letter-spacing: .55em;
         filter: drop-shadow(10px 10px 10px white);
+        padding-left: 4vw;
     }
+
+    #designsText {
+        font-size: 1.1em;
+        font-weight: 175;
+        letter-spacing: 0.08em;
+        padding-left: 4vw;
+        padding-top: 5vh;
+    }
+
+
+    #lincoln,
+    #franklin,
+    #madison,
+    #paine {
+        width: 100vw;
+        filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
+        padding: 5vw;
+    }
+
+    #borText {
+        font-size: 1.05em;
+        font-weight: 100;
+        letter-spacing: 0.08em;
+        padding: 15vh 4vw 1vh 4vw;
+        display: flex;
+        float: center;
+    }
+
+    /* @MEDIA SMALL.... */
+
+    .container-fluid.icon1 {
+        background-position: center;
+        height: 125vh;
+        font-size: 1.07em;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+        padding: 0;
+    }
+
+    #pinky {
+        width: 55vw;
+        padding: 35vh 0 0 0;
+    }
+
+    #pinkyText {
+        padding: 5vh;
+    }
+
+    .container-fluid.icon2 {
+        background-position: center;
+        height: 125vh;
+        font-size: 1.07em;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+        padding: 0;
+    }
+
+
 
     #sparko {
         width: 55vw;
@@ -757,10 +707,10 @@ text-align: left;
     }
 
 
-    #pinky {
-        width: 50vw;
-        margin: 4vh;
-    }
+
+
+    /* @MEDIA SMALL.... */
+
 
     .container-fluid.ali {
         text-align: center;
@@ -787,25 +737,23 @@ text-align: left;
         padding: 10vh 0;
     }
 
-    #timeline, #tl2 {
+    #timeline,
+    #tl2 {
         width: 70vw;
         padding: 10vh 0 10vh 0;
     }
-    
+
 
 }
 
 
 
 
-
+/* BIG */
+/* BIG */
+/* BIG */
 /* BIG */
 @media (min-width: 426px) {
-
-    #hamburger {
-        height: 8vw;
-        padding: 2vw;
-    }
 
     #hello {
         font-size: 15vh;
@@ -816,6 +764,8 @@ text-align: left;
         font-size: 2em;
         font-weight: 340;
         letter-spacing: .09em;
+        padding-left: 1vw;
+
     }
 
     .container-fluid.hal {
@@ -826,74 +776,101 @@ text-align: left;
         background-repeat: no-repeat;
         background-position: center;
         z-index: 0;
-        padding: 0;
+        padding: 40vh;
         margin: 0;
     }
 
-
-
-    .coffee {
-        padding: 40vh 0 0 6vh;
+    #coffeeTitle {
+        color: white;
+        font-size: 6em;
+        letter-spacing: .55em;
+        filter: drop-shadow(3px 3px 15px white);
     }
 
-    .whiterabbit {
-        padding: 39vh 0 0 0;
+    #coffeeText {
+        font-size: 1.1em;
+        font-weight: 175;
+        letter-spacing: 0.08em;
+        width: 50vw;
+        padding-left: 2vw;
     }
+
+    /* BIG........ */
 
     #whiterabbit {
         height: 17vh;
         filter: drop-shadow(2px 2px 10px white);
     }
 
-    #coffee {
-        font-size: 5em;
-        font-weight: thin;
-        letter-spacing: .5em;
-        color: white;
-        filter: drop-shadow(2px 2px 6px white);
-        cursor: pointer;
-    }
 
+    .commute {
+        padding: 30vh 0;
+        margin: 0;
+    }
 
 
     .container-fluid.designs {
-        padding: 60vh 0 10vh 1vh;
+        padding: 20vh 0 0 0;
+        height: 525vh;
     }
 
-    #designs {
-        font-size: 7em;
-    }
-
-    .title {
+    #designsTitle {
         color: white;
-        padding: 0 0 10vh 3vw;
+        padding: 0 0 5vh 3vw;
         font-size: 6em;
         letter-spacing: .55em;
         filter: drop-shadow(3px 3px 15px white);
     }
 
-    #bor {
-        width: 30vw;
-        padding: 5vw;
-        filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
-
+    #designsText {
+        font-size: 1.1em;
+        font-weight: 175;
+        letter-spacing: 0.08em;
+        padding-left: 4vw;
+        padding-bottom: 45vh;
     }
 
+    #lincoln,
+    #franklin,
+    #madison,
+    #paine {
+        padding: 5vw;
+        filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
+    }
 
+    #borText {
+        font-size: 1.1em;
+        font-weight: 175;
+        letter-spacing: 0.08em;
+        display: flex;
+        align-items: center;
+    }
+
+    /* ....BIG..... */
 
     .container-fluid.icon1,
     .container-fluid.icon2 {
-        padding: 30vh 8vh;
-        text-align: center;
+        background-position: bottom center;
+        height: 125vh;
+        font-size: 1.1em;
+        font-weight: 200;
+        letter-spacing: 0.08em;
+        padding: 0;
+    }
+
+    #pinky {
+        padding: 31vh 0;
+        width: 35vw;
+    }
+
+    #pinkyText {
+        padding: 36vh 0 0 7vw;
     }
 
     #sparko {
         width: 25vw;
     }
 
-    #pinky {
-        width: 30vw;
-    }
 
     .container-fluid.ali {
         padding: 30vh 8vh;
@@ -911,12 +888,16 @@ text-align: left;
         padding: 35vh 0;
     }
 
+    /* BIG........ */
+
+
     #flow {
         width: 80vw;
         padding: 8vh 0;
     }
 
-    #timeline, #tl2 {
+    #timeline,
+    #tl2 {
         width: 25vw;
         padding: 10vh 0 5vh 0;
     }
