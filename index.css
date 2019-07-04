@@ -673,8 +673,8 @@ body {
     /* @MEDIA SMALL.... */
 
     .container-fluid.icon1 {
-        background-position: center;
-        height: 125vh;
+        background-position: bottom center;
+        height: 120vh;
         font-size: 1.07em;
         font-weight: 400;
         letter-spacing: 0.08em;
@@ -683,27 +683,42 @@ body {
 
     #pinky {
         width: 55vw;
-        padding: 35vh 0 0 0;
+        padding: 25vh 0 0 0;
+    }
+
+    .col.pinky {
+        text-align: center;
     }
 
     #pinkyText {
-        padding: 5vh;
+        padding: 11vh;
     }
+
+
+
 
     .container-fluid.icon2 {
         background-position: center;
-        height: 125vh;
+        height: 150vh;
         font-size: 1.07em;
         font-weight: 400;
         letter-spacing: 0.08em;
         padding: 0;
     }
 
-
+    .col.ambass {
+        text-align: center;
+    }
+    #ambassText {
+        padding: 25vh 5vh 10vh 5vh;
+    }
+    #sparkoText {
+        padding: 10vh 5vh 15vh 5vh;
+    }
 
     #sparko {
-        width: 55vw;
-        margin: 4vh;
+        width: 80vw;
+        padding-left: 10vw;
     }
 
 
@@ -848,10 +863,9 @@ body {
 
     /* ....BIG..... */
 
-    .container-fluid.icon1,
-    .container-fluid.icon2 {
+    .container-fluid.icon1 {
         background-position: bottom center;
-        height: 125vh;
+        height: 105vh;
         font-size: 1.1em;
         font-weight: 200;
         letter-spacing: 0.08em;
@@ -867,9 +881,28 @@ body {
         padding: 36vh 0 0 7vw;
     }
 
-    #sparko {
-        width: 25vw;
+
+    .container-fluid.icon2 {
+        background-position: bottom center;
+        height: 125vh;
+        font-size: 1.1em;
+        font-weight: 350;
+        letter-spacing: 0.08em;
+        padding: 0;
     }
+
+    #ambassText {
+        padding: 20vw 0 0 7vw;
+    }
+
+    #sparko {
+        width: 40vw;
+        padding: 30vh 0;
+    }
+    #sparkoText {
+        padding: 30vw 5vw 0 0;
+    }
+
 
 
     .container-fluid.ali {
