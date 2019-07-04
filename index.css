@@ -1,8 +1,6 @@
-/*
 * {
     border: solid black .5px;
 }
-*/
 
 @font-face {
     font-family: Tron;
@@ -12,10 +10,13 @@
 body {
     font-family: "Gill Sans";
     color: white;
+    margin: 0;
 }
 
 .row,
 .col,
+.mars,
+.intro,
 .wu,
 .space,
 .coffee,
@@ -25,16 +26,40 @@ body {
 .franklin,
 .madison,
 .paine,
-.works,
-.mgmt,
+.pinky,
+.ambassSparko,
+.ali,
+.scope,
 .flows,
 .timeline,
 .pdv,
-.words,
-.journal {
+.words {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
+
+#helloText,
+#robertText, #marsText,
+#coffeeText,
+#designsText,
+#borText,
+#pinkyText,
+#ambassText,
+#sparkoText,
+#aliText,
+#scopeText,
+#flowsText,
+#timelineText,
+#pdvText,
+#theoryText,
+#clinText,
+#tdrText,
+#cirqueText {
+    display: inline-block;
+    text-align: left;
+}
+
 
 
 .bg {
@@ -67,13 +92,11 @@ body {
 }
 
 .navbar a:hover {
-    transform: scale(1.1);
     transition: .2s ease-in-out;
 }
 
 #nav {
     color: white;
-    font-weight: 100;
     filter: drop-shadow(2px 2px 6px white);
 }
 
@@ -85,10 +108,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
+    font-weight: 300;
     letter-spacing: .2em;
-    font-weight: 340;
-    padding: 40vh 0 70vh 0;
     filter: drop-shadow(1px 1px 10px white);
+    padding: 40vh 0 70vh 0;
+
 }
 
 
@@ -101,7 +125,8 @@ body {
     background-position: center;
     background-size: cover;
     z-index: 0;
-    font-family: "Gill Sans";
+    text-align: center;
+
 }
 
 #wu {
@@ -111,6 +136,7 @@ body {
     float: right;
     width: 60vw;
     filter: drop-shadow(5px 5px 20px rgb(255, 251, 0));
+    
 }
 
 /* COMMUTE */
@@ -119,10 +145,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
-    margin: 0;
-    padding: 0;
     width: 100%;
     z-index: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
 }
 
 .space {
@@ -137,14 +165,14 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 0;
     padding: 40vh 3vw;
+    text-align: center;
+
 }
 
 #coffeeTitle {
-    font-weight: thin;
-    letter-spacing: .5em;
     color: white;
     filter: drop-shadow(2px 2px 6px white);
 }
@@ -155,6 +183,7 @@ body {
     filter: drop-shadow(2px 2px 10px white);
     cursor: pointer;
     transition: 1s ease-in-out;
+
 }
 
 #whiterabbit:hover {
@@ -169,12 +198,13 @@ body {
     background: url("blueCam2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 70%;
+    background-position: 60%;
     width: 100%;
     height: 350vh;
     z-index: 0;
-    font-weight: thin;
     color: white;
+    text-align: center;
+
 }
 
 #designsText {
@@ -182,55 +212,21 @@ body {
 }
 
 
-#borText {
-    width: 75vw;
-    padding: 7vh 0 0 10vw;
-}
-
 /* bor */
-#bor1 {
-    font-size: 1.4em;
-    font-weight: 200;
-    letter-spacing: 0.08em;
-    max-width: 30vw;
-    color: white;
-}
-
-
-
-
-#bor2 {
-    font-size: 1.4em;
-    font-weight: 200;
-    letter-spacing: 0.08em;
-    max-width: 30vw;
-    color: white;
-}
-
-
-
-#bor3 {
-    font-size: 1.4em;
-    font-weight: 200;
-    letter-spacing: 0.08em;
-    max-width: 30vw;
-    color: white;
-}
-
-
+#bor1,
+#bor2 #bor3,
 #bor4 {
-    font-size: 1.4em;
-    font-weight: 200;
-    letter-spacing: 0.08em;
-    max-width: 30vw;
+    font-size: 1.2em;
+    font-weight: 100;
+    letter-spacing: 0.15em;
     color: white;
 }
 
 
 
 
-/* ICON1 */
-.container-fluid.icon1 {
+/* pinky */
+.container-fluid.pinky {
     background-image: url("concreteGrey2.jpg");
     background-repeat: no-repeat;
     background-position: left;
@@ -240,23 +236,13 @@ body {
     margin: 0;
     padding: 0;
     z-index: 0;
-}
+    text-align: center;
 
-#pinky1 {
-    font-size: 1.4em;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    max-width: 30vw;
-    color: white;
-    filter: drop-shadow(1px 1px 10px white);
-    text-align: left;
 }
 
 
-
-
-/* ICON2 */
-.container-fluid.icon2 {
+/* ambassSparko */
+.container-fluid.ambassSparko {
     background-image: url("greyCement.jpg");
     background-repeat: no-repeat;
     background-position: left;
@@ -266,19 +252,9 @@ body {
     margin: 0;
     padding: 0;
     z-index: 0;
+    text-align: center;
+
 }
-
-#sparko1 {
-    font-size: 1.4em;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    max-width: 30vw;
-    color: white;
-    text-align: left;
-    filter: drop-shadow(1px 1px 10px white);
-}
-
-
 
 
 /* ALI */
@@ -290,25 +266,21 @@ body {
     width: 100vw;
     height: 100%;
     margin: 0;
-    padding: 30vh 0;
+    padding: 0;
     z-index: 0;
     color: white;
     text-align: center;
+
 }
 
-#ali1 {
-    font-size: 1.4em;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    max-width: 30vw;
-    color: white;
+#aliText {
+    display: inline-block;
     text-align: left;
-    filter: drop-shadow(1px 1px 10px white);
 }
 
 
-/* MGMT */
-.container-fluid.mgmt {
+/* SCOPE */
+.container-fluid.scope {
     background-image: url("grad.png");
     background-repeat: no-repeat;
     background-position: left;
@@ -318,51 +290,13 @@ body {
     margin: 0;
     padding: 0;
     z-index: 0;
-    font-weight: 400;
+    color: black;
     text-align: center;
+
 }
 
-#mgmt {
-    color: black;
-    filter: drop-shadow(3px 3px 15px black);
-    padding: 15vh 0 14vh 0;
-}
-
-#mgmttext {
-    font-size: 1.3em;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    max-width: 30vw;
-    color: black;
-    text-align: left;
-    filter: drop-shadow(1px 1px 10px black);
-    padding: 10vh 5vh 0 0;
-}
-
-
-#flows1 {
-    font-size: 1.3em;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    max-width: 30vw;
-    color: black;
-    text-align: left;
-    filter: drop-shadow(1px 1px 10px black);
-    padding: 1vh 0 20vh 5vw;
-}
-
-
-
-
-#timeline1 {
-    font-size: 1.3em;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    max-width: 30vw;
-    color: black;
-    text-align: left;
-    filter: drop-shadow(1px 1px 10px black);
-    padding: 35vh 0 0 5vw;
+#scopeText {
+    display: inline-block;
 }
 
 
@@ -371,19 +305,6 @@ body {
     max-width: 25vw;
     padding: 20vh 0 5vh 0;
 }
-
-#pdv1 {
-    font-size: 1.3em;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    max-width: 30vw;
-    color: black;
-    text-align: left;
-    filter: drop-shadow(1px 1px 10px black);
-    padding: 0 0 0 5vw;
-
-}
-
 
 
 /* HAL2 */
@@ -397,81 +318,55 @@ body {
     margin: 0;
     z-index: 0;
     text-align: center;
+
 }
 
 
-/* PUBS */
+/* WORDS */
 .container-fluid.words {
-    background-image: url("subCarbon.png");
+    background-image: url("redBlack.png");
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 100%;
     margin: 0;
     padding: 0;
     z-index: 0;
-    text-align: center;
     color: white;
+    text-align: center;
+
 }
 
-#words {
-    padding: 10vh 0 0 0;
-}
-
-.journal {
-    padding: 10vh 3vh;
-}
-
-#hal8,
-#hal4,
-#hal6,
-#tdr,
-#clin,
-#theory {
-    height: 50vh;
+#hal8img,
+#hal6img,
+#tdrImg,
+#clinImg,
+#theoryImg {
+    width: 30vw;
+    padding: 10vh 0;
 }
 
 
-#tdr,
-#clin,
-#theory {
+#tdrImg,
+#clinImg,
+#theoryImg {
     cursor: pointer;
 }
 
-#theoryE1 {
-    font-size: 1.3em;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    max-width: 30vw;
-    color: white;
-    text-align: left;
-    filter: drop-shadow(1px 1px 10px white);
-    padding: 0 0 3vh 0;
+
+.container-fluid.hal3 {
+    background: url("commuteB.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100vw;
+    height: 100%;
+    z-index: 0;
+    padding: 30vh 0;
+    margin: 0;
+    text-align: center;
+
 }
 
-
-#clinI1 {
-    font-size: 1.3em;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    max-width: 30vw;
-    color: white;
-    text-align: left;
-    filter: drop-shadow(1px 1px 10px white);
-    padding: 0 0 3vh 0;
-}
-
-
-#tdrMuse1 {
-    font-size: 1.3em;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    max-width: 30vw;
-    color: white;
-    text-align: left;
-    filter: drop-shadow(1px 1px 10px white);
-    padding: 0 0 3vh 0;
-}
 
 
 .container-fluid.cirque {
@@ -479,26 +374,14 @@ body {
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     margin: 0;
-    padding: 30vh 0;
-    z-index: 0;
-    text-align: center;
-    color: white;
-}
-
-
-#dance1 {
-    font-size: 1em;
-    font-weight: 200;
-    letter-spacing: 0.05em;
-    max-width: 30vw;
-    color: white;
-    text-align: left;
-    filter: drop-shadow(1px 1px 10px white);
     padding: 0;
-}
+    z-index: 0;
+    color: white;
+    text-align: center;
 
+}
 
 
 
@@ -546,54 +429,63 @@ body {
 }
 
 
+/*  SMALL */
+/*  SMALL */
+/*  SMALL */
+/*  SMALL */
 
-
-
-
-
-/* @MEDIA SMALL */
-/* @MEDIA SMALL */
-/* @MEDIA SMALL */
-/* @MEDIA SMALL */
 @media (max-width:425px) {
+
+
+
+
+    #navbar {
+        margin: 0;
+        padding: 0;
+    }
+
     #nav {
         padding: 1vh 1.2vh;
         font-size: 1.2em;
+        font-weight: 100;
         filter: drop-shadow(2px 2px 6px white);
     }
 
     #hello {
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     #robert {
         font-size: 1.4em;
-        font-weight: 350;
-        letter-spacing: .02em;
+        font-weight: 300;
+        letter-spacing: .08em;
         padding-left: 1vw;
     }
 
+    /*  SMALL */
+
     .container-fluid.hal {
         background: url("animKubRed.gif");
-        width: 100vw;
-        height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        width: 40vw;
+        height: 100%;
         z-index: 0;
         padding: 0;
         margin: 0;
+        text-align: center;
+
     }
 
-    #hal {
-        margin: 0;
-        padding: 30vw 0;
-    }
+
 
 
     .container-fluid.commute {
         background-image: url(commuteB.png);
         position: left;
+        text-align: center;
+
     }
 
     .commute {
@@ -601,17 +493,20 @@ body {
         margin: 0;
     }
 
-    /* @MEDIA SMALL.......... */
+    /* SMALL.......... */
 
 
     #coffeeTitle {
         font-size: 2.7em;
+        font-weight: 400;
         letter-spacing: .3em;
     }
 
+
+
     #coffeeText {
-        font-size: 1.05em;
-        font-weight: 200;
+        font-size: 1.07em;
+        font-weight: 100;
         letter-spacing: 0.08em;
         padding-left: 2vw;
 
@@ -623,62 +518,67 @@ body {
         margin: 0;
     }
 
-
-    /* @MEDIA SMALL.... */
-
-
+    /* SMALL.... */
 
     .container-fluid.designs {
         background-size: cover;
         background-position: left;
         height: 730vh;
         padding: 20vh 0 0 0;
+        text-align: center;
+
     }
 
     #designsTitle {
         color: white;
-        font-size: 2.7em;
-        letter-spacing: .55em;
+        font-size: 3em;
+        letter-spacing: .5em;
         filter: drop-shadow(10px 10px 10px white);
         padding-left: 4vw;
     }
 
     #designsText {
-        font-size: 1.1em;
-        font-weight: 175;
+        font-size: 1.07em;
+        font-weight: 100;
         letter-spacing: 0.08em;
-        padding-left: 4vw;
-        padding-top: 5vh;
+        padding: 5vh 4vw 10vh 4vw;
+        filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
     }
 
+    /* SMALL.... */
 
-    #lincoln,
-    #franklin,
-    #madison,
-    #paine {
-        width: 100vw;
+
+    #lincolnImg,
+    #franklinImg,
+    #madisonImg,
+    #paineImg {
+        display: inline-block;
+        text-align: left;
+        width: 75vw;
         filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
         padding: 5vw;
     }
 
     #borText {
-        font-size: 1.05em;
+        font-size: 1.07em;
         font-weight: 100;
         letter-spacing: 0.08em;
-        padding: 15vh 4vw 1vh 4vw;
-        display: flex;
-        float: center;
+        padding: 1vh 5vw 20vh 5vw;
+        filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
+
     }
 
-    /* @MEDIA SMALL.... */
+    /* SMALL.... */
 
-    .container-fluid.icon1 {
+    .container-fluid.pinky {
         background-position: bottom center;
         height: 120vh;
         font-size: 1.07em;
-        font-weight: 400;
+        font-weight: 300;
         letter-spacing: 0.08em;
         padding: 0;
+        text-align: center;
+
     }
 
     #pinky {
@@ -686,32 +586,31 @@ body {
         padding: 25vh 0 0 0;
     }
 
-    .col.pinky {
-        text-align: center;
-    }
-
     #pinkyText {
+        filter: drop-shadow(2px 2px 10px black);
         padding: 11vh;
     }
 
+    /*  SMALL.... */
 
 
 
-    .container-fluid.icon2 {
+    .container-fluid.ambassSparko {
         background-position: center;
-        height: 150vh;
+        height: 160vh;
+        color: black;
         font-size: 1.07em;
         font-weight: 400;
         letter-spacing: 0.08em;
         padding: 0;
+        text-align: center;
+
     }
 
-    .col.ambass {
-        text-align: center;
-    }
     #ambassText {
         padding: 25vh 5vh 10vh 5vh;
     }
+
     #sparkoText {
         padding: 10vh 5vh 15vh 5vh;
     }
@@ -724,42 +623,142 @@ body {
 
 
 
-    /* @MEDIA SMALL.... */
+    /* SMALL.... */
 
 
     .container-fluid.ali {
+        background-position: bottom center;
+        height: 130vh;
+        font-size: 1.07em;
+        font-weight: 100;
+        letter-spacing: 0.08em;
+        padding: 40vh 0;
         text-align: center;
-        padding: 40vw 0;
+
     }
 
     #ali {
-        width: 35vw;
-        margin: 4vh;
+        width: 40vw;
     }
 
-    .container-fluid.hal2 {
+    #aliText {
+        width: 60vw;
+        padding: 10vh 0 0 5vw;
+    }
+
+    /* SMALL.... */
+
+
+    #scopeTitle {
+        padding: 10vh 0 5vh 5vw;
+        font-size: 1em;
+        font-weight: 400;
+        letter-spacing: .55em;
+        filter: drop-shadow(10px 10px 10px black);
+    }
+
+    #scopeText {
+        width: 80vw;
+        color: black;
+        font-size: 1.07em;
+        font-weight: 300;
+        letter-spacing: 0.08em;
+        padding-left: 3vw;
+        padding-bottom: 15vh;
+    }
+
+
+    #flowImg {
+        max-width: 70vw;
+        padding-bottom: 5vh;
+    }
+
+    #flowsText {
+        font-size: 1.07em;
+        font-weight: 300;
+        letter-spacing: 0.08em;
+        color: black;
+        display: inline-block;
+        text-align: left;
+        padding: 0 0 15vh 8vw;
+    }
+
+
+    .timeline {
+        text-align: center;
+    }
+
+    #timelineImg,
+    #timeline2Img,
+    #pdvImg {
+        max-width: 70vw;
+        padding-bottom: 5vh;
+    }
+
+    #timelineText {
+        font-size: 1.07em;
+        font-weight: 300;
+        letter-spacing: 0.08em;
+        color: black;
+        display: inline-block;
+        text-align: left;
+        padding: 0 0 15vh 8vw;
+    }
+
+
+
+    .container-fluid.words {
+        height: 290vh;
+        text-align: center;
+
+    }
+
+    #tdrText,
+    #clinText,
+    #theoryText {
+        font-size: 1.07em;
+        font-weight: 100;
+        letter-spacing: 0.08em;
+        display: inline-block;
+        text-align: left;
+        padding: 30vh 20vw 10vh 3vh;
+    }
+
+    #tdrImg,
+    #clinImg,
+    #theoryImg {
         padding: 10vh 0;
+        cursor: pointer;
     }
 
-    #hal8,
-    #hal4,
-    #hal6 {
-        max-height: 300px;
+
+    #cirqueText {
+        font-size: 1.07em;
+        font-weight: 100;
+        letter-spacing: 0.08em;
+        display: inline-block;
+        text-align: left;
+        padding: 0;
     }
 
-    #flow {
-        width: 70vw;
-        padding: 10vh 0;
+
+    .container-fluid.cirque {
+        background-position: left;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+
     }
 
-    #timeline,
-    #tl2 {
-        width: 70vw;
-        padding: 10vh 0 10vh 0;
-    }
 
 
 }
+
+
+/* SMALL.... */
+/* SMALL.... */
+/* SMALL.... */
+
 
 
 
@@ -777,7 +776,6 @@ body {
 
     #robert {
         font-size: 2em;
-        font-weight: 340;
         letter-spacing: .09em;
         padding-left: 1vw;
 
@@ -785,27 +783,33 @@ body {
 
     .container-fluid.hal {
         background: url("halRed1.png");
-        width: 100vw;
-        height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        width: 100vw;
+        height: 40vh;
         z-index: 0;
-        padding: 40vh;
+        padding: 40vh 0;
         margin: 0;
+        text-align: center;
+
     }
 
+
+    /* BIG........ */
+
+
     #coffeeTitle {
-        color: white;
         font-size: 6em;
-        letter-spacing: .55em;
-        filter: drop-shadow(3px 3px 15px white);
+        font-weight: 400;
+        letter-spacing: .5em;
+
     }
 
     #coffeeText {
-        font-size: 1.1em;
-        font-weight: 175;
-        letter-spacing: 0.08em;
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.15em;
         width: 50vw;
         padding-left: 2vw;
     }
@@ -826,50 +830,55 @@ body {
 
     .container-fluid.designs {
         padding: 20vh 0 0 0;
-        height: 525vh;
+        height: 560vh;
+        text-align: center;
+
     }
+
+    /* BIG........ */
 
     #designsTitle {
         color: white;
-        padding: 0 0 5vh 3vw;
+        padding: 0 0 15vh 3vw;
         font-size: 6em;
-        letter-spacing: .55em;
+        letter-spacing: .5em;
         filter: drop-shadow(3px 3px 15px white);
     }
 
     #designsText {
-        font-size: 1.1em;
-        font-weight: 175;
-        letter-spacing: 0.08em;
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.15em;
         padding-left: 4vw;
-        padding-bottom: 45vh;
+        padding-bottom: 25vh;
     }
 
-    #lincoln,
-    #franklin,
-    #madison,
-    #paine {
+    #lincolnImg,
+    #franklinImg,
+    #madisonImg,
+    #paineImg {
         padding: 5vw;
         filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
     }
 
     #borText {
-        font-size: 1.1em;
-        font-weight: 175;
-        letter-spacing: 0.08em;
-        display: flex;
-        align-items: center;
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.15em;
+
     }
 
     /* ....BIG..... */
 
-    .container-fluid.icon1 {
+    .container-fluid.pinky {
         background-position: bottom center;
         height: 105vh;
-        font-size: 1.1em;
-        font-weight: 200;
-        letter-spacing: 0.08em;
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.15em;
         padding: 0;
+        text-align: center;
+
     }
 
     #pinky {
@@ -881,14 +890,19 @@ body {
         padding: 36vh 0 0 7vw;
     }
 
+    /* BIG........ */
 
-    .container-fluid.icon2 {
+
+    .container-fluid.ambassSparko {
         background-position: bottom center;
         height: 125vh;
-        font-size: 1.1em;
-        font-weight: 350;
-        letter-spacing: 0.08em;
+        font-size: 1.2em;
+        font-weight: 400;
+        letter-spacing: 0.15em;
         padding: 0;
+        color: black;
+        text-align: center;
+
     }
 
     #ambassText {
@@ -899,40 +913,197 @@ body {
         width: 40vw;
         padding: 30vh 0;
     }
+
     #sparkoText {
         padding: 30vw 5vw 0 0;
     }
 
-
+    /* BIG........ */
+    /* BIG........ */
 
     .container-fluid.ali {
-        padding: 30vh 8vh;
-    }
-
-    .row.mgmt {
+        height: 200vh;
+        padding: 50vh 0 30vh 0;
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.15em;
         text-align: center;
+
     }
 
     #ali {
-        width: 20vw;
+        width: 25vw;
     }
 
-    .container-fluid.hal2 {
-        padding: 35vh 0;
+    #aliText {
+        width: 25vw;
+        padding: 20vh 0 0 5vw;
     }
 
     /* BIG........ */
 
 
-    #flow {
-        width: 80vw;
-        padding: 8vh 0;
+    .container-fluid.scope {
+        width: 100%;
+        text-align: center;
+
     }
 
-    #timeline,
-    #tl2 {
-        width: 25vw;
-        padding: 10vh 0 5vh 0;
+    #scopeTitle {
+        padding: 10vh 0 5vh 3vw;
+        font-size: 6.5em;
+        font-weight: 400;
+        letter-spacing: .5em;
+        filter: drop-shadow(3px 3px 15px black);
     }
 
+    #scopeText {
+        color: black;
+        font-size: 1.2em;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+        padding-left: 4vw;
+        padding-bottom: 30vh;
+    }
+
+    /* BIG........ */
+
+    .flows {
+        text-align: center;
+    }
+
+    #flowImg {
+        max-width: 50vw;
+        padding-bottom: 25vh;
+    }
+
+    #flowsText {
+        font-size: 1.2em;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+        max-width: 25vw;
+        color: black;
+        text-align: left;
+        padding-top: 30vh;
+    }
+
+    /* BIG........ */
+
+
+
+    .timeline {
+        text-align: center;
+    }
+
+    #timelineText {
+        font-size: 1.2em;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+        display: inline-block;
+        text-align: left;
+        padding: 20vh 0 0 10vw;
+    }
+
+    #timelineImg,
+    #timeline2Img {
+        max-width: 35vw;
+        padding-bottom: 20vh;
+    }
+
+    .pdv {
+        text-align: center;
+        padding: 5vh 5vh 40vh 0;
+    }
+
+
+    /* BIG........ */
+
+    #pdvText {
+        display: inline-block;
+        text-align: left;
+        padding-top: 10vh;
+        padding-right: 10vh;
+        color: white;
+        font-weight: 100;
+        font-size: 1.2em;
+        letter-spacing: 0.15em;
+
+    }
+
+
+    .container-fluid.hal2 {
+        padding: 35vh 0;
+        text-align: center;
+
+    }
+
+    /* BIG........ */
+
+    .container-fluid.words {
+        height: 320vh;
+        text-align: center;
+
+    }
+
+    #wordsTitle {
+        font-size: 6.5em;
+        font-weight: 400;
+        letter-spacing: .5em;
+        filter: drop-shadow(3px 3px 15px white);
+        display: inline-block;
+        text-align: left;
+        padding: 10vh 0 15vh 5vw;
+    }
+
+
+    /* BIG........ */
+
+
+
+    #tdrText,
+    #clinText,
+    #theoryText {
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.15em;
+        display: inline-block;
+        text-align: left;
+        padding: 30vh 20vw 10vh 3vh;
+    }
+
+    #tdrImg,
+    #clinImg,
+    #theoryImg {
+        padding: 10vh 0;
+        cursor: pointer;
+    }
+
+
+    .container-fluid.hal3 {
+        background: url("commuteB.jpg");
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 0;
+        margin: 0;
+        text-align: center;
+
+    }
+
+
+
+    #cirqueText {
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.15em;
+        display: inline-block;
+        text-align: left;
+        padding: 10vh 25vw 25vh 5vw;
+    }
+
+
+    /* BIG........ */
+    /* BIG........ */
+    /* BIG........ */
 }

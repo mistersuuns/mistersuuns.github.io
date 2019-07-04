@@ -42,35 +42,37 @@
 <body>
 	<div class="bg"></div>
 
-	<nav class="navbar" id="navbar">
+	<nav class="navbar navbar-default" id="navbar">
+		<ul class="nav">
+			<li><a href="#home" id="nav">home</a></li>
+			<li><a href="#designs" id="nav">work</a></li>
+			<li><a href="#words" id="nav">words</a></li>
+			<li><a href="#footer" id="nav">contact</a></li>
+		</ul>
 
-		<div class="container-fluid nav">
-			<ul class="nav navbar-default">
-				<li><a href="#home" id="nav">home</a></li>
-				<li><a href="#designs" id="nav">work</a></li>
-				<li><a href="#words" id="nav">words</a></li>
-				<li><a href="#footer" id="nav">contact</a></li>
-			</ul>
-		</div>
 	</nav>
 
 	<div class="container-fluid mars" id="home">
 		<div class="row">
-			<div class="col-lg-4 col-xs-2"> </div>
-			<div class="col-lg-5 col-xs-10">
-				<div id="hello" style="color:white !important">HELLO<br></div>
-				<div id="robert">I'm Robert <br></div>
-				<div id="robert" style="filter: drop-shadow(2px 2px 10px silver); opacity: .8;" )>Let's go to Mars!
+			<div class="col-lg-6 col-sm-12 mars">
+				<div id="helloText">HELLO
 				</div>
 			</div>
-			<div class="col-lg-3 col-sm-0"></div>
+			<div class="row">
+				<div class="col">
+					<div id="robertText">I'm Robert <br></div>
+					<div id="marsText" style="filter: drop-shadow(2px 2px 10px silver); 
+						opacity: .8;">Let's go to Mars!
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
 
 	<div class="container-fluid hal">
 		<div class="row">
-			<div id="hal" class="col-xs-12"></div>
+			<div id="hal" class="col-sm-12"></div>
 		</div>
 	</div>
 
@@ -84,7 +86,7 @@
 
 	<div class="container-fluid commute">
 		<div class="row">
-			<div class="col-xs commute">
+			<div class="col">
 			</div>
 		</div>
 	</div>
@@ -96,22 +98,21 @@
 	<div class="container-fluid coffee">
 		<div class="row">
 			<div class="col">
-				<div class="row">
-					<div class="col">
-						<div id="coffeeTitle">COFFEE</div>
-					</div>
-					<div class="col whiterabbit">
-						<a href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank">
-							<img id="whiterabbit" src="whiteRabbit.png">
-						</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-5" id="coffeeText">
-						Tap the white rabbit to see a website (my first)
-						in progress for my friends Amy and Adrian
-						at White Rabbit Coffee Co. in British Columbia, Canada.
-					</div>
+				<div id="coffeeTitle">COFFEE</div>
+			</div>
+			<div class="col whiterabbit">
+				<a href="https://mistersuuns.github.io/whiterabbit.github.io/" target="_blank">
+					<img id="whiterabbit" src="whiteRabbit.png">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-5">
+				<div id="coffeeText">
+					I like coffee.<br>
+					Tap the white rabbit to see my first website,
+					in progress, for my friends Amy and Adrian
+					at White Rabbit Coffee Co. in British Columbia, Canada.
 				</div>
 			</div>
 		</div>
@@ -127,77 +128,73 @@
 		<div class="row">
 			<div class="col" id="designsTitle">DESIGN</div>
 		</div>
+
 		<div class="row">
-			<div class="col-sm-5" id="designsText">From 2015-2019, I worked
-				for a top secret (!) silicon valley startup,
-				where my roles included design, market research, product vision,
-				project and product management, app testing, user feedback,
-				amateur psychologist, and whatever was needed.
-				<br>By any means necessary.
+			<div class="col-sm-6">
+				<div id="designsText">From 2015-2019, I worked
+					for a top secret (!) silicon valley startup,
+					where my roles included design, market research, product vision,
+					project and product management, app testing, user feedback,
+					amateur psychologist, and, if necessary, screwing in lightbulbs.
+					Here are some designs from that time.
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 bor">
+				<img id="lincolnImg" src="1Lincoln.png">
+			</div>
+			<div class="col-sm-6 bor">
+				<div id="borText">
+					First onboarding screen to the TOTL Bill of Rights.<br><br>
+					STATUE: Lincoln, career politician, civil war president, abolitionist,
+					and proponent of individual rights, until his assassination in 1865 while watching
+					the comedy play, Our American Cousin, in Ford Theater, Washington, DC.</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 bor">
+				<img id="franklinImg" src="2Franklin.png">
+			</div>
+			<div class="col-sm-6 bor">
+				<div id="borText">
+					IN FRAME: Michelangelo, The Fall and Expulsion of Adam and Eve, 1509.
+					Cistene Chapel.<br><br>
+					STATUE: Ben Franklin, inventor, founding father, champion of industriousness and
+					intellectual property rights.</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 bor">
+				<img id="madisonImg" src="3Madison.png"></span>
+			</div>
+			<div class="col-sm-6 bor">
+				<div id="borText">
+					IN FRAME: Abraham Bosse, Frontispiece for Hobbes’ Leviathan, 1651. Created
+					with
+					input from Thomas Hobbes.<br><br>
+					STATUE: James Madison, founding father, advocate of individual rights of privacy, as
+					opposed
+					to the Hobbesian absolute power of the sovereign.</div>
 			</div>
 		</div>
 
 
-
-
 		<div class="row">
-			<div class="col-sm-1 bor"> </div>
-			<div class="col bor" id="borText">
-				First onboarding screen to the TOTL Bill of Rights.<br><br>
-				STATUE: Lincoln, career politician, civil war president, abolitionist,
-				and proponent of individual rights, until his assassination in 1865 while watching
-				the comedy play, Our American Cousin, in Ford Theater, Washington, DC.
+			<div class="col-sm-6 bor">
+				<img id="paineImg" src="4tomPaine.png">
 			</div>
-			<div class="col-sm-5 bor">
-				<img id="lincoln" src="1Lincoln.png">
+			<div class="col-sm-6 bor">
+				<div id="borText">
+					IN FRAME: Bob Gomel, The LIFE Picture Collection, 1968. Photo: Muhammed Ali,
+					boxing champion, trash-talker, conscientious objector, and philanthropist.<br><br>
+					STATUE: Tom Paine, revolutionary, author of Common Sense (1775-1776), advocating
+					independence (from Great Britain) and egalitarian government for the Thirteen
+					Colonies.</div>
 			</div>
-			<div class="col-sm-1"></div>
-
-		</div>
-		<div class="row">
-			<div class="col-sm-1 bor"> </div>
-
-			<div class="col bor" id="borText">
-				IN FRAME: Michelangelo, The Fall and Expulsion of Adam and Eve, 1509.
-				Cistene Chapel.<br><br>
-				STATUE: Ben Franklin, inventor, founding father, champion of industriousness and
-				intellectual property rights.
-			</div>
-			<div class="col-sm-5 bor">
-				<img id="franklin" src="2Franklin.png">
-			</div>
-			<div class="col-sm-1 bor"></div>
-
-		</div>
-		<div class="row">
-			<div class="col-sm-1 bor"> </div>
-			<div class="col bor" id="borText">
-				IN FRAME: Abraham Bosse, Frontispiece for Hobbes’ Leviathan, 1651. Created
-				with
-				input from Thomas Hobbes.<br><br>
-				STATUE: James Madison, founding father, advocate of individual rights of privacy, as
-				opposed
-				to the Hobbesian absolute power of the sovereign.
-			</div>
-			<div class="col-sm-5 bor">
-				<img id="madison" src="3Madison.png"></span>
-			</div>
-			<div class="col-sm-1 bor"></div>
-
-		</div>
-		<div class="row">
-			<div class="col-sm-1 bor"> </div>
-			<div class="col bor" id="borText">
-				IN FRAME: Bob Gomel, The LIFE Picture Collection, 1968. Photo: Muhammed Ali,
-				boxing champion, trash-talker, conscientious objector, and philanthropist.<br><br>
-				STATUE: Tom Paine, revolutionary, author of Common Sense (1775-1776), advocating
-				independence (from Great Britain) and egalitarian government for the Thirteen
-				Colonies.</div>
-			<div class="col-sm-5 bor">
-				<img id="paine" src="4tomPaine.png">
-			</div>
-			<div class="col-sm-1 bor"></div>
-
 		</div>
 	</div>
 
@@ -207,18 +204,17 @@
 	</div>
 
 
-	<div class="container-fluid icon1">
+	<div class="container-fluid pinky">
 		<div class="row">
-			<div class="col-sm-3 icon1"> </div>
-			<div class="col pinky">
+			<div class="col-sm-6 pinky">
 				<img id="pinky" src="pinkyS.png">
 			</div>
-			<div class="col icon1" id="pinkyText">"Pinky Swear" icon. Designed as an informal NDA for beta users of
-				TOTL apps,
-				a model for ideal and transparent user-provider privacy agreements.<br><br>In Pinky Swear we
-				trust.
+			<div class="col-sm-6 icon1">
+				<div id="pinkyText">"Pinky Swear" icon. Designed as an informal NDA for beta users of
+					TOTL apps.
+					A model for ideal and transparent user-provider privacy agreements.<br><br>In Pinky Swear we
+					trust.</div>
 			</div>
-			<div class="col-sm-2 icon1"> </div>
 		</div>
 	</div>
 
@@ -228,17 +224,21 @@
 	</div>
 
 
-	<div class="container-fluid icon2">
+	<div class="container-fluid ambassSparko">
 		<div class="row">
-			<div class="col ambass" id="ambassText">
-				TOP LEFT: Ambassador, a mode for TOTL members to onboard users to the TOTL environment.
+			<div class="col-sm-4 ambassSparko">
+				<div id="ambassText">
+					TOP LEFT: Ambassador, a mode for TOTL members to onboard users to the TOTL environment.
+				</div>
 			</div>
-			<div class="col icon2">
+			<div class="col-sm-4 ambassSparko">
 				<img id="sparko" src="ambassSparko.png">
 			</div>
-			<div class="col sparko" id="sparkoText">
-				BOTTOM RIGHT: Sparko, host and user guide to an eponymous TOTL app,
-				helping users set goals and track and visualize progress.
+			<div class="col-sm-4 ambassSparko">
+				<div id="sparkoText">
+					BOTTOM RIGHT: Sparko, host and user guide to an eponymous TOTL app,
+					helping users set goals and track and visualize progress.
+				</div>
 			</div>
 		</div>
 	</div>
@@ -250,11 +250,16 @@
 
 	<div class="container-fluid ali">
 		<div class="row">
-			<div class="col works" id="colAli">
-				<span id="ali1">INSET: Bob Gomel's iconic 1968 photograph of Muhammed Ali.<br>
+			<div class="col ali">
+				<img id="ali" src="ali.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col ali">
+				<div id="aliText">
+					INSET: Bob Gomel's iconic 1968 photograph of Muhammed Ali.<br><br>
 					FRAME: Right-handed pinky swear.
-				</span>
-				<span><img id="ali" src="ali.png"></span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -263,68 +268,84 @@
 		<div class="col space"> </div>
 	</div>
 
-	<div class="container-fluid mgmt">
-		<div class="row row-mgmt">
-			<div id="col mgmt">
-				<span id="mgmt">SCOPE</span>
-				<span id="mgmttext"><br><br><br><br><br><br>
-					I'm an experienced team collaborator with keen analytic and systems analysis ability.
+	<div class="container-fluid scope">
+		<div class="row">
+			<div class="col-sm-6 scope" id="scopeTitle">SCOPE</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 scopeText">
+				<div id="scopeText">
+					I'm an experienced team collaborator with keen systems and general analytic ability.
 					Demonstrated
 					history
 					of research and project coordination in the startup computer software industry, and clinical
 					epidemiology.
 					<br>
 					I'm also not bad in the kitchen.<br>
-					Skilled in Remote Team Management, Analysis, Writing (Technical and Copy), Wireframing,
+					Skilled in Writing (Technical and Copy), Wireframing,
 					Design,
 					Web
-					Dev, and Project Deliverables. Certified Scrum Master.
+					Dev, Project Deliverables, and Remote Team Management. Certified Scrum Master.
 					<br>Most of all, I'm helpful, curious, and friendly.<br>Ph.D. from Cornell
-					University.<br><br>
-				</span>
+					University.<br>
+				</div>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col flows" id="colFlows">
-				<span><img id="flow" src="workuserflows.png" style="padding: 0;"></span>
-				<span id="flows1">User/member onboarding flows, for TOTL.</span>
+			<div class="col-sm-8 flows">
+				<img id="flowImg" src="workuserflows2.png">
+			</div>
+			<div class="col-sm-4 flows">
+				<div id="flowsText">
+					User/member onboarding flows, for TOTL (top secret startup).</div>
 			</div>
 		</div>
+
 		<div class="row">
-			<div class="col timeline" id="colTimeline">
-				<span id="timeline1">TOTL Timeline.<br>Like Google Timeline, but actually private, with more
-					than
-					just
-					your route. <br><br>
-					Email, calls, calendar, and photos. Self-writing journal. Planner. Shareable.</span>
-				<span><img id="timeline" src="timeline.png"></span>
+			<div class="col-sm-6 timeline">
+				<div id="timelineText">
+					TOTL Timeline.<br>Like Google Timeline, but actually private, with more
+					than just your route.<br><br>
+					Email, calls, calendar, and photos. Self-writing journal. Planner. Shareable.
+				</div>
+			</div>
+			<div class="col-sm-6 timeline">
+				<img id="timelineImg" src="timeline.png">
 			</div>
 		</div>
+
 		<div class="row">
-			<div class="col timeline" id="colTimeline2">
-				<span><img id="tl2" src="tl2.png"></span>
+			<div class="col-sm-6 timeline"> </div>
+			<div class="col-sm-6 timeline">
+				<img id="timeline2Img" src="timeline2.png">
 			</div>
 		</div>
-		<div class="row" id="rowpdv">
-			<div class="col pdv">
-				<span id="pdv1">TOTL Private Data Vault.<br>Lock your data away from everyone else.
+
+		<div class="row">
+			<div class="col-sm-6 pdv">
+				<img id="pdvImg" src="pdvMap.png">
+			</div>
+			<div class="col-sm-6 pdv">
+				<div id="pdvText">TOTL Private Data Vault.<br>Lock your data away from everyone else.
 					Keep your gmail, google calendar, device, and contacts data to yourself.
 					Only you have access.
-				</span>
-				<span><img id="pdv" src="pdvMap.png"></span>
+				</div>
 			</div>
 		</div>
 	</div>
+
+
 
 	<div class="row space">
 		<div class="col space"> </div>
 	</div>
 
 
+
 	<div class="container-fluid hal2">
 		<div class="row">
-			<div class="col"></div>
+			<div class="col"> </div>
 		</div>
 	</div>
 
@@ -340,60 +361,63 @@
 		</div>
 
 		<div class="row">
-			<div class="col-sm-6 journal">
-				<span><img id="hal4" src="hal6.png"></span>
-			</div>
-
-
-
-			<div class="col-sm-6 journal" id="theoryE">
-				<span id="theoryE1">A critical review of existing extrapolations from neuropsychology to
-					political
-					theory.<br>
-					Sole author. Published in peer-reviewed journal, Theory and Event.<br>
-					A good pre-game read before party night.<br>Click cover to view.</span>
+			<div class="col-sm-6 words">
 				<a href="https://muse.jhu.edu/article/448983" target="_blank">
-					<img id="theory" src="theoryEventArticle.png">
+					<img id="theoryImg" src="theoryEventArticle.png">
 				</a>
-
 			</div>
-			<div class="col-sm-6 journal" id="clinI">
-				<span id="clinI1">Epidemiological study of the effects of influenza immunization during a
-					two-year
-					period in Canada.<br>
+			<div class="col-sm-6 words">
+				<div id="theoryText">A critical review of existing extrapolations from neuropsychology to
+					political
+					theory.<br><br>
+					Sole author. Published in peer-reviewed journal, Theory and Event.<br>Tap cover to view.
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 words">
+				<a href="https://academic.oup.com/cid/article/57/6/820/330306" target="_blank">
+					<img id="clinImg" src="clinInfectDis.png">
+				</a>
+			</div>
+			<div class="col-sm-6 words">
+				<div id="clinText">Epidemiological study of the effects of influenza immunization on influenza
+					prevalence
+					during a one-year flu season in Canada.<br><br>
 					Contributing author. Published in peer-reviewed journal, Clinical Infectious Diseases.
 					Widely
-					cited.<br>Click cover to view.</span>
+					cited.<br>Tap cover to view.
+				</div>
+			</div>
+		</div>
 
-				<a href="https://academic.oup.com/cid/article/57/6/820/330306" target="_blank">
-					<img id="clin" src="clinInfectDis.png">
+		<div class="row">
+			<div class="col-sm-6 words">
+				<a href="https://muse.jhu.edu/article/390982" target="_blank">
+					<img id="tdrImg" src="TDR.png">
 				</a>
 			</div>
-			<div class="col-sm-6 journal">
-				<span><img id="hal8" src="halVehF.png"></span>
-			</div>
-
-
-
-			<div class="col-sm-6 journal">
-				<img id="hal6" src="halComF.png">
-			</div>
-
-
-			<div class="col-sm-6 journal" id="tdrMuse">
-				<span id="tdrMuse1">Exploration of the work of Steve Paxton, pioneer of contact improvisation,
+			<div class="col-sm-6 words">
+				<div id="tdrText">Exploration of the work of Steve Paxton, pioneer of contact improvisation,
 					its
 					potential,
-					and its legacy in the United States.<br>
+					and its legacy in the United States.<br><br>
 					Sole Author. Published in NYU Tisch School of the Arts peer-reviewed journal, The Drama
-					Review.<br>Click cover to view.</span>
-				<a href="https://muse.jhu.edu/article/390982" target="_blank">
-					<img id="tdr" src="TDR.jpeg">
-				</a>
+					Review.<br>Tap cover to view.
+				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="row space">
+		<div class="col space"> </div>
+	</div>
 
 
-
+	<div class="container-fluid hal3">
+		<div class="row">
+			<div class="col" id="hal3"> </div>
 		</div>
 	</div>
 
@@ -402,13 +426,12 @@
 		<div class="col space"> </div>
 	</div>
 
-	<div class="container-fluid cirque" id="dance">
+	<div class="container-fluid cirque">
 		<div class="row">
-			<div class="col">
-				<span id="dance1">Professional modern and circus dancer from 2005-2010.
+			<div class="col-4">
+				<div id="cirqueText">Professional modern and circus dancer from 2005-2010.
 					Cirque du Soleil, Zero Gravity, Kristina Isabelle, Ithaca Ballet, Kat Galasso.<br><br>
-					I'm in front of the high chair, lower left.
-				</span>
+					That's me, lower left in front of the high chair.</div>
 			</div>
 		</div>
 	</div>
