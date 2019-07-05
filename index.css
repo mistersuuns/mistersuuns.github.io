@@ -10,71 +10,96 @@
 body {
     font-family: "Gill Sans";
     color: white;
-    margin: 0;
 }
 
 .row,
 .col,
-.martians,
-.mars,
-.marspace,
-.space,
-.halMars
-.wu,
-.halCommute,
-.coffee,
-.whiterabbit,
-.designs,
-.bor,
-.pinky,
-.ambassSparko,
-.ali,
-.scope,
-.flows,
-.timeline,
-.pdv,
-.halRedgif,
-.words,
-.halReturn {
+div[class*=col-] {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-#helloText,
-#robertText, #marsText,
-#halCommute,
-#coffeeText,
+/* 1row */
+#robertText,
+#marsText,
+#coffeeText {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 0 5vw;
+}
+#marsText {
+    filter: drop-shadow(2px 2px 10px silver);
+    opacity: .8;
+}
+
+/*hello*/
+#hello {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding-left: 3vw;
+}
+
+/* Title */
+#coffeeTitle,
+#designsTitle,
+#scopeTitle,
+#wordsTitle {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding-left: 3vw;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+
+
+
+
 #designsText,
 #borText,
 #pinkyText,
 #ambassText,
 #sparkoText,
 #aliText,
+
 #scopeText,
+
 #flowsText,
 #timelineText,
 #pdvText,
+
 #theoryText,
 #clinText,
 #tdrText,
 #cirqueText {
     display: inline-block;
     text-align: left;
+    margin: 0;
+    padding: 0 0 5vh 5vw;
 }
 
-
+.container-fluid {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
 
 .bg {
     background: url("nili.jpg");
-    width: 100vw;
-    height: 100%;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -116,32 +141,22 @@ body {
 /* halMars */
 .container-fluid.halMars {
     background: url("mars2001.gif");
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
     background-size: cover;
+    background-position: center;
     z-index: 0;
     margin: 0;
-    text-align: center;
 }
-
-
-
 
 
 /* halCommute */
 .container-fluid.halCommute {
-    background: url("halCommute.png");
-    background-size: cover;
+    background: url("halOfficeCommute.png");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: left;
-    width: 100%;
+    height: 40vw;
     z-index: 0;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-
 }
 
 .space {
@@ -149,18 +164,36 @@ body {
 }
 
 
+
+/* WU */
+.container-fluid.wu {
+    background: url("wuRed2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    z-index: 0;
+
+}
+
+#wuImg {
+    padding: 6vw 7vw 80vw 0;
+    margin: 0;
+    display: flex;
+    float: right;
+    width: 55vw;
+    filter: drop-shadow(5px 5px 20px rgb(255, 251, 0));
+}
+
+
 /* COFFEE */
 .container-fluid.coffee {
     background: url("stream.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    width: 100%;
     height: 100%;
     z-index: 0;
-    padding: 40vh 3vw;
-    text-align: center;
-
 }
 
 #coffeeTitle {
@@ -183,43 +216,15 @@ body {
 }
 
 
-/* WU */
-.container-fluid.wu {
-    background: url("wuRed2.svg");
-    width: 100vw;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
-    text-align: center;
-
-}
-
-#wuImg {
-    padding: 6vw 5vw 80vw 0;
-    margin: 0;
-    display: flex;
-    float: right;
-    width: 60vw;
-    filter: drop-shadow(5px 5px 20px rgb(255, 251, 0));
-    
-}
-
-
 
 /* DESIGNS */
 .container-fluid.designs {
     background: url("blueCam2.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 60%;
-    width: 100%;
-    height: 350vh;
     z-index: 0;
     color: white;
-    text-align: center;
-
 }
 
 #designsText {
@@ -238,73 +243,57 @@ body {
 }
 
 
-
-
 /* pinky */
 .container-fluid.pinky {
-    background-image: url("concreteGrey2.jpg");
+    background: url("concreteGrey2.jpg");
     background-repeat: no-repeat;
-    background-position: left;
     background-size: cover;
-    width: 100vw;
+    background-position: left;
     height: 100%;
-    margin: 0;
-    padding: 0;
     z-index: 0;
-    text-align: center;
-
 }
 
 
 /* ambassSparko */
 .container-fluid.ambassSparko {
-    background-image: url("greyCement.jpg");
+    background: url("greyCement.jpg");
     background-repeat: no-repeat;
-    background-position: left;
     background-size: cover;
-    width: 100vw;
+    background-position: left;
     height: 100%;
-    margin: 0;
-    padding: 0;
     z-index: 0;
-    text-align: center;
-
 }
 
 
 /* ALI */
 .container-fluid.ali {
-    background-image: url("whiteRoom.jpg");
+    background: url("whiteRoom.jpg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    width: 100vw;
+    background-position: center;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    z-index: 0;
     color: white;
-    text-align: center;
+}
 
+/* SCOPE */
+.container-fluid.halRed {
+    background: url("halRed.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vw;
 }
 
 
 /* SCOPE */
 .container-fluid.scope {
-    background-image: url("grad.png");
+    background: url("grad.png");
     background-repeat: no-repeat;
-    background-position: left;
     background-size: cover;
-    width: 100vw;
+    background-position: left;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    z-index: 0;
     color: black;
-    text-align: center;
-
 }
-
 
 
 #pdv {
@@ -315,28 +304,20 @@ body {
 
 /* halRedgif */
 .container-fluid.halRedgif {
-    background-image: url("halRedgif.gif");
+    background: url("halRedgif.gif");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    width: 100vw;
+    background-position: center;
     height: 100%;
-    margin: 0;
-    z-index: 0;
-    text-align: center;
-
 }
 
 
 /* WORDS */
 .container-fluid.words {
-    background-image: url("redBlack.png");
-    background-position: center;
+    background: url("redBlack.png");
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    z-index: 0;
+    background-position: center;
     color: white;
     text-align: center;
 
@@ -361,47 +342,33 @@ body {
 
 .container-fluid.halReturn {
     background: url("halReturn.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: right;
-    width: 100vw;
     height: 100%;
-    z-index: 0;
     padding: 30vh 0;
-    margin: 0;
-    text-align: center;
-
 }
-
 
 
 .container-fluid.cirque {
-    background-image: url("cirque2009.jpg");
-    background-position: center;
+    background: url("cirque2009.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    background-position: center;
     height: 100vh;
-    margin: 0;
-    padding: 0;
-    z-index: 0;
     color: white;
-    text-align: center;
-
 }
 
 
-
-
-
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
 /* FOOTER */
 .container-fluid.footer {
-    width: 100vw;
     height: 100%;
     bottom: 0;
-    margin: 0;
-    padding: 0;
     justify-content: center;
-    z-index: 0;
 }
 
 .icons {
@@ -412,34 +379,22 @@ body {
     justify-content: center;
 }
 
-.fab.fa-linkedin:hover {
-    cursor: pointer;
-
-    transform: scale(1.2);
-}
-
-.fab.fa-instagram:hover {
-    cursor: pointer;
-
-    transform: scale(1.2);
-}
-
-.fab.fa-facebook-f:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-}
-
+.fab.fa-linkedin:hover,
+.fab.fa-instagram:hover,
+.fab.fa-facebook-f:hover,
 .gmail:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
 
 
-/*  SMALL */
-/*  SMALL */
-/*  SMALL */
-/*  SMALL */
 
+/*  SMALL */
+/*  SMALL */
+/*  SMALL */
+/*  SMALL */
+/*  SMALL */
+/*  SMALL */
 @media (max-width:425px) {
 
     #navbar {
@@ -454,44 +409,31 @@ body {
         filter: drop-shadow(2px 2px 6px white);
     }
 
-    #helloText {
-        font-size: 3.5em;
+    #hello {
+        font-size: 5em;
     }
 
-    #robertText, #marsText  {
+    #robertText,
+    #marsText {
         font-size: 1.4em;
         font-weight: 300;
         letter-spacing: .08em;
-        padding-left: 1vw;
     }
 
-    #marsText {
-        filter: drop-shadow(2px 2px 10px silver); 
-        opacity: .8;
-    }
 
-    /*  SMALL */
+    /* .....SMALL.... */
 
     .container-fluid.halMars {
         height: 50vw;
-        z-index: 0;
-        margin: 0;
-        text-align: center;
 
     }
-
-
 
 
     .container-fluid.halCommute {
-        background-image: url("halCommute.png");
-        position: left;
-        text-align: center;
-        padding: 16vh 0 9vh 0;
-        margin: 0;
+        padding: 25vw;
     }
 
-    /* SMALL.......... */
+    /* .....SMALL.... */
 
 
     #coffeeTitle {
@@ -506,8 +448,6 @@ body {
         font-size: 1.07em;
         font-weight: 100;
         letter-spacing: 0.08em;
-        padding-left: 2vw;
-
     }
 
     #whiterabbit {
@@ -516,15 +456,13 @@ body {
         margin: 0;
     }
 
-    /* SMALL.... */
+    /* .....SMALL.... */
 
     .container-fluid.designs {
         background-size: cover;
         background-position: left;
-        height: 730vh;
+        height: 1100vw;
         padding: 20vh 0 0 0;
-        text-align: center;
-
     }
 
     #designsTitle {
@@ -532,9 +470,6 @@ body {
         font-size: 3em;
         letter-spacing: .5em;
         filter: drop-shadow(10px 10px 10px white);
-        padding-left: 4vw;
-        display: inline-block;
-        
     }
 
     #designsText {
@@ -542,10 +477,11 @@ body {
         font-weight: 100;
         letter-spacing: 0.08em;
         padding: 5vh 4vw 10vh 4vw;
+
         filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
     }
 
-    /* SMALL.... */
+    /* .....SMALL.... */
 
 
     #lincolnImg,
@@ -568,7 +504,7 @@ body {
 
     }
 
-    /* SMALL.... */
+    /* .....SMALL.... */
 
     .container-fluid.pinky {
         background-position: bottom center;
@@ -576,9 +512,6 @@ body {
         font-size: 1.07em;
         font-weight: 300;
         letter-spacing: 0.08em;
-        padding: 0;
-        text-align: center;
-
     }
 
     #pinky {
@@ -591,7 +524,7 @@ body {
         padding: 11vh;
     }
 
-    /*  SMALL.... */
+    /* .....SMALL.... */
 
 
 
@@ -602,9 +535,6 @@ body {
         font-size: 1.07em;
         font-weight: 400;
         letter-spacing: 0.08em;
-        padding: 0;
-        text-align: center;
-
     }
 
     #ambassText {
@@ -623,7 +553,7 @@ body {
 
 
 
-    /* SMALL.... */
+    /* .....SMALL.... */
 
 
     .container-fluid.ali {
@@ -633,7 +563,6 @@ body {
         font-weight: 100;
         letter-spacing: 0.08em;
         padding: 40vh 0;
-        text-align: center;
 
     }
 
@@ -646,14 +575,13 @@ body {
         padding: 10vh 0 0 5vw;
     }
 
-    /* SMALL.... */
+    /* .....SMALL.... */
 
 
     #scopeTitle {
-        padding: 10vh 0 5vh 5vw;
-        font-size: 1em;
-        font-weight: 400;
-        letter-spacing: .55em;
+        font-size: 3em;
+        font-weight: 600;
+        letter-spacing: .5em;
         filter: drop-shadow(10px 10px 10px black);
     }
 
@@ -663,54 +591,54 @@ body {
         font-size: 1.07em;
         font-weight: 300;
         letter-spacing: 0.08em;
-        padding-left: 3vw;
-        padding-bottom: 15vh;
+        padding-left: 5vw;
+        padding-bottom: 20vh;
     }
 
 
-    #flowImg {
-        max-width: 70vw;
-        padding-bottom: 5vh;
-    }
 
-    #flowsText {
-        font-size: 1.07em;
-        font-weight: 300;
-        letter-spacing: 0.08em;
-        color: black;
-        display: inline-block;
-        text-align: left;
-        padding: 0 0 15vh 8vw;
-    }
-
-
-    .timeline {
-        text-align: center;
-    }
-
+    #flowImg,
     #timelineImg,
     #timeline2Img,
     #pdvImg {
         max-width: 70vw;
-        padding-bottom: 5vh;
+        padding-bottom: 20vh;
     }
 
-    #timelineText {
+
+    /* .....SMALL.... */
+
+    #flowsText,
+    #timelineText,
+    #pdvText {
         font-size: 1.07em;
         font-weight: 300;
         letter-spacing: 0.08em;
-        color: black;
-
-        padding: 0 0 15vh 8vw;
+        padding: 0 0 5vw 5vw;
     }
 
+    #flowsText,
+    #timelineText {
+        color: black;
+    }
 
+    #pdvText {
+        color: white;
+    }
 
     .container-fluid.words {
         height: 290vh;
-        text-align: center;
-
     }
+
+    #wordsTitle {
+        font-size: 3em;
+        font-weight: 400;
+        letter-spacing: .5em;
+        filter: drop-shadow(10px 10px 10px white);
+    }
+
+    /* .....SMALL.... */
+
 
     #tdrText,
     #clinText,
@@ -718,7 +646,6 @@ body {
         font-size: 1.07em;
         font-weight: 100;
         letter-spacing: 0.08em;
-  
         padding: 30vh 20vw 10vh 3vh;
     }
 
@@ -729,37 +656,57 @@ body {
         cursor: pointer;
     }
 
+    /* .....SMALL.... */
+
 
     #cirqueText {
         font-size: 1.07em;
         font-weight: 100;
         letter-spacing: 0.08em;
-
-        padding: 0;
     }
-
 
     .container-fluid.cirque {
         background-position: left;
-        width: 100%;
         height: 100vh;
-        text-align: center;
-
     }
-
-
 
 }
 
-
-/* SMALL.... */
-/* SMALL.... */
-/* SMALL.... */
-
-
-
+/* ....SMALL */
+/* ....SMALL */
+/* ....SMALL */
+/* ....SMALL */
+/* ....SMALL */
 
 
+
+
+
+
+/* MID */
+/* MID */
+/* MID */
+/* MID */
+/* MID */
+@media (max-width: 762px) and (min-width: 425) {
+    #coffeeTitle {
+        max-width: ;
+    }
+}
+
+/* MID */
+/* MID */
+/* MID */
+/* MID */
+/* MID */
+
+
+
+
+
+
+/* BIG */
+/* BIG */
 /* BIG */
 /* BIG */
 /* BIG */
@@ -771,30 +718,13 @@ body {
         color: white;
     }
 
-    #robertText, #marsText {
+    #robertText,
+    #marsText {
         font-size: 2em;
         letter-spacing: .09em;
-        padding-left: 1vw;
     }
 
-
-    /* BIG........ */
-
-
-
-    #marsText {
-        filter: drop-shadow(2px 2px 10px silver); 
-        opacity: .8;
-    }
-
-    .container-fluid.halMars {
-        z-index: 0;
-        padding: 22vw 0;
-        margin: 0;
-        text-align: center;
-
-    }
-
+    /* ...BIG... */
 
 
     .halCommute {
@@ -803,8 +733,12 @@ body {
     }
 
 
+    /* ...BIG... */
 
-    /* BIG........ */
+    .container-fluid.halMars {
+        height: 100vh;
+    }
+
 
 
     #coffeeTitle {
@@ -819,10 +753,9 @@ body {
         font-weight: 100;
         letter-spacing: 0.15em;
         width: 50vw;
-        padding-left: 2vw;
     }
 
-    /* BIG........ */
+    /* ....BIG..... */
 
     #whiterabbit {
         height: 17vh;
@@ -837,11 +770,11 @@ body {
 
     }
 
-    /* BIG........ */
+    /* ....BIG..... */
 
     #designsTitle {
         color: white;
-        padding: 0 0 15vh 3vw;
+        padding-bottom: 15vh;
         font-size: 6em;
         letter-spacing: .5em;
         filter: drop-shadow(3px 3px 15px white);
@@ -892,7 +825,7 @@ body {
         padding: 36vh 0 0 7vw;
     }
 
-    /* BIG........ */
+    /* ....BIG..... */
 
 
     .container-fluid.ambassSparko {
@@ -903,7 +836,6 @@ body {
         letter-spacing: 0.15em;
         padding: 0;
         color: black;
-        text-align: center;
 
     }
 
@@ -920,8 +852,7 @@ body {
         padding: 30vw 5vw 0 0;
     }
 
-    /* BIG........ */
-    /* BIG........ */
+    /* ....BIG..... */
 
     .container-fluid.ali {
         height: 200vh;
@@ -929,7 +860,6 @@ body {
         font-size: 1.2em;
         font-weight: 100;
         letter-spacing: 0.15em;
-        text-align: center;
 
     }
 
@@ -942,17 +872,12 @@ body {
         padding: 20vh 0 0 5vw;
     }
 
-    /* BIG........ */
+    /* ....BIG..... */
 
 
-    .container-fluid.scope {
-        width: 100%;
-        text-align: center;
-
-    }
+    .container-fluid.scope {}
 
     #scopeTitle {
-        padding: 10vh 0 5vh 3vw;
         font-size: 6.5em;
         font-weight: 400;
         letter-spacing: .5em;
@@ -968,7 +893,7 @@ body {
         padding-bottom: 30vh;
     }
 
-    /* BIG........ */
+    /* ....BIG..... */
 
     .flows {
         text-align: center;
@@ -989,7 +914,7 @@ body {
         padding-top: 30vh;
     }
 
-    /* BIG........ */
+    /* ....BIG..... */
 
 
 
@@ -1001,7 +926,6 @@ body {
         font-size: 1.2em;
         font-weight: 400;
         letter-spacing: 0.15em;
-
         padding: 20vh 0 0 10vw;
     }
 
@@ -1012,37 +936,30 @@ body {
     }
 
     .pdv {
-        text-align: center;
         padding: 5vh 5vh 40vh 0;
     }
 
 
-    /* BIG........ */
+    /* ....BIG..... */
 
     #pdvText {
-
         padding-top: 10vh;
         padding-right: 10vh;
         color: white;
         font-weight: 100;
         font-size: 1.2em;
         letter-spacing: 0.15em;
-
     }
 
 
     .container-fluid.halRedgif {
         padding: 35vh 0;
-        text-align: center;
-
     }
 
-    /* BIG........ */
+    /* ....BIG..... */
 
     .container-fluid.words {
         height: 320vh;
-        text-align: center;
-
     }
 
     #wordsTitle {
@@ -1050,12 +967,11 @@ body {
         font-weight: 400;
         letter-spacing: .5em;
         filter: drop-shadow(3px 3px 15px white);
- 
-        padding: 10vh 0 15vh 5vw;
+        padding-bottom: 15vh;
     }
 
 
-    /* BIG........ */
+    /* ....BIG..... */
 
 
 
@@ -1065,7 +981,6 @@ body {
         font-size: 1.2em;
         font-weight: 100;
         letter-spacing: 0.15em;
-
         padding: 30vh 20vw 10vh 3vh;
     }
 
@@ -1079,28 +994,29 @@ body {
 
     .container-fluid.halReturn {
         background: url("halReturn.jpg");
-        width: 100vw;
-        background-size: cover;
         background-repeat: no-repeat;
+        background-size: cover;
         background-position: center;
         z-index: 0;
         margin: 0;
-        text-align: center;
-
     }
-
 
 
     #cirqueText {
         font-size: 1.2em;
         font-weight: 100;
         letter-spacing: 0.15em;
-
         padding: 10vh 25vw 25vh 5vw;
     }
-
-
-    /* BIG........ */
-    /* BIG........ */
-    /* BIG........ */
 }
+
+/* BIG */
+/* BIG */
+/* BIG */
+/* BIG */
+/* BIG */
+/* BIG */
+/* BIG */
+/* BIG */
+/* BIG */
+/* BIG */
