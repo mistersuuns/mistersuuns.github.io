@@ -52,12 +52,7 @@ div[class*=col-] {
     margin: 0;
     padding-left: 3vw;
     padding-top: 10vh;
-    padding-bottom: 5vh;
 }
-
-
-
-
 
 #designsText,
 #borText,
@@ -65,26 +60,22 @@ div[class*=col-] {
 #ambassText,
 #sparkoText,
 #aliText,
-
 #scopeText,
-
 #flowsText,
 #timelineText,
 #pdvText,
-
 #theoryText,
 #clinText,
 #tdrText,
 #cirqueText {
     display: inline-block;
     text-align: left;
-    margin: 0;
-    padding: 0 0 5vh 5vw;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
 }
 
 .container-fluid {
     width: 100vw;
-    margin: 0;
     padding: 0;
 }
 
@@ -227,10 +218,6 @@ div[class*=col-] {
     color: white;
 }
 
-#designsText {
-    font-weight: 200;
-}
-
 
 /* bor */
 #bor1,
@@ -319,8 +306,6 @@ div[class*=col-] {
     background-size: cover;
     background-position: center;
     color: white;
-    text-align: center;
-
 }
 
 #hal8img,
@@ -420,6 +405,11 @@ div[class*=col-] {
         letter-spacing: .08em;
     }
 
+    #coffeeText, #designsText {
+        font-size: 1.07em;
+        font-weight: 100;
+        letter-spacing: 0.08em;
+    }
 
     /* .....SMALL.... */
 
@@ -443,17 +433,10 @@ div[class*=col-] {
     }
 
 
-
-    #coffeeText {
-        font-size: 1.07em;
-        font-weight: 100;
-        letter-spacing: 0.08em;
-    }
-
     #whiterabbit {
         height: 12vh;
-        padding: 0 0 2vh 3vw;
-        margin: 0;
+        padding-bottom: 2vh;
+        padding-left: 3vw;
     }
 
     /* .....SMALL.... */
@@ -462,7 +445,7 @@ div[class*=col-] {
         background-size: cover;
         background-position: left;
         height: 1100vw;
-        padding: 20vh 0 0 0;
+        padding-top: 20vh;
     }
 
     #designsTitle {
@@ -473,11 +456,9 @@ div[class*=col-] {
     }
 
     #designsText {
-        font-size: 1.07em;
-        font-weight: 100;
-        letter-spacing: 0.08em;
-        padding: 5vh 4vw 10vh 4vw;
-
+        padding-top: 5vh;
+        padding-right: 4vw;
+        padding-bottom: 10vh;
         filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
     }
 
@@ -499,9 +480,10 @@ div[class*=col-] {
         font-size: 1.07em;
         font-weight: 100;
         letter-spacing: 0.08em;
-        padding: 1vh 5vw 20vh 5vw;
+        padding-top: 1vh;
+        padding-right: 5vw;
+        padding-bottom: 20vh;
         filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
-
     }
 
     /* .....SMALL.... */
@@ -591,7 +573,6 @@ div[class*=col-] {
         font-size: 1.07em;
         font-weight: 300;
         letter-spacing: 0.08em;
-        padding-left: 5vw;
         padding-bottom: 20vh;
     }
 
@@ -614,7 +595,7 @@ div[class*=col-] {
         font-size: 1.07em;
         font-weight: 300;
         letter-spacing: 0.08em;
-        padding: 0 0 5vw 5vw;
+        padding-bottom: 5vw;
     }
 
     #flowsText,
@@ -712,8 +693,8 @@ div[class*=col-] {
 /* BIG */
 /* BIG */
 @media (min-width: 426px) {
-
-    #helloText {
+ 
+    #hello {
         font-size: 15vh;
         color: white;
     }
@@ -784,7 +765,6 @@ div[class*=col-] {
         font-size: 1.2em;
         font-weight: 100;
         letter-spacing: 0.15em;
-        padding-left: 4vw;
         padding-bottom: 25vh;
     }
 
