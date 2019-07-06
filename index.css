@@ -15,6 +15,7 @@ body {
 .container-fluid {
     width: 100vw;
     padding: 0;
+    text-align: center;
 }
 
 .row,
@@ -22,7 +23,6 @@ body {
 div[class*=col-] {
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 /* 1row */
@@ -38,11 +38,13 @@ div[class*=col-] {
     text-align: left;
     padding-bottom: 30vw;
     padding-left: 5vw;
+    padding-right: 3vw;
 }
 
 #marsText {
     filter: drop-shadow(2px 2px 10px silver);
     opacity: .8;
+    padding-bottom: 60vh;
 }
 
 /*hello*/
@@ -50,12 +52,11 @@ div[class*=col-] {
     display: inline-block;
     text-align: left;
     padding-top: 40vh;
-    padding-bottom: 60vh;
     padding-left: 3vw;
 }
 
 /* Title */
-#coffeeTitle,
+
 #designsTitle,
 #scopeTitle,
 #wordsTitle {
@@ -64,6 +65,12 @@ div[class*=col-] {
     padding-left: 3vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
+}
+
+#coffeeTitle {
+    display: inline-block;
+    text-align: left;
+    padding-left: 3vw;
 }
 
 #wordsTitle {
@@ -80,8 +87,7 @@ div[class*=col-] {
 #pdvText,
 #theoryText,
 #clinText,
-#tdrText,
-#playText {
+#tdrText {
     display: inline-block;
     text-align: left;
     padding-bottom: 5vh;
@@ -116,19 +122,24 @@ div[class*=col-] {
     padding-right: 5vw;
 }
 
+#cirqueText,
+#playText {
+    display: inline-block;
+    text-align: left;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
 #downText {
     padding-top: 10vh;
 }
 
- #downText, #cirqueText   
-{
-    display: inline-block;
-    text-align: left;
-    padding-left: 3vw;
-}
 #cirqueText {
-padding-bottom: 10vh;
+    padding-top: 70vh;
+    padding-bottom: 5vh;
 }
+
+
 
 
 
@@ -168,6 +179,17 @@ padding-bottom: 10vh;
     color: white;
     filter: drop-shadow(2px 2px 6px white);
 }
+
+
+/* MARsSKY */
+.container-fluid.marsSky {
+    background: url("mars3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40vw 0;
+}
+
 
 /* MARS */
 .container-fluid.mars {
@@ -235,7 +257,7 @@ padding-bottom: 10vh;
     filter: drop-shadow(2px 2px 10px white);
     cursor: pointer;
     transition: 1s ease-in-out;
-    padding-top: 18vw;
+    padding-top: 28vw;
     padding-bottom: 3vw;
 }
 
@@ -280,6 +302,8 @@ padding-bottom: 10vh;
     height: 100%;
 }
 
+
+
 /* ALI */
 .container-fluid.ali {
     background: url("whiteRoom.jpg");
@@ -315,7 +339,6 @@ padding-bottom: 10vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
 }
 
 #halRedgif {
@@ -339,6 +362,11 @@ padding-bottom: 10vh;
     text-align: left;
 }
 
+#typeImg {
+    display: inline-block;
+    text-align: left;
+}
+
 .container-fluid.halReturn {
     background: url("halReturn.jpg");
     background-repeat: no-repeat;
@@ -351,6 +379,7 @@ padding-bottom: 10vh;
     background: url("cirque2009.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom left;
 }
 
 
@@ -403,7 +432,7 @@ padding-bottom: 10vh;
     #coffeeText,
     #designsText,
     #borText,
-    #aliText,     #downText,
+    #aliText,
     #cirqueText {
         font-size: 1.07em;
         font-weight: 100;
@@ -427,7 +456,7 @@ padding-bottom: 10vh;
         font-size: 2.7em;
         font-weight: 400;
         letter-spacing: .3em;
-        padding-top: 20vw;
+        padding-top: 30vw;
     }
 
     #whiterabbit {
@@ -482,10 +511,6 @@ padding-bottom: 10vh;
     }
 
     /* .....SMALL.... */
-
-    .container-fluid.ambassSparko {
-        background-position: center;
-    }
 
     #ambassText,
     #sparkoText {
@@ -585,18 +610,13 @@ padding-bottom: 10vh;
 
     #tdrImg,
     #clinImg,
-    #theoryImg {
+    #theoryImg,
+    #typeImg {
         width: 50vw;
         padding-bottom: 5vh;
     }
-
-    /* .....SMALL.... */
-
-    .container-fluid.cirque {
-        background-position: absolute;
-        left: 0;
-    }
 }
+
 /* ....SMALL */
 /* ....SMALL */
 /* ....SMALL */
@@ -680,14 +700,9 @@ padding-bottom: 10vh;
 
     /* ....BIG..... */
 
-    .container-fluid.ambassSparko {
-        background-position: bottom center;
-        height: 125vh;
-        color: black;
-    }
-
     #ambassText,
     #sparkoText {
+        color: black;
         font-size: 1.2em;
         font-weight: 400;
         letter-spacing: 0.15em;
@@ -709,7 +724,7 @@ padding-bottom: 10vh;
         padding-bottom: 20vh;
     }
 
-    #sparkoImg {
+    img #sparkoImg {
         max-width: 40vw;
     }
 
@@ -790,20 +805,18 @@ padding-bottom: 10vh;
 
     #tdrImg,
     #clinImg,
-    #theoryImg {
-        width: 20vw;
+    #theoryImg,
+    #typeImg {
+        width: 30vw;
         padding-bottom: 20vh;
     }
 
-    .container-fluid.cirque {
-        background-position: center;
-    }
-
-    #downText, #cirqueText {
+    #cirqueText {
         font-size: 1.2em;
         font-weight: 100;
         letter-spacing: 0.15em;
     }
 }
+
 /* BIG */
 /* BIG *
