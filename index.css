@@ -12,6 +12,11 @@ body {
     color: white;
 }
 
+.container-fluid {
+    width: 100vw;
+    padding: 0;
+}
+
 .row,
 .col,
 div[class*=col-] {
@@ -44,6 +49,8 @@ div[class*=col-] {
 #hello {
     display: inline-block;
     text-align: left;
+    padding-top: 40vh;
+    padding-bottom: 60vh;
     padding-left: 3vw;
 }
 
@@ -56,14 +63,17 @@ div[class*=col-] {
     text-align: left;
     padding-left: 3vw;
     padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#wordsTitle {
+    filter: drop-shadow(3px 3px 15px white);
 }
 
 #designsText,
 #borText,
-#pinkyText,
 #ambassText,
 #sparkoText,
-#aliText,
 #scopeText,
 #flowsText,
 #timelineText,
@@ -71,11 +81,30 @@ div[class*=col-] {
 #theoryText,
 #clinText,
 #tdrText,
-#cirqueText {
+#playText {
     display: inline-block;
     text-align: left;
     padding-bottom: 5vh;
     padding-left: 5vw;
+}
+
+#aliText {
+    display: inline-block;
+    text-align: left;
+    padding-left: 35vw;
+    padding-right: 30vw;
+}
+
+#pinkyText {
+    display: inline-block;
+    text-align: left;
+    padding-top: 7vh;
+    padding-bottom: 30vh;
+}
+
+#pinkyImg {
+    max-width: 45vw;
+    padding-top: 20vh;
 }
 
 #pdvText {
@@ -83,14 +112,25 @@ div[class*=col-] {
 }
 
 #ambassText {
-padding-top: 25vh;
-padding-right: 5vw;
+    padding-top: 25vh;
+    padding-right: 5vw;
 }
 
-.container-fluid {
-    width: 100vw;
-    padding: 0;
+#downText {
+    padding-top: 10vh;
 }
+
+ #downText, #cirqueText   
+{
+    display: inline-block;
+    text-align: left;
+    padding-left: 3vw;
+}
+#cirqueText {
+padding-bottom: 10vh;
+}
+
+
 
 .bg {
     background: url("nili.jpg");
@@ -134,8 +174,6 @@ padding-right: 5vw;
     font-weight: 300;
     letter-spacing: .2em;
     filter: drop-shadow(1px 1px 10px white);
-    padding-top: 40vh;
-    padding-bottom: 60vh;
 }
 
 /* halMars */
@@ -148,7 +186,7 @@ padding-right: 5vw;
 
 /* halCommute */
 .container-fluid.halCommute {
-    background: url("halOfficeCommute.png");
+    background: url("halOffice.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -166,7 +204,6 @@ padding-right: 5vw;
     background-size: cover;
     height: 100%;
     background-position: center;
-
 }
 
 #wuImg {
@@ -198,7 +235,8 @@ padding-right: 5vw;
     filter: drop-shadow(2px 2px 10px white);
     cursor: pointer;
     transition: 1s ease-in-out;
-    padding-top: 20vw;
+    padding-top: 18vw;
+    padding-bottom: 3vw;
 }
 
 #whiterabbit:hover {
@@ -230,13 +268,12 @@ padding-right: 5vw;
     background: url("concreteGrey2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
-    height: 100%;
+    background-position: bottom center;
 }
 
 /* ambassSparko */
 .container-fluid.ambassSparko {
-    background: url("greyCement.jpg");
+    background: url("greyCement2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -278,7 +315,12 @@ padding-right: 5vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
+    width: 100vw;
+}
+
+#halRedgif {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }
 
 /* WORDS */
@@ -295,14 +337,6 @@ padding-right: 5vw;
     cursor: pointer;
     display: inline-block;
     text-align: left;
-    width: 60vw;
-    padding-bottom: 20vh;
-}
-
-#tdrImg,
-#clinImg,
-#theoryImg {
-
 }
 
 .container-fluid.halReturn {
@@ -310,7 +344,6 @@ padding-right: 5vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    height: 100%;
     padding: 30vh 0;
 }
 
@@ -318,10 +351,7 @@ padding-right: 5vw;
     background: url("cirque2009.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 100vh;
 }
-
 
 
 /* FOOTER */
@@ -372,7 +402,9 @@ padding-right: 5vw;
 
     #coffeeText,
     #designsText,
-    #borText,#aliText, #cirqueText {
+    #borText,
+    #aliText,     #downText,
+    #cirqueText {
         font-size: 1.07em;
         font-weight: 100;
         letter-spacing: 0.08em;
@@ -399,7 +431,7 @@ padding-right: 5vw;
     }
 
     #whiterabbit {
-        width: 19vw;
+        width: 18vw;
         padding-left: 3vw;
     }
 
@@ -407,8 +439,6 @@ padding-right: 5vw;
 
     .container-fluid.designs {
         background-position: left;
-        height: 900vh;
-        padding-top: 20vh;
     }
 
     #designsTitle {
@@ -444,33 +474,22 @@ padding-right: 5vw;
 
     /* .....SMALL.... */
 
-    .container-fluid.pinky {
-        background-position: bottom center;
-        height: 120vh;
-    }
-
-    #pinkyImg {
-        width: 55vw;
-        padding-top: 25vh;
-    }
-
     #pinkyText {
         font-size: 1.07em;
         font-weight: 300;
         letter-spacing: 0.08em;
         filter: drop-shadow(2px 2px 10px black);
-        padding: 11vh;
     }
 
     /* .....SMALL.... */
 
     .container-fluid.ambassSparko {
         background-position: center;
-        height: 160vh;
-        color: black;
     }
 
-    #ambassText, #sparkoText {
+    #ambassText,
+    #sparkoText {
+        color: black;
         font-size: 1.07em;
         font-weight: 400;
         letter-spacing: 0.08em;
@@ -478,28 +497,26 @@ padding-right: 5vw;
 
     #sparkoText {
         padding-top: 5vh;
-        padding-right: 5vh;
+        padding-right: 3vh;
+        padding-bottom: 20vh;
     }
 
     #sparkoImg {
-        width: 80vw;
-        padding-left: 10vw;
+        max-width: 70vw;
     }
 
     /* .....SMALL.... */
 
     .container-fluid.ali {
         background-position: bottom center;
-        height: 130vh;
-        padding-top: 40vh;
     }
 
     #aliImg {
         width: 40vw;
+        padding-top: 40vh;
     }
 
     #aliText {
-        width: 60vw;
         padding-top: 10vh;
         padding-left: 5vw;
     }
@@ -525,6 +542,7 @@ padding-right: 5vw;
         max-width: 45vw;
         padding-bottom: 20vh;
     }
+
     #flowImg {
         max-width: 80vw;
         padding-bottom: 20vh;
@@ -534,7 +552,8 @@ padding-right: 5vw;
 
     #flowsText,
     #timelineText,
-    #pdvText, #scopeText {
+    #pdvText,
+    #scopeText {
         font-size: 1.07em;
         font-weight: 300;
         letter-spacing: 0.08em;
@@ -545,45 +564,50 @@ padding-right: 5vw;
         color: black;
     }
 
-    .container-fluid.words {
-        height: 290vh;
-    }
-
     #wordsTitle {
         font-size: 3em;
         font-weight: 400;
         letter-spacing: .5em;
-        filter: drop-shadow(10px 10px 10px white);
     }
 
     /* .....SMALL.... */
 
     #tdrText,
     #clinText,
-    #theoryText {
+    #theoryText,
+    #playText {
         font-size: 1.07em;
         font-weight: 100;
         letter-spacing: 0.08em;
-        padding-bottom: 10vh;
+        padding-bottom: 15vh;
         padding-right: 3vw;
+    }
+
+    #tdrImg,
+    #clinImg,
+    #theoryImg {
+        width: 50vw;
+        padding-bottom: 5vh;
     }
 
     /* .....SMALL.... */
 
     .container-fluid.cirque {
-        background-position: left;
-        height: 100vh;
+        background-position: absolute;
+        left: 0;
     }
-
 }
 /* ....SMALL */
 /* ....SMALL */
-/* ....SMALL *//* ....SMALL *//* ....SMALL */
-/* BIG *//* BIG *//* BIG */
+/* ....SMALL */
+/* ....SMALL */
+/* ....SMALL */
+/* BIG */
+/* BIG */
+/* BIG */
 /* BIG */
 /* BIG */
 @media (min-width: 426px) {
-
     #hello {
         font-size: 15vh;
         color: white;
@@ -621,13 +645,6 @@ padding-right: 5vw;
         filter: drop-shadow(2px 2px 10px white);
     }
 
-    .container-fluid.designs {
-        padding-top: 20vh;
-        height: 560vh;
-        text-align: center;
-
-    }
-
     /* ....BIG..... */
 
     #designsTitle {
@@ -649,31 +666,16 @@ padding-right: 5vw;
         display: flex;
         float: right;
         width: 25vw;
-        padding-bottom: 10vw;
         filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
+        padding-bottom: 10vw;
     }
 
-    #borText, #pinkyText, #designsText {
-        font-size: 1.2em;
+    #borText,
+    #pinkyText,
+    #designsText {
+        font-size: 1.1em;
         font-weight: 100;
         letter-spacing: 0.15em;
-        padding-right: 20vw;
-    }
-
-    /* ....BIG..... */
-
-    .container-fluid.pinky {
-        background-position: bottom center;
-        height: 105vh;
-    }
-
-    #pinkyImg {
-        padding: 31vh 0;
-        width: 35vw;
-    }
-
-    #pinkyText {
-        padding: 36vh 0 0 7vw;
     }
 
     /* ....BIG..... */
@@ -684,30 +686,20 @@ padding-right: 5vw;
         color: black;
     }
 
-    #ambassText, #sparkoText {font-size: 1.2em;
-    font-weight: 400;
-    letter-spacing: 0.15em;}
-
-    #sparkoImg {
-        width: 40vw;
-        padding: 30vh 0;
-    }
-
+    #ambassText,
     #sparkoText {
-        padding-top: 30vw;
-        padding-right: 5vw;
+        font-size: 1.2em;
+        font-weight: 400;
+        letter-spacing: 0.15em;
     }
+
 
     /* ....BIG..... */
 
-    .container-fluid.ali {
-        height: 200vh;
-        padding-top: 50vh;
-        padding-bottom: 30vh;
-    }
-
     #aliImg {
         width: 25vw;
+        padding-top: 50vh;
+        padding-bottom: 10vh;
     }
 
     #aliText {
@@ -715,7 +707,10 @@ padding-right: 5vw;
         font-weight: 100;
         letter-spacing: 0.15em;
         padding-bottom: 20vh;
-        width: 25vw;
+    }
+
+    #sparkoImg {
+        max-width: 40vw;
     }
 
     /* ....BIG..... */
@@ -746,14 +741,17 @@ padding-right: 5vw;
 
     /* ....BIG..... */
 
-    #timelineText, #flowsText, #scopeText {
+    #timelineText,
+    #flowsText,
+    #scopeText {
         font-size: 1.2em;
         font-weight: 400;
         letter-spacing: 0.15em;
     }
 
     #timelineImg,
-    #timeline2Img, #pdvImg {
+    #timeline2Img,
+    #pdvImg {
         max-width: 35vw;
         padding-bottom: 20vh;
     }
@@ -768,46 +766,44 @@ padding-right: 5vw;
         padding-right: 10vh;
     }
 
-    .container-fluid.halRedgif {
-        padding-top: 35vh;
-        padding-bottom: 35vh;
-    }
-
     /* ....BIG..... */
-
-    .container-fluid.words {
-        height: 360vh;
-    }
 
     #wordsTitle {
         font-size: 11vw;
         font-weight: 400;
         letter-spacing: .5em;
-        filter: drop-shadow(3px 3px 15px white);
-        padding-bottom: 15vh;
     }
 
     /* ....BIG..... */
-    
+
     #tdrText,
     #clinText,
-    #theoryText {
+    #theoryText,
+    #playText {
         font-size: 1.2em;
         font-weight: 100;
         letter-spacing: 0.15em;
-        padding-right: 10vw;
-        padding-bottom: 10vh;
+        padding-right: 15vw;
         padding-left: 3vh;
+        padding-bottom: 15vh;
     }
 
-    #cirqueText {
+    #tdrImg,
+    #clinImg,
+    #theoryImg {
+        width: 20vw;
+        padding-bottom: 20vh;
+    }
+
+    .container-fluid.cirque {
+        background-position: center;
+    }
+
+    #downText, #cirqueText {
         font-size: 1.2em;
         font-weight: 100;
         letter-spacing: 0.15em;
-        padding-top: 10vh;
-        padding-right: 25vw;
-        padding-bottom: 25vh;
     }
 }
 /* BIG */
-/* BIG */
+/* BIG *
