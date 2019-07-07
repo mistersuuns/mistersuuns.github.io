@@ -342,7 +342,7 @@ div[class*=col-] {
 
 /* halRedgif */
 .container-fluid.halRedgif {
-    background: url("halRedgif.gif");
+    background: url("hal.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -595,6 +595,24 @@ div[class*=col-] {
         color: black;
     }
 
+
+
+/* halRedgif */
+.container-fluid.halRedgif {
+    background: url("halRedgif.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#halRedgif {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+
+
+
     #wordsTitle {
         font-size: 3em;
         font-weight: 400;
@@ -602,6 +620,10 @@ div[class*=col-] {
     }
 
     /* .....SMALL.... */
+
+
+
+
 
     #tdrText,
     #clinText,
