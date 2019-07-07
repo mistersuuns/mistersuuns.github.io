@@ -1,6 +1,7 @@
+/*
 * {
     border: solid black .5px;
-}
+}*/
 
 @font-face {
     font-family: Tron;
@@ -377,7 +378,6 @@ div[class*=col-] {
     background: url("halReturn.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom right;
     padding: 45vh 0;
 }
 
@@ -621,6 +621,10 @@ div[class*=col-] {
         width: 50vw;
         padding-bottom: 5vh;
     }
+
+    .container-fluid.halReturn {
+        background-position: 80% 100%;
+    }
 }
 
 /* ....SMALL */
@@ -814,6 +818,10 @@ div[class*=col-] {
     #typeImg {
         width: 30vw;
         padding-bottom: 20vh;
+    }
+
+    .container-fluid.halReturn {
+        background-position: 90% bottom;
     }
 
     #cirqueText {
