@@ -377,8 +377,8 @@ div[class*=col-] {
     background: url("halReturn.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
-    padding: 30vh 0;
+    background-position: bottom right;
+    padding: 45vh 0;
 }
 
 .container-fluid.cirque {
