@@ -342,15 +342,15 @@ div[class*=col-] {
 
 /* halRedgif */
 .container-fluid.halRedgif {
-    background: url("halRedgif.gif");
+    background: url("hal.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #halRedgif {
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 40vh;
+    padding-bottom: 40vh;
 }
 
 /* WORDS */
