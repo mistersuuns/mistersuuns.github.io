@@ -342,7 +342,7 @@ div[class*=col-] {
 
 /* halRedgif */
 .container-fluid.halRedgif {
-    background: url("hal.gif");
+    background: url("halRedgif.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
