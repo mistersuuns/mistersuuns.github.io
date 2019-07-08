@@ -141,8 +141,8 @@ div[class*=col-] {
 }
 
 #cirqueText {
-    padding-top: 70vh;
-    padding-bottom: 5vh;
+    padding-top: 90vh;
+    padding-bottom: 10vh;
 }
 
 
@@ -671,7 +671,7 @@ div[class*=col-] {
     /* ...BIG... */
 
     .container-fluid.halMars {
-        height: 90vh;
+        height: 50vw;
     }
 
     #coffeeTitle {
@@ -724,6 +724,7 @@ div[class*=col-] {
     #designsText {
         font-size: 1.1em;
         letter-spacing: 0.15em;
+        padding-right: 3vw;
     }
 
     /* ....BIG..... */
