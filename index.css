@@ -715,6 +715,7 @@ body {
     #designsText {
         font-size: 1.1em;
         letter-spacing: 0.15em;
+        padding-left: 5vw;
         padding-right: 3vw;
     }
 
