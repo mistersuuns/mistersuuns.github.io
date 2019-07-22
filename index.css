@@ -182,8 +182,14 @@ body {
 }
 
 
+/* MARS */
+.mars {
+    font-weight: 300;
+    letter-spacing: .2em;
+}
+
 /* MARsSKY */
-.container-fluid.marsSky {
+.marsSky {
     background: url("mars2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -192,14 +198,8 @@ body {
 }
 
 
-/* MARS */
-.container-fluid.mars {
-    font-weight: 300;
-    letter-spacing: .2em;
-}
-
 /* halMars */
-.container-fluid.halMars {
+.halMars {
     background: url("mars2001.gif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,7 +207,7 @@ body {
 }
 
 /* halCommute */
-.container-fluid.halCommute {
+.halCommute {
     background: url("halOffice.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -220,7 +220,7 @@ body {
 }
 
 /* WU */
-.container-fluid.wu {
+.wu {
     background: url("wuRed2.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -239,7 +239,7 @@ body {
 }
 
 /* COFFEE */
-.container-fluid.coffee {
+.coffee {
     background: url("stream.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,7 +267,7 @@ body {
 }
 
 /* DESIGNS */
-.container-fluid.designs {
+.designs {
     background: url("blueCam2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -286,7 +286,7 @@ body {
 }
 
 /* pinky */
-.container-fluid.pinky {
+.pinky {
     background: url("concreteGrey2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,7 +294,7 @@ body {
 }
 
 /* ambassSparko */
-.container-fluid.ambassSparko {
+.ambassSparko {
     background: url("greyCement2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -303,7 +303,7 @@ body {
 }
 
 /* ALI */
-.container-fluid.ali {
+.ali {
     background: url("whiteRoom.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -312,7 +312,7 @@ body {
 }
 
 /* halRED */
-.container-fluid.halRed {
+.halRed {
     background: url("halRed.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -321,7 +321,7 @@ body {
 }
 
 /* SCOPE */
-.container-fluid.scope {
+.scope {
     background: url("grad.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -331,7 +331,7 @@ body {
 }
 
 /* halRedgif */
-.container-fluid.halRedgif {
+.halRedgif {
     background: url("hal.gif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -344,7 +344,7 @@ body {
 }
 
 /* WORDS */
-.container-fluid.words {
+.words {
     background: url("redBlack.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -364,14 +364,14 @@ body {
     text-align: left;
 }
 
-.container-fluid.halReturn {
+.halReturn {
     background: url("halReturn.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 45vh 0;
 }
 
-.container-fluid.cirque {
+.cirque {
     background: url("cirque2009.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -381,7 +381,7 @@ body {
 
 /* FOOTER */
 /* FOOTER */
-.container-fluid.footer {
+.footer {
     background-color: rgb(0, 0, 0);
     background-image: linear-gradient(rgb(8, 2, 8),rgb(49, 33, 33));
     opacity: .8;
