@@ -11,12 +11,16 @@
 body {
     font-family: "Gill Sans";
     color: white;
+    scroll-snap-points-y: repeat(300px);
+    scroll-snap-type: y proximity;
 }
+
 .row, .col {margin: 0;}
 .container-fluid {
     width: 100vw;
     padding: 0;
     text-align: center;
+    scroll-snap-align: start;
 }
 
 /* 1row */
@@ -181,6 +185,16 @@ body {
     padding-right: 2em;    
 }
 
+
+/*
+.mars,.marsSky,.halMars,.halCommute,.wu,.coffee,
+.designs,.pinky,.ambassSparko,.ali,.halRed,
+.scope,.halRedgif,.words,.halReturn,.cirque {
+width: 100vw;
+scroll-snap-align: start;
+position: relative;
+} 
+*/
 
 /* MARS */
 .mars {
