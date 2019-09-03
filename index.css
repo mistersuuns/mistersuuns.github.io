@@ -11,8 +11,8 @@
 body {
     font-family: "Gill Sans";
     color: white;
-    scroll-snap-points-y: repeat(300px);
-    scroll-snap-type: y proximity;
+    /*scroll-snap-points-y: repeat(300px);
+    scroll-snap-type: y mandatory;*/
 }
 
 .row, .col {margin: 0;}
@@ -20,7 +20,7 @@ body {
     width: 100vw;
     padding: 0;
     text-align: center;
-    scroll-snap-align: start;
+    /*scroll-snap-align: start;*/
 }
 
 /* 1row */
