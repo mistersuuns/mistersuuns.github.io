@@ -447,6 +447,7 @@ body {
     #scopeText {
         color: black;
         padding-bottom: 30vh;
+        padding-left: 7vw;
     }
 
     /* LG LG LG LG LG LG LG LG LG LG LG LG*/
@@ -467,6 +468,8 @@ body {
         font-size: 1.2em;
         font-weight: 500;
         letter-spacing: 0.15em;
+        padding-left: 7vw;
+
     }
 
     #timelineImg,
@@ -483,6 +486,8 @@ body {
         font-weight: 100;
         letter-spacing: 0.15em;
         padding-right: 10vh;
+        padding-left: 7vw;
+
     }
 
     #wordsTitle {
