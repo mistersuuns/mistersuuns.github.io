@@ -6,7 +6,7 @@
 body {
     font-family: "Gill Sans";
     color: white;
-    scroll-snap-points-y: repeat(200px);
+    scroll-snap-points-y: repeat(100px);
     scroll-snap-type: y mandatory;
 }
 
@@ -335,10 +335,13 @@ body {
     }
 
     #coffeeText {
-        font-size: 2.25em;
+        color: white;
+        font-size: 2.5em;
         letter-spacing: 0.15em;
         font-weight: 400;
         padding-top: 20vh;
+        filter: drop-shadow(2px 2px 10px black);
+
     }
 
     #followWhite,
