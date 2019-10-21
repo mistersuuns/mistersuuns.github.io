@@ -8,6 +8,7 @@ body {
     color: white;
     scroll-snap-points-y: repeat(100px);
     scroll-snap-type: y mandatory;
+    overscroll-behavior: auto contain;
 }
 
 .samurai,
