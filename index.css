@@ -176,7 +176,7 @@ body {
     background-size: cover;
 }
 .scope, .ambassSparko, .pinky, 
-.designs, .cirque, .noPlay, .timeline, .pdv {
+.designs, .cirque, .noPlay, .pdv {
     height: 100vh;
 }
 .timeline, .pdv {
@@ -517,7 +517,10 @@ body {
     #timelineImg,
     #timeline2Img,
     #pdvImg {
-        max-height: 85vh;
+        max-height: 80vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+
     }
     #tdrImg,
     #theoryImg,#clinImg {
@@ -581,10 +584,16 @@ body {
         padding-left: 5vw;
         padding-right: 4vw;
     }
+    #cirqueText {
+        padding-top: 75vh;
+    }
     #scopeText, #pinkyText, #ambassText, #designsText,
     #sparkoText, #flowsText, #timelineText, #pdvText,
     #theoryText, #clinText, #tdrText, #playText, #cirqueText {
     font-size: 1.07em;
+    }
+    #playText {
+        padding-top: 5vh;
     }
     #theoryText, #clinText, #tdrText {
         font-size: .8em;
@@ -668,7 +677,9 @@ body {
     #timelineImg,
     #timeline2Img,
     #pdvImg {
-        max-height: 85vh;
+        max-height: 75vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
     #flowImg {
         max-width: 80vw;
