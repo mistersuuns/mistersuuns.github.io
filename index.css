@@ -170,12 +170,17 @@ body {
     background: url("whiteRoom.jpg");
     background-position: center;
 }*/
-.scope, .designs, .flows, .ambassSparko, .pinky, .ali, .BoR,.cirque, .words {
+.scope, .designs, .flows, .ambassSparko, .pinky, 
+.ali, .BoR,.cirque, .words {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.scope, .ambassSparko, .pinky, .designs, .cirque, .noPlay, .pdv {
+.scope, .ambassSparko, .pinky, 
+.designs, .cirque, .noPlay, .timeline, .pdv {
     height: 100vh;
+}
+.timeline, .pdv {
+    background: rgb(80, 80, 80);
 }
 .pdv {
     padding-top: 10vh;
