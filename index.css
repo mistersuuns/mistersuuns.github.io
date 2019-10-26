@@ -2,149 +2,27 @@
 * {
     border: solid black .5px;
 }*/
-
 body {
     font-family: "Gill Sans";
     color: white;
     scroll-snap-points-y: repeat(100px);
     scroll-snap-type: y mandatory;
-    overscroll-behavior: auto contain;
 }
-
-.samurai,
-.upsideDown,
-.coffee,
-.designs,
-.pinky,
-.ambassSparko,
-.ali,
-.scope,
-.words,
-.cirque {
-    scroll-snap-align: start;
-    position: relative;
-}
-
+.container-fluid,
 .row,
 .col,
 .span,
 #row,
-#col,
-#borText {
+#col {
     margin: 0;
     padding: 0;
 }
-
 .container-fluid {
     width: 100vw;
-    padding: 0;
     text-align: center;
     scroll-snap-align: start;
+    position: relative;
 }
-
-#home {
-    background: url("harakiri.jpg");
-}
-
-#homeV {
-    height: 100vh;
-    background-position: center;
-}
-
-#upsideDown {
-    background:
-        linear-gradient(rgba(255, 255, 255, .001),
-            rgba(255, 255, 255, 1.0)),
-        url("upsideDown.jpg");
-}
-
-#home,
-#upsideDown,
-#homeV,
-#upsideV {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    text-align: left;
-}
-
-#coffeeText,
-#followWhite,
-#caffeine {
-    color: black;
-}
-
-/* Title */
-#designsTitle,
-#scopeTitle,
-#wordsTitle {
-    display: inline-block;
-    text-align: left;
-    padding-left: 7vw;
-    padding-top: 7.5vh;
-    padding-bottom: 7.5vh;
-}
-
-#designsText,
-#borText,
-#ambassText,
-#sparkoText,
-#scopeText,
-#flowsText,
-#timelineText,
-#pdvText,
-#theoryText,
-#clinText,
-#tdrText {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    text-align: left;
-}
-
-#designsText,
-#borText {
-    color: white;
-}
-
-#aliText {
-    display: inline-block;
-    text-align: left;
-}
-
-#pinkyText {
-    color: black;
-    display: inline-block;
-    text-align: left;
-    font-weight: 300;
-    padding-bottom: 30vh;
-}
-
-#pinkyImg {
-    max-width: 30vw;
-    padding-top: 20vh;
-}
-
-#pdvText {
-    color: white;
-}
-
-#playText {
-    display: inline-block;
-    text-align: left;
-    padding-left: 5vw;
-    padding-right: 3vw;
-}
-
-#cirqueText {
-    display: inline-block;
-    text-align: left;
-    padding-left: 5vw;
-    padding-right: 3vw;
-    padding-bottom: 10vh;
-}
-
 .navbar {
     background-color: black;
     opacity: .5;
@@ -152,20 +30,16 @@ body {
     z-index: 1;
     padding-left: 5vw;
 }
-
 .navbar a {
     float: left;
-    color: white;
     opacity: 1;
     font-size: 1.75em;
     font-weight: 100;
     letter-spacing: .17em;
 }
-
 .navbar a:hover {
     transition: .2s ease-in-out;
 }
-
 #nav {
     color: white;
     filter: drop-shadow(2px 2px 6px white);
@@ -173,124 +47,177 @@ body {
     padding-left: .25em;
 }
 
-
-/* SAMURAI */
 .samurai {
-    font-weight: 300;
-    letter-spacing: .2em;
+    background: url("harakiri.jpg");
+}
+.upsideV {
+    height: 100vh;
+    background-position: center;
+}
+.upsideDown {
+    background:
+        linear-gradient(rgba(255, 255, 255, .001),
+            rgba(255, 255, 255, 1.0)),
+        url("upsideDown.jpg");
+}
+.samurai,
+.upsideDown,
+.samuraiV,
+.upsideM, .ambassSparko, .flows, .words {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: left;
 }
 
-#WRicon {
+#designsTitle {
+    color: white;
+}
+#designsTitle,
+#scopeTitle,
+#wordsTitle {
+    display: inline-block;
+    text-align: left;
+    padding-top: 7.5vh;
+    padding-bottom: 3.5vh;
+    padding-left: 5vw;
+}
+
+#cirqueText,
+#designsText,
+#borText, #aliText
+#ambassText,
+#sparkoText,
+#scopeText,
+#pinkyText,
+#flowsText,
+#timelineText,
+#pdvText,
+#theoryText,
+#clinText,
+#tdrText, #playText {
+    margin: 0;
     padding: 0;
     display: inline-block;
     text-align: left;
 }
-
-#whiterabbit {
-    filter: drop-shadow(2px 2px 10px white);
-    max-width: 10vw;
-    cursor: pointer;
-    transition: 1s ease-in-out;
+#scopeText,
+#coffeeText,
+#coffeeTextM,
+#followWhite,
+#caffeine, #pinkyText, #ambassText, #sparkoText, #timelineText,
+#flowsText, #pdvText {
+    color: black;
+}
+#designsText,
+#borText { 
+    color: white;
+}
+#pinkyText {
+    padding-bottom: 30vh;
+}
+#playText, #cirqueText, #designsText, #pinkyText {
+    padding-left: 5vw;
+    padding-right: 4vw;
+}
+#cirqueText {
+    padding-bottom: 10vh;
+}
+#timelineRow {
+    padding-top: 10vh;
 }
 
+#pinkyImg {
+    max-width: 30vw;
+    padding-top: 20vh;
+}
+#pdvImg {
+    padding-bottom: 20vh;
+}
+
+#whiterabbit {
+    filter: drop-shadow(0px 0px 10px white);
+    opacity: .9;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    width: 4vw;
+}
 #whiterabbit:hover {
     transform: scale(1.08);
     transition: 1s ease-in-out;
 }
 
-#upsideDown {
-    background:
-        linear-gradient(rgba(255, 255, 255, .001),
-            rgba(255, 255, 255, 1.0)),
-        url("upsideDown.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    height: 100vh;
-    color: white;
-    filter: drop-shadow(2px 2px 6px white);
-}
-
-/* DESIGNS */
+/* backgrounds */
 .designs {
-    color: black;
     background:
-        /* WHITE HOUSE BACKGROUND! */
         url("vonAppen2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
+    background-position: center top;
 }
-
-/* pinky */
+/* .BoR {
+    background:url("vonAppen2.jpg");
+    background-position: center top;
+}*/
 .pinky {
     background: url("vonApp2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: top left;
-    height: 100vh;
 }
-
-/* ambassSparko */
 .ambassSparko {
     background: url("greyCement2.jpg");
+    background-position: left;
+}
+/* .ali {
+    background: url("whiteRoom.jpg");
+    background-position: center;
+}*/
+.scope, .designs, .flows, .ambassSparko, .pinky, .ali, .BoR,.cirque, .words {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+}
+.scope, .ambassSparko, .pinky, .designs, .cirque, .noPlay, .pdv {
     height: 100vh;
 }
-
-/* ALI */
-.ali {
-    background: url("whiteRoom.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
+.pdv {
+    padding-top: 10vh;
 }
-
-/* SCOPE */
 .scope {
     background: url("grad.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: left;
-    height: 100%;
-    color: black;
 }
-
-
-/* WORDS */
+.flows {
+    background: linear-gradient(rgb(136, 136, 136), rgb(73, 73, 73));
+    padding-top: 10vh;
+}
 .words {
     background-image: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0));
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
 }
 
 #tdrImg,
 #clinImg,
+#theoryImg, #typeImg {
+    display: inline-block;
+    text-align: left;
+}
+#typeImg {
+    width: 35vw;
+}
+#tdrImg,
+#clinImg,
 #theoryImg {
     cursor: pointer;
-    display: inline-block;
-    text-align: left;
+    padding-left: 5vw;
 }
 
-#typeImg {
-    display: inline-block;
-    text-align: left;
+.noPlay {
+    padding-top: 30vh;
+    background-color: black;
 }
-
 .cirque {
     background: url("cirque2009.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: bottom left;
-    height: 100vh;
 }
 
-
-/* FOOTER */
 /* FOOTER */
 .footer {
     background-color: rgb(0, 0, 0);
@@ -300,239 +227,134 @@ body {
     bottom: 0;
     justify-content: center;
 }
-
 .icons {
     font-size: 2em;
     padding: .5em;
     display: flex;
     justify-content: center;
 }
-
 .fab.fa-linkedin:hover,
-.fab.fa-instagram:hover,
-.fab.fa-facebook-f:hover,
 .gmail:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
 
 
-
-
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
-/* LG LG LG LG LG LG LG LG LG LG LG LG*/
+/* >=1050px*/
 @media (min-width: 1050px) {
-
-    #homeV,
-    #upsideV {
+    .samuraiV,
+    .upsideM,
+    .upsideS {
         display: none;
     }
-
-    #coffee {
-        padding-left: 5vw;
-        padding-right: 0;
+    #coffeeText, #followWhite {
+        font-size: 2.25em;
+        letter-spacing: 0.15em;
+        font-weight: 400;
     }
-
     #coffeeText {
-        color: white;
-        font-size: 2.5em;
-        letter-spacing: 0.15em;
-        font-weight: 400;
-        padding-top: 20vh;
+        padding-top: 45vh;
+        padding-left: 5vw;
+    }
+    #followWhite {
+        text-align: right;
         filter: drop-shadow(2px 2px 10px black);
-
+        padding-top: 10vh;
     }
-
-    #followWhite,
-    #caffeine {
-        font-size: 1.6em;
-        letter-spacing: 0.15em;
+    #designsTitle, #scopeTitle, #wordsTitle {
+        font-size: 9vw;
         font-weight: 400;
-    }
-
-    /* LG LG LG LG LG LG LG LG LG LG LG LG*/
-    #whiterabbit {
-        max-width: 12vw;
-        filter: drop-shadow(2px 2px 10px white);
-    }
-
-    #designsTitle {
-        color: white;
-        font-size: 10vw;
         letter-spacing: .5em;
-        padding-bottom: 7.5vh;
     }
-
-    #designsText {
-        padding-bottom: 10vh;
-    }
-
-    #lincolnImg,
-    #franklinImg,
-    #madisonImg,
-    #paineImg {
-        display: flex;
-        float: right;
-        width: 25vw;
-        filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
-        padding-bottom: 10vw;
-    }
-
     /* LG LG LG LG LG LG LG LG LG LG LG LG*/
-
-    #borText,
-    #designsText {
+    #scopeText,
+    #pinkyText,
+    #ambassText,
+    #designsText,
+    #sparkoText,
+    #flowsText,
+    #timelineText,
+    #pdvText,
+    #aliText, #borText,
+    #theoryText,
+    #clinText,
+    #tdrText,
+    #playText,
+    #cirqueText {
         font-size: 1.1em;
         font-weight: 200;
         letter-spacing: 0.15em;
-        padding-left: 5vw;
-        padding-right: 3vw;
     }
 
+/* LG LG LG LG LG LG LG LG LG LG LG LG*//* >=1050px*/
     #pinkyText {
-        color: black;
-        font-size: 1.1em;
-        font-weight: 400;
-        letter-spacing: 0.15em;
         padding-top: 7vh;
-        padding-left: 5vw;
-        padding-right: 3vw;
     }
-
-    #ambassText,
-    #sparkoText {
-        color: black;
-        font-size: 1.2em;
-        font-weight: 400;
-        letter-spacing: 0.15em;
-    }
-
     #ambassText {
         padding-top: 20vh;
         padding-right: 5vw;
     }
-
     #sparkoText {
         padding-top: 5vh;
-        padding-bottom: 10vh
     }
+    #flowsText {
+        max-width: 25vw;
+    }
+    #timelineText,
+    #flowsText,
+    #scopeText, #pdvText, #tdrText,
+    #clinText,
+    #theoryText,
+    #playText {
+        padding-left: 5vw;
+    }
+    #tdrText,
+    #clinText,
+    #theoryText,#scopeText {
+        padding-right:3vw;
+    }
+    #tdrText, #clinText, #theoryText {font-size: .9em; }
 
-    /* LG LG LG LG LG LG LG LG LG LG LG LG*/
-
+    #cirqueText {
+        padding-top: 70vh;
+    }
+    /* LG LG LG LG LG LG LG LG LG LG LG LG*//* >=1050px*/
+    /* #lincolnImg, #franklinImg, #madisonImg, #paineImg {
+        width: 20vw;
+        filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
+        padding-bottom: 2vw;
+        padding-top: 5vw;
+    }
     #aliImg {
         width: 25vw;
         padding-top: 20vh;
         padding-bottom: 10vh;
-    }
-
-    #aliText {
-        font-size: 1.2em;
-        font-weight: 100;
-        letter-spacing: 0.15em;
-        padding-bottom: 20vh;
-    }
-
+    }*/
     #sparkoImg {
         padding-top: 5vh;
         max-width: 40vw;
     }
-
-    /* LG LG LG LG LG LG LG LG LG LG LG LG*/
-
-    #scopeTitle {
-        font-size: 12vw;
-        font-weight: 400;
-        letter-spacing: .5em;
-        filter: drop-shadow(3px 3px 15px black);
-    }
-
-    #scopeText {
-        color: black;
-        padding-bottom: 30vh;
-        padding-left: 7vw;
-    }
-
-    /* LG LG LG LG LG LG LG LG LG LG LG LG*/
-
     #flowImg {
         max-width: 50vw;
-        padding-bottom: 25vh;
     }
-
-    #flowsText {
-        color: black;
+    #timelineImg,
+    #timeline2Img {
+        max-height: 85vh;
+    }
+    #pdvImg {
         max-width: 25vw;
     }
-
-    #timelineText,
-    #flowsText,
-    #scopeText {
-        font-size: 1.2em;
-        font-weight: 500;
-        letter-spacing: 0.15em;
-        padding-left: 7vw;
-
-    }
-
-    #timelineImg,
-    #timeline2Img,
-    #pdvImg {
-        max-width: 35vw;
-        padding-bottom: 20vh;
-    }
-
-    /* LG LG LG LG LG LG LG LG LG LG LG LG*/
-
-    #pdvText {
-        font-size: 1.2em;
-        font-weight: 100;
-        letter-spacing: 0.15em;
-        padding-right: 10vh;
-        padding-left: 7vw;
-
-    }
-
-    #wordsTitle {
-        font-size: 11vw;
-        font-weight: 400;
-        letter-spacing: .5em;
-    }
-
-    /* LG LG LG LG LG LG LG LG LG LG LG LG*/
-
-    #tdrText,
-    #clinText,
-    #theoryText,
-    #playText {
-        font-size: 1.2em;
-        font-weight: 100;
-        letter-spacing: 0.15em;
-        padding-right: 15vw;
-        padding-left: 5vh;
-        padding-bottom: 15vh;
-    }
-
     #tdrImg,
-    #clinImg,
-    #theoryImg,
-    #typeImg {
-        width: 30vw;
-        padding-bottom: 20vh;
-    }
-
-    #cirqueText {
-        font-size: 1.2em;
-        font-weight: 100;
-        letter-spacing: 0.15em;
-        padding-top: 70vh;
+    #theoryImg,#clinImg {
+        width: 20vw;
+        padding-bottom: 2.5vh;
     }
 }
-
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
-
 
 
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
@@ -544,225 +366,162 @@ body {
         font-weight: 100;
         filter: drop-shadow(2px 2px 6px white);
     }
-    #home,
-    #upsideDown {
+    .samurai,
+    .upsideDown,
+    .upsideS {
         display: none;
     }
-
-    #homeV {
+    .samuraiV {
         background-image: url("7samurai.jpg");
         height: 100vh;
     }
-
-    #upsideV {
-        background: linear-gradient(rgba(255, 255, 255, .2),
-                rgba(255, 255, 255, 1.0)),
+    .upsideM {
+        background: linear-gradient(rgba(255, 255, 255, .001),
+                rgba(255, 255, 255, .7)),
             url("7samuraiU.jpg");
         background-repeat: none;
         background-size: cover;
         background-position: center;
         height: 100vh;
     }
-
-    #coffee {
-        padding-left: 5vw;
-        padding-right: 0;
-    }
-
-    #coffeeText {
+    /* MD MD MD MD MD MD MD MD MD MD MD MD */
+    #coffeeTextM {
         font-size: 2.25em;
         letter-spacing: 0.15em;
         font-weight: 400;
-        padding-top: 30vh;
+        padding-top: 45vh;
     }
-
-    #followWhite,
-    #caffeine {
+    #scopeText,
+    #pinkyText,
+    #ambassText,
+    #designsText,
+    #sparkoText,
+    #flowsText,
+    #timelineText,
+    #pdvText,
+    #theoryText,
+    #clinText,
+    #tdrText,
+    #playText,
+    #cirqueText {
+        font-size: 1.1em;
+        font-weight: 200;
+        letter-spacing: 0.15em;
+    }
+    #followWhite {
+        padding-top: 15vh;
         font-size: 1.6em;
         letter-spacing: 0.15em;
         font-weight: 400;
         text-align: left;
     }
-
     /* MD MD MD MD MD MD MD MD MD MD MD MD */
-    #whiterabbit {
-        max-width: 12vw;
-        filter: drop-shadow(2px 2px 10px white);
-    }
-
-    #designsTitle {
-        color: white;
+    #designsTitle, #scopeTitle, #wordsTitle {
         font-size: 10vw;
         letter-spacing: .5em;
-        padding-bottom: 7.5vh;
     }
-
-    #designsText {
-        padding-bottom: 10vh;
-    }
-
-    #lincolnImg,
+    /* #lincolnImg,
     #franklinImg,
     #madisonImg,
     #paineImg {
         display: flex;
         float: right;
-        width: 25vw;
+        width: 20vw;
         filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
         padding-bottom: 10vw;
-    }
-
+    } */
     /* MD MD MD MD MD MD MD MD MD MD MD MD */
-
-    #borText,
-    #designsText {
-        color: white;
-        font-size: 1.1em;
+    #designsText,
+    #pinkyText, #pdvText {
+        font-size: 1.2em;
         font-weight: 200;
         letter-spacing: 0.15em;
         padding-left: 5vw;
-        padding-right: 3vw;
+        padding-right: 4vw;
     }
-
-    #pinkyText {
-        color: black;
-        font-size: 1.1em;
-        font-weight: 400;
-        letter-spacing: 0.15em;
-        padding-top: 5vh;
-        padding-left: 5vw;
-        padding-right: 3vw;
+    #designsText {
+        color: white;
+        padding-bottom: 10vh;
     }
-
-    #ambassText,
+    #pinkyText,
     #sparkoText {
         color: black;
-        font-size: 1.2em;
-        font-weight: 400;
-        letter-spacing: 0.15em;
+        padding-top: 5vh;
     }
-
     #ambassText {
-        padding-top: 10vh;
         padding-right: 5vw;
+        padding-top: 20vh;
     }
-
     #sparkoText {
         padding-top: 5vh;
         padding-bottom: 10vh
     }
-
-    /* MD MD MD MD MD MD MD MD MD MD MD MD */
-
-    #aliImg {
-        width: 25vw;
-        padding-top: 20vh;
-        padding-bottom: 10vh;
-    }
-
-    #aliText {
-        font-size: 1.2em;
-        font-weight: 100;
-        letter-spacing: 0.15em;
-        padding-bottom: 20vh;
-    }
-
-    #sparkoImg {
-        padding-top: 5vh;
-        max-width: 40vw;
-    }
-
-    /* MD MD MD MD MD MD MD MD MD MD MD MD */
-
-    #scopeTitle {
-        font-size: 12vw;
-        font-weight: 400;
-        letter-spacing: .5em;
-        filter: drop-shadow(3px 3px 15px black);
-    }
-
+        /* MD MD MD MD MD MD MD MD MD MD MD MD */
     #scopeText {
         color: black;
         padding-bottom: 30vh;
+        padding-right: 4vw;
     }
-
-    /* MD MD MD MD MD MD MD MD MD MD MD MD */
-
-    #flowImg {
-        max-width: 50vw;
-        padding-bottom: 25vh;
-    }
-
     #flowsText {
         color: black;
         max-width: 25vw;
     }
-
     #timelineText,
     #flowsText,
     #scopeText {
         font-size: 1.2em;
-        font-weight: 500;
+        font-weight: 200;
         letter-spacing: 0.15em;
-        padding-left: 7vw;
+        padding-left: 5vw;
     }
-
+        /* MD MD MD MD MD MD MD MD MD MD MD MD */
+    #playText, #cirqueText {
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.15em;
+    }
+    #tdrText, #clinText, #theoryText {
+        font-size: 0.8em;
+        letter-spacing: .17em;
+        font-weight: 100;
+    }
+    #tdrText, #clinText, #theoryText, #playText {
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+    #cirqueText {
+        padding-top: 75vh;
+    }
+        /* MD MD MD MD MD MD MD MD MD MD MD MD */
+    /*     #aliText {
+        padding-bottom: 20vh;
+    }
+    #aliImg {
+        width: 25vw;
+        padding-top: 20vh;
+        padding-bottom: 10vh;
+    }     */
+    #sparkoImg {
+        padding-top: 5vh;
+        max-width: 40vw;
+    }
+    #flowImg {
+        max-width: 50vw;
+        padding-bottom: 25vh;
+    }
     #timelineImg,
     #timeline2Img,
     #pdvImg {
-        max-width: 35vw;
-        padding-bottom: 20vh;
+        max-height: 85vh;
     }
-
-    /* MD MD MD MD MD MD MD MD MD MD MD MD */
-
-    #pdvText {
-        font-size: 1.2em;
-        font-weight: 100;
-        letter-spacing: 0.15em;
-        padding-right: 5vw;
-        padding-left:7vw;
-    }
-
-    #wordsTitle {
-        font-size: 11vw;
-        font-weight: 400;
-        letter-spacing: .5em;
-    }
-
-    /* MD MD MD MD MD MD MD MD MD MD MD MD */
-
-    #tdrText,
-    #clinText,
-    #theoryText,
-    #playText {
-        font-size: 1.2em;
-        font-weight: 100;
-        letter-spacing: 0.15em;
-        padding-right: 7vw;
-        padding-left: 7vw;
-        padding-bottom: 15vh;
-    }
-
     #tdrImg,
-    #clinImg,
-    #theoryImg,
-    #typeImg {
-        width: 30vw;
-        padding-bottom: 20vh;
-    }
-
-    #cirqueText {
-        font-size: 1.2em;
-        font-weight: 100;
-        letter-spacing: 0.15em;
-        padding-top: 75vh;
+    #theoryImg,#clinImg {
+        width: 20vw;
+        padding-bottom: 2.5vh;
     }
 }
-
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
-
 
 
 /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
@@ -774,86 +533,99 @@ body {
         font-weight: 100;
         filter: drop-shadow(2px 2px 6px white);
     }
-
-    #homeV {
+    .samuraiV {
         background: url("loneSam.jpg");
         background-position: center;
     }
-
-    #home,
-    #upsideDown {
+    .samurai,
+    .upsideDown,
+    .upsideM {
         display: none;
     }
-
-    #homeV,
-    #upsideV {
+    .samuraiV,
+    .upsideS {
         background-repeat: none;
         background-size: cover;
         background-position: center;
         height: 100vh;
     }
-
-    #upsideV {
+    /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
+    .upsideS {
         background-image:
             linear-gradient(rgba(255, 255, 255, .35),
                 rgba(255, 255, 255, 1.0)),
             url("loneSamU.jpg");
     }
-
-    #coffeeText {
-        color: black;
-        font-size: 2.25em;
-        letter-spacing: 0.15em;
-        font-weight: 400;
-        padding-top: 10vh;
-    }
-
-    #followWhite,
-    #caffeine {
-        color: black;
-        font-size: 1.6em;
-        letter-spacing: 0.15em;
-        font-weight: 400;
-        text-align: left;
-    }
-
     #coffee {
-        padding-left: 7.5vw;
-        padding-right: 0;
+        padding-top: 15vh;
     }
-
+    #followWhiteS {
+        color: black;
+        filter: drop-shadow(2px 2px 10px black);
+        font-size: 3em;
+        letter-spacing: 0.15em;
+        text-align: center;
+        padding-left: 70vw;
+    }
     /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-
-    #designsText,
-    #borText,
-    #aliText,
-    #ambassText,
-    #cirqueText {
-        font-size: 1.07em;
+    #scopeText, #pinkyText, #ambassText, #designsText,
+    #sparkoText, #flowsText, #timelineText, #pdvText,
+    #theoryText, #clinText, #tdrText, #playText, #cirqueText {
         font-weight: 100;
         letter-spacing: 0.08em;
-        padding-left: 7vw;
-        padding-top: 75vh;
+        padding-left: 5vw;
+        padding-right: 4vw;
     }
-
-    #whiterabbit {
-        max-width: 18vw;
+    #scopeText, #pinkyText, #ambassText, #designsText,
+    #sparkoText, #flowsText, #timelineText, #pdvText,
+    #theoryText, #clinText, #tdrText, #playText, #cirqueText {
+    font-size: 1.07em;
     }
-
-    #designsTitle {
-        color: white;
+    #theoryText, #clinText, #tdrText {
+        font-size: .8em;
+        padding-bottom: 2vh;
+    }
+    #designsTitle,
+    #scopeTitle,
+    #wordsTitle {
         font-size: 3em;
         letter-spacing: .5em;
+        padding-bottom: 1vh;
     }
-
+    /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
     #designsText {
         padding-top: 5vh;
-        padding-right: 5vw;
         padding-bottom: 15vh;
     }
-
-    /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-
+    #pinkyText {
+        filter: drop-shadow(2px 2px 10px black);
+        padding-top: 4vh;
+    }
+    #ambassText,
+    #sparkoText {
+        color: black;
+    }
+    #ambassText {
+        padding-top: 10vh;
+    }
+    #sparkoText {
+        padding-top: 3vh;
+    }
+    #scopeText {
+        color: black;
+        padding-bottom: 20vh;
+    }
+    #flowsText,
+    #timelineText,
+    #pdvText,
+    #scopeText {
+        padding-bottom: 3vh;
+    }
+    #flowsText,
+    #timelineText {
+        color: black;
+    }
+    /*
     #lincolnImg,
     #franklinImg,
     #madisonImg,
@@ -861,137 +633,48 @@ body {
         width: 70vw;
         filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
     }
-
     #borText {
         padding-top: 5vh;
         padding-right: 5vw;
         padding-bottom: 20vh;
         filter: drop-shadow(2px 2px 10px rgb(17, 17, 56));
     }
-
-    /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-
-    #pinkyText {
-        font-size: 1.07em;
-        font-weight: 400;
-        letter-spacing: 0.08em;
-        filter: drop-shadow(2px 2px 10px black);
-        padding-top: 4vh;
-    }
-
-    #ambassText,
-    #sparkoText {
-        color: black;
-        font-size: 1.07em;
-        font-weight: 400;
-        letter-spacing: 0.08em;
-    }
-    #ambassText {
-        padding-top: 10vh;
-        padding-right: 5vw;
-    }
-    #sparkoText {
-        padding-left: 7vw;
-        padding-top: 3vh;
-        padding-right: 3vh;
-    }
-
-    /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-
-    #sparkoImg {
-        padding-top: 5vh;
-        max-width: 70vw;
-    }
-
-    .container-fluid.ali {
-        background-position: bottom center;
-    }
-
-    #aliImg {
-        width: 40vw;
-        padding-top: 20vh;
-    }
-
-    #aliText {
+        #aliText {
         padding-top: 10vh;
         padding-left: 5vw;
         padding-bottom: 30vw;
     }
-
+*/
     /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-
-    #scopeTitle {
-        font-size: 3em;
-        font-weight: 600;
-        letter-spacing: .5em;
-        filter: drop-shadow(10px 10px 10px black);
+    #sparkoImg {
+        max-width: 70vw;
+        padding-top: 5vh;
+        padding-left: 25vw;
     }
-
-    #scopeText {
-        width: 80vw;
-        color: black;
-        padding-bottom: 20vh;
+    /*
+    .container-fluid.ali {
+        background-position: bottom center;
     }
-
+    #aliImg {
+        width: 40vw;
+        padding-top: 20vh;
+    }
+    */
     #timelineImg,
     #timeline2Img,
     #pdvImg {
-        max-width: 45vw;
-        padding-bottom: 20vh;
+        max-height: 85vh;
     }
-
     #flowImg {
         max-width: 80vw;
         padding-bottom: 20vh;
     }
-
-    /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-
-    #flowsText,
-    #timelineText,
-    #pdvText,
-    #scopeText {
-        font-size: 1.07em;
-        font-weight: 300;
-        letter-spacing: 0.08em;
-        padding-left: 7vw;
-        padding-bottom: 3vh;
-        padding-right: 5vw;
-    }
-
-    #flowsText,
-    #timelineText {
-        color: black;
-    }
-
-    #wordsTitle {
-        font-size: 3em;
-        font-weight: 400;
-        letter-spacing: .5em;
-    }
-
-    /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-
-    #tdrText,
-    #clinText,
-    #theoryText,
-    #playText {
-        font-size: 1.07em;
-        font-weight: 100;
-        letter-spacing: 0.08em;
-        padding-bottom: 15vh;
-        padding-right: 5vw;
-        padding-left: 7vw;
-    }
-
     #tdrImg,
-    #clinImg,
-    #theoryImg,
-    #typeImg {
-        width: 50vw;
-        padding-bottom: 5vh;
+    #theoryImg,#clinImg {
+        width: 22vw;
+        padding-bottom: 1vh;
+        padding-left: 10vw;
     }
 }
-
 /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
 /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
