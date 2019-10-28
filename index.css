@@ -81,6 +81,20 @@ body {
     background-position: center;
     text-align: left;
 }
+
+.img-hover-zoom {
+    height: 100vh; /* Modify this according to your need */
+    overflow: hidden; /* Removing this will break the effects */
+  }
+  .img-hover-zoom--quick-zoom flowImg {
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+  }
+  /* The Transformation */
+  .img-hover-zoom--quick-zoom:hover img {
+    transform: scale(2);
+  }
+
 #designsTitle,
 #scopeTitle,
 #wordsTitle {
@@ -128,9 +142,6 @@ body {
 #pinkyImg {
     max-width: 30vw;
     padding-top: 20vh;
-}
-#pdvImg {
-    padding-bottom: 20vh;
 }
 
 #whiterabbit {
@@ -341,7 +352,7 @@ body {
         max-height: 85vh;
     }
     #pdvImg {
-        max-width: 25vw;
+        max-width: 20vw;
     }
     #tdrImg,
     #theoryImg,#clinImg {
