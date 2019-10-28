@@ -1,7 +1,7 @@
 
-* {
+/* {
     border: solid black .5px;
-}
+}*/
 
 body {
     font-family: "Gill Sans";
@@ -214,6 +214,8 @@ body {
 .cirque {
     background: url("cirque2009.jpg");
     background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* FOOTER */
@@ -332,7 +334,7 @@ body {
         max-width: 40vw;
     }
     #flowImg {
-        max-width: 50vw;
+        max-width: 45vw;
     }
     #timelineImg,
     #timeline2Img {
