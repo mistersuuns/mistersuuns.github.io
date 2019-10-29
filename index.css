@@ -82,18 +82,15 @@ body {
     text-align: left;
 }
 
-.img-hover-zoom {
-    height: 100vh; /* Modify this according to your need */
-    overflow: hidden; /* Removing this will break the effects */
+input[type=checkbox] {
+    display: none;
   }
-  .img-hover-zoom--quick-zoom flowImg {
-    transform-origin: 0 0;
-    transition: transform .25s, visibility .25s ease-in;
-  }
-  /* The Transformation */
-  .img-hover-zoom--quick-zoom:hover img {
-    transform: scale(2);
-  }
+.flowImg {
+        margin: 100px;
+        transition: transform 0.25s ease;
+        cursor: zoom-in;
+      }
+
 
 #designsTitle,
 #scopeTitle,
@@ -145,11 +142,11 @@ body {
 }
 
 #whiterabbit {
-    filter: drop-shadow(0px 0px 10px white);
+    filter: drop-shadow(0px 0px 30px black);
     opacity: .9;
     cursor: pointer;
     transition: 1s ease-in-out;
-    width: 4vw;
+    width: 6vw;
 }
 #whiterabbit:hover {
     transform: scale(1.08);
@@ -345,7 +342,7 @@ body {
         max-width: 40vw;
     }
     #flowImg {
-        max-width: 45vw;
+        max-width: 60vw;
     }
     #timelineImg,
     #timeline2Img {
@@ -437,7 +434,6 @@ body {
     }
     #designsText {
         color: white;
-        padding-bottom: 10vh;
     }
     #pinkyText,
     #sparkoText {
@@ -501,8 +497,8 @@ body {
         max-width: 40vw;
     }
     #flowImg {
-        max-width: 50vw;
-        padding-bottom: 25vh;
+        max-width: 60vw;
+        padding-bottom: 10vh;
     }
     #timelineImg,
     #timeline2Img,
@@ -562,7 +558,7 @@ body {
         padding-right: 4vw;
     }
     #cirqueText {
-        padding-top: 70vh;
+        padding-top: 75vh;
     }
     #scopeText, #pinkyText, #ambassText, #designsText,
     #sparkoText, #flowsText, #timelineText, #pdvText,
@@ -570,7 +566,7 @@ body {
     font-size: 1.07em;
     }
     #cirqueText {
-        font-size: .9em;
+        font-size: 1.1em;
     }
     #playText {
         padding-top: 5vh;
@@ -587,10 +583,6 @@ body {
         padding-bottom: 1vh;
     }
     /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-    #designsText {
-        padding-top: 5vh;
-        padding-bottom: 15vh;
-    }
     #pinkyText {
         filter: drop-shadow(2px 2px 10px black);
         padding-top: 4vh;
@@ -601,19 +593,14 @@ body {
     #sparkoText {
         padding-top: 3vh;
     }
-    #scopeText {
-        color: black;
-        padding-bottom: 20vh;
-    }
     #flowsText,
     #timelineText,
-    #pdvText,
-    #scopeText {
+    #pdvText {
         padding-bottom: 3vh;
     }
     #flowsText,
     #timelineText {
-        color: black;
+        color: white;
     }
     /*
     #lincolnImg,
@@ -659,7 +646,7 @@ body {
     }
     #flowImg {
         max-width: 80vw;
-        padding-bottom: 20vh;
+        padding-bottom: 10vh;
     }
     #tdrImg,
     #theoryImg,#clinImg {
