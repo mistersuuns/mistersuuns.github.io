@@ -26,6 +26,7 @@ body {
 }
 .navbar {
     background-color: black;
+    background-size: cover;
     opacity: .5;
     position: fixed;
     z-index: 1;
@@ -533,7 +534,6 @@ input[type=checkbox] {
     }
     .samuraiV {
         background: url("loneSam.jpg");
-        background-position: center;
     }
     .samurai,
     .upsideDown,
@@ -543,6 +543,8 @@ input[type=checkbox] {
     .samuraiV,
     .upsideS {
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
     #coffeeV {
@@ -554,6 +556,7 @@ input[type=checkbox] {
         padding-left: 80vw;
     }
     #whiterabbit {
+        padding-left: 1.25vw;
         max-height: 4vh;
     }
     /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
@@ -569,18 +572,17 @@ input[type=checkbox] {
         padding-top: 75vh;
     }
     #scopeText, #pinkyText, #ambassText, #designsText,
-    #sparkoText, #flowsText, #timelineText, #pdvText,
-    #theoryText, #clinText, #tdrText, #playText {
+    #sparkoText, #flowsText, #timelineText, #pdvText {
     font-size: 1.07em;
     }
     #cirqueText {
-        font-size: 1.1em;
+        font-size: 1em;
     }
     #playText {
         padding-top: 5vh;
     }
     #theoryText, #clinText, #tdrText {
-        font-size: .9em;
+        font-size: .85em;
         padding-bottom: 2vh;
     }
     #designsTitle,
