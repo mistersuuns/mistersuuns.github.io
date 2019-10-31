@@ -21,12 +21,14 @@ body {
     scroll-snap-align: start;
     position: relative;
 }
+.nb {
+    width: 100vw;
+}
 .nav {
     padding-left: 4vw;
 }
 .navbar {
     background-color: black;
-    background-size: cover;
     opacity: .5;
     position: fixed;
     z-index: 1;
@@ -123,10 +125,7 @@ input[type=checkbox] {
 
 .black {color: black;}
 
-#pinkyText {
-    padding-bottom: 30vh;
-}
-#ambassText, #sparkoText, #playText, #cirqueText, #designsText, #pinkyText, #scopeText, #flowsText, #timelineText, #pdvText {
+#ambassText, #sparkoText, #playText, #cirqueText, #designsText, #scopeText, #flowsText, #pinkyText, #timelineText, #pdvText {
     padding-left: 5vw;
     padding-right: 4vw;
 }
@@ -136,12 +135,6 @@ input[type=checkbox] {
 #timelineRow {
     padding-top: 10vh;
 }
-
-#pinkyImg {
-    max-width: 30vw;
-    padding-top: 20vh;
-}
-
 #whiterabbit {
     filter: drop-shadow(0px 0px 40px black);
     opacity: .9;
@@ -340,6 +333,10 @@ input[type=checkbox] {
         padding-top: 20vh;
         padding-bottom: 10vh;
     }*/
+    #pinkyImg {
+        max-width: 30vw;
+        padding-top: 20vh;
+    }
     #sparkoImg {
         padding-top: 5vh;
         max-width: 40vw;
@@ -498,6 +495,10 @@ input[type=checkbox] {
         padding-top: 20vh;
         padding-bottom: 10vh;
     }     */
+    #pinkyImg {
+        max-width: 30vw;
+        padding-top: 20vh;
+    }
     #sparkoImg {
         padding-top: 5vh;
         max-width: 40vw;
@@ -511,7 +512,6 @@ input[type=checkbox] {
     #pdvImg {
         max-height: 80vh;
         padding-top: 5vh;
-        padding-bottom: 5vh;
     }
     #tdrImg,
     #theoryImg,#clinImg {
@@ -560,13 +560,17 @@ input[type=checkbox] {
         max-height: 4vh;
     }
     /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-    #scopeText, #pinkyText, #ambassText, #designsText,
+    #scopeText, #ambassText, #designsText,
     #sparkoText, #flowsText, #timelineText, #pdvText,
     #theoryText, #clinText, #tdrText, #playText, #cirqueText {
         font-weight: 100;
         letter-spacing: 0.08em;
         padding-left: 5vw;
         padding-right: 4vw;
+    }
+    #pinkyText {
+        font-weight: 100;
+        letter-spacing: 0.08em;
     }
     #cirqueText {
         padding-top: 75vh;
@@ -591,6 +595,7 @@ input[type=checkbox] {
         font-size: 3em;
         letter-spacing: .5em;
         padding-bottom: 1vh;
+        padding-top: 6vh;
     }
     /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
     #pinkyText {
@@ -647,12 +652,15 @@ input[type=checkbox] {
         padding-top: 20vh;
     }
     */
+    #pinkyImg {
+        max-width: 50vw;
+        padding-top: 10vh;
+    }
     #timelineImg,
     #timeline2Img,
     #pdvImg {
         max-height: 65vh;
         padding-top: 3vh;
-        padding-bottom: 3vh;
     }
     #flowImg {
         max-width: 80vw;
@@ -667,3 +675,14 @@ input[type=checkbox] {
 }
 /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
 /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
+
+/* PORTRAITPORTRAITPORTRAITPORTRAIT */
+/* PORTRAITPORTRAITPORTRAITPORTRAIT */
+
+@media only screen and (orientation: landscape) {
+     {
+    }
+  }
+
+/* PORTRAITPORTRAITPORTRAITPORTRAIT */
+/* PORTRAITPORTRAITPORTRAITPORTRAIT */
