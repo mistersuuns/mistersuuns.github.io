@@ -181,7 +181,10 @@ body {
     padding-top: 10vh;
 }
 .scope {
-    background: url("grad.png");
+    background: 
+    linear-gradient(rgb(206, 206, 206),
+    rgba(1, 21, 49, 0.35)),
+    url("grad.png");
     background-position: left;
 }
 .flows {
