@@ -352,7 +352,7 @@ body {
     }
     #flowImg, #timelineImg,
     #timeline2Img, #pdvImg {
-        max-height: 80vh;
+        max-height: 87vh;
     }
     #tdrImg,
     #theoryImg,#clinImg {
@@ -511,8 +511,7 @@ body {
     #timelineImg,
     #timeline2Img,
     #pdvImg {
-        max-height: 80vh;
-        padding-top: 5vh;
+        max-height: 87vh;
     }
     #tdrImg,
     #theoryImg,#clinImg {
@@ -678,8 +677,7 @@ body {
     #timelineImg,
     #timeline2Img,
     #pdvImg {
-        max-height: 80vh;
-        padding-top: 5vh;
+        max-height: 87vh;
     }
     #tdrImg,
     #theoryImg,#clinImg {
