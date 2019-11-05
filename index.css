@@ -23,7 +23,9 @@ body {
 .oneH {
     height: 100vh;
 }
-
+.nav {
+    padding-left: 11vw;
+}
 .navbar {
     background-color: black;
     opacity: .5;
@@ -251,9 +253,6 @@ body {
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
 @media (min-width: 1200px) {
-    .nav {
-        padding-left: 12vw;
-    }
     .samuraiV,
     .upsideM,
     .upsideS {
@@ -364,9 +363,7 @@ body {
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 @media (min-width: 992px) and (max-width: 1199px) {
-    .nav {
-        padding-left: 15vw;
-    }
+
     #nav {
         font-size: 1.2em;
         font-weight: 100;
@@ -533,9 +530,7 @@ body {
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 @media (min-width: 768px) and (max-width: 991px) {
-    .nav {
-        padding-left: 4vw;
-    }
+
     #nav {
         font-size: 1.2em;
         font-weight: 100;
