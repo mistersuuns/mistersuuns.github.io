@@ -696,6 +696,7 @@ body {
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
 @media (max-width: 767px) {
+    .nav {padding-left: 0;}
     #nav {
         padding-right: 2.5vw;
         font-size: 3.5vw;
