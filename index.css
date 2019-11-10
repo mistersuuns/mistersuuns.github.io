@@ -8,9 +8,7 @@ body {
     scroll-snap-points-y: repeat(100px);
     scroll-snap-type: y mandatory;
 }
-.container-fluid, .oneH,
-.row,.col,
-#row,#col {
+.container-fluid, .row,.col {
     margin: 0;
     padding: 0;
 }
@@ -20,9 +18,10 @@ body {
     scroll-snap-align: start;
     position: relative;
 }
-.oneH {
-    height: 100vh;
-}
+.oneH {height: 100vh;}
+.black {color: black;}
+.white {color: white;}
+
 .navbar {
     background-color: black;
     opacity: .5;
@@ -42,8 +41,7 @@ body {
 #nav {
     color: white;
     filter: drop-shadow(2px 2px 6px white);
-    padding-right: 5vw;
-    padding-top: 3vh;
+    padding-right: 3vw;
 }
 .samurai {
     background: url("harakiri.jpg");
@@ -66,7 +64,6 @@ body {
 #upsideM {
     transform: scaleY(-1);
 }
-
 .upsideS {
     background-image:
         linear-gradient(rgba(255, 255, 255, 1),
@@ -78,56 +75,34 @@ body {
     transform: scaleY(-1);
     opacity: .6;
 }
-#down {
-    max-width: 8vh;
-}
-.samurai, .upsideDown, .samuraiV,
-.upsideM, .ambassSparko, .flows, .words, .words2, .words3 {
+#down {max-width: 8vh;}
+
+.samurai, .upsideDown, .samuraiV, .upsideM, .ambassSparko, .flows,
+.words, .words2, .words3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    text-align: left;
 }
 .words, .words2, .words3 {
     background-color: black;
 }
-#designsTitle,
-#scopeTitle,
-#wordsTitle {
-    display: inline-block;
-    text-align: left;
-    padding-top: 7.5vh;
-    padding-bottom: 3.5vh;
+#designsTitle, #scopeTitle, #wordsTitle, #playTitle {
+    padding-top: 15vh;
     padding-left: 5vw;
 }
-#cirqueText,
+
 #designsText,
-#borText, #aliText
-#ambassText,
-#sparkoText,
-#scopeText,
-#pinkyText,
-#flowsText,
-#timelineText,
-#pdvText,
-#theoryText,
-#clinText,
-#tdrText, #playText {
+#borText, #aliText,
+#ambassText, #sparkoText,
+#scopeText, #pinkyText,#flowsText,#timelineText,#pdvText,
+#theoryText,#clinText,#tdrText, 
+#playText,#cirqueText {
     margin: 0;
-    padding: 0;
-    display: inline-block;
-    text-align: left;
-}
-
-.black {color: black;}
-.white {color: white;}
-
-#ambassText, #sparkoText, #playText, #cirqueText, #designsText, #scopeText, #flowsText, #pinkyText, #timelineText, #pdvText {
     padding-left: 5vw;
     padding-right: 4vw;
 }
-#cirqueText {
-    padding-bottom: 10vh;
+#flowsText {
+    padding-bottom: 3vh;
 }
 #timelineRow {
     padding-top: 10vh;
@@ -144,8 +119,7 @@ body {
 
 /* backgrounds */
 .designs {
-    background:
-        url("vonAppen2.jpg");
+    background: url("vonAppen2.jpg");
     background-position: center top;
 }
 /* .BoR {
@@ -156,7 +130,7 @@ body {
     background: url("vonApp2.jpg");
     background-position: top left;
 }
-.pinkySwear, .ambassadorSparko {
+.pinkySwear {
     text-align: center;
 }
 .ambassSparko {
@@ -201,25 +175,19 @@ body {
 .words2, .words3 {
     padding-top: 20vh;
 }
-
 #tdrImg,
 #clinImg,
 #theoryImg, 
 #typeImg {
     display: inline-block;
     text-align: left;
-    max-width: 40vw;
-    max-height: 40vh;
+    width: 30vw;
+    padding-left: 5vw;
 }
-
 #tdrImg,
 #clinImg,
 #theoryImg {
     cursor: pointer;
-    padding-left: 5vw;
-}
-#typeImg {
-    padding-left: 5vw;
 }
 
 .noPlay {
@@ -259,7 +227,7 @@ body {
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
 @media (min-width: 1200px) {
     .nav {
-        padding-left: 11vw;
+        padding-left: 21vw;
     }
     .samuraiV,
     .upsideM,
@@ -282,7 +250,7 @@ body {
     #whiterabbit {
         width: 4vw;
     }
-    #designsTitle, #scopeTitle, #wordsTitle {
+    #designsTitle, #scopeTitle, #wordsTitle, #playTitle  {
         font-size: 9vw;
         font-weight: 400;
         letter-spacing: .5em;
@@ -290,9 +258,9 @@ body {
     /* LG LG LG LG LG LG LG LG LG LG LG LG*/
     #scopeText,
     #pinkyText,
-    #ambassText,
     #designsText,
     #sparkoText,
+    #ambassText,
     #flowsText,
     #timelineText,
     #pdvText,
@@ -313,28 +281,12 @@ body {
     }
     #ambassText {
         padding-top: 20vh;
-        padding-right: 5vw;
     }
     #sparkoText {
         padding-top: 5vh;
     }
-    #flowsText {
-        max-width: 25vw;
-    }
-    #timelineText,
-    #flowsText, #scopeText, #pdvText, #tdrText, #clinText,
-    #theoryText, #playText {
-        padding-left: 5vw;
-    }
-    /* LG LG LG LG LG LG LG LG LG LG LG LG*//* >=1200px*/
-    #tdrText,
-    #clinText,
-    #theoryText,#scopeText {
-        padding-right:3vw;
-    }
-
     #cirqueText {
-        padding-top: 70vh;
+        padding-top: 50vh;
     }
     /* #lincolnImg, #franklinImg, #madisonImg, #paineImg {
         width: 20vw;
@@ -355,7 +307,10 @@ body {
         max-width: 35vw;
         padding-top: 5vh;
     }
-    #flowImg, #timelineImg,
+    #flowImg {
+        max-height: 75vh; 
+    }
+    #timelineImg,
     #timeline2Img, #pdvImg {
         max-height: 87vh;
     }
@@ -372,7 +327,7 @@ body {
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 @media (min-width: 992px) and (max-width: 1199px) {
     .nav {
-        padding-left: 11vw;
+        padding-left: 20vw;
     }
     #nav {
         font-size: 1.2em;
@@ -423,8 +378,8 @@ body {
         padding-bottom: 20vh;
     }
     /* MD MD MD MD MD MD MD MD MD MD MD MD */
-    #designsTitle, #scopeTitle, #wordsTitle {
-        font-size: 2.25em;
+    #designsTitle, #scopeTitle, #wordsTitle, #playTitle  {
+        font-size: 4em;
         letter-spacing: .5em;
     }
     /* #lincolnImg,
@@ -444,16 +399,12 @@ body {
         font-weight: 200;
         letter-spacing: 0.15em;
     }
-    #designsText {
-        color: white;
-    }
     #pinkyText,
     #sparkoText {
         color: black;
         padding-top: 5vh;
     }
     #ambassText {
-        padding-right: 5vw;
         padding-top: 20vh;
     }
     #sparkoText {
@@ -464,10 +415,6 @@ body {
     #scopeText {
         color: black;
         padding-bottom: 30vh;
-        padding-right: 4vw;
-    }
-    #flowsText {
-        max-width: 25vw;
     }
     #timelineText,
     #flowsText,
@@ -476,6 +423,7 @@ body {
         font-weight: 200;
         letter-spacing: 0.15em;
     }
+
         /* MD MD MD MD MD MD MD MD MD MD MD MD */
     #playText, #cirqueText {
         font-size: 1.2em;
@@ -487,12 +435,9 @@ body {
         letter-spacing: .17em;
         font-weight: 100;
     }
-    #tdrText, #clinText, #theoryText, #playText {
-        padding-right: 5vw;
-        padding-left: 5vw;
-    }
+
     #cirqueText {
-        padding-top: 75vh;
+        padding-top: 50vh;
     }
         /* MD MD MD MD MD MD MD MD MD MD MD MD */
     /*     #aliText {
@@ -512,8 +457,7 @@ body {
         max-width: 40vw;
     }
     #flowImg {
-        max-width: 60vw;
-        padding-bottom: 10vh;
+        max-height: 80vh;
     }
     #timelineImg,
     #timeline2Img,
@@ -524,14 +468,13 @@ body {
     #theoryImg,#clinImg {
         padding-bottom: 2.5vh;
     }
-    /* LANDSCAPE */
+    /* LANDSCAPE
     @media (max-height: 600px) and (orientation: landscape) {
         #ambassText {
             padding-top: 12.5vh;
         }
-    }
+    } */
 }
-
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 
@@ -540,7 +483,7 @@ body {
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 @media (min-width: 768px) and (max-width: 991px) {
     .nav {
-        padding-left: 11vw;
+        padding-left: 10vw;
     }
     #nav {
         font-size: 1.2em;
@@ -565,19 +508,10 @@ body {
     #whiterabbit {
         width: 4vw;
     }
-    #scopeText,
-    #pinkyText,
-    #ambassText,
-    #designsText,
-    #sparkoText,
-    #flowsText,
-    #timelineText,
-    #pdvText,
-    #theoryText,
-    #clinText,
-    #tdrText,
-    #playText,
-    #cirqueText {
+    #scopeText, #pinkyText, #ambassText,
+    #designsText, #sparkoText, #flowsText,
+    #timelineText, #pdvText, #theoryText,
+    #clinText, #tdrText, #playText, #cirqueText {
         font-size: 1.1em;
         font-weight: 200;
         letter-spacing: 0.15em;
@@ -591,7 +525,7 @@ body {
         padding-bottom: 20vh;
         }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
-#designsTitle, #scopeTitle, #wordsTitle {
+#designsTitle, #scopeTitle, #wordsTitle, #playTitle  {
         font-size: 6em;
         letter-spacing: .5em;
     }
@@ -605,22 +539,16 @@ body {
         padding-bottom: 10vw;
     } */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
-#designsText,
-    #pinkyText, #pdvText {
+#designsText, #pinkyText, #pdvText {
         font-size: 1.2em;
         font-weight: 200;
         letter-spacing: 0.15em;
     }
-    #designsText {
-        color: white;
-    }
     #pinkyText,
     #sparkoText {
-        color: black;
         padding-top: 5vh;
     }
     #ambassText {
-        padding-right: 5vw;
         padding-top: 20vh;
     }
     #sparkoText {
@@ -629,37 +557,18 @@ body {
     }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 #scopeText {
-        color: black;
         padding-bottom: 30vh;
-        padding-right: 4vw;
-    }
-    #flowsText {
-        max-width: 25vw;
     }
     #timelineText,
     #flowsText,
-    #scopeText {
+    #scopeText, #playText, 
+    #cirqueText, #tdrText, #clinText, #theoryText {
         font-size: 1.2em;
         font-weight: 200;
         letter-spacing: 0.15em;
     }
-/* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
-#playText, #cirqueText {
-        font-size: 1.2em;
-        font-weight: 100;
-        letter-spacing: 0.15em;
-    }
-    #tdrText, #clinText, #theoryText {
-        font-size: 1.2em;
-        letter-spacing: .17em;
-        font-weight: 100;
-    }
-    #tdrText, #clinText, #theoryText, #playText {
-        padding-right: 5vw;
-        padding-left: 5vw;
-    }
     #cirqueText {
-        padding-top: 75vh;
+        padding-top: 40vh;
     }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
     /*     #aliText {
@@ -679,8 +588,8 @@ body {
         max-width: 40vw;
     }
     #flowImg {
-        max-width: 50vw;
-        padding-bottom: 10vh;
+        max-height: 75vh;
+        padding-left: 5vw;
     }
     #timelineImg,
     #timeline2Img,
@@ -691,12 +600,12 @@ body {
     #theoryImg,#clinImg {
         padding-bottom: 2.5vh;
     }
-    /* LANDSCAPE */
+    /* LANDSCAPE 
     @media (max-height: 600px) and (orientation: landscape) {
         #ambassText {
             padding-top: 12.5vh;
         }
-    }
+    }*/
 }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -705,7 +614,6 @@ body {
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
 @media (max-width: 767px) {
-    .nav {padding-left: 0;}
     #nav {
         padding-right: 2.5vw;
         font-size: 3.5vw;
@@ -737,45 +645,36 @@ body {
         padding-left: 1.25vw;
         width: 10vw;
     }
-/* XS XS XS XS XS XS XS XS XS XS XS XS */
-#scopeText, #ambassText, #designsText,
+    #scopeText, #ambassText, #designsText,
     #sparkoText, #flowsText, #timelineText, #pdvText,
     #theoryText, #clinText, #tdrText, #playText, #cirqueText {
+        font-size:1em;
         font-weight: 100;
         letter-spacing: .5vw;
-        padding-left: 5vw;
-        padding-right: 4vw;
     }
     #pinkyText {
         font-weight: 100;
         letter-spacing: .5vw;
     }
+/* XS XS XS XS XS XS XS XS XS XS XS XS */
     #cirqueText {
-        padding-top: 70vh;
-    }
-    #scopeText, #pinkyText, #ambassText, #designsText,
-    #sparkoText, #flowsText, #timelineText, #pdvText, #theoryText, #clinText, #tdrText, #cirqueText {
-    font-size:1em;
+        padding-top: 55vh;
     }
     #playText {
         padding-top: 5vh;
     }
     #theoryText, #clinText, #tdrText {
-        
         padding-bottom: 2vh;
     }
     #scopeTitle, #designsTitle,
-    #wordsTitle {
+    #wordsTitle, #playTitle  {
         font-size: 3em;
         letter-spacing: .5em;
-        padding-top: 6vh;
+        padding-top: 10vh;
     }
-    #designsTitle,
+    #designsTitle,#scopeTitle,
     #wordsTitle {
         padding-bottom: 8vh;
-    }
-    #scopeTitle {
-        padding-bottom: 1vh;
     }
 
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
@@ -788,7 +687,6 @@ body {
     #sparkoText {
         padding-top: 3vh;
     }
-    #flowsText,
     #timelineText,
     #pdvText {
         padding-bottom: 3vh;
@@ -838,14 +736,10 @@ body {
     }
     #flowImg {
         max-width: 80vw;
-        padding-bottom: 10vh;
     }
-    #tdrImg,
-    #theoryImg,#clinImg {
-        max-width: 50vw;
-        max-height:50vh;
+    #tdrImg, #theoryImg, #clinImg {
+        max-width: 30vw;
         padding-bottom: 1vh;
-        padding-left: 5vw;
     }
     #tdrImg,#clinImg {
     padding-top: 5vh;
@@ -855,7 +749,6 @@ body {
         padding-top: 5vh;
     }
     #typeImg {
-        max-width: 80vw;
         padding-left: 5vw;
     }
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
