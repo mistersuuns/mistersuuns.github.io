@@ -137,6 +137,9 @@ body {
     background: url("greyCement2.jpg");
     background-position: left;
 }
+.ambassadorSparko, .flowImg {
+    text-align: center;
+}
 /* .ali {
     background: url("whiteRoom.jpg");
     background-position: center;
@@ -318,6 +321,8 @@ body {
     #theoryImg,#clinImg {
         padding-bottom: 2.5vh;
     }
+    .wordsLAND, .words2LAND, .words3LAND {display: none;}
+
 }
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
@@ -412,10 +417,6 @@ body {
         padding-bottom: 10vh
     }
         /* MD MD MD MD MD MD MD MD MD MD MD MD */
-    #scopeText {
-        color: black;
-        padding-bottom: 30vh;
-    }
     #timelineText,
     #flowsText,
     #scopeText {
@@ -468,12 +469,8 @@ body {
     #theoryImg,#clinImg {
         padding-bottom: 2.5vh;
     }
-    /* LANDSCAPE
-    @media (max-height: 600px) and (orientation: landscape) {
-        #ambassText {
-            padding-top: 12.5vh;
-        }
-    } */
+    .wordsLAND, .words2LAND, .words3LAND {display: none;}
+
 }
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
@@ -556,9 +553,6 @@ body {
         padding-bottom: 10vh
     }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
-#scopeText {
-        padding-bottom: 30vh;
-    }
     #timelineText,
     #flowsText,
     #scopeText, #playText, 
@@ -600,12 +594,14 @@ body {
     #theoryImg,#clinImg {
         padding-bottom: 2.5vh;
     }
-    /* LANDSCAPE 
-    @media (max-height: 600px) and (orientation: landscape) {
-        #ambassText {
-            padding-top: 12.5vh;
+    .wordsLAND, .words2LAND, .words3LAND {display: none;}
+
+    @media (orientation: landscape) {
+        #scopeTitle, #designsTitle,
+        #wordsTitle, #playTitle  {
+            padding-bottom: 4vh;
         }
-    }*/
+    } 
 }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -751,33 +747,48 @@ body {
     #typeImg {
         padding-left: 5vw;
     }
-/* XS XS XS XS XS XS XS XS XS XS XS XS */
-/* XS XS XS XS XS XS XS XS XS XS XS XS */
 
-
-
-    /* LANDSCAPELANDSCAPELANDSCAPELANDSCAPE */
-    /* LANDSCAPELANDSCAPELANDSCAPELANDSCAPE 
-    @media (max-height: 600px) and (orientation: landscape) {
-        #ambassText {
-            padding-top: 12.5vh;
-        }
-    }
     @media (orientation: landscape) {
-        .samuraiV
-        {
-        background-position: 0 42.5%;
-        background-repeat: no-repeat;
-        background-size: cover;
+        #scopeTitle, #designsTitle,
+        #wordsTitle, #playTitle  {
+            padding-bottom: 0;
         }
-    .upsideS {
-        background-position: 0 42.5%;
-        background-repeat: no-repeat;
-        background-size: cover;
+        #scopeText, #ambassText, #designsText,
+        #sparkoText, #flowsText, #timelineText, #pdvText,
+        #theoryText, #clinText, #tdrText, #playText, #cirqueText {
+            font-size:1em;
+            font-weight: 100;
+            letter-spacing: .3vw;
         }
-    #coffeeV {
-        font-size: 2em;
-        letter-spacing: 0.1em;
-    }
-    }
-    */
+        #timelineText, #pdvText {
+            padding-top: 5vh;
+            padding-bottom: 0;
+        }
+        #pinkyImg {
+            max-width: 30vw;
+            padding-top: 10vh;
+        }
+        #sparkoImg {
+            max-width: 25vw;
+            padding-top: 5vh;
+        }
+        #ambassText {
+            padding-top: 15vh;
+        }
+        #flowsText {
+            padding-top: 10vh;
+        }
+        #flowImg {
+            max-width: 30vw;
+        }
+        #theoryImg, #clinImg, #tdrImg {
+            width: 15vw;
+        }
+        #cirqueText {
+            padding-top: 40vh;
+        }
+    } 
+
+}
+/* XS XS XS XS XS XS XS XS XS XS XS XS */
+/* XS XS XS XS XS XS XS XS XS XS XS XS */
