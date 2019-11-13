@@ -87,8 +87,11 @@ body {
     background-color: black;
 }
 #designsTitle, #scopeTitle, #wordsTitle, #playTitle {
-    padding-top: 15vh;
+    padding-top: 5vh;
     padding-left: 5vw;
+}
+#playTitle {
+    padding-bottom: 7.5vh;
 }
 
 #designsText,
@@ -260,6 +263,7 @@ body {
         font-weight: 400;
         letter-spacing: .5em;
     }
+
     /* LG LG LG LG LG LG LG LG LG LG LG LG*/
     #scopeText,
     #pinkyText,
@@ -291,7 +295,7 @@ body {
         padding-top: 5vh;
     }
     #cirqueText {
-        padding-top: 50vh;
+        padding-top: 45vh;
     }
     /* #lincolnImg, #franklinImg, #madisonImg, #paineImg {
         width: 20vw;
@@ -503,7 +507,7 @@ body {
     #coffeeTextM, #knowPlaceM {
         font-size: 1.6em;
         letter-spacing: 0.15em;
-        font-weight: 500;
+        font-weight: 400;
         filter: drop-shadow(1px 1px 6px white);
 
     }
@@ -570,7 +574,7 @@ body {
         letter-spacing: 0.15em;
     }
     #cirqueText {
-        padding-top: 30vh;
+        padding-top: 45vh;
     }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
     /*     #aliText {
