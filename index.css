@@ -11,6 +11,7 @@ body {
 .container-fluid, .row,.col {
     margin: 0;
     padding: 0;
+    text-align: left;
 }
 .container-fluid {
     width: 100vw;
