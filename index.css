@@ -11,7 +11,6 @@ body {
 .container-fluid, .row,.col {
     margin: 0;
     padding: 0;
-    text-align: left;
 }
 .container-fluid {
     width: 100vw;
@@ -32,7 +31,7 @@ body {
 .navbar a {
     float: left;
     opacity: 1;
-    font-size: 1.75em;
+    font-size: 1.7em;
     font-weight: 100;
     letter-spacing: .17em;
 }
@@ -42,7 +41,7 @@ body {
 #nav {
     color: white;
     filter: drop-shadow(2px 2px 6px white);
-    padding-right: 3vw;
+    padding-right: 2vw;
 }
 .samurai {
     background: url("harakiri.jpg");
@@ -234,7 +233,7 @@ body {
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
 @media (min-width: 1200px) {
     .nav {
-        padding-left: 21vw;
+        padding-left: 20vw;
     }
     .samuraiV,
     .upsideM,
