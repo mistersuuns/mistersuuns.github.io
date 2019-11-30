@@ -241,8 +241,8 @@ body {
         display: none;
     }
     #coffeeText, #knowPlaceText {
-        font-size: 2.25em;
-        letter-spacing: 0.15em;
+        font-size: 2.1em;
+        letter-spacing: 0.14em;
         font-weight: 400;
         opacity: .8;
     }
@@ -253,7 +253,7 @@ body {
     #knowPlaceText {
         line-height: 1.2em;
         text-align: right;
-        padding-bottom: 10vh;
+        padding-bottom: 15vh;
     }
     #whiterabbit {
         width: 4vw;
@@ -356,13 +356,13 @@ body {
 
     /* MD MD MD MD MD MD MD MD MD MD MD MD */
     #coffeeTextM, #knowPlaceM {
-        font-size: 1.6em;
+        font-size: 1.5em;
         letter-spacing: 0.15em;
         font-weight: 500;
         filter: drop-shadow(1px 1px 6px white);
     }
     #coffeeTextM {
-    padding-top: 30vh;
+    padding-top: 20vh;
     }
 
     #knowPlaceM {
