@@ -221,11 +221,14 @@ body {
     display: flex;
     justify-content: center;
 }
-.fab.fa-linkedin:hover,
-.gmail:hover {
+.fab.fa-linkedin:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
+#email {
+    font-size: 1em;
+}
+
 
 
 /* LG LG LG LG LG LG LG LG LG LG LG LG*/
