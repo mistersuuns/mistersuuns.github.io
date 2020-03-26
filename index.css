@@ -1,6 +1,6 @@
-/* {
+* {
     border: solid black .5px;
-}*/
+}
 
 body {
     font-family: "Gill Sans";
@@ -217,7 +217,7 @@ body {
 }
 .icons {
     font-size: 2em;
-    padding: .5em;
+    padding-left: .5em;
     display: flex;
     justify-content: center;
 }
@@ -317,7 +317,8 @@ body {
         padding-top: 5vh;
     }
     #flowImg {
-        max-height: 75vh; 
+        max-height: 75vh;
+        max-width: 80vw; 
     }
     #timelineImg,
     #timeline2Img, #pdvImg {
@@ -466,6 +467,7 @@ body {
     }
     #flowImg {
         max-height: 80vh;
+        max-width: 80vw;
     }
     #timelineImg,
     #timeline2Img,
@@ -535,7 +537,7 @@ body {
         letter-spacing: .5em;
     }
     #scopeTitle {
-        font-size: 6em;
+        font-size: 5.25em;
         letter-spacing: .4em;
     }
     /* #lincolnImg,
@@ -595,6 +597,7 @@ body {
     }
     #flowImg {
         max-height: 75vh;
+        max-width: 80vw;
         padding-left: 5vw;
     }
     #timelineImg,
@@ -622,7 +625,7 @@ body {
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
 @media (max-width: 767px) {
     #nav {
-        padding-right: 2.5vw;
+        padding-right: 2vw;
         font-size: 3.5vw;
         font-weight: 100;
         filter: drop-shadow(2px 2px 6px white);
@@ -673,11 +676,15 @@ body {
     #theoryText, #clinText, #tdrText {
         padding-bottom: 2vh;
     }
-    #scopeTitle, #designsTitle,
+    #designsTitle,
     #wordsTitle, #playTitle  {
         font-size: 3em;
         letter-spacing: .5em;
         padding-top: 10vh;
+    }
+    #scopeTitle {
+        font-size: 3em;
+        letter-spacing: .4em;
     }
     #designsTitle,#scopeTitle,
     #wordsTitle {
