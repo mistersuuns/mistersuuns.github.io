@@ -216,8 +216,9 @@ body {
     justify-content: center;
 }
 .icons {
-    font-size: 2em;
-    padding-left: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-size: 3vw;
     display: flex;
     justify-content: center;
 }
