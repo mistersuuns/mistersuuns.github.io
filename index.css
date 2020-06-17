@@ -16,6 +16,7 @@ body {
 .navbar {
     position: fixed;
     z-index: 1;
+    background: white;
 }
 .navbar a {
     color: rgba(0, 0, 0, 1);
@@ -56,11 +57,12 @@ body {
 }
 
 img.lincoln {
-    max-width: 21vw;
+    max-width: 30vw;
     bottom: 1vh;
 }
 #desImg {
-    margin-top: 20vh;
+    margin: 20vh 0;
+
 }
 #email {
 position: absolute;
