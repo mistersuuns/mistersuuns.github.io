@@ -48,7 +48,6 @@ body {
 .container-fluid {
     width: 100vw;
     scroll-snap-align: end;
-
 }
 .datar {
     background-image: url("datar.png");
@@ -59,7 +58,9 @@ body {
 img.lincoln {
     max-width: 21vw;
     bottom: 1vh;
-    position: absolute;
+}
+#desImg {
+    margin-top: 20vh;
 }
 #email {
 position: absolute;
