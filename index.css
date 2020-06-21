@@ -59,6 +59,9 @@ img.datar, img.lincoln, img.white, img.rdt1 {
     bottom: 1vh;
     padding-bottom: 1vh;
 }
+#imgTxt {
+    font-weight: 200;
+}
 img.rdt1 {
 position: absolute;
 right: 0;
@@ -83,10 +86,11 @@ right: 0;
         width: 45vw;
         padding-left: 22.5vw;
     }
-    #ghost, #rabbit {
+    #imgTxt {
         padding-left: 3vw;  
-        font-size: 3vh;
-    }
+        font-size: 2.5vh;
+        letter-spacing: .2vh;
+        }
     img.rdt1 {
         width: 40vw;
     }
