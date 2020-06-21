@@ -3,12 +3,13 @@
 }*/
 body {
     font-family: "Gill Sans";
+    background-image: ;
 }
 .navbar, .nav, 
-.scrolling-wrapper, .card, .container-fluid, .row, [class*='col-'] {
+.scrolling-wrapper, .card, .container-fluid, .row, .col, [class*='col-'] {
     margin: 0; padding: 0;
 }
-.scrolling-wrapper, .card, .container-fluid, .row, [class*='col-'] {
+.scrolling-wrapper, .card, .container-fluid, .row, .col, [class*='col-'] {
     height: 100vh;
 }
 
@@ -50,25 +51,17 @@ body {
     width: 100vw;
     scroll-snap-align: end;
 }
-.datar {
-    background-image: url("datar.png");
-    background-repeat: no-repeat;
-    background-position: bottom left;
+#flexEnd  {
+    display: flex;
+    align-items: flex-end;
 }
-
-img.lincoln {
-    max-width: 30vw;
+img.datar, img.lincoln, img.white, img.rdt1 {
     bottom: 1vh;
+    padding-bottom: 1vh;
 }
-#desImg {
-    margin: 20vh 0;
-
-}
-#email {
+img.rdt1 {
 position: absolute;
-bottom: 0;
 right: 0;
-padding: 0 0 1vh 0;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -86,6 +79,14 @@ padding: 0 0 1vh 0;
         width: 30vw;
         padding-left: 11vw;
     }
+    img.white {
+        width: 45vw;
+        padding-left: 22.5vw;
+    }
+    #ghost, #rabbit {
+        padding-left: 3vw;  
+        font-size: 3vh;
+    }
     img.rdt1 {
         width: 40vw;
     }
@@ -99,7 +100,7 @@ padding: 0 0 1vh 0;
 @media (min-width: 992px) and (max-width: 1199px) {
     .nav {
         padding-left: 8.3vw;
-        width: 91vw;
+        width: 91.45vw;
     }
     #nav {
         font-size: 1.2em;
@@ -107,6 +108,14 @@ padding: 0 0 1vh 0;
     img.lincoln {
         width: 40vw;
         padding-left: 14vw;
+    }
+    img.white {
+        width: 50vw;
+        padding-left: 30vw;
+    }
+    #ghost, #rabbit {
+        padding-left: 3vw;  
+        font-size: 2.5vh;
     }
     img.rdt1 {
         width: 45vw;
@@ -121,14 +130,22 @@ padding: 0 0 1vh 0;
 @media (min-width: 768px) and (max-width: 991px) {
     .nav {
         padding-left: 8.3vw;
-        width: 91vw;
+        width: 91.25vw;
     }
     #ul {
         width: 100vw;
     }
     img.lincoln {
         width: 40vw;
-        padding-left: 13vw;
+        padding-left: 14vw;
+    }
+    img.white {
+        width: 55vw;
+        padding-left: 30vw;
+    }
+    #ghost, #rabbit {
+        padding-left: 3vw;  
+        font-size: 2.5vh;
     }
     img.rdt1 {
         width: 50vw;
@@ -143,15 +160,23 @@ padding: 0 0 1vh 0;
 @media (min-width: 576px) and (max-width: 767px) {
     .nav {
         padding-left: 8.3vw;
-        width: 91vw;
+        width: 91.25vw;
     }
     #nav {
         font-size: 1.2em;
     }
     img.lincoln {
         width: 50vw;
-        padding-left: 12vw;
+        padding-left: 14vw;
      }
+     img.white {
+        width: 55vw;
+        padding-left: 30vw;
+    }
+    #ghost, #rabbit {
+        padding-left: 3vw;  
+        font-size: 2.5vh;
+    }
     img.rdt1 {
         width: 60vw;
     }
@@ -168,10 +193,18 @@ padding: 0 0 1vh 0;
         width: 91vw;
     }   
     #nav {
-        font-size: 3.5vw;
+        font-size: 3.25vw;
     }
-    .datar {
-        background-size: 70vw;
+    img.datar {
+        width: 55vw;
+    }
+    #ghost, #rabbit {
+        padding-left: 3vw;  
+        font-size: 2.25vh;
+    }
+    img.white {
+        width: 70vw;
+        padding-left: 28vw;
     }
     img.lincoln {
         width: 55vw;
