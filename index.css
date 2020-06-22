@@ -56,7 +56,7 @@ body {
     align-items: flex-end;
     padding-bottom: 5vh;
 }
-img.datar, img.lincoln, img.white, img.rdt1 {
+img.datar, img.design, img.white, img.rdt1 {
     bottom: 5vh;
 }
 #imgTxt {
@@ -82,7 +82,7 @@ img.rdt1 {
     #small {
         display: none;
     }
-    img.lincoln {
+    img.design {
         width: 30vw;
         padding-left: 11vw;
     }
@@ -115,7 +115,7 @@ img.rdt1 {
     #small {
         display: none;
     }
-    img.lincoln {
+    img.design {
         width: 40vw;
         padding-left: 14vw;
     }
@@ -148,7 +148,7 @@ img.rdt1 {
     #ul {
         width: 100vw;
     }
-    img.lincoln {
+    img.design {
         width: 40vw;
         padding-left: 14vw;
     }
@@ -181,12 +181,12 @@ img.rdt1 {
     #small {
         display: none;
     }
-    img.lincoln {
+    img.design {
         width: 50vw;
         padding-left: 14vw;
      }
      img.white {
-        width: 55vw;
+        width: 70vw;
         padding-left: 30vw;
     }
     #imgTxt {
@@ -222,10 +222,10 @@ img.rdt1 {
         font-size: 2vh;
     }
     img.white {
-        width: 55vw;
+        width: 70vw;
         padding-left: 28vw;
     }
-    img.lincoln {
+    img.design {
         width: 45vw;
         padding-left: 12vw;
     }
