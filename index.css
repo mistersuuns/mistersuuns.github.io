@@ -21,7 +21,6 @@ body {
 }
 .navbar a {
     color: rgba(0, 0, 0, 1);
-    font-weight: 300;
     letter-spacing: .3vw;
     font-size: 3vh;
     opacity: 1;
@@ -31,7 +30,7 @@ body {
     padding: 3vh 0;
     font-weight: 100;
 }
-#nav 
+
 /* nav nav nav nav nav */
 
 .scrolling-wrapper {
@@ -44,8 +43,8 @@ body {
     scroll-snap-type: x mandatory;
 }
 .card {
-      display: inline-block;
-      overflow-y: hidden;
+    display: inline-block;
+    overflow-y: hidden; 
     width: 100vw;
 }
 .container-fluid {
@@ -55,18 +54,18 @@ body {
 #flexEnd  {
     display: flex;
     align-items: flex-end;
+    padding-bottom: 5vh;
 }
 img.datar, img.lincoln, img.white, img.rdt1 {
-    bottom: 1vh;
-    padding-bottom: 1vh;
+    bottom: 5vh;
 }
 #imgTxt {
     font-weight: 200;
     letter-spacing: .2vh;
 }
 img.rdt1 {
-position: absolute;
-right: 0;
+    position: absolute;
+    right: 0;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -77,8 +76,11 @@ right: 0;
         width: 83vw;
     }
     #nav {
-        font-size: 1.2em;
+        font-size: 1.9vw;
         font-weight: 100;
+    }
+    #small {
+        display: none;
     }
     img.lincoln {
         width: 30vw;
@@ -110,6 +112,9 @@ right: 0;
     #nav {
         font-size: 1.2em;
     }
+    #small {
+        display: none;
+    }
     img.lincoln {
         width: 40vw;
         padding-left: 14vw;
@@ -136,6 +141,9 @@ right: 0;
     .nav {
         padding-left: 8.3vw;
         width: 91.25vw;
+    }
+    #small {
+        display: none;
     }
     #ul {
         width: 100vw;
@@ -168,7 +176,10 @@ right: 0;
         width: 91.25vw;
     }
     #nav {
-        font-size: 1.2em;
+        font-size: 3vw;
+    }
+    #small {
+        display: none;
     }
     img.lincoln {
         width: 50vw;
@@ -196,23 +207,26 @@ right: 0;
     .nav {
         padding-left: 8vw;
         width: 91vw;
-    }   
-    #nav {
-        font-size: 3.25vw;
+    }  
+    #big {
+        display: none;
+    } 
+    #icon {
+        height: 4vh;
     }
     img.datar {
-        width: 55vw;
+        width: 45vw;
     }
     #imgTxt {
         padding-left: 3vw;  
-        font-size: 2.25vh;
+        font-size: 2vh;
     }
     img.white {
-        width: 70vw;
+        width: 55vw;
         padding-left: 28vw;
     }
     img.lincoln {
-        width: 55vw;
+        width: 45vw;
         padding-left: 12vw;
     }
     img.rdt1 {
