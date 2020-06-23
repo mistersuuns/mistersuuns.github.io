@@ -54,7 +54,7 @@ body {
 #flexEnd  {
     display: flex;
     align-items: flex-end;
-    padding-bottom: 15vh;
+    padding-bottom: 17.5vh;
 }
 #design {
     background: url("gradient.png");
@@ -82,7 +82,7 @@ img#pdv, img#timeline {
 img.rdt1 {
     position: absolute;
     right: 0;
-    bottom: 15vh;
+    bottom: 17.5vh;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
