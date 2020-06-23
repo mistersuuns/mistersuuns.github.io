@@ -54,10 +54,26 @@ body {
 #flexEnd  {
     display: flex;
     align-items: flex-end;
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
 }
-img.datar, img.design, img.white, img.rdt1 {
-    bottom: 5vh;
+#design {
+    background: url("gradient.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+#coffee {
+    background: url("");
+    background-position: 0 0;
+    background-size: cover;
+}
+#contact {
+    background: url("");
+    background-position: 0 0;
+    background-size: cover;
+}
+img#pdv, img#timeline {
+    max-height: 80vh;
+    width: auto;
 }
 #imgTxt {
     font-weight: 200;
@@ -66,6 +82,7 @@ img.datar, img.design, img.white, img.rdt1 {
 img.rdt1 {
     position: absolute;
     right: 0;
+    bottom: 10vh;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -76,7 +93,7 @@ img.rdt1 {
         width: 83vw;
     }
     #nav {
-        font-size: 1.9vw;
+        font-size: 1.75vw;
         font-weight: 100;
     }
     #small {
@@ -115,6 +132,7 @@ img.rdt1 {
     #small {
         display: none;
     }
+
     img.design {
         width: 40vw;
         padding-left: 14vw;
@@ -148,6 +166,7 @@ img.rdt1 {
     #ul {
         width: 100vw;
     }
+
     img.design {
         width: 40vw;
         padding-left: 14vw;
@@ -216,6 +235,10 @@ img.rdt1 {
     }
     img.datar {
         width: 45vw;
+    }
+    img#pdv {
+        height: 50vh;
+        width: auto;
     }
     #imgTxt {
         padding-left: 3vw;  
