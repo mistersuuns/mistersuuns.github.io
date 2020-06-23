@@ -12,6 +12,11 @@ body {
 .scrolling-wrapper, .card, .container-fluid, .row, .col, [class*='col-'] {
     height: 100vh;
 }
+body {
+    position: relative;
+    height: 100vh;
+    overflow-x: scroll;
+}
 
 /* nav nav nav nav nav */
 .navbar {
@@ -134,7 +139,7 @@ img.rdt1 {
     }
 
     img.design {
-        width: 40vw;
+        width: 35vw;
         padding-left: 14vw;
     }
     img.white {
