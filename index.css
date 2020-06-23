@@ -54,7 +54,7 @@ body {
 #flexEnd  {
     display: flex;
     align-items: flex-end;
-    padding-bottom: 13vh;
+    padding-bottom: 15vh;
 }
 #design {
     background: url("gradient.png");
