@@ -46,16 +46,15 @@ body {
     scroll-padding: 0;
     width: 100vw;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 .card {
     display: inline-block;
     overflow-y: hidden; 
     width: 100vw;
-}
-.container-fluid {
-    width: 100vw;
     scroll-snap-align: end;
 }
+
 #flexEnd  {
     display: flex;
     align-items: flex-end;
