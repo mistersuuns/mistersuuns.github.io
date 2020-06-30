@@ -35,6 +35,9 @@ body {
     padding: 3vh 0;
     font-weight: 100;
 }
+.navLink:link, .navLink:visited, .navLink:hover {
+    text-decoration: none;
+}
 
 /* nav nav nav nav nav */
 
@@ -51,6 +54,7 @@ body {
 .card {
     display: inline-block;
     overflow-y: hidden; 
+    overflow-x: auto;
     width: 100vw;
     scroll-snap-align: end;
 }
@@ -83,10 +87,18 @@ img#pdv, img#timeline {
     font-weight: 200;
     letter-spacing: .2vh;
 }
+#fwd {
+    font-size: 3vw;
+    padding-left: 8vw;
+    text-decoration:none;
+}
 img.rdt1 {
     position: absolute;
     right: 0;
     bottom: 17.5vh;
+}
+img.next {
+    height: 5vh;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */

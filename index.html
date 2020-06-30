@@ -19,24 +19,24 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="0">
 	<nav class="navbar">
 		<ul class="nav" id="big">
-			<li><a href="#home" id="nav" role="navigation">HOME</a></li>
-			<li><a href="#design" id="nav" role="navigation">DESIGN</a></li>
-			<li><a href="#coffee" id="nav" role="navigation">COFFEE</a></li>
-			<li><a href="https://www.bobrobert.com/#print" target="_blank" id="nav" role="navigation">PRINT</a></li>
-			<li><a href="https://www.bobrobert.com" target="_blank" id="nav" role="navigation">CV</a></li>
-			<li><a href="#contact" id="nav" role="navigation">CONTACT</a></li>
+			<li><a class="navLink" href="#home" id="nav" role="navigation">HOME</a></li>
+			<li><a class="navLink" href="#design" id="nav" role="navigation">DESIGN</a></li>
+			<li><a class="navLink" href="#coffee" id="nav" role="navigation">COFFEE</a></li>
+			<li><a class="navLink" href="https://www.bobrobert.com/#print" target="_blank" id="nav" role="navigation">PRINT</a></li>
+			<li><a class="navLink" href="https://www.bobrobert.com" target="_blank" id="nav" role="navigation">CV</a></li>
+			<li><a class="navLink" href="#contact" id="nav" role="navigation">CONTACT</a></li>
 		</ul>
 		<ul class="nav" id="small">
-			<li><a href="#home" id="nav" role="navigation"><img id="icon" src="home.png"></a></li>
-			<li><a href="#design" id="nav" role="navigation"><img id="icon" src="design.png"></a></li>
-			<li><a href="#coffee" id="nav" role="navigation"><img id="icon" src="coffee.png"></a></li>
-			<li><a href="https://www.bobrobert.com/#print" target="_blank" id="nav" role="navigation"><img id="icon" src="pub.png"></a></li>
-			<li><a href="https://www.bobrobert.com" target="_blank" id="nav" role="navigation"><img id="icon" src="cv.png"></a></li>
-			<li><a href="#contact" id="nav" role="navigation"><img id="icon" src="contact.png"></a></li>
+			<li><a class="navLink" href="#home" id="nav" role="navigation"><img id="icon" src="home.png"></a></li>
+			<li><a class="navLink" href="#design" id="nav" role="navigation"><img id="icon" src="design.png"></a></li>
+			<li><a class="navLink" href="#coffee" id="nav" role="navigation"><img id="icon" src="coffee.png"></a></li>
+			<li><a class="navLink" href="https://www.bobrobert.com/#print" target="_blank" id="nav" role="navigation"><img id="icon" src="pub.png"></a></li>
+			<li><a class="navLink" href="https://www.bobrobert.com" target="_blank" id="nav" role="navigation"><img id="icon" src="cv.png"></a></li>
+			<li><a class="navLink" href="#contact" id="nav" role="navigation"><img id="icon" src="contact.png"></a></li>
 		</ul>
 	</nav>
 	<div class="scrolling-wrapper">
-		<div class="card " id="home">
+		<div class="card" id="home">
 			<div class="row">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
@@ -50,79 +50,96 @@
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 			</div>
 		</div>
-		<div class="card  overflow-auto" id="design">
+
+		<div class="card" id="design">
 			<div class="row design">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" src="1Lincoln.png"></a>
-					<a id="imgTxt" style="color:black !important">
+					<div id="imgTxt" style="color:black !important">
+						<a id="fwd" href="#tomPaine" style="color: black !important"><img class="next" src="fwd1.png"></a>
+						<br><br><br>
 						Screen 1<br>TOTL<br>Bill of Rights<br><br>
-					</a>
+					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 			</div>
 		</div>
-		<div class="card  overflow-auto" id="design">
-			<div class="row design">
+
+		<div class="card" id="design">
+			<div class="row design" id="tomPaine">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" src="4tomPaine.png"></a>
-					<a id="imgTxt" style="color:black !important">
+					<div id="imgTxt" style="color:black !important">
+						<a id="fwd" href="#pinkyS" style="color: black !important"><img class="next" src="fwd1.png"></a>
+						<br><br><br>
 						Screen 4<br>TOTL<br>Bill of Rights<br><br>
-					</a>
+					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 			</div>
 		</div>
-		<div class="card  overflow-auto" id="design">
-			<div class="row design">
+
+		<div class="card" id="design">
+			<div class="row design" id="pinkyS">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" src="pinkyS.png"></a>
-					<a id="imgTxt" style="color:black !important">
+					<div id="imgTxt" style="color:black !important">
+						<a id="fwd" href="#pdvMap" style="color: black !important"><img class="next" src="fwd1.png"></a>
+						<br><br><br><br>
 						In Pinky Swear<br>we trust.<br><br>
-					</a>
+					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 			</div>
 		</div>
-		<div class="card  overflow-auto" id="design">
-			<div class="row design">
+
+		<div class="card" id="design">
+			<div class="row design" id="pdvMap">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" id="pdv" src="pdvMap.png"></a>
-					<a id="imgTxt" style="color:black !important">
+					<div id="imgTxt" style="color:black !important">
+						<a id="fwd" href="#timeline1" style="color: black !important"><img class="next" src="fwd1.png"></a>
+						<br><br>
 						TOTL<br>Private<br>Data<br>Vault<br><br>
-					</a>
+					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 			</div>
 		</div>
-		<div class="card  overflow-auto" id="design">
-			<div class="row design">
+
+		<div class="card" id="design">
+			<div class="row design" id="timeline1">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" id="timeline" src="timeline1.png"></a>
-					<a id="imgTxt" style="color:black !important">
+					<div id="imgTxt" style="color:black !important">
+						<a id="fwd" href="#timeline2" style="color: black !important"><img class="next" src="fwd1.png"></a>
+						<br><br><br><br>
 						TOTL<br>Timeline 1<br><br>
-					</a>
+					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 			</div>
 		</div>
-		<div class="card  overflow-auto" id="design">
-			<div class="row design">
+
+		<div class="card" id="design">
+			<div class="row design" id="timeline2">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" id="timeline" src="timeline2.png"></a>
-					<a id="imgTxt" style="color:black !important">
+					<div id="imgTxt" style="color:black !important">
 						TOTL<br>Timeline 2<br><br>
-					</a>
+					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 			</div>
 		</div>
-		<div class="card " id="coffee">
+
+		<div class="card" id="coffee">
 			<div class="row">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
@@ -137,7 +154,18 @@
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 			</div>
 		</div>
-		<div class="card " id="contact">
+
+		<div class="card" id="print">
+			<div class="row">
+				<div class="col-1 col-sm-1 col-xl-2"></div>
+				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
+					<a href="" target="_blank"><img src=""></a>
+				</div>
+				<div class="col-1 col-sm-1 col-xl-2"></div>
+			</div>
+		</div>
+
+		<div class="card" id="contact">
 			<div class="row">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
@@ -146,6 +174,7 @@
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 			</div>
 		</div>
+
 	</div>
 
 
