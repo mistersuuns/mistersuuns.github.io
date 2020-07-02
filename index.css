@@ -55,7 +55,8 @@ body {
     display: inline-block;
     overflow-y: hidden; 
     overflow-x: auto;
-    width: 100%;
+    width: 100vw;
+    border:none;
     scroll-margin: 0;
     scroll-padding: 0;
     scroll-snap-align: end;
@@ -125,6 +126,10 @@ img.next {
         width: 45vw;
         padding-left: 22.5vw;
     }
+    img.bmz {
+        width: 45vw;
+        padding-left: 25vw;
+    }
     #imgTxt {
         padding-left: 3vw;  
         font-size: 2.5vh;
@@ -158,6 +163,10 @@ img.next {
     img.white {
         width: 50vw;
         padding-left: 30vw;
+    }
+    img.bmz {
+        width: 50vw;
+        padding-left: 32.5vw;
     }
     #imgTxt {
         padding-left: 3vw;  
@@ -193,6 +202,10 @@ img.next {
         width: 55vw;
         padding-left: 30vw;
     }
+    img.bmz {
+        width: 55vw;
+        padding-left: 31vw;
+    }
     #imgTxt {
         padding-left: 3vw;  
         font-size: 2.5vh;
@@ -225,6 +238,10 @@ img.next {
      img.white {
         width: 70vw;
         padding-left: 30vw;
+    }
+    img.bmz {
+        width: 70vw;
+        padding-left: 31vw;
     }
     #imgTxt {
         padding-left: 3vw;  
@@ -265,6 +282,10 @@ img.next {
     img.white {
         width: 70vw;
         padding-left: 28vw;
+    }
+    img.bmz {
+        width: 70vw;
+        padding-left: 30vw;
     }
     img.design {
         width: 45vw;
