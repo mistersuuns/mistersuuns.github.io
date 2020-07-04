@@ -38,6 +38,9 @@ body {
 .navLink:link, .navLink:visited, .navLink:hover {
     text-decoration: none;
 }
+#icon {
+    opacity: .35;
+}
 
 /* nav nav nav nav nav */
 
@@ -266,7 +269,7 @@ img.next {
         display: none;
     } 
     #icon {
-        height: 4vh;
+        height: 3.75vh;
     }
     img.datar {
         width: 45vw;
