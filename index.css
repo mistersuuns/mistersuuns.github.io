@@ -8,7 +8,7 @@ body {
     overflow-x: scroll;
 }
 .nav.active {
-    text-decoration-color: tomato;
+    text-decoration: underline;
 }
 .navbar, .nav, 
 .scrolling-wrapper, .card, .container-fluid, .row, .col, [class*='col-'] {
@@ -90,18 +90,26 @@ img#pdv, img#timeline {
     font-weight: 200;
     letter-spacing: .2vh;
 }
+
 #fwd {
-    font-size: 3vw;
-    padding-left: 8vw;
-    text-decoration:none;
+    position: absolute;
+    top: 45%;
+    right: 20;
 }
+#prev {
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
+img.next, img.prev {
+    height: 4vh;
+    opacity: .45;
+}
+
 img.rdt1 {
     position: absolute;
     right: 0;
     bottom: 17.5vh;
-}
-img.next {
-    height: 5vh;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
