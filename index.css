@@ -68,7 +68,7 @@ body {
     padding-bottom: 17.5vh;
 }
 #design {
-    background: url("gradient.png");
+    background: url("");
     background-position: 0 0;
     background-size: cover;
 }
@@ -94,7 +94,7 @@ img#pdv, img#timeline {
 #fwd {
     position: absolute;
     top: 45%;
-    right: 20;
+    left: 0;
 }
 #prev {
     position: absolute;
