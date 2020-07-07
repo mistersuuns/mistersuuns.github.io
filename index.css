@@ -91,15 +91,17 @@ img#pdv, img#timeline {
     letter-spacing: .2vh;
 }
 
+/* prev next */
+/* prev next */
 #fwd {
     position: absolute;
     top: 45%;
-    left: 0;
+    left: -1vw;
 }
 #prev {
     position: absolute;
     top: 45%;
-    right: 0;
+    right: -1vw;
 }
 img.next, img.prev {
     height: 4vh;
@@ -142,6 +144,11 @@ img.rdt1 {
         padding-left: 3vw;  
         font-size: 2.25vh;
         }
+    #ghost {
+        font-size: 1.2vw;
+        letter-spacing: .075vw;
+        line-height: .65vh;
+    }
     img.rdt1 {
         width: 40vw;
     }
@@ -163,7 +170,6 @@ img.rdt1 {
     #small {
         display: none;
     }
-
     img.design {
         width: 35vw;
         padding-left: 14vw;
@@ -175,6 +181,11 @@ img.rdt1 {
     img.bmz {
         width: 50vw;
         padding-left: 32.5vw;
+    }
+    #ghost {
+        font-size: 1.35vw;
+        letter-spacing: .075vw;
+        line-height: .65vh;
     }
     #imgTxt {
         padding-left: 3vw;  
