@@ -5,6 +5,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+	<script src="//unpkg.com/vue2-scrollspy/dist/index.js"></script>
+
 	<!-- bootstrap JS, Popper.js, and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -31,35 +42,54 @@
 	<title> R O B E R T</title>
 </head>
 
-<body data-spy="scroll" data-target=".nav" data-offset="0">
-	<nav class="navbar">
-		<ul class="nav" id="big">
-			<li><a class="navLink" href="#home" id="nav" role="navigation">HOME</a></li>
-			<li><a class="navLink" href="#design" id="nav" role="navigation">DESIGN</a></li>
-			<li><a class="navLink" href="#coffee" id="nav" role="navigation">SITES</a></li>
-			<li><a class="navLink" href="https://www.bobrobert.com/cv/#print" target="_blank" id="nav"
-					role="navigation">PRINT</a></li>
-			<li><a class="navLink" href="https://www.bobrobert.com/cv" target="_blank" id="nav" role="navigation">CV</a>
+<body data-spy="scroll" data-target=".navbar-nav">
+
+	<nav class="navbar navbar-expand navbar-light">
+		<ul class="navbar-nav" id="big">
+			<li :class="{active:scrollPos == 0}" class="nav-item"><a @click="$scrollTo(0)" class="nav-link active"
+					href="#home" id="nav" role="navigation">HOME</a></li>
+			<li :class="{active:scrollPos == 1}" class="nav-item"><a @click="$scrollTo(1)" class="nav-link"
+					href="#design" id="nav" role="navigation">DESIGN</a></li>
+			<li :class="{active:scrollPos == 2}" class="nav-item"><a @click="$scrollTo(2)" class="nav-link"
+					href="#coffee" id="nav" role="navigation">SITES</a></li>
+			<li :class="{active:scrollPos == 3}" class="nav-item"><a @click="$scrollTo(3)" class="nav-link"
+					href="https://www.bobrobert.com/cv/#print" target="_blank" id="nav" role="navigation">PRINT</a></li>
+			<li :class="{active:scrollPos == 4}" class="nav-item"><a @click="$scrollTo(4)" class="nav-link"
+					href="https://www.bobrobert.com/cv" target="_blank" id="nav" role="navigation">CV</a>
 			</li>
-			<li><a class="navLink" href="#contact" id="nav" role="navigation">CONTACT</a></li>
+			<li :class="{active:scrollPos == 5}" class="nav-item"><a @click="$scrollTo(5)" class="nav-link"
+					href="#contact" id="nav" role="navigation">CONTACT</a></li>
 		</ul>
-		<ul class="nav" id="small">
-			<li><a class="navLink" href="#home" id="nav" role="navigation"><img id="icon" src="home-outline.svg"></a>
+
+		<ul class="navbar-nav" id="small">
+			<li class="nav-item"><a class="nav-link active" href="#home" id="nav" role="navigation"><img id="icon"
+						src="home-outline.svg"></a>
 			</li>
-			<li><a class="navLink" href="#design" id="nav" role="navigation"><img id="icon"
+			<li class="nav-item"><a class="nav-link" href="#design" id="nav" role="navigation"><img id="icon"
 						src="color-palette-outline.svg"></a></li>
-			<li><a class="navLink" href="#coffee" id="nav" role="navigation"><img id="icon" src="cafe-outline.svg"></a>
+			<li class="nav-item"><a class="nav-link" href="#coffee" id="nav" role="navigation"><img id="icon"
+						src="cafe-outline.svg"></a>
 			</li>
-			<li><a class="navLink" href="https://www.bobrobert.com/cv/#print" target="_blank" id="nav"
+			<li class="nav-item"><a class="nav-link" href="https://www.bobrobert.com/cv/#print" target="_blank" id="nav"
 					role="navigation"><img id="icon" src="book-outline.svg"></a></li>
-			<li><a class="navLink" href="https://www.bobrobert.com/cv" target="_blank" id="nav" role="navigation"><img
-						id="icon" src="school-outline.svg"></a></li>
-			<li><a class="navLink" href="#contact" id="nav" role="navigation"><img id="icon" src="mail-outline.svg"></a>
+			<li class="nav-item"><a class="nav-link" href="https://www.bobrobert.com/cv" target="_blank" id="nav"
+					role="navigation"><img id="icon" src="school-outline.svg"></a></li>
+			<li class="nav-item"><a class="nav-link" href="#contact" id="nav" role="navigation"><img id="icon"
+						src="mail-outline.svg"></a>
 			</li>
 		</ul>
 	</nav>
 
-	<div class="scrolling-wrapper">
+	<script src="//unpkg.com/vue2-scrollspy/dist/index.js">
+		new Vue({
+			data: {
+				scrollPos: 0
+			}
+		});
+	</script>
+
+	<div class="scrolling-wrapper" v-scroll-spy="scrollPos">
+
 		<div class="card" id="home">
 			<div class="row">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
