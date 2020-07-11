@@ -5,9 +5,10 @@ body {
     font-family: "Gill Sans";
     overflow-x: scroll;
     position: relative;
+    font-size: min(16px);
 }
 .navbar-nav .nav-link.active {
-    color: red !important;
+    /*color: red !important;*/
 }
 .navbar, .navbar-nav, 
 .scrolling-wrapper, .card, .container-fluid, .row, .col, [class*='col-'] {
@@ -140,12 +141,11 @@ img.rdt1 {
     }
     #imgTxt {
         padding-left: 3vw;  
-        font-size: 2.25vh;
+        font-size: 1.25vw;
         }
     #ghost {
-        font-size: 1.2vw;
+        font-size: 1vw;
         letter-spacing: .075vw;
-        line-height: .65vh;
     }
     img.rdt1 {
         width: 40vw;
@@ -187,7 +187,7 @@ img.rdt1 {
     }
     #imgTxt {
         padding-left: 3vw;  
-        font-size: 2.25vh;
+        font-size: 1.45vw;
     }
     img.rdt1 {
         width: 45vw;
@@ -225,7 +225,7 @@ img.rdt1 {
     }
     #imgTxt {
         padding-left: 3vw;  
-        font-size: 2.5vh;
+        font-size: 1.75vw;
     }
     img.rdt1 {
         width: 50vw;
@@ -262,7 +262,7 @@ img.rdt1 {
     }
     #imgTxt {
         padding-left: 3vw;  
-        font-size: 2.5vh;
+        font-size: 2.25vw;
     }
     img.rdt1 {
         width: 60vw;
@@ -295,7 +295,7 @@ img.rdt1 {
     }
     #imgTxt {
         padding-left: 3vw;  
-        font-size: 1.85vh;
+        font-size: 2.5vw;
     }
     img.white {
         width: 70vw;

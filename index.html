@@ -5,6 +5,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145184415-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145184415-2');
+</script>
 
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
@@ -12,7 +21,8 @@
 	<!-- UIkit JS -->
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
-
+	
+	<!-- vue vue2 -->
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 	<script src="//unpkg.com/vue2-scrollspy/dist/index.js"></script>
 
@@ -46,18 +56,36 @@
 
 	<nav class="navbar navbar-expand navbar-light">
 		<ul class="navbar-nav" id="big">
-			<li :class="{active:scrollPos == 0}" class="nav-item"><a @click="$scrollTo(0)" class="nav-link active"
+			<li :class="{active:scrollPos == 0}" 
+			class="nav-item"><a 
+			@click="$scrollTo(0)" 
+			class="nav-link active"
 					href="#home" id="nav" role="navigation">HOME</a></li>
-			<li :class="{active:scrollPos == 1}" class="nav-item"><a @click="$scrollTo(1)" class="nav-link"
+			<li :class="{active:scrollPos == 1}" 
+			class="nav-item"><a 
+			@click="$scrollTo(1)" 
+			class="nav-link"
 					href="#design" id="nav" role="navigation">DESIGN</a></li>
-			<li :class="{active:scrollPos == 2}" class="nav-item"><a @click="$scrollTo(2)" class="nav-link"
+			<li :class="{active:scrollPos == 2}" 
+			class="nav-item"><a 
+			@click="$scrollTo(2)" 
+			class="nav-link"
 					href="#coffee" id="nav" role="navigation">SITES</a></li>
-			<li :class="{active:scrollPos == 3}" class="nav-item"><a @click="$scrollTo(3)" class="nav-link"
+			<li :class="{active:scrollPos == 3}" 
+			class="nav-item"><a 
+			@click="$scrollTo(3)" 
+			class="nav-link"
 					href="https://www.bobrobert.com/cv/#print" target="_blank" id="nav" role="navigation">PRINT</a></li>
-			<li :class="{active:scrollPos == 4}" class="nav-item"><a @click="$scrollTo(4)" class="nav-link"
+			<li :class="{active:scrollPos == 4}" 
+			class="nav-item"><a 
+			@click="$scrollTo(4)" 
+			class="nav-link"
 					href="https://www.bobrobert.com/cv" target="_blank" id="nav" role="navigation">CV</a>
 			</li>
-			<li :class="{active:scrollPos == 5}" class="nav-item"><a @click="$scrollTo(5)" class="nav-link"
+			<li :class="{active:scrollPos == 5}" 
+			class="nav-item"><a 
+			@click="$scrollTo(5)" 
+			class="nav-link"
 					href="#contact" id="nav" role="navigation">CONTACT</a></li>
 		</ul>
 
