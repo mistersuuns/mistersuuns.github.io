@@ -62,7 +62,7 @@
 			<li :class="{active:scrollPos == 0}" class="nav-item"><a @click="$scrollTo(0)" class="nav-link active"
 					href="#home" id="nav" role="navigation">HOME</a></li>
 			<li :class="{active:scrollPos == 1}" class="nav-item"><a @click="$scrollTo(1)" class="nav-link"
-					href="#design" id="nav" role="navigation">DESIGN</a></li>
+					href="#design" id="nav" role="navigation">DESIGN/UX</a></li>
 			<li :class="{active:scrollPos == 2}" class="nav-item"><a @click="$scrollTo(2)" class="nav-link"
 					href="#coffee" id="nav" role="navigation">SITES</a></li>
 			<!-- PRINT
@@ -113,7 +113,8 @@
 			<div class="row">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
-					<img class="datar" src="datar.webp">
+					<a href="https://archeyes.com/ghost-house-datar-architecture/" target="_blank"><img class="datar"
+							src="datar.webp"></a>
 					<div id="imgTxt">
 						Hello, I'm Robert.<br>
 						I do design,<br>
@@ -125,6 +126,7 @@
 						<br><br>
 						<a id="ghost" href="https://archeyes.com/ghost-house-datar-architecture/" target="_blank"
 							style="color:rgba(0, 0, 0, 0.404) !important">
+							Home page.<br>
 							Ghost House<br>
 							Datar Architecture<br>
 							Tokyo</a>
@@ -146,7 +148,7 @@
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" src="1Lincoln.webp"></a>
 					<div id="imgTxt" style="color:black !important">
-						Screen 1<br>TOTL<br>Bill of Rights<br><br>
+						Screen 1<br>TOTL<br>Bill of Rights<br>(onboarding)<br>
 					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -163,7 +165,7 @@
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" src="4tomPaine.webp"></a>
 					<div id="imgTxt" style="color:black !important">
-						Screen 4<br>TOTL<br>Bill of Rights<br><br>
+						Screen 4<br>TOTL<br>Bill of Rights<br>(onboarding)<br>
 					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -180,7 +182,7 @@
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" src="pinkyS.webp"></a>
 					<div id="imgTxt" style="color:black !important">
-						In Pinky Swear<br>we trust.<br><br>
+						In Pinky Swear<br>we trust.<br>(onboarding)<br>
 					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -197,7 +199,7 @@
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" id="pdv" src="pdvMap.webp"></a>
 					<div id="imgTxt" style="color:black !important">
-						TOTL<br>Private<br>Data<br>Vault<br><br>
+						TOTL<br>Private<br>Data<br>Vault<br>(home screen)<br>
 					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -214,7 +216,7 @@
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" id="timeline" src="timeline1.webp"></a>
 					<div id="imgTxt" style="color:black !important">
-						TOTL<br>Timeline 1<br><br>
+						TOTL<br>Timeline 1<br>(mobile app)<br>
 					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -231,7 +233,33 @@
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" id="timeline" src="timeline2.webp"></a>
 					<div id="imgTxt" style="color:black !important">
-						TOTL<br>Timeline 2<br><br>
+						TOTL<br>Timeline 2<br>(mobile app)<br>
+					</div>
+				</div>
+				<div class="col-1 col-sm-1 col-xl-2">
+					<a id="fwd" href="#ux1"><img class="next" src="chevron-forward-outline.svg"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- ux1 -->
+		<div class="card" id="design">
+			<div class="row design" id="ux1">
+				<div class="col-1 col-sm-1 col-xl-2">
+					<a id="prev" href="#timeline2"><img class="prev" src="chevron-back-outline.svg"></a>
+				</div>
+				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
+					<a href="https://drive.google.com/file/d/18OSXbB-VGVvYRGXIDhh6E1dBRhTE4QQK/view?usp=sharing"
+						target="blank">
+						<img class="design" id="ux1" src="flows2.png">
+					</a>
+					<div id="imgTxt"><a
+							href="https://drive.google.com/file/d/18OSXbB-VGVvYRGXIDhh6E1dBRhTE4QQK/view?usp=sharing"
+							target="blank" style="color:black !important">
+							TOTL UX<br>
+							Click for<br>
+							more detail.<br>
+						</a>
 					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -243,17 +271,17 @@
 		<div class="card" id="coffee">
 			<div class="row">
 				<div class="col-1 col-sm-1 col-xl-2">
-					<a id="prev" href="#timeline2"><img class="prev" src="chevron-back-outline.svg"></a>
+					<a id="prev" href="#ux1"><img class="prev" src="chevron-back-outline.svg"></a>
 				</div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
-					<a href="https://whiterabbitcoffeeco.com" target="_blank" id="rabbit"><img class="white"
-							src="white.webp"></a>
+					<a href="https://whiterabbitcoffeeco.com" target="_blank"><img class="white" src="white.webp">
+					</a>
 					<div id="imgTxt" style="color:black !important">
 						<a href="https://whiterabbitcoffeeco.com" target="_blank" style="color:black !important">
 							White<br>
 							Rabbit<br>
 							Coffee<br>
-							Co.<br><br>
+							Co.<br>(web design<br>+ UX)<br>
 						</a>
 					</div>
 				</div>
@@ -270,7 +298,15 @@
 				</div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a href="https://bmzanalytics.com" target="_blank" id="rabbit"><img class="bmz"
-							src="bmzLogo.png"></a>
+							src="bmzLogo.png">
+					</a>
+					<div id="imgTxt" style="color:black !important">
+						<a href="https://bmzanalytics.com" target="_blank"  style="color:black !important">
+							BMZ<br>
+							Analytics<br>
+							(web design<br>+ UX)<br>
+						</a>
+					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2">
 					<a id="fwd" href="#contact"><img class="next" src="chevron-forward-outline.svg"></a>

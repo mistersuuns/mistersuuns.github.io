@@ -144,10 +144,8 @@ img.rdt1 {
         font-size: 1.25vw;
         }
     #ghost {
-        font-size: 1vw;
+        font-size: 1.1vw;
         letter-spacing: .075vw;
-
-
     }
     img.rdt1 {
         height: 50vh;
@@ -187,11 +185,10 @@ img.rdt1 {
     #ghost {
         font-size: 1.35vw;
         letter-spacing: .075vw;
-        line-height: .65vh;
     }
     #imgTxt {
         padding-left: 3vw;  
-        font-size: 1.45vw;
+        font-size: 1.5vw;
     }
     img.rdt1 {
         height: 50vh;
