@@ -103,8 +103,8 @@ img#pdv, img#timeline {
     right: -1vw;
 }
 img.next, img.prev {
-    height: 4vh;
-    opacity: .45;
+    height: 3.25vh;
+    opacity: .5;
 }
 
 img.rdt1 {
