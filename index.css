@@ -8,7 +8,7 @@ body {
     font-size: min(16px);
 }
 .navbar-nav .nav-link.active {
-    /*color: red !important;*/
+    color: rgba(0, 0, 0, 1);
 }
 .navbar, .navbar-nav, 
 .scrolling-wrapper, .card, .container-fluid, .row, .col, [class*='col-'] {
@@ -66,6 +66,8 @@ body {
     align-items: flex-end;
     padding-bottom: 17.5vh;
 }
+
+/*
 #design {
     background: url("");
     background-position: 0 0;
@@ -80,7 +82,9 @@ body {
     background: url("");
     background-position: 0 0;
     background-size: cover;
-}
+} 
+*/
+
 img#pdv, img#timeline {
     max-height: 70vh;
     width: auto;
@@ -144,7 +148,7 @@ img.rdt1 {
         font-size: 1.25vw;
         }
     #ghost {
-        font-size: 1.1vw;
+        font-size: 1.25vw;
         letter-spacing: .075vw;
     }
     img.rdt1 {
