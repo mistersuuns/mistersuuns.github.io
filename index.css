@@ -1,54 +1,48 @@
-/* {
+* {
     border: solid black .001px;
-}*/
+}
 body {
     font-family: "Gill Sans";
     overflow-x: scroll;
     position: relative;
     font-size: min(16px);
 }
-.navbar-nav .nav-link.active {
-    color: rgba(0, 0, 0, 1);
-}
 .navbar, .navbar-nav, 
-.scrolling-wrapper, .card, .container-fluid, .row, .col, [class*='col-'] {
+.scrollspy, .card, .row, .col, [class*='col-'] {
     margin: 0; padding: 0; border: none;
 }
-.scrolling-wrapper, .card, .container-fluid, .row, .col, [class*='col-'] {
+.scrollspy, .card, .row, .col, [class*='col-'] {
     height: 100vh;
 }
-.scrolling-wrapper {
-    position: relative;
-}
+
 /* nav nav nav nav nav */
 .navbar {
     position: fixed;
     z-index: 1;
     background: white;
 }
-.navbar a {
+
+.navbar-nav {
+    justify-content: space-between;
+    padding: 3vh 0;
+    font-weight: 100;
     color: rgba(0, 0, 0, 1);
     letter-spacing: .3vw;
     font-size: 3vh;
     opacity: 1;
 }
-.navbar-nav {
-    justify-content: space-between;
-    padding: 3vh 0;
-    font-weight: 100;
-}
 
 /* nav nav nav nav nav */
 
-.scrolling-wrapper {
+.scrollspy {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     scroll-margin: 0;
     scroll-padding: 0;
-    width: 100vw;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    position: relative;
 }
 .card {
     display: inline-block;
@@ -124,25 +118,26 @@ img.rdt1 {
         padding-left: 16.75vw;
         width: 83vw;
     }
-    #nav {
+    .nav-link {
         font-size: 1.75vw;
         font-weight: 100;
     }
     #small {
         display: none;
     }
-    img.design {
-        width: 30vw;
-        padding-left: 11vw;
-    }
     img.white {
-        width: 45vw;
-        padding-left: 22.5vw;
+        width: 35vw;
+        padding-left: 12vw;
     }
     img.bmz {
+        width: 35vw;
+        padding-left: 12vw;
+    }
+    img.design {
         width: 45vw;
         padding-left: 25vw;
     }
+
     #imgTxt {
         padding-left: 3vw;  
         font-size: 1.25vw;
@@ -168,24 +163,22 @@ img.rdt1 {
         padding-left: 8.3vw;
         width: 91.45vw;
     }
-    #nav {
+    .nav-link {
         font-size: 1.2em;
     }
     #small {
         display: none;
     }
+
+    img.white, img.bmz {
+        width: 40vw;
+        padding-left: 15vw;
+    }
     img.design {
-        width: 35vw;
-        padding-left: 14vw;
-    }
-    img.white {
-        width: 50vw;
-        padding-left: 30vw;
-    }
-    img.bmz {
-        width: 50vw;
+        width: 55vw;
         padding-left: 32.5vw;
-    }
+    }    
+
     #ghost {
         font-size: 1.35vw;
         letter-spacing: .075vw;
@@ -218,18 +211,15 @@ img.rdt1 {
         width: 100vw;
     }
 
+    img.white, img.bmz {
+        width: 50vw;
+        padding-left: 15vw;
+    }
     img.design {
-        width: 40vw;
-        padding-left: 14vw;
-    }
-    img.white {
-        width: 55vw;
-        padding-left: 30vw;
-    }
-    img.bmz {
-        width: 55vw;
+        width: 58vw;
         padding-left: 31vw;
-    }
+    }  
+
     #imgTxt {
         padding-left: 3vw;  
         font-size: 1.75vw;
@@ -251,24 +241,22 @@ img.rdt1 {
         padding-left: 8.3vw;
         width: 91.25vw;
     }
-    #nav {
+    .nav-link {
         font-size: 3vw;
     }
     #small {
         display: none;
     }
+
+    img.white, img.bmz {
+        width: 60vw;
+        padding-left: 15vw;
+    }
     img.design {
-        width: 50vw;
-        padding-left: 14vw;
-     }
-     img.white {
-        width: 70vw;
+        width: 75vw;
         padding-left: 30vw;
-    }
-    img.bmz {
-        width: 67.5vw;
-        padding-left: 31vw;
-    }
+    }  
+
     #imgTxt {
         padding-left: 3vw;  
         font-size: 2.25vw;
@@ -298,7 +286,7 @@ img.rdt1 {
         opacity: .45;
     }
     img.datar {
-        width: 45vw;
+        width: 55vw;
     }
     img#pdv {
         height: 50vh;
@@ -306,19 +294,16 @@ img.rdt1 {
     }
     #imgTxt {
         padding-left: 3vw;  
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
-    img.white {
+
+    img.white, img.bmz {
         width: 70vw;
-        padding-left: 28vw;
-    }
-    img.bmz {
-        width: 67.5vw;
-        padding-left: 30vw;
+        padding-left: 5vw;
     }
     img.design {
-        width: 45vw;
-        padding-left: 12vw;
+        width: 65vw;
+        padding-left: 5vw;
     }
     img.rdt1 {
         height: 50vh;

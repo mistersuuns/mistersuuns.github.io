@@ -5,19 +5,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145184415-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-145184415-2');
-	</script>
-
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" defer />
 
@@ -25,19 +12,18 @@
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js" defer></script>
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js" defer></script>
 
-	<!-- vue vue2 
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-	<script src="//unpkg.com/vue2-scrollspy/dist/index.js"></script>
-	-->
 	<!-- bootstrap JS, Popper.js, and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer>
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
+		defer>
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer>
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
+		defer>
 	</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" defer>
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"
+		defer>
 	</script>
 	<!-- bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -45,7 +31,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 	</script>
-
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -55,61 +40,47 @@
 	<title> R O B E R T</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar-nav">
+<body>
 
 	<nav class="navbar navbar-expand navbar-light">
-		<ul class="navbar-nav" id="big">
-			<li :class="{active:scrollPos == 0}" class="nav-item"><a @click="$scrollTo(0)" class="nav-link active"
-					href="#home" id="nav" role="navigation">HOME</a></li>
-			<li :class="{active:scrollPos == 1}" class="nav-item"><a @click="$scrollTo(1)" class="nav-link"
-					href="#design" id="nav" role="navigation">DESIGN/UX</a></li>
-			<li :class="{active:scrollPos == 2}" class="nav-item"><a @click="$scrollTo(2)" class="nav-link"
-					href="#coffee" id="nav" role="navigation">SITES</a></li>
-			<!-- PRINT
-					<li :class="{active:scrollPos == 3}" class="nav-item"><a @click="$scrollTo(3)" class="nav-link"
-					href="https://www.bobrobert.com/cv/#print" target="_blank" id="nav" role="navigation">PRINT</a></li>
-			-->
-			<li :class="{active:scrollPos == 4}" class="nav-item"><a @click="$scrollTo(4)" class="nav-link"
-					href="https://www.bobrobert.com/cv" target="_blank" id="nav" role="navigation">CV</a>
+		<ul class="navbar-nav " id="big">
+			<li class="nav-item"><a class="nav-link active" href="#home">HOME</a></li>
+			<li class="nav-item"><a class="nav-link" href="#coffee">SITES</a></li>
+			<li class="nav-item"><a class="nav-link" href="#design">DESIGN/UX</a></li>
+			
+			<li class="nav-item"><a class="nav-link" href="https://www.bobrobert.com/cv" target="_blank">CV</a>
 			</li>
-			<li :class="{active:scrollPos == 5}" class="nav-item"><a @click="$scrollTo(5)" class="nav-link"
-					href="#contact" id="nav" role="navigation" style="color:rgb(143, 142, 142) !important">CONTACT</a></li>
+			<li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a>
+			</li>
 		</ul>
 
 		<ul class="navbar-nav" id="small">
-			<li class="nav-item"><a class="nav-link active" href="#home" id="nav" role="navigation"><img id="icon"
-						src="home-outline.svg"></a>
+			<li class="nav-item">
+				<a class="nav-link active" href="#home"><img id="icon" src="home-outline.svg"></a>
 			</li>
-			<li class="nav-item"><a class="nav-link" href="#design" id="nav" role="navigation"><img id="icon"
-						src="color-palette-outline.svg"></a></li>
-			<li class="nav-item"><a class="nav-link" href="#coffee" id="nav" role="navigation"><img id="icon"
-						src="cafe-outline.svg"></a>
+			<li class="nav-item">
+				<a class="nav-link" href="#coffee"><img id="icon" src="cafe-outline.svg"></a>
 			</li>
-			<!-- PRINT
-			<li class="nav-item"><a class="nav-link" href="https://www.bobrobert.com/cv/#print" target="_blank" id="nav"
-					role="navigation"><img id="icon" src="book-outline.svg"></a></li>
-			-->
-			<li class="nav-item"><a class="nav-link" href="https://www.bobrobert.com/cv" target="_blank" id="nav"
-					role="navigation"><img id="icon" src="school-outline.svg"></a></li>
-			<li class="nav-item"><a class="nav-link" href="#contact" id="nav" role="navigation"><img id="icon"
-						src="mail-outline.svg"></a>
+			<li class="nav-item">
+				<a class="nav-link" href="#design"><img id="icon" src="color-palette-outline.svg"></a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.bobrobert.com/cv" target="_blank"><img id="icon"
+						src="school-outline.svg"></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact"><img id="icon" src="mail-outline.svg"></a>
 			</li>
 		</ul>
 	</nav>
 
-	<!--
-	<script src="//unpkg.com/vue2-scrollspy/dist/index.js">
-		new Vue({
-			data: {
-				scrollPos: 0
-			}
-		});
-	</script>
-	-->
 
-	<div class="scrolling-wrapper" v-scroll-spy="scrollPos">
 
-		<div class="card" id="home">
+	<div class="scrollspy" data-spy="scroll" data-target=".navbar-nav">
+
+		<!-- card1 -->
+		<div class="card " id="home">
 			<div class="row">
 				<div class="col-1 col-sm-1 col-xl-2"></div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
@@ -134,16 +105,67 @@
 					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2">
-					<a id="fwd" href="#lincoln"><img class="next" src="chevron-forward-outline.svg"></a>
+					<a id="fwd" href="#coffee"><img class="next" src="chevron-forward-outline.svg"></a>
 				</div>
 			</div>
 		</div>
 
 
+
+		<!-- card9 -->
+		<div class="card" id="coffee">
+			<div class="row">
+				<div class="col-1 col-sm-1 col-xl-2">
+					<a id="prev" href="#home"><img class="prev" src="chevron-back-outline.svg"></a>
+				</div>
+				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
+					<a href="https://whiterabbitcoffeeco.com" target="_blank"><img class="white"
+							src="newWRcircle2.webp">
+					</a>
+					<div id="imgTxt" style="color:black !important">
+						<a href="https://whiterabbitcoffeeco.com" target="_blank" style="color:black !important">
+							White<br>
+							Rabbit<br>
+							Coffee<br>
+							Co.<br>(web design<br>+ UX)<br>
+						</a>
+					</div>
+				</div>
+				<div class="col-1 col-sm-1 col-xl-2">
+					<a id="fwd" href="#bmz"><img class="next" src="chevron-forward-outline.svg"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- card10 -->
+		<div class="card" id="bmz">
+			<div class="row">
+				<div class="col-1 col-sm-1 col-xl-2">
+					<a id="prev" href="#coffee"><img class="prev" src="chevron-back-outline.svg"></a>
+				</div>
+				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
+					<a href="https://bmzanalytics.com" target="_blank" id="rabbit"><img class="bmz" src="bmzLogo.png">
+					</a>
+					<div id="imgTxt" style="color:black !important">
+						<a href="https://bmzanalytics.com" target="_blank" style="color:black !important">
+							BMZ<br>
+							Analytics<br>
+							(web design<br>+ UX)<br>
+						</a>
+					</div>
+				</div>
+				<div class="col-1 col-sm-1 col-xl-2">
+					<a id="fwd" href="#lincoln"><img class="next" src="chevron-forward-outline.svg"></a>
+				</div>
+			</div>
+		</div>	
+
+
+		<!-- card2 -->
 		<div class="card" id="design">
 			<div class="row design" id="lincoln">
 				<div class="col-1 col-sm-1 col-xl-2">
-					<a id="prev" href="#home"><img class="prev" src="chevron-back-outline.svg"></a>
+					<a id="prev" href="#bmz"><img class="prev" src="chevron-back-outline.svg"></a>
 				</div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a><img class="design" src="1Lincoln.webp"></a>
@@ -157,6 +179,7 @@
 			</div>
 		</div>
 
+		<!-- card3 -->
 		<div class="card" id="design">
 			<div class="row design" id="tomPaine">
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -174,6 +197,7 @@
 			</div>
 		</div>
 
+		<!-- card4 -->
 		<div class="card" id="design">
 			<div class="row design" id="pinkyS">
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -191,6 +215,7 @@
 			</div>
 		</div>
 
+		<!-- card5 -->
 		<div class="card" id="design">
 			<div class="row design" id="pdvMap">
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -208,6 +233,7 @@
 			</div>
 		</div>
 
+		<!-- card6 -->
 		<div class="card" id="design">
 			<div class="row design" id="timeline1">
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -225,6 +251,7 @@
 			</div>
 		</div>
 
+		<!-- card7 -->
 		<div class="card" id="design">
 			<div class="row design" id="timeline2">
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -242,6 +269,7 @@
 			</div>
 		</div>
 
+		<!-- card8 -->
 		<!-- ux1 -->
 		<div class="card" id="design">
 			<div class="row design" id="ux1">
@@ -263,61 +291,17 @@
 					</div>
 				</div>
 				<div class="col-1 col-sm-1 col-xl-2">
-					<a id="fwd" href="#coffee"><img class="next" src="chevron-forward-outline.svg"></a>
-				</div>
-			</div>
-		</div>
-
-		<div class="card" id="coffee">
-			<div class="row">
-				<div class="col-1 col-sm-1 col-xl-2">
-					<a id="prev" href="#ux1"><img class="prev" src="chevron-back-outline.svg"></a>
-				</div>
-				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
-					<a href="https://whiterabbitcoffeeco.com" target="_blank"><img class="white" src="newWRcircle1.webp">
-					</a>
-					<div id="imgTxt" style="color:black !important">
-						<a href="https://whiterabbitcoffeeco.com" target="_blank" style="color:black !important">
-							White<br>
-							Rabbit<br>
-							Coffee<br>
-							Co.<br>(web design<br>+ UX)<br>
-						</a>
-					</div>
-				</div>
-				<div class="col-1 col-sm-1 col-xl-2">
-					<a id="fwd" href="#bmz"><img class="next" src="chevron-forward-outline.svg"></a>
-				</div>
-			</div>
-		</div>
-
-		<div class="card" id="bmz">
-			<div class="row">
-				<div class="col-1 col-sm-1 col-xl-2">
-					<a id="prev" href="#coffee"><img class="prev" src="chevron-back-outline.svg"></a>
-				</div>
-				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
-					<a href="https://bmzanalytics.com" target="_blank" id="rabbit"><img class="bmz"
-							src="bmzLogo.png">
-					</a>
-					<div id="imgTxt" style="color:black !important">
-						<a href="https://bmzanalytics.com" target="_blank"  style="color:black !important">
-							BMZ<br>
-							Analytics<br>
-							(web design<br>+ UX)<br>
-						</a>
-					</div>
-				</div>
-				<div class="col-1 col-sm-1 col-xl-2">
 					<a id="fwd" href="#contact"><img class="next" src="chevron-forward-outline.svg"></a>
 				</div>
 			</div>
 		</div>
 
+
+		<!-- card11 -->
 		<div class="card" id="contact">
 			<div class="row">
 				<div class="col-1 col-sm-1 col-xl-2">
-					<a id="prev" href="#bmz"><img class="prev" src="chevron-back-outline.svg"></a>
+					<a id="prev" href="#ux1"><img class="prev" src="chevron-back-outline.svg"></a>
 				</div>
 				<div class="col-10 col-sm-10 col-xl-8" id="flexEnd">
 					<a href="mailto:rdt1@cornell.edu" target="_blank" id="email">
@@ -331,6 +315,44 @@
 
 	</div>
 
+
+
+	<script>
+		$(function () {
+			var parent = document.querySelector('.scrollspy');
+			var parentDimensions = parent.getBoundingClientRect();
+			var parentX = parentDimensions.x;
+
+			parent.addEventListener('scroll', function () {
+
+				var items = document.querySelectorAll('.card');
+				var arr = [];
+
+				items.forEach(function (item, index, array) {
+
+					var itemDimensions = item.getBoundingClientRect();
+					var itemX = itemDimensions.x;
+					arr[index] = itemX;
+
+					var itemId = item.id;
+					var itemBtn = document.querySelector('a[href="#' + itemId + '"]');
+					itemBtn.setAttribute('data-index', index);
+
+					itemBtn.classList.contains('active') && itemBtn.classList.remove('active');
+				});
+
+				var closest = arr.reduce(function (prev, curr, index, array) {
+					return (Math.abs(curr - parentX) < Math.abs(prev - parentX) ? curr : prev)
+				});
+
+				arr.map(function (item, index, array) {
+					(item === closest) && document.querySelector('[data-index="' + index + '"]')
+						.classList.add(
+							'active');
+				});
+			});
+		});
+	</script>
 
 	<!--	
 				<span id="borText">
