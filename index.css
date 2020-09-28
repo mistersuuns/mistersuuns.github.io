@@ -35,24 +35,20 @@ body {
 /* nav nav nav nav nav */
 
 .scrollspy {
-    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     scroll-margin: 0;
     scroll-padding: 0;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    position: relative;
 }
 .card {
     display: inline-block;
-    overflow-y: hidden; 
-    overflow-x: auto;
     width: 100vw;
     border:none;
     scroll-margin: 0;
     scroll-padding: 0;
-    scroll-snap-align: end;
+    scroll-snap-align: start;
 }
 
 #flexEnd  {
@@ -101,8 +97,8 @@ img#pdv, img#timeline {
     right: -1vw;
 }
 img.next, img.prev {
-    height: 3.25vh;
-    opacity: .5;
+    height: 4.75vh;
+    opacity: 0.9;
 }
 
 img.rdt1 {
