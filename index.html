@@ -51,7 +51,6 @@
 				<li class="nav-item"><a class="nav-link active" href="#home">HOME</a></li>
 				<li class="nav-item"><a class="nav-link" href="#coffee">SITES</a></li>
 				<li class="nav-item"><a class="nav-link" href="#design">DESIGN/UX</a></li>
-
 				<li class="nav-item"><a class="nav-link" href="https://www.bobrobert.com/cv" target="_blank">CV</a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a>
@@ -68,7 +67,6 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#design"><img id="icon" src="color-palette-outline.svg"></a>
 				</li>
-
 				<li class="nav-item">
 					<a class="nav-link" href="https://www.bobrobert.com/cv" target="_blank"><img id="icon"
 							src="school-outline.svg"></a>
@@ -78,7 +76,7 @@
 				</li>
 			</ul>
 		</nav>
-
+		
 
 
 		<!-- card1 -->
@@ -110,12 +108,12 @@
 					<a id="fwd" href="#coffee"><img class="next" src="R.webp"></a>
 				</div>
 			</div>
-		</div>	
+		</div>
 
 
 
-		<!-- card9 -->
-		<div class="card"  id="coffee">
+		<!-- card2 -->
+		<div class="card" id="coffee">
 			<div class="row">
 				<div class="col-1 col-sm-1 col-xl-2">
 					<a id="prev" href="#home"><img class="prev" src="L.webp"></a>
@@ -139,7 +137,7 @@
 			</div>
 		</div>
 
-		<!-- card10 -->
+		<!-- card3 -->
 		<div class="card" id="bmz">
 			<div class="row">
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -163,7 +161,7 @@
 		</div>
 
 
-		<!-- card2 -->
+		<!-- card4 -->
 		<div class="card" id="design">
 			<div class="row" id="lincoln">
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -181,7 +179,7 @@
 			</div>
 		</div>
 
-		<!-- card3 -->
+		<!-- card5 -->
 		<div class="card" id="design">
 			<div class="row" id="tomPaine">
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -199,7 +197,7 @@
 			</div>
 		</div>
 
-		<!-- card4 -->
+		<!-- card6 -->
 		<div class="card" id="design">
 			<div class="row" id="pinkyS">
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -217,7 +215,7 @@
 			</div>
 		</div>
 
-		<!-- card5 -->
+		<!-- card7 -->
 		<div class="card" id="design">
 			<div class="row" id="pdvMap">
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -235,7 +233,7 @@
 			</div>
 		</div>
 
-		<!-- card6 -->
+		<!-- card8 -->
 		<div class="card" id="design">
 			<div class="row" id="timeline1">
 				<div class="col-1 col-sm-1 col-xl-2">
@@ -253,8 +251,8 @@
 			</div>
 		</div>
 
-		<!-- card7 -->
-		<div class="card"id="design" >
+		<!-- card9 -->
+		<div class="card" id="design">
 			<div class="row" id="timeline2">
 				<div class="col-1 col-sm-1 col-xl-2">
 					<a id="prev" href="#timeline1"><img class="prev" src="L.webp"></a>
@@ -271,7 +269,7 @@
 			</div>
 		</div>
 
-		<!-- card8 -->
+		<!-- car10 -->
 		<!-- ux1 -->
 		<div class="card" id="design">
 			<div class="row" id="ux1">
@@ -314,48 +312,49 @@
 				</div>
 			</div>
 		</div>
-		
-	</div>
 
 
-	<script>
-		$(function () {
-			var parent = document.querySelector('.scrollspy');
-			var parentDimensions = parent.getBoundingClientRect();
-			var parentX = parentDimensions.x;
 
-			parent.addEventListener('scroll', function () {
 
-				var items = document.querySelectorAll('.card');
-				var arr = [];
+		<script>
+			$(function () {
+				var parent = document.querySelector('.scrollspy');
+				var parentDimensions = parent.getBoundingClientRect();
+				var parentX = parentDimensions.x;
 
-				items.forEach(function (item, index, array) {
+				parent.addEventListener('scroll', function () {
 
-					var itemDimensions = item.getBoundingClientRect();
-					var itemX = itemDimensions.x;
-					arr[index] = itemX;
+					var items = document.querySelectorAll('.card');
+					var arr = [];
 
-					var itemId = item.id;
-					var itemBtn = document.querySelector('a[href="#' + itemId + '"]');
-					itemBtn.setAttribute('data-index', index);
+					items.forEach(function (item, index, array) {
 
-					itemBtn.classList.contains('active') && itemBtn.classList.remove('active');
-				});
+						var itemDimensions = item.getBoundingClientRect();
+						var itemX = itemDimensions.x;
+						arr[index] = itemX;
 
-				var closest = arr.reduce(function (prev, curr, index, array) {
-					return (Math.abs(curr - parentX) < Math.abs(prev - parentX) ? curr : prev)
-				});
+						var itemId = item.id;
+						var itemBtn = document.querySelector('a[href="#' + itemId + '"]');
+						itemBtn.setAttribute('data-index', index);
 
-				arr.map(function (item, index, array) {
-					(item === closest) && document.querySelector('[data-index="' + index + '"]')
-						.classList.add(
-							'active');
+						itemBtn.classList.contains('active') && itemBtn.classList.remove('active');
+					});
+
+					var closest = arr.reduce(function (prev, curr, index, array) {
+						return (Math.abs(curr - parentX) < Math.abs(prev - parentX) ? curr : prev)
+					});
+
+					arr.map(function (item, index, array) {
+						(item === closest) && document.querySelector('[data-index="' + index + '"]')
+							.classList.add(
+								'active');
+					});
 				});
 			});
-		});
-	</script>
+		</script>
 
-	<!--	
+
+		<!--	
 				<span id="borText">
 					Introductory screen to the TOTL Bill of Rights.<br>
 					FLOOR: Abe Lincoln, career politician, civil war president, abolitionist,
