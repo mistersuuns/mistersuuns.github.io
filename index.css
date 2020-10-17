@@ -98,7 +98,7 @@ img#pdv, img#timeline {
 }
 img.next, img.prev {
     height: 4.75vh;
-    opacity: 0.9;
+    opacity: 0.25;
 }
 
 img.rdt1 {
