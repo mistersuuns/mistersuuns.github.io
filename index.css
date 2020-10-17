@@ -97,6 +97,7 @@ img#pdv, img#timeline {
     right: -1vw;
 }
 img.next, img.prev {
+    margin: 1vw;
     height: 4.75vh;
     opacity: 0.25;
 }
@@ -282,6 +283,7 @@ img.rdt1 {
         opacity: .45;
     }
     img.next, img.prev {
+        margin: 1vw;
         height: 5vh;
         padding: 2vw;
     }
