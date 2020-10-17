@@ -1,6 +1,7 @@
-  /* {
+/* {
     border: solid black .001px;
 }*/
+
 body {
     font-family: "Gill Sans";
     overflow-x: scroll;
@@ -79,7 +80,12 @@ img#pdv, img#timeline {
     max-height: 70vh;
     width: auto;
 }
-#imgTxt {
+
+#spacer {
+    height: 15vh;
+}
+
+#copyTxt, #imgTxt {
     font-weight: 200;
     letter-spacing: .2vh;
 }
@@ -135,6 +141,20 @@ img.rdt1 {
         padding-left: 25vw;
     }
 
+    #copy {
+        height: 28vh;
+        padding-left: 2vw;
+    }
+    #copyImg {
+        height: 26vh;
+        width: auto;
+    }
+    #copyTxt {
+        padding-left: 3vw;  
+        font-size: 1.75vw;
+        line-height: 3.5vh;
+    }
+
     #imgTxt {
         padding-left: 3vw;  
         font-size: 1.25vw;
@@ -180,6 +200,21 @@ img.rdt1 {
         font-size: 1.35vw;
         letter-spacing: .075vw;
     }
+
+    #copy {
+        height: 28vh;
+        padding-left: 2vw;
+    }
+    #copyImg {
+        height: 26vh;
+        width: auto;
+    }
+    #copyTxt {
+        padding-left: 3vw;  
+        font-size: 2vw;
+        line-height: 3.5vh;
+    }
+
     #imgTxt {
         padding-left: 3vw;  
         font-size: 1.5vw;
@@ -216,6 +251,20 @@ img.rdt1 {
         width: 58vw;
         padding-left: 31vw;
     }  
+
+    #copy {
+        padding-left: 2vw;
+        height: 28vh;
+    }
+    #copyImg {
+        height: 26vh;
+        width: auto;
+    }
+    #copyTxt {
+        padding-left: 4.5vw;  
+        font-size: 2.35vw;
+        line-height: 3.5vh;
+    }
 
     #imgTxt {
         padding-left: 3vw;  
@@ -254,6 +303,20 @@ img.rdt1 {
         padding-left: 30vw;
     }  
 
+    #copy {
+        padding-left: 2vw;
+        height: 28vh;
+    }
+    #copyImg {
+        height: 26vh;
+        width: auto;
+    }
+    #copyTxt {
+        padding-left: 4.5vw;  
+        font-size: 3.25vw;
+        line-height: 3vh;
+    }
+
     #imgTxt {
         padding-left: 3vw;  
         font-size: 2.25vw;
@@ -291,10 +354,23 @@ img.rdt1 {
     img.datar {
         width: 55vw;
     }
+    #copy {
+        height: 28vh;
+    }
+    #copyImg {
+        height: 25vh;
+        width: auto;
+    }
+    #copyTxt {
+        padding-left: 5vw;  
+        font-size: 4vw;
+        line-height: 3.25vh;
+    }
     img#pdv {
         height: 50vh;
         width: auto;
     }
+
     #imgTxt {
         padding-left: 3vw;  
         font-size: 3vw;
