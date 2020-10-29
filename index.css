@@ -82,7 +82,7 @@ img#pdv, img#timeline {
 }
 
 #spacer {
-    height: 15vh;
+    height: 12.5vh;
 }
 
 #copyTxt, #imgTxt {
@@ -182,7 +182,7 @@ img.rdt1 {
         width: 91.45vw;
     }
     .nav-link {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     #small {
         display: none;
