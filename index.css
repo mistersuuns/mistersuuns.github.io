@@ -153,9 +153,8 @@ img.rdt1 {
         width: auto;
     }
     #copyTxt {
-        padding-left: 3vw;  
-        font-size: 1.5vw;
-        line-height: 3.5vh;
+        padding-left: 2vw;  
+        font-size: 1.25vw;
     }
 
     #imgTxt {
@@ -218,8 +217,7 @@ img.rdt1 {
     }
     #copyTxt {
         padding-left: 3vw;  
-        font-size: 2vw;
-        line-height: 3.5vh;
+        font-size: 1.5vw;
     }
 
     #imgTxt {
@@ -272,9 +270,8 @@ img.rdt1 {
         width: auto;
     }
     #copyTxt {
-        padding-left: 4.5vw;  
-        font-size: 2vw;
-        line-height: 3.25vh;
+        padding-left: 3vw;  
+        font-size: 1.75vw;
     }
 
     #imgTxt {
@@ -327,9 +324,8 @@ img.rdt1 {
         width: auto;
     }
     #copyTxt {
-        padding-left: 4.5vw;  
-        font-size: 2.5vw;
-        line-height: 3vh;
+        padding-left: 3vw;  
+        font-size: 2.25vw;
     }
 
     #imgTxt {
@@ -377,9 +373,8 @@ img.rdt1 {
         width: auto;
     }
     #copyTxt {
-        padding-left: 5vw;  
-        font-size: 4vw;
-        line-height: 3.25vh;
+        padding-left: 3vw;  
+        font-size: 3vw;
     }
     img#pdv {
         height: 50vh;
