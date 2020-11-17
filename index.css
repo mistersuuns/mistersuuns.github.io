@@ -1,19 +1,18 @@
 /* {
     border: solid black .001px;
-}*/
+} */
 
 body {
     font-family: "Gill Sans";
     overflow-x: scroll;
     position: relative;
     font-size: min(16px);
+    font-weight: 200;
+    letter-spacing: .2vh;
 }
 .navbar, .navbar-nav, 
 .scrollspy, .card, .row, .col, [class*='col-'] {
     margin: 0; padding: 0; border: none;
-}
-.scrollspy, .card, .row, .col, [class*='col-'] {
-    height: 100vh;
 }
 
 /* nav nav nav nav nav */
@@ -36,138 +35,95 @@ body {
 /* nav nav nav nav nav */
 
 .scrollspy {
-    overflow-y: hidden;
-    white-space: nowrap;
+    overflow: scroll;
     scroll-margin: 0;
     scroll-padding: 0;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 .card {
-    display: inline-block;
-    width: 100vw;
-    border:none;
+    border: none;
     scroll-margin: 0;
     scroll-padding: 0;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
+    scroll-behavior: smooth;
 }
 
-#flexEnd  {
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 17.5vh;
+#cornell, #totlPDV, #beetroot  {
+    padding-bottom: 5vh;
 }
-
-/*
-#design {
-    background: url("");
-    background-position: 0 0;
-    background-size: cover;
+#cornell, #totlPDV {
+    padding-right: 3vw;
 }
-#coffee {
-    background: url("");
-    background-position: 0 0;
-    background-size: cover;
-}
-#contact {
-    background: url("");
-    background-position: 0 0;
-    background-size: cover;
-} 
-*/
-
-img#pdv, img#timeline {
-    max-height: 70vh;
-    width: auto;
-}
-
-#spacer {
-    height: 12.5vh;
-}
-
-#copyTxt, #imgTxt {
-    font-weight: 200;
-    letter-spacing: .2vh;
-}
-
-/* prev next */
-/* prev next */
-#fwd {
-    position: absolute;
-    top: 45%;
-    left: -1vw;
-}
-#prev {
-    position: absolute;
-    top: 45%;
-    right: -1vw;
-}
-img.next, img.prev {
-    opacity: 0.25;
-}
-
-img.rdt1 {
-    position: absolute;
-    right: 0;
-    bottom: 17.5vh;
+.home, .sites, .copyEdit, .pm, .email {
+    height: 100vh;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 @media (min-width: 1200px) {
+    #logo {
+        height: 10vh;
+    }
     .navbar-nav {
-        padding-left: 16.75vw;
-        width: 83vw;
+        padding-left: 8.3vw;
+        width: 91.7vw;
     }
     .nav-link {
-        font-size: 1.75vw;
+        font-size: .95em;
         font-weight: 100;
     }
     #small {
         display: none;
     }
 
-    img.next, img.prev {
-        margin: 1vw;
-        height: 3vh;
+    .home, .sites, .copyEdit, .pm, .email {
+        font-size: 1.1em;
     }
-    img.white {
-        width: 35vw;
-        padding-left: 12vw;
+    .home { padding-top: 50vh; }
+    img.design {
+        padding-right: 1.25vw;
+    }
+    .sites { padding-top: 35vh; }
+    img.whiteRabbit {
+        width: 15vw;
+        padding-bottom: 5vh;
     }
     img.bmz {
-        width: 35vw;
-        padding-left: 12vw;
+        width: 20vw;
+        padding-bottom: 5vh;
     }
-    img.design {
-        width: 45vw;
-        padding-left: 25vw;
+    .copyEdit { padding-top: 35vh; }
+    #cornell {
+        width: 15vw;
     }
-
-    #copy {
-        height: 28vh;
+    #totlPDV {
+        width: 12vw;
     }
-    #copyImg {
-        height: 27vh;
-        width: auto;
+    #theoryImg, #clinImg, #tdrImg {
+        padding-right: 1vw;
     }
-    #copyTxt {
-        padding-left: 2vw;  
-        font-size: 1.25vw;
+    .pm { padding-top: 22.5vh;}
+    img.flows2 {
+        height: 70vh;
     }
-
-    #imgTxt {
-        padding-left: 3vw;  
-        font-size: 1.25vw;
-        }
-    #ghost {
-        font-size: 1.25vw;
-        letter-spacing: .075vw;
+    img.timeline1 {
+        height: 70vh;
+        padding-left: 5vw;
+    }
+    #breakS {
+        display: none;
+    }
+    .email { padding-top: 35vh;}
+    #email {
+        float: right;
     }
     img.rdt1 {
-        height: 50vh;
         padding-right: 1vw;
         opacity: .75;
+    }
+
+    .smallest {
+        display: none;
     }
 }
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -177,55 +133,68 @@ img.rdt1 {
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
 @media (min-width: 992px) and (max-width: 1199px) {
+    #logo {
+        height: 10vh;
+    }
     .navbar-nav {
-        padding-left: 8.3vw;
+        padding-left: 8vw;
         width: 91.45vw;
     }
     .nav-link {
-        font-size: 1em;
+        font-size: .95em;
     }
     #small {
         display: none;
     }
 
-    img.next, img.prev {
-        margin: 1vw;
-        height: 3vh;
+    .home, .sites, .copyEdit, .pm, .email {
+        font-size: 1.1em;
     }
-    img.white, img.bmz {
-        width: 40vw;
-        padding-left: 15vw;
-    }
+    .home { padding-top: 50vh; }
     img.design {
-        width: 55vw;
-        padding-left: 32.5vw;
-    }    
-
-    #ghost {
-        font-size: 1.35vw;
-        letter-spacing: .075vw;
+        padding-right: 1.25vw;
     }
-
-    #copy {
-        height: 28vh;
+    .sites { padding-top: 35vh; }
+    img.whiteRabbit {
+        width: 15vw;
+        padding-bottom: 5vh;
     }
-    #copyImg {
-        height: 26vh;
-        width: auto;
+    img.bmz {
+        width: 20vw;
+        padding-bottom: 5vh;
     }
-    #copyTxt {
-        padding-left: 3vw;  
-        font-size: 1.5vw;
+    .copyEdit { padding-top: 35vh; }
+    #cornell {
+        width: 15vw;
     }
-
-    #imgTxt {
-        padding-left: 3vw;  
-        font-size: 1.5vw;
+    #totlPDV {
+        width: 12vw;
+    }
+    #theoryImg, #clinImg, #tdrImg {
+        padding-right: 1vw;
+    }
+    .pm { padding-top: 22.5vh;}
+    img.flows2 {
+        height: 70vh;
+    }
+    img.timeline1 {
+        height: 70vh;
+        padding-left: 5vw;
+    }
+    #breakS {
+        display: none;
+    }
+    .email { padding-top: 35vh;}
+    #email {
+        float: right;
     }
     img.rdt1 {
-        height: 50vh;
         padding-right: 1vw;
         opacity: .75;
+    }
+
+    .smallest {
+        display: none;
     }
 }
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
@@ -235,51 +204,72 @@ img.rdt1 {
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 @media (min-width: 768px) and (max-width: 991px) {
+    #logo {
+        height: 7.5vh;
+    }
     .navbar-nav {
         padding-left: 8.3vw;
         width: 91.25vw;
     }
+    .nav-link {
+        font-size: .95em;
+    }
     #small {
         display: none;
     }
-    #ul {
-        width: 100vw;
-    }
 
-    img.next, img.prev {
-        margin: 1vw;
-        height: 3vh;
+    .home, .sites, .copyEdit, .pm, .email {
+        font-size: .95em;
     }
-    img.white, img.bmz {
-        width: 50vw;
-        padding-left: 15vw;
-    }
+    .home { padding-top: 50vh; }
     img.design {
-        width: 58vw;
-        padding-left: 31vw;
-    }  
-
-    #copy {
-        height: 28vh;
+        padding-right: 1.25vw;
     }
-    #copyImg {
-        height: 26vh;
-        width: auto;
+    .sites { padding-top: 35vh; }
+    img.whiteRabbit {
+        width: 15vw;
+        padding-bottom: 5vh;
     }
-    #copyTxt {
-        padding-left: 3vw;  
-        font-size: 1.75vw;
+    img.bmz {
+        width: 20vw;
+        padding-bottom: 5vh;
     }
-
-    #imgTxt {
-        padding-left: 3vw;  
-        font-size: 1.75vw;
+    .copyEdit { padding-top: 35vh; }
+    #cornell {
+        width: 15vw;
+    }
+    #totlPDV {
+        width: 12vw;
+    }
+    #theoryImg, #clinImg, #tdrImg {
+        padding-right: 1vw;
+    }
+    .pm { padding-top: 22.5vh;}
+    img.flows2 {
+        height: 50vh;
+    }
+    img.timeline1 {
+        height: 70vh;
+        padding-left: 5vw;
+    }
+    .bigger {
+        padding-left: 1vw;
+    }
+    #breakS {
+        display: none;
+    }
+    .email { padding-top: 35vh;}
+    #email {
+        float: right;
     }
     img.rdt1 {
-        height: 50vh;
         padding-right: 1vw;
         opacity: .75;
-        }
+    }
+
+    .smallest {
+        display: none;
+    }
 }
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
@@ -288,51 +278,66 @@ img.rdt1 {
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 @media (min-width: 576px) and (max-width: 767px) {
+    #logo {
+        height: 7.5vh;
+    }
     .navbar-nav {
         padding-left: 8.3vw;
         width: 91.25vw;
     }
     .nav-link {
-        font-size: 3vw;
+        font-size: .85em;
     }
     #small {
         display: none;
     }
 
-    img.next, img.prev {
-        margin: 1vw;
-        height: 3.5vh;
+    .home, .sites, .copyEdit, .pm, .email {
+        font-size: .85em;
     }
-    img.white, img.bmz {
-        width: 60vw;
-        padding-left: 15vw;
-    }
+    .home { padding-top: 40vh; }
     img.design {
-        width: 75vw;
-        padding-left: 30vw;
-    }  
-
-    #copy {
-        height: 28vh;
+        padding-right: 1.25vw;
     }
-    #copyImg {
-        height: 26vh;
-        width: auto;
+    .sites { padding-top: 50vh; }
+    img.whiteRabbit {
+        width: 20vw;
+        padding-bottom: 5vh;
     }
-    #copyTxt {
-        padding-left: 3vw;  
-        font-size: 2.25vw;
+    img.bmz {
+        width: 22.5vw;
+        padding-bottom: 5vh;
     }
-
-    #imgTxt {
-        padding-left: 3vw;  
-        font-size: 2.25vw;
+    .copyEdit { padding-top: 35vh; }
+    #cornell {
+        width: 15vw;
+    }
+    #totlPDV {
+        width: 12vw;
+    }
+    #theoryImg, #clinImg, #tdrImg {
+        padding-right: 1vw;
+    }
+    .pm { padding-top: 22.5vh;}
+    img.flows2 {
+        height: 45vh;
+    }
+    img.timeline1 {
+        height: 45vh;
+        padding-left: 5vw;
+    }
+    .email { padding-top: 55vh;}
+    #email {
+        float: right;
     }
     img.rdt1 {
-        height: 50vh;
         padding-right: 1vw;
         opacity: .75;
-        }
+    }
+
+    .smallest {
+        display: none;
+    }
 }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSS5SSSSSSSSS */
@@ -341,6 +346,9 @@ img.rdt1 {
 /* XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
+    #logo {
+        width: 10vw;
+    }
     .navbar-nav {
         padding-left: 8vw;
         width: 91vw;
@@ -348,53 +356,66 @@ img.rdt1 {
     #big {
         display: none;
     } 
-    #icon {
-        height: 3.5vh;
-        opacity: .45;
-    }
-    img.next, img.prev {
-        margin: 1vw;
-        height: 4vh;
-        padding: 2vw;
+    .nav-link {
+        font-size: .85em;
     }
 
-    img.datar {
-        width: 55vw;
+    .home, .sites, .copyEdit, .pm, .email {
+        font-size: .85em;
     }
-    #copy {
-        height: 28vh;
-    }
-    #copyImg {
-        height: 26vh;
-        width: auto;
-    }
-    #copyTxt {
-        padding-left: 3vw;  
-        font-size: 3vw;
-    }
-    img#pdv {
-        height: 50vh;
-        width: auto;
-    }
-
-    #imgTxt {
-        padding-left: 3vw;  
-        font-size: 3vw;
-    }
-
-    img.white, img.bmz {
-        width: 70vw;
-        padding-left: 5vw;
-    }
+    .home { padding-top: 17.5vh; }
     img.design {
-        width: 65vw;
-        padding-left: 5vw;
+        padding-right: 1.25vw;
+    }
+    .sites { padding-top: 50vh; }
+    img.whiteRabbit {
+        width: 20vw;
+        padding-bottom: 5vh;
+    }
+    img.bmz {
+        width: 22.5vw;
+        padding-bottom: 5vh;
+    }
+    .copyEdit { padding-top: 17.5vh; }
+    #cornell, #totlPDV {
+        width: 18vw;
+        padding: 0 1vw 0 0;
+    }
+    #totlPDV {
+        width: 18vw;
+        padding: 2vh 1vw 1vh 0;
+    }
+    #beetroot {
+        padding-bottom: 2vh;
+    }
+    #theoryImg, #clinImg, #tdrImg {
+        width: 21vw;
+        padding-right: 1vw;
+        padding-bottom: 1vh;
+    }
+
+    .pm { padding-top: 22.5vh;}
+    img.flows2 {
+        height: 25vh;
+    }
+    img.timeline1 {
+        height: 40vh;
+        padding-left: 2.5vw;
+    }
+    .email { padding-top: 55vh;}
+    #email {
+        float: right;
     }
     img.rdt1 {
-        height: 50vh;
         padding-right: 1vw;
         opacity: .75;
-        }
+    }
+    .bigger {
+        display: none;
+    }
+    #xsRow {
+        padding-bottom: .75vh;
+    }
 }
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
