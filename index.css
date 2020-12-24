@@ -55,7 +55,7 @@ body {
     padding-right: 3vw;
 }
 .home, .sites, .copyEdit, .pm, .email {
-    height: 100vh;
+    height: ;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -83,7 +83,7 @@ body {
     img.design {
         padding-right: 1.25vw;
     }
-    .sites { padding-top: 35vh; }
+    .sites { padding-top: 25vh; }
     img.whiteRabbit {
         width: 15vw;
         padding-bottom: 5vh;
@@ -92,7 +92,7 @@ body {
         width: 20vw;
         padding-bottom: 5vh;
     }
-    .copyEdit { padding-top: 35vh; }
+    .copyEdit { padding-top: 25vh; }
     #cornell {
         width: 15vw;
     }
@@ -121,7 +121,9 @@ body {
         padding-right: 1vw;
         opacity: .75;
     }
-
+    .bigger {
+        padding-left: 1vw;
+    }
     .smallest {
         display: none;
     }
@@ -150,7 +152,7 @@ body {
     .home, .sites, .copyEdit, .pm, .email {
         font-size: 1.1em;
     }
-    .home { padding-top: 50vh; }
+    .home { padding-top: 25vh; }
     img.design {
         padding-right: 1.25vw;
     }
@@ -192,7 +194,9 @@ body {
         padding-right: 1vw;
         opacity: .75;
     }
-
+    .bigger {
+        padding-left: 1vw;
+    }
     .smallest {
         display: none;
     }
@@ -225,7 +229,7 @@ body {
     img.design {
         padding-right: 1.25vw;
     }
-    .sites { padding-top: 35vh; }
+    .sites { padding-top: 25vh; }
     img.whiteRabbit {
         width: 15vw;
         padding-bottom: 5vh;
@@ -299,7 +303,7 @@ body {
     img.design {
         padding-right: 1.25vw;
     }
-    .sites { padding-top: 50vh; }
+    .sites { padding-top: 25vh; }
     img.whiteRabbit {
         width: 20vw;
         padding-bottom: 5vh;
@@ -367,7 +371,7 @@ body {
     img.design {
         padding-right: 1.25vw;
     }
-    .sites { padding-top: 50vh; }
+    .sites { padding-top: 25vh; }
     img.whiteRabbit {
         width: 20vw;
         padding-bottom: 5vh;
@@ -402,7 +406,13 @@ body {
         height: 40vh;
         padding-left: 2.5vw;
     }
-    .email { padding-top: 55vh;}
+    .col-12.smallest {
+        padding-bottom: 2vh;
+    }
+    .email { 
+        padding-top: 25vh;
+        padding-bottom: 5vh;
+    }
     #email {
         float: right;
     }
