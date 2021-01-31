@@ -1,0 +1,434 @@
+/* {
+    border: solid black .001px;
+} */
+
+body {
+    font-family: "Gill Sans";
+    overflow-x: scroll;
+    position: relative;
+    font-size: min(16px);
+    font-weight: 200;
+    letter-spacing: .2vh;
+}
+.navbar, .navbar-nav, 
+.scrollspy, .card, .row, .col, [class*='col-'] {
+    margin: 0; padding: 0; border: none;
+}
+
+/* nav nav nav nav nav */
+.navbar {
+    position: fixed;
+    z-index: 1;
+    background: white;
+}
+
+.navbar-nav {
+    justify-content: space-between;
+    padding: 3vh 0;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: .3vw;
+    font-size: 3vh;
+    opacity: 1;
+}
+
+/* nav nav nav nav nav */
+
+.scrollspy {
+    overflow: scroll;
+    scroll-margin: 0;
+    scroll-padding: 0;
+    scroll-snap-type: y mandatory;
+}
+.card {
+    border: none;
+    scroll-margin: 0;
+    scroll-padding: 0;
+    scroll-snap-align: end;
+    scroll-behavior: smooth;
+}
+
+#cornell, #totlPDV, #beetroot  {
+    padding-bottom: 5vh;
+}
+#cornell, #totlPDV {
+    padding-right: 3vw;
+}
+#subhead {
+    font-size: larger;
+}
+
+.email {
+    padding-bottom: 5vh;
+}
+
+/* XL XL XL XL XL XL XL XL XL XL XL XL */
+/* XL XL XL XL XL XL XL XL XL XL XL XL */
+@media (min-width: 1200px) {
+    #logo {
+        height: 10vh;
+    }
+    .navbar-nav {
+        padding-left: 8.3vw;
+        width: 91.7vw;
+    }
+    .nav-link {
+        font-size: .95em;
+        font-weight: 100;
+    }
+    #small {
+        display: none;
+    }
+
+    .home, .sites, .copyEdit, .pm, .email {
+        font-size: 1.1em;
+    }
+    .home { padding-top: 50vh; }
+    img.design {
+        padding-right: 1.25vw;
+    }
+    .sites { padding-top: 25vh; }
+    img.whiteRabbit {
+        width: 15vw;
+        padding-bottom: 5vh;
+    }
+    img.bmz {
+        width: 20vw;
+        padding-bottom: 5vh;
+    }
+    .copyEdit { padding-top: 25vh; }
+    #cornell {
+        width: 15vw;
+    }
+    #totlPDV {
+        width: 12vw;
+    }
+    #theoryImg, #clinImg, #tdrImg {
+        padding-right: 1vw;
+    }
+    .pm { padding-top: 22.5vh;}
+    img.flows2 {
+        height: 70vh;
+    }
+    img.timeline1 {
+        height: 70vh;
+        padding-left: 5vw;
+    }
+    #breakS {
+        display: none;
+    }
+    .email { padding-top: 35vh;}
+    #email {
+        float: right;
+    }
+    img.rdt1 {
+        padding-right: 1vw;
+        opacity: .75;
+    }
+    .bigger {
+        padding-left: 1vw;
+    }
+    .smallest {
+        display: none;
+    }
+}
+/* XL XL XL XL XL XL XL XL XL XL XL XL */
+/* XL XL XL XL XL XL XL XL XL XL XL XL */
+
+
+/* LG LG LG LG LG LG LG LG LG LG LG LG */
+/* LG LG LG LG LG LG LG LG LG LG LG LG */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo {
+        height: 10vh;
+    }
+    .navbar-nav {
+        padding-left: 8vw;
+        width: 91.45vw;
+    }
+    .nav-link {
+        font-size: .95em;
+    }
+    #small {
+        display: none;
+    }
+
+    .home, .sites, .copyEdit, .pm, .email {
+        font-size: 1.1em;
+    }
+    .home { padding-top: 45vh; }
+    img.design {
+        padding-right: 1.25vw;
+    }
+    .sites { padding-top: 35vh; }
+    img.whiteRabbit {
+        width: 15vw;
+        padding-bottom: 5vh;
+    }
+    img.bmz {
+        width: 20vw;
+        padding-bottom: 5vh;
+    }
+    .copyEdit { padding-top: 35vh; }
+    #cornell {
+        width: 15vw;
+    }
+    #totlPDV {
+        width: 12vw;
+    }
+    #theoryImg, #clinImg, #tdrImg {
+        padding-right: 1vw;
+    }
+    .pm { padding-top: 22.5vh;}
+    img.flows2 {
+        height: 70vh;
+    }
+    img.timeline1 {
+        height: 70vh;
+        padding-left: 5vw;
+    }
+    #breakS {
+        display: none;
+    }
+    .email { padding-top: 35vh;}
+    #email {
+        float: right;
+    }
+    img.rdt1 {
+        padding-right: 1vw;
+        opacity: .75;
+    }
+    .bigger {
+        padding-left: 1vw;
+    }
+    .smallest {
+        display: none;
+    }
+}
+/* LG LG LG LG LG LG LG LG LG LG LG LG */
+/* LG LG LG LG LG LG LG LG LG LG LG LG */
+
+
+/* MD MD MD MD MD MD MD MD MD MD MD MD */
+/* MD MD MD MD MD MD MD MD MD MD MD MD */
+@media (min-width: 768px) and (max-width: 991px) {
+    #logo {
+        height: 7.5vh;
+    }
+    .navbar-nav {
+        padding-left: 8.3vw;
+        width: 91.25vw;
+    }
+    .nav-link {
+        font-size: .95em;
+    }
+    #small {
+        display: none;
+    }
+
+    .home, .sites, .copyEdit, .pm, .email {
+        font-size: .95em;
+    }
+    .home { padding-top: 50vh; }
+    img.design {
+        padding-right: 1.25vw;
+    }
+    .sites { padding-top: 25vh; }
+    img.whiteRabbit {
+        width: 15vw;
+        padding-bottom: 5vh;
+    }
+    img.bmz {
+        width: 20vw;
+        padding-bottom: 5vh;
+    }
+    .copyEdit { padding-top: 35vh; }
+    #cornell {
+        width: 15vw;
+    }
+    #totlPDV {
+        width: 12vw;
+    }
+    #theoryImg, #clinImg, #tdrImg {
+        padding-right: 1vw;
+    }
+    .pm { padding-top: 22.5vh;}
+    img.flows2 {
+        height: 50vh;
+    }
+    img.timeline1 {
+        height: 70vh;
+        padding-left: 5vw;
+    }
+    .bigger {
+        padding-left: 1vw;
+    }
+    #breakS {
+        display: none;
+    }
+    .email { padding-top: 35vh;}
+    #email {
+        float: right;
+    }
+    img.rdt1 {
+        padding-right: 1vw;
+        opacity: .75;
+    }
+
+    .smallest {
+        display: none;
+    }
+}
+/* MD MD MD MD MD MD MD MD MD MD MD MD */
+/* MD MD MD MD MD MD MD MD MD MD MD MD */
+
+
+/* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+/* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+@media (min-width: 576px) and (max-width: 767px) {
+    #logo {
+        height: 7.5vh;
+    }
+    .navbar-nav {
+        padding-left: 8.3vw;
+        width: 91.25vw;
+    }
+    .nav-link {
+        font-size: .85em;
+    }
+    #small {
+        display: none;
+    }
+
+    .home, .sites, .copyEdit, .pm, .email {
+        font-size: .85em;
+    }
+    .home { padding-top: 40vh; }
+    img.design {
+        padding-right: 1.25vw;
+    }
+    .sites { padding-top: 25vh; }
+    img.whiteRabbit {
+        width: 20vw;
+        padding-bottom: 5vh;
+    }
+    img.bmz {
+        width: 22.5vw;
+        padding-bottom: 5vh;
+    }
+    .copyEdit { padding-top: 35vh; }
+    #cornell {
+        width: 15vw;
+    }
+    #totlPDV {
+        width: 12vw;
+    }
+    #theoryImg, #clinImg, #tdrImg {
+        padding-right: 1vw;
+    }
+    .pm { padding-top: 22.5vh;}
+    img.flows2 {
+        height: 45vh;
+    }
+    img.timeline1 {
+        height: 45vh;
+        padding-left: 5vw;
+    }
+    .email { padding-top: 55vh;}
+    #email {
+        float: right;
+    }
+    img.rdt1 {
+        padding-right: 1vw;
+        opacity: .75;
+    }
+    .smallest {
+        display: none;
+    }
+}
+/* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+/* SSSSSSSSSSSSSSSSSSSSSSSSSS5SSSSSSSSS */
+
+
+/* XS XS XS XS XS XS XS XS XS */
+/* XS XS XS XS XS XS XS XS XS */
+@media (max-width: 575px) {
+    #logo {
+        width: 10vw;
+    }
+    .navbar-nav {
+        padding-left: 8vw;
+        width: 91vw;
+    }  
+    #big {
+        display: none;
+    } 
+    .nav-link {
+        font-size: .85em;
+    }
+
+    .home, .sites, .copyEdit, .pm, .email {
+        font-size: .85em;
+    }
+    .home { padding-top: 17.5vh; }
+    img.design {
+        padding-right: 1.25vw;
+    }
+    .sites { padding-top: 25vh; }
+    img.whiteRabbit {
+        width: 20vw;
+        padding-bottom: 5vh;
+    }
+    img.bmz {
+        width: 22.5vw;
+        padding-bottom: 5vh;
+    }
+    .copyEdit { padding-top: 17.5vh; }
+    #cornell, #totlPDV {
+        width: 18vw;
+        padding: 0 1vw 0 0;
+    }
+    #totlPDV {
+        width: 18vw;
+        padding: 2vh 1vw 1vh 0;
+    }
+    #beetroot {
+        padding-bottom: 2vh;
+    }
+    #theoryImg, #clinImg, #tdrImg {
+        width: 21vw;
+        padding-right: 1vw;
+        padding-bottom: 1vh;
+    }
+
+    .pm { padding-top: 22.5vh;}
+    img.flows2 {
+        height: 25vh;
+    }
+    img.timeline1 {
+        height: 40vh;
+        padding-left: 2.5vw;
+    }
+    .col-12.smallest {
+        padding-bottom: 2vh;
+    }
+    .email { 
+        padding-top: 25vh;
+        padding-bottom: 5vh;
+    }
+    #email {
+        float: right;
+    }
+    img.rdt1 {
+        padding-right: 1vw;
+        opacity: .75;
+    }
+    .bigger {
+        display: none;
+    }
+    #xsRow {
+        padding-bottom: .75vh;
+    }
+}
+/* XS XS XS XS XS XS XS XS XS XS XS XS */
+/* XS XS XS XS XS XS XS XS XS XS XS XS */
