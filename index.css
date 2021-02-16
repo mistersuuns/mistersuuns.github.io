@@ -110,9 +110,20 @@ img.flow {
     #totlPDV {
         width: 12vw;
     }
-    #theoryImg, #clinImg, #tdrImg {
-        padding-right: 1vw;
+    #tdrImg, #clinImg, #theoryImg {
+        padding-top: 2vh;
     }
+   #tdrImg {
+        padding-right: 3vw;
+    }
+    #clinImg {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    } 
+    #theoryImg {
+        padding-left: 3vw;
+    }
+
     .pm { padding-top: 22.5vh;}
     img.flows2 {
         height: 70vh;
@@ -186,8 +197,18 @@ img.flow {
     #totlPDV {
         width: 12vw;
     }
-    #theoryImg, #clinImg, #tdrImg {
-        padding-right: 1vw;
+    #tdrImg, #clinImg, #theoryImg {
+        padding-top: 2vh;
+    }
+   #tdrImg {
+        padding-right: 3vw;
+    }
+    #clinImg {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    } 
+    #theoryImg {
+        padding-left: 3vw;
     }
     .pm { padding-top: 22.5vh;}
     img.flows2 {
@@ -262,8 +283,18 @@ img.flow {
     #totlPDV {
         width: 12vw;
     }
-    #theoryImg, #clinImg, #tdrImg {
-        padding-right: 1vw;
+    #tdrImg, #clinImg, #theoryImg {
+        padding-top: 2vh;
+    }
+   #tdrImg {
+        padding-right: 3vw;
+    }
+    #clinImg {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    } 
+    #theoryImg {
+        padding-left: 3vw;
     }
     .pm { padding-top: 22.5vh;}
     img.flows2 {
@@ -339,8 +370,18 @@ img.flow {
     #totlPDV {
         width: 12vw;
     }
-    #theoryImg, #clinImg, #tdrImg {
-        padding-right: 1vw;
+    #tdrImg, #clinImg, #theoryImg {
+        padding-top: 2vh;
+    }
+   #tdrImg {
+        padding-right: 3vw;
+    }
+    #clinImg {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    } 
+    #theoryImg {
+        padding-left: 3vw;
     }
     .pm { padding-top: 22.5vh;}
     img.flows2 {
