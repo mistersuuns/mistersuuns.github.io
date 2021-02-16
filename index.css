@@ -27,8 +27,8 @@ body {
     padding: 3vh 0;
     font-weight: 100;
     color: rgba(0, 0, 0, 1);
-    letter-spacing: .3vw;
-    font-size: 3vh;
+    letter-spacing: .4vw;
+    font-size: 2.5vh;
     opacity: 1;
 }
 .nav-link {
@@ -57,7 +57,7 @@ body {
     padding-right: 3vw;
 }
 #bighead {
-    font-size: xx-large;
+    font-size: 5vh;
 }
 #subhead {
     font-size: larger;
