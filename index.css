@@ -60,7 +60,9 @@ body {
 #subhead {
     font-size: larger;
 }
-
+img.flow {
+    opacity: .95;
+}
 .email {
     padding-bottom: 5vh;
 }
@@ -112,6 +114,9 @@ body {
     .pm { padding-top: 22.5vh;}
     img.flows2 {
         height: 70vh;
+    }
+    img.flow {
+        width: 25vw;
     }
     img.timeline1 {
         height: 70vh;
@@ -186,6 +191,9 @@ body {
     img.flows2 {
         height: 70vh;
     }
+    img.flow {
+        width: 25vw;
+    }
     img.timeline1 {
         height: 70vh;
         padding-left: 5vw;
@@ -258,6 +266,9 @@ body {
     .pm { padding-top: 22.5vh;}
     img.flows2 {
         height: 50vh;
+    }
+    img.flow {
+        width: 25vw;
     }
     img.timeline1 {
         height: 70vh;
@@ -332,6 +343,9 @@ body {
     .pm { padding-top: 22.5vh;}
     img.flows2 {
         height: 45vh;
+    }
+    img.flow {
+        width: 25vw;
     }
     img.timeline1 {
         height: 45vh;
