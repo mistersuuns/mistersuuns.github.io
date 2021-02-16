@@ -31,7 +31,9 @@ body {
     font-size: 3vh;
     opacity: 1;
 }
-
+.nav-link {
+    opacity: .95;
+}
 /* nav nav nav nav nav */
 
 .scrollspy {
