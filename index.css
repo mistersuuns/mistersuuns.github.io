@@ -58,6 +58,9 @@ body {
 }
 #bighead {
     font-size: 5vh;
+    font-weight: 500;
+    letter-spacing: 2.7vw;
+    color:rgba(78, 92, 110, 0.808)
 }
 #subhead {
     font-size: larger;
@@ -67,6 +70,12 @@ img.flow {
 }
 .email {
     padding-bottom: 5vh;
+}
+#rdt1 {
+    font-size: 1.75vw;
+    letter-spacing: .65vw;
+        float: left;
+
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -139,13 +148,7 @@ img.flow {
         display: none;
     }
     .email { padding-top: 35vh;}
-    #email {
-        float: right;
-    }
-    img.rdt1 {
-        padding-right: 1vw;
-        opacity: .75;
-    }
+
     .bigger {
         padding-left: 1vw;
     }
@@ -225,13 +228,7 @@ img.flow {
         display: none;
     }
     .email { padding-top: 35vh;}
-    #email {
-        float: right;
-    }
-    img.rdt1 {
-        padding-right: 1vw;
-        opacity: .75;
-    }
+
     .bigger {
         padding-left: 1vw;
     }
@@ -314,13 +311,6 @@ img.flow {
         display: none;
     }
     .email { padding-top: 35vh;}
-    #email {
-        float: right;
-    }
-    img.rdt1 {
-        padding-right: 1vw;
-        opacity: .75;
-    }
 
     .smallest {
         display: none;
@@ -395,13 +385,7 @@ img.flow {
         padding-left: 5vw;
     }
     .email { padding-top: 55vh;}
-    #email {
-        float: right;
-    }
-    img.rdt1 {
-        padding-right: 1vw;
-        opacity: .75;
-    }
+
     .smallest {
         display: none;
     }
@@ -476,13 +460,7 @@ img.flow {
         padding-top: 25vh;
         padding-bottom: 5vh;
     }
-    #email {
-        float: right;
-    }
-    img.rdt1 {
-        padding-right: 1vw;
-        opacity: .75;
-    }
+
     .bigger {
         display: none;
     }
