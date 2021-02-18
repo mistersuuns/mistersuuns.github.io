@@ -50,32 +50,39 @@ body {
     scroll-behavior: smooth;
 }
 
+#home { padding-top: 40vh; }
+
+
 #cornell, #totlPDV, #beetroot  {
     padding-bottom: 5vh;
 }
 #cornell, #totlPDV {
     padding-right: 3vw;
 }
-#bighead {
-    font-size: 5vh;
+#designHead, #copyHead {
     font-weight: 500;
-    letter-spacing: 2.7vw;
-    color:rgba(78, 92, 110, 0.808)
+    color:rgba(84, 111, 146, 0.808);
+}
+#designHead {
+    font-size: 6vh;
+    letter-spacing: 1.4vw;
+}
+#copyHead {
+    font-size: 6vh;
+    letter-spacing: 1vw;
 }
 #subhead {
     font-size: larger;
+    letter-spacing: .8vw;
 }
-img.flow {
-    opacity: .95;
-}
+
 .email {
     padding-bottom: 5vh;
 }
 #rdt1 {
     font-size: 1.75vw;
     letter-spacing: .65vw;
-        float: left;
-
+    float: left;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -96,22 +103,16 @@ img.flow {
         display: none;
     }
 
-    .home, .sites, .copyEdit, .pm, .email {
-        font-size: 1.1em;
+    .siteClient {
+        float: right;
     }
-    .home { padding-top: 50vh; }
-    img.design {
-        padding-right: 1.25vw;
+    img.codeClient, img.flow {
+        padding-bottom: 6vh;
+        float: right;
     }
-    .sites { padding-top: 25vh; }
-    img.whiteRabbit {
-        width: 15vw;
-        padding-bottom: 5vh;
-    }
-    img.bmz {
-        width: 20vw;
-        padding-bottom: 5vh;
-    }
+    img.codeClient {width: 13vw;}
+    img.flow {width: 18vw;}
+    
     .copyEdit { padding-top: 25vh; }
     #cornell {
         width: 15vw;
@@ -133,26 +134,13 @@ img.flow {
         padding-left: 3vw;
     }
 
-    .pm { padding-top: 22.5vh;}
-    img.flows2 {
-        height: 70vh;
-    }
-    img.flow {
-        width: 25vw;
-    }
-    img.timeline1 {
-        height: 70vh;
-        padding-left: 5vw;
-    }
+
     #breakS {
         display: none;
     }
     .email { padding-top: 35vh;}
 
-    .bigger {
-        padding-left: 1vw;
-    }
-    .smallest {
+    .smDown {
         display: none;
     }
 }
@@ -177,20 +165,22 @@ img.flow {
         display: none;
     }
 
-    .home, .sites, .copyEdit, .pm, .email {
+    .home, .sites, .copyEdit, .email {
         font-size: 1.1em;
     }
-    .home { padding-top: 45vh; }
     img.design {
         padding-right: 1.25vw;
     }
     .sites { padding-top: 35vh; }
-    img.whiteRabbit {
-        width: 15vw;
+    .siteClient {
+        float: right;
+    }
+    img.codeClient {
+        width: 20vw;
         padding-bottom: 5vh;
     }
-    img.bmz {
-        width: 20vw;
+    img.flow {
+        width: 25vw;
         padding-bottom: 5vh;
     }
     .copyEdit { padding-top: 35vh; }
@@ -213,26 +203,10 @@ img.flow {
     #theoryImg {
         padding-left: 3vw;
     }
-    .pm { padding-top: 22.5vh;}
-    img.flows2 {
-        height: 70vh;
-    }
-    img.flow {
-        width: 25vw;
-    }
-    img.timeline1 {
-        height: 70vh;
-        padding-left: 5vw;
-    }
-    #breakS {
-        display: none;
-    }
+
     .email { padding-top: 35vh;}
 
-    .bigger {
-        padding-left: 1vw;
-    }
-    .smallest {
+    .smDown {
         display: none;
     }
 }
@@ -257,7 +231,7 @@ img.flow {
         display: none;
     }
 
-    .home, .sites, .copyEdit, .pm, .email {
+    .home, .sites, .copyEdit, .email {
         font-size: .95em;
     }
     .home { padding-top: 50vh; }
@@ -265,54 +239,30 @@ img.flow {
         padding-right: 1.25vw;
     }
     .sites { padding-top: 25vh; }
-    img.whiteRabbit {
-        width: 15vw;
+
+    img.codeClient {
+        width: 40vw;
         padding-bottom: 5vh;
     }
-    img.bmz {
-        width: 20vw;
+    img.flow {
+        width: 55vw;
         padding-bottom: 5vh;
     }
+
     .copyEdit { padding-top: 35vh; }
-    #cornell {
-        width: 15vw;
-    }
-    #totlPDV {
+    #cornell, #totlPDV, #beetroot {
         width: 12vw;
     }
     #tdrImg, #clinImg, #theoryImg {
         padding-top: 2vh;
     }
-   #tdrImg {
-        padding-right: 3vw;
-    }
-    #clinImg {
-        padding-left: 1.5vw;
-        padding-right: 1.5vw;
-    } 
-    #theoryImg {
-        padding-left: 3vw;
-    }
-    .pm { padding-top: 22.5vh;}
-    img.flows2 {
-        height: 50vh;
-    }
-    img.flow {
-        width: 25vw;
-    }
-    img.timeline1 {
-        height: 70vh;
-        padding-left: 5vw;
-    }
-    .bigger {
-        padding-left: 1vw;
-    }
+
     #breakS {
         display: none;
     }
     .email { padding-top: 35vh;}
 
-    .smallest {
+    .smDown {
         display: none;
     }
 }
@@ -337,7 +287,7 @@ img.flow {
         display: none;
     }
 
-    .home, .sites, .copyEdit, .pm, .email {
+    .home, .sites, .copyEdit, .email {
         font-size: .85em;
     }
     .home { padding-top: 40vh; }
@@ -345,50 +295,27 @@ img.flow {
         padding-right: 1.25vw;
     }
     .sites { padding-top: 25vh; }
-    img.whiteRabbit {
-        width: 20vw;
+    .siteClient {
+        float: left;
+    }
+    img.codeClient {
+        width: 18vw;
         padding-bottom: 5vh;
-    }
-    img.bmz {
-        width: 22.5vw;
-        padding-bottom: 5vh;
-    }
-    .copyEdit { padding-top: 35vh; }
-    #cornell {
-        width: 15vw;
-    }
-    #totlPDV {
-        width: 12vw;
-    }
-    #tdrImg, #clinImg, #theoryImg {
-        padding-top: 2vh;
-    }
-   #tdrImg {
-        padding-right: 3vw;
-    }
-    #clinImg {
-        padding-left: 1.5vw;
-        padding-right: 1.5vw;
-    } 
-    #theoryImg {
-        padding-left: 3vw;
-    }
-    .pm { padding-top: 22.5vh;}
-    img.flows2 {
-        height: 45vh;
     }
     img.flow {
-        width: 25vw;
+        width: 24vw;
+        padding-bottom: 5vh;
     }
-    img.timeline1 {
-        height: 45vh;
-        padding-left: 5vw;
-    }
-    .email { padding-top: 55vh;}
 
-    .smallest {
-        display: none;
+    .copyEdit { padding-top: 35vh; }
+    #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
+        width: 25vw;
+        padding: 3vw 3vw 3vw 0;
     }
+    
+    .email { padding-top: 55vh;}
+.mdUp {display: none}
+
 }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSS5SSSSSSSSS */
@@ -411,62 +338,40 @@ img.flow {
         font-size: .85em;
     }
 
-    .home, .sites, .copyEdit, .pm, .email {
+    .home, .sites, .copyEdit, .email {
         font-size: .85em;
     }
     .home { padding-top: 17.5vh; }
     img.design {
         padding-right: 1.25vw;
     }
-    .sites { padding-top: 25vh; }
-    img.whiteRabbit {
-        width: 20vw;
+
+    img.codeClient {
+        width: 30vw;
         padding-bottom: 5vh;
     }
-    img.bmz {
-        width: 22.5vw;
+    img.flow {
+        width: 35vw;
         padding-bottom: 5vh;
-    }
-    .copyEdit { padding-top: 17.5vh; }
-    #cornell, #totlPDV {
-        width: 18vw;
-        padding: 0 1vw 0 0;
-    }
-    #totlPDV {
-        width: 18vw;
-        padding: 2vh 1vw 1vh 0;
-    }
-    #beetroot {
-        padding-bottom: 2vh;
-    }
-    #theoryImg, #clinImg, #tdrImg {
-        width: 21vw;
-        padding-right: 1vw;
-        padding-bottom: 1vh;
     }
 
-    .pm { padding-top: 22.5vh;}
-    img.flows2 {
-        height: 25vh;
+    .copyEdit { 
+        padding-top: 17.5vh;
+     }
+    #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
+        width: 25vw;
+        padding: 3vw 3vw 3vw 0;
     }
-    img.timeline1 {
-        height: 40vh;
-        padding-left: 2.5vw;
-    }
-    .col-12.smallest {
-        padding-bottom: 2vh;
-    }
-    .email { 
+
+    .email {  
         padding-top: 25vh;
         padding-bottom: 5vh;
     }
 
-    .bigger {
+    .mdUp {
         display: none;
     }
-    #xsRow {
-        padding-bottom: .75vh;
-    }
+
 }
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
