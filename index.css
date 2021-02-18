@@ -50,7 +50,6 @@ body {
     scroll-behavior: smooth;
 }
 
-#home { padding-top: 40vh; }
 
 
 #cornell, #totlPDV, #beetroot  {
@@ -102,6 +101,9 @@ body {
         display: none;
     }
 
+    .home, .sites { padding-top: 40vh; }
+    .copyEdit, .email { padding-top: 30vh; }
+
     .siteClient {
         float: right;
     }
@@ -112,16 +114,10 @@ body {
     img.codeClient {width: 13vw;}
     img.flow {width: 18vw;}
     
-    .copyEdit { padding-top: 25vh; }
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
         padding: 0 0 3vw 3vw;
     }
-
-    #breakS {
-        display: none;
-    }
-    .email { padding-top: 35vh;}
 
     .smDown {
         display: none;
@@ -138,8 +134,8 @@ body {
         height: 10vh;
     }
     .navbar-nav {
-        padding-left: 8vw;
-        width: 91.45vw;
+        padding-left: 7.5vw;
+        width: 92vw;
     }
     .nav-link {
         font-size: .95em;
@@ -152,26 +148,25 @@ body {
         font-size: 1.1em;
     }
 
-    .sites { padding-top: 35vh; }
+    .home, .sites { padding-top: 40vh; }
+    .copyEdit, .email { padding-top: 30vh; }
+
     .siteClient {
         float: right;
     }
     img.codeClient {
         width: 20vw;
-        padding-bottom: 5vh;
+        padding-bottom: 7.5vh;
     }
     img.flow {
         width: 25vw;
-        padding-bottom: 5vh;
+        padding-bottom: 7.5vh;
     }
-    .copyEdit { padding-top: 35vh; }
     
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
         padding: 0 0 3vw 3vw;
     }
-
-    .email { padding-top: 35vh;}
 
     .smDown {
         display: none;
@@ -198,29 +193,29 @@ body {
         display: none;
     }
 
+    .home, .sites { padding-top: 40vh; }
+    .copyEdit, .email { padding-top: 25vh; }
+    .siteClient {
+        float: right;
+    }
+
     .home, .sites, .copyEdit, .email {
         font-size: .95em;
     }
-    .home { padding-top: 50vh; }
-
-    .sites { padding-top: 25vh; }
 
     img.codeClient {
-        width: 40vw;
-        padding-bottom: 5vh;
+        width: 20vw;
+        padding-bottom: 7.5vh;
     }
     img.flow {
         width: 55vw;
-        padding-bottom: 5vh;
+        padding-bottom: 7.5vh;
     }
 
-    .copyEdit { padding-top: 35vh; }
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
         padding: 0 0 3vw 3vw;
     }
-
-    .email { padding-top: 35vh;}
 
     .smDown {
         display: none;
@@ -247,12 +242,13 @@ body {
         display: none;
     }
 
+    .home, .sites { padding-top: 35vh; }
+    .copyEdit, .email { padding-top: 20vh; }
+
     .home, .sites, .copyEdit, .email {
         font-size: .85em;
     }
-    .home { padding-top: 40vh; }
-
-    .sites { padding-top: 25vh; }
+    
     .siteClient {
         float: left;
     }
@@ -265,13 +261,11 @@ body {
         padding-bottom: 5vh;
     }
 
-    .copyEdit { padding-top: 35vh; }
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 20vw;
         padding: 3vw 3vw 3vw 0;
     }
     
-    .email { padding-top: 55vh;}
 .mdUp {display: none}
 
 }
@@ -295,11 +289,12 @@ body {
     .nav-link {
         font-size: .85em;
     }
+    .home, .sites { padding-top: 20vh; }
+    .copyEdit, .email { padding-top: 15vh; }
 
     .home, .sites, .copyEdit, .email {
         font-size: .85em;
     }
-    .home { padding-top: 17.5vh; }
 
     img.codeClient {
         width: 30vw;
@@ -310,16 +305,12 @@ body {
         padding-bottom: 5vh;
     }
 
-    .copyEdit { 
-        padding-top: 17.5vh;
-     }
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
         padding: 3vw 3vw 3vw 0;
     }
 
-    .email {  
-        padding-top: 25vh;
+    .email {
         padding-bottom: 5vh;
     }
     #rdt1 {
