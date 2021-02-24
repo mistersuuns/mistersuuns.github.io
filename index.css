@@ -74,7 +74,9 @@ body {
     font-size: larger;
     letter-spacing: .8vw;
 }
-
+#tdrImg {
+    opacity: .8;
+}
 .email {
     padding-bottom: 5vh;
 }
