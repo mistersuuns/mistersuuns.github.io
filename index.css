@@ -109,12 +109,13 @@ body {
     .siteClient {
         float: right;
     }
-    img.codeClient, img.flow {
+    img.codeClient, img.flow, img.salt {
         padding-bottom: 6vh;
         float: right;
     }
     img.codeClient {width: 13vw;}
     img.flow {width: 18vw;}
+    img.salt {width: 26vw;}
     
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
@@ -162,6 +163,10 @@ body {
     }
     img.flow {
         width: 25vw;
+        padding-bottom: 7.5vh;
+    }
+    img.salt {
+        width: 30vw;
         padding-bottom: 7.5vh;
     }
     
@@ -262,6 +267,10 @@ body {
         width: 24vw;
         padding-bottom: 5vh;
     }
+    img.salt {
+        width: 29vw;
+        padding-bottom: 5vh;
+    }
 
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 20vw;
@@ -304,6 +313,10 @@ body {
     }
     img.flow {
         width: 35vw;
+        padding-bottom: 5vh;
+    }
+    img.salt {
+        width: 43vw;
         padding-bottom: 5vh;
     }
 
