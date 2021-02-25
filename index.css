@@ -84,6 +84,9 @@ body {
     letter-spacing: .65vw;
     float: left;
 }
+img.flow {
+    opacity: .9;
+}
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -110,12 +113,12 @@ body {
         float: right;
     }
     img.codeClient, img.flow, img.salt {
-        padding-bottom: 6vh;
+        padding-bottom: 5vh;
         float: right;
     }
-    img.codeClient {width: 13vw;}
-    img.flow {width: 18vw;}
-    img.salt {width: 24vw;}
+    img.codeClient {width: 11vw;}
+    img.flow {width: 17vw;}
+    img.salt {width: 18vw;}
     
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
@@ -157,18 +160,12 @@ body {
     .siteClient {
         float: right;
     }
-    img.codeClient {
-        width: 20vw;
-        padding-bottom: 7.5vh;
+    img.codeClient, img.flow, img.salt {
+        padding-bottom: 5vh;
     }
-    img.flow {
-        width: 25vw;
-        padding-bottom: 7.5vh;
-    }
-    img.salt {
-        width: 29vw;
-        padding-bottom: 7.5vh;
-    }
+    img.codeClient { width: 10.5vw; }
+    img.flow { width: 17.5vw; }
+    img.salt { width: 17.5vw; }
     
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
@@ -210,17 +207,16 @@ body {
         font-size: .95em;
     }
 
-    img.codeClient {
-        width: 20vw;
-        padding-bottom: 7.5vh;
+    img.codeClient, img.flow, img.salt {
+        padding-bottom: 3.5vh;
     }
-    img.flow {
-        width: 55vw;
-        padding-bottom: 7.5vh;
-    }
+    img.codeClient { width: 12.5vw; }
+    img.flow { width: 25vw; }
+    img.salt { width: 25vw; }
+
 
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
-        width: 25vw;
+        width: 27.5vw;
         padding: 0 0 3vw 3vw;
     }
 
@@ -259,23 +255,21 @@ body {
     .siteClient {
         float: left;
     }
-    img.codeClient {
-        width: 18vw;
+    img.codeClient, img.flow, img.salt {
         padding-bottom: 5vh;
     }
-    img.flow {
-        width: 24vw;
-        padding-bottom: 5vh;
-    }
-    img.salt {
-        width: 28vw;
-        padding-bottom: 5vh;
-    }
+    img.codeClient { width: 18vw; }
+    img.flow { width: 24vw; }
+    img.salt { width: 28vw; }
 
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
-        width: 20vw;
-        padding: 3vw 3vw 3vw 0;
+        width: 16vw;
     }
+    #cornell, #totlPDV, #beetroot {
+    padding: 7.5vw 3vw 0 0; }
+    #theoryImg, #clinImg, #tdrImg {
+    padding: 0 3vw 0 0; }
+    
     
 .mdUp {display: none}
 
@@ -307,23 +301,21 @@ body {
         font-size: .85em;
     }
 
-    img.codeClient {
-        width: 30vw;
-        padding-bottom: 5vh;
+
+    img.codeClient, img.flow, img.salt {
+        padding-bottom: 3.5vh;
     }
-    img.flow {
-        width: 35vw;
-        padding-bottom: 5vh;
-    }
-    img.salt {
-        width: 41vw;
-        padding-bottom: 5vh;
-    }
+    img.codeClient { width: 30vw; }
+    img.flow { width: 35vw; }
+    img.salt { width: 41vw; }
 
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
-        padding: 3vw 3vw 3vw 0;
     }
+    #cornell, #totlPDV, #beetroot {
+    padding: 7.5vw 3vw 0 0; }
+    #theoryImg, #clinImg, #tdrImg {
+    padding: 0 3vw 0 0; }
 
     .email {
         padding-bottom: 5vh;
