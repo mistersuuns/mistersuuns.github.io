@@ -115,7 +115,7 @@ body {
     }
     img.codeClient {width: 13vw;}
     img.flow {width: 18vw;}
-    img.salt {width: 26vw;}
+    img.salt {width: 24vw;}
     
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
@@ -166,7 +166,7 @@ body {
         padding-bottom: 7.5vh;
     }
     img.salt {
-        width: 30vw;
+        width: 29vw;
         padding-bottom: 7.5vh;
     }
     
@@ -268,7 +268,7 @@ body {
         padding-bottom: 5vh;
     }
     img.salt {
-        width: 29vw;
+        width: 28vw;
         padding-bottom: 5vh;
     }
 
@@ -316,7 +316,7 @@ body {
         padding-bottom: 5vh;
     }
     img.salt {
-        width: 43vw;
+        width: 41vw;
         padding-bottom: 5vh;
     }
 
