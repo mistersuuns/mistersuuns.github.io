@@ -292,7 +292,7 @@ img.flow {
         display: none;
     } 
     .nav-link {
-        font-size: .85em;
+        font-size: 1em;
     }
     .home, .sites { padding-top: 20vh; }
     .copyEdit, .email { padding-top: 15vh; }
