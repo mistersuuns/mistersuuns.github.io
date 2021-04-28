@@ -50,7 +50,10 @@ body {
     scroll-behavior: smooth;
 }
 
-
+#fwd {
+    font-size: 1.5em;
+    font-weight: 100;
+}
 
 #cornell, #totlPDV, #beetroot  {
     padding-bottom: 5vh;
