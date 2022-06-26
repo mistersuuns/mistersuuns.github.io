@@ -1,8 +1,8 @@
-/* {
+* {
     border: solid black .001px;
-} */
+} 
 
-body {
+body, h6 {
     font-family: "Gill Sans";
     overflow-x: scroll;
     position: relative;
@@ -48,11 +48,6 @@ body {
     scroll-padding: 0;
     scroll-snap-align: end;
     scroll-behavior: smooth;
-}
-
-#fwd {
-    font-size: 1.25em;
-    font-weight: 100;
 }
 
 #cornell, #totlPDV, #beetroot  {
@@ -116,16 +111,19 @@ img.flow {
         float: right;
     }
     img.codeClient, img.flow, img.salt {
-        padding-bottom: 5vh;
+        padding: 0 2vw 2vw 2vw;
         float: right;
     }
-    img.codeClient {width: 11vw;}
+    img.codeClient {width: 12vw;}
     img.flow {width: 17vw;}
     img.salt {width: 18vw;}
     
+    #thedoe {
+        padding: 0 2vw 2vw 2vw;
+    }
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
-        padding: 0 0 3vw 3vw;
+        padding: 0 2vw 2vw 2vw;
     }
 
     .smDown {
@@ -164,12 +162,16 @@ img.flow {
         float: right;
     }
     img.codeClient, img.flow, img.salt {
-        padding-bottom: 5vh;
+        padding-bottom: 3vh;
     }
     img.codeClient { width: 10.5vw; }
     img.flow { width: 17.5vw; }
     img.salt { width: 17.5vw; }
     
+    #thedoe {
+        width: 35vw;
+        padding: 0 0 3vw 3vw;
+    }
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
         padding: 0 0 3vw 3vw;
@@ -213,11 +215,14 @@ img.flow {
     img.codeClient, img.flow, img.salt {
         padding-bottom: 3.5vh;
     }
-    img.codeClient { width: 12.5vw; }
+    img.codeClient { width: 15vw; }
     img.flow { width: 25vw; }
     img.salt { width: 25vw; }
 
-
+    #thedoe {
+        width: 35vw;
+        padding: 0 0 3vw 3vw;
+    }
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 27.5vw;
         padding: 0 0 3vw 3vw;
@@ -259,7 +264,7 @@ img.flow {
         float: left;
     }
     img.codeClient, img.flow, img.salt {
-        padding-bottom: 5vh;
+        padding-bottom: 3vh;
     }
     img.codeClient { width: 18vw; }
     img.flow { width: 24vw; }
@@ -268,7 +273,10 @@ img.flow {
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 16vw;
     }
-    #cornell, #totlPDV, #beetroot {
+    #thedoe {
+        width: 35vw;
+    }
+    #thedoe, #cornell, #totlPDV, #beetroot {
     padding: 7.5vw 3vw 0 0; }
     #theoryImg, #clinImg, #tdrImg {
     padding: 0 3vw 0 0; }
@@ -312,10 +320,17 @@ img.flow {
     img.flow { width: 35vw; }
     img.salt { width: 41vw; }
 
+    #thedoe {
+        width: 35vw;
+        padding: 0 0 3vw 3vw;
+    }
     #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
     }
-    #cornell, #totlPDV, #beetroot {
+    #thedoe {
+        width: 35vw;
+    }
+    #thedoe, #cornell, #totlPDV, #beetroot {
     padding: 7.5vw 3vw 0 0; }
     #theoryImg, #clinImg, #tdrImg {
     padding: 0 3vw 0 0; }
