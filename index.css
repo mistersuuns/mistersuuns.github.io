@@ -55,6 +55,7 @@ body, h6 {
 }
 #cornell, #totlPDV {
     padding-right: 3vw;
+    padding-left: 3vw;
 }
 #designHead, #copyHead {
     font-weight: 500;
@@ -121,9 +122,12 @@ img.flow {
     #thedoe {
         padding: 0 2vw 2vw 2vw;
     }
-    #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
+    #mooncats, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
         padding: 0 2vw 2vw 2vw;
+    }
+    #cornell, #totlPDV {
+        width: 20vw;
     }
 
     .smDown {
@@ -172,11 +176,13 @@ img.flow {
         width: 35vw;
         padding: 0 0 3vw 3vw;
     }
-    #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
+    #mooncats, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
         padding: 0 0 3vw 3vw;
     }
-
+    #cornell, #totlPDV {
+        width: 20vw;
+    }
     .smDown {
         display: none;
     }
@@ -223,9 +229,12 @@ img.flow {
         width: 35vw;
         padding: 0 0 3vw 3vw;
     }
-    #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
+    #mooncats, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 27.5vw;
         padding: 0 0 3vw 3vw;
+    }
+    #cornell, #totlPDV {
+        width: 20vw;
     }
 
     .smDown {
@@ -270,7 +279,7 @@ img.flow {
     img.flow { width: 24vw; }
     img.salt { width: 28vw; }
 
-    #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
+    #mooncats, #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 16vw;
     }
     #thedoe {
@@ -320,20 +329,20 @@ img.flow {
     img.flow { width: 35vw; }
     img.salt { width: 41vw; }
 
-    #thedoe {
+    #thedoe, #mooncats {
         width: 35vw;
         padding: 0 0 3vw 3vw;
     }
-    #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
+    #mooncats, #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
         width: 25vw;
     }
     #thedoe {
         width: 35vw;
     }
-    #thedoe, #cornell, #totlPDV, #beetroot {
-    padding: 7.5vw 3vw 0 0; }
+    #mooncats, #thedoe, #cornell, #totlPDV, #beetroot {
+    padding: 7.5vw 4vw 0 0; }
     #theoryImg, #clinImg, #tdrImg {
-    padding: 0 3vw 0 0; }
+    padding: 0 5vw 0 0; }
 
     .email {
         padding-bottom: 5vh;
