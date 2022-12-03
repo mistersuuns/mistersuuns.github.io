@@ -167,6 +167,7 @@ img.flow {
     }
     img.codeClient, img.flow, img.salt {
         padding-bottom: 3vh;
+        padding-left: 3vw;
     }
     img.codeClient { width: 10.5vw; }
     img.flow { width: 17.5vw; }
