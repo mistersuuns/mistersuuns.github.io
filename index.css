@@ -49,13 +49,8 @@ body, h6 {
     scroll-snap-align: end;
     scroll-behavior: smooth;
 }
-
-#cornell, #totlPDV, #beetroot  {
-    padding-bottom: 5vh;
-}
-#cornell, #totlPDV {
-    padding-right: 3vw;
-    padding-left: 3vw;
+.card.words {
+    margin-top: 40vh;
 }
 #designHead, #copyHead {
     font-weight: 500;
@@ -65,6 +60,9 @@ body, h6 {
     font-size: 6vh;
     letter-spacing: 1.4vw;
 }
+.rowtop {
+    margin-top: 40vh;
+}
 #copyHead {
     font-size: 6vh;
     letter-spacing: 1vw;
@@ -73,18 +71,25 @@ body, h6 {
     font-size: larger;
     letter-spacing: .8vw;
 }
-#tdrImg {
-    opacity: .8;
+#oxford {
+    padding-top: 2vw;
 }
+#mitpress {
+    padding: 0vw 3vw 2vw 6vw;
+}
+img.copyedit {
+    padding: 2vw;
+}
+img.wrc {
+    padding: 4vw;
+}
+
 .email {
     padding-bottom: 5vh;
 }
 #rdt1 {
     letter-spacing: .65vw;
     float: left;
-}
-img.flow {
-    opacity: .9;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -106,32 +111,15 @@ img.flow {
     }
 
     .home, .sites { padding-top: 40vh; }
-    .copyEdit, .email { padding-top: 40vh; }
+    .email { padding-top: 40vh; }
 
     .siteClient {
         float: right;
     }
-    img.codeClient, img.flow, img.salt {
-        padding: 0 2vw 2vw 2vw;
-        float: right;
-    }
-    img.codeClient {width: 12vw;}
-    img.flow {width: 17vw;}
-    img.salt {width: 18vw;}
-    
-    #thedoe {
-        padding: 0 2vw 2vw 2vw;
-    }
-    #mooncats, #beetroot, #theoryImg, #clinImg, #tdrImg {
-        width: 25vw;
-        padding: 0 2vw 2vw 2vw;
-    }
-    #cornell, #totlPDV {
-        width: 20vw;
-    }
 
-    .smDown {
-        display: none;
+    img.coded {
+        width: 25vw;
+        padding: 5vw 2vw 5vw 2vw;
     }
 }
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -155,37 +143,16 @@ img.flow {
         display: none;
     }
 
-    .home, .sites, .copyEdit, .email {
+    .home, .sites, .email {
         font-size: 1.1em;
     }
 
     .home, .sites { padding-top: 40vh; }
-    .copyEdit, .email { padding-top: 30vh; }
+    .email { padding-top: 30vh; }
 
-    .siteClient {
-        float: right;
-    }
-    img.codeClient, img.flow, img.salt {
-        padding-bottom: 3vh;
-        padding-left: 3vw;
-    }
-    img.codeClient { width: 10.5vw; }
-    img.flow { width: 17.5vw; }
-    img.salt { width: 17.5vw; }
-    
-    #thedoe {
-        width: 35vw;
-        padding: 0 0 3vw 3vw;
-    }
-    #mooncats, #beetroot, #theoryImg, #clinImg, #tdrImg {
+    img.coded {
         width: 25vw;
-        padding: 0 0 3vw 3vw;
-    }
-    #cornell, #totlPDV {
-        width: 20vw;
-    }
-    .smDown {
-        display: none;
+        padding: 2vw;
     }
 }
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
@@ -210,36 +177,23 @@ img.flow {
     }
 
     .home, .sites { padding-top: 40vh; }
-    .copyEdit, .email { padding-top: 25vh; }
-    .siteClient {
-        float: right;
-    }
+    .email { padding-top: 25vh; }
 
-    .home, .sites, .copyEdit, .email {
+    .home, .sites, .email {
         font-size: .95em;
     }
-
-    img.codeClient, img.flow, img.salt {
-        padding-bottom: 3.5vh;
+    #oxford {
+        padding-top: 4vw;
     }
-    img.codeClient { width: 15vw; }
-    img.flow { width: 25vw; }
-    img.salt { width: 25vw; }
-
-    #thedoe {
-        width: 35vw;
-        padding: 0 0 3vw 3vw;
+    #mitpress {
+        padding: 0vw 2vw 2vw 6vw;
     }
-    #mooncats, #beetroot, #theoryImg, #clinImg, #tdrImg {
+    img.coded {
         width: 27.5vw;
         padding: 0 0 3vw 3vw;
     }
-    #cornell, #totlPDV {
-        width: 20vw;
-    }
-
-    .smDown {
-        display: none;
+    img.wrc {
+        padding: 6vw;
     }
 }
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
@@ -264,35 +218,29 @@ img.flow {
     }
 
     .home, .sites { padding-top: 35vh; }
-    .copyEdit, .email { padding-top: 20vh; }
+    .email { padding-top: 20vh; }
 
-    .home, .sites, .copyEdit, .email {
+    .home, .sites, .email {
         font-size: .85em;
     }
     
     .siteClient {
         float: left;
     }
-    img.codeClient, img.flow, img.salt {
-        padding-bottom: 3vh;
+    #oxford {
+        padding-top: 10vw;
     }
-    img.codeClient { width: 18vw; }
-    img.flow { width: 24vw; }
-    img.salt { width: 28vw; }
-
-    #mooncats, #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
-        width: 16vw;
+    #mitpress {
+        padding: 2vw 4vw 3vw 3vw;
     }
-    #thedoe {
-        width: 35vw;
+ 
+    img.coded {
+        width: 17.5vw;
+        padding: 7.5vw 3vw 0 0; 
     }
-    #thedoe, #cornell, #totlPDV, #beetroot {
-    padding: 7.5vw 3vw 0 0; }
-    #theoryImg, #clinImg, #tdrImg {
-    padding: 0 3vw 0 0; }
-    
-    
-.mdUp {display: none}
+    img.wrc {
+        padding: 7vw;
+    }
 
 }
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -316,46 +264,25 @@ img.flow {
         font-size: 1em;
     }
     .home, .sites { padding-top: 20vh; }
-    .copyEdit, .email { padding-top: 15vh; }
+    .email { padding-top: 15vh; }
 
-    .home, .sites, .copyEdit, .email {
+    .home, .sites, .email {
         font-size: .85em;
     }
 
-
-    img.codeClient, img.flow, img.salt {
-        padding-bottom: 3.5vh;
-    }
-    img.codeClient { width: 30vw; }
-    img.flow { width: 35vw; }
-    img.salt { width: 41vw; }
-
-    #thedoe, #mooncats {
-        width: 35vw;
-        padding: 0 0 3vw 3vw;
-    }
-    #mooncats, #cornell, #totlPDV, #beetroot, #theoryImg, #clinImg, #tdrImg {
+    img.coded {
         width: 25vw;
+        padding: 7.5vw 4vw 0 0; 
     }
-    #thedoe {
-        width: 35vw;
+    img.wrc {
+        padding: 10vw;
     }
-    #mooncats, #thedoe, #cornell, #totlPDV, #beetroot {
-    padding: 7.5vw 4vw 0 0; }
-    #theoryImg, #clinImg, #tdrImg {
-    padding: 0 5vw 0 0; }
-
     .email {
         padding-bottom: 5vh;
     }
     #rdt1 {
         font-size: 1em;
     }
-
-    .mdUp {
-        display: none;
-    }
-
 }
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
