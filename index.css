@@ -114,13 +114,14 @@ img.wrc {
     .siteClient {
         float: right;
     }
+
     img.coded-icon {
-        width: 10vw;
+        width: 18vw;
         padding: 2vw 3vw 2vw 6vw;
     }
     img.coded {
-        width: 25vw;
-        padding: 5vw 2vw 5vw 2vw;
+        width: 22.5vw;
+        padding: 2vw;
     }
 }
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
