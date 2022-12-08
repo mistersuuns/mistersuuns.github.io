@@ -79,7 +79,7 @@ img.copyedit {
     padding: 2vw;
 }
 img.wrc {
-    padding: 4vw;
+    padding: 2vw 8vw;
 }
 
 .email {
@@ -116,7 +116,7 @@ img.wrc {
     }
     img.coded-icon {
         width: 10vw;
-        padding: 2vw 5vw;
+        padding: 2vw 3vw 2vw 6vw;
     }
     img.coded {
         width: 25vw;
@@ -152,7 +152,7 @@ img.wrc {
     .email { padding-top: 30vh; }
     img.coded-icon {
         width: 20vw;
-        padding: 2vw 5vw;
+        padding: 2vw 3vw 2vw 6vw;
     }
     img.coded {
         width: 25vw;
@@ -191,11 +191,11 @@ img.wrc {
     }
     img.coded-icon {
         width: 22vw;
-        padding: 2vw 5vw;
+        padding: 2vw 3vw 2vw 6vw;
     }
     img.coded {
         width: 27.5vw;
-        padding: 0 0 3vw 3vw;
+        padding: 0 1vw 3vw 1vw;
     }
     img.wrc {
         padding: 6vw;
