@@ -69,7 +69,7 @@ body, h6 {
 }
 #subhead {
     font-size: larger;
-    letter-spacing: .8vw;
+    letter-spacing: .5vw;
 }
 #oxford {
     padding-top: 2vw;
@@ -152,7 +152,7 @@ img.wrc {
     .home, .sites { padding-top: 40vh; }
     .email { padding-top: 30vh; }
     img.coded-icon {
-        width: 20vw;
+        width: 2vw;
         padding: 2vw 3vw 2vw 6vw;
     }
     img.coded {
@@ -191,7 +191,7 @@ img.wrc {
         padding-top: 4vw;
     }
     img.coded-icon {
-        width: 22vw;
+        width: 12vw;
         padding: 2vw 3vw 2vw 6vw;
     }
     img.coded {
