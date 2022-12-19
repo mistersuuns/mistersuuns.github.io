@@ -169,6 +169,10 @@ img.wrc {
     float: left;
     padding-bottom: 10em;
 }
+img.envelope {
+    width: 10em;
+    opacity: 40%;
+}
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
