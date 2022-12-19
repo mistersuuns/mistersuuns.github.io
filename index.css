@@ -1,6 +1,46 @@
 /* {
-    border: solid black .001px;
+    border: solid white .001px;
 } */
+
+/* animation css start */
+.btn-shine {
+    transform: translate(-50%, -50%);
+    color: pink;
+    background: linear-gradient(to right,rgb(203, 2, 89) 0, white 10%, rgb(203, 2, 89) 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2500s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  @-moz-keyframes shine {
+    0% {background-position: 0;}
+    60% {background-position: 1000em;}
+    100% {background-position: 1000em;}
+  }
+  @-webkit-keyframes shine {
+    0% {background-position: 0;}
+    60% {background-position: 1000em;}
+    100% {background-position: 1000em;}
+  }
+  @-o-keyframes shine {
+    0% {background-position: 0;}
+    60% {background-position: 1000em;}
+    100% {background-position: 1000em;}
+  }
+  @keyframes shine {
+    0% {background-position: 0;}
+    60% {background-position: 1000em;}
+    100% {background-position: 1000em;}
+  }
+  
+ /* animation css stop */
+
 
 body, h6 {
     font-family: "Gill Sans";
@@ -9,30 +49,47 @@ body, h6 {
     font-size: min(16px);
     font-weight: 200;
     letter-spacing: .2vh;
+    color: #d7d7d7;
+    background-color: black;
+}
+ul {
+    background-image: url("wideROBERT-white10.png");
+    background-size: 65vw;
+    background-position: 25vw;
+    background-repeat: no-repeat;
+    float: right;
 }
 .navbar, .navbar-nav, 
 .scrollspy, .card, .row, .col, [class*='col-'] {
-    margin: 0; padding: 0; border: none;
+    margin: 0; 
+    padding: 0; 
+    border: none;
 }
 
 /* nav nav nav nav nav */
 .navbar {
     position: fixed;
     z-index: 1;
-    background: white;
+    width: 100%;
+    background: black;
 }
 
 .navbar-nav {
     justify-content: space-between;
     padding: 3vh 0;
     font-weight: 100;
-    color: rgba(0, 0, 0, 1);
     letter-spacing: .4vw;
     font-size: 2.5vh;
     opacity: 1;
 }
+
 .nav-link {
     opacity: .95;
+    color:rgb(203, 2, 89);
+    border-color:rgb(203, 2, 89);
+    border-width: .005em;
+    border-radius: 2em;
+    border-style: solid;
 }
 /* nav nav nav nav nav */
 
@@ -48,16 +105,26 @@ body, h6 {
     scroll-padding: 0;
     scroll-snap-align: end;
     scroll-behavior: smooth;
+    background-color: black;
+}
+.title, .wrc {
+    width:20em;
+    margin-top: 5em;
+}
+.siteClient {
+    margin-top: 1em;
 }
 .card.words {
-    margin-top: 40vh;
-}
-#designHead, #copyHead {
-    font-weight: 500;
-    color:rgba(84, 111, 146, 0.808);
+    padding-top: 40vh;
 }
 #designHead {
-    font-size: 6vh;
+    font-weight: 600;
+    color:rgb(203, 2, 89);
+    border-color:rgb(203, 2, 89);
+    border-width: .005em;
+    border-radius: 1em;
+    border-style: solid;
+    font-size: 9em;
     letter-spacing: 1.4vw;
 }
 .rowtop {
@@ -79,7 +146,13 @@ img.copyedit {
     padding: 2vw;
 }
 img.wrc {
-    padding: 2vw 8vw;
+    padding: 2vw 0vw;
+}
+#wrcc {
+    width: 50em;
+}
+#totlPDV {
+    width: 12.5em;
 }
 
 .email {
@@ -88,6 +161,7 @@ img.wrc {
 #rdt1 {
     letter-spacing: .75vw;
     float: left;
+    padding-bottom: 10em;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -111,17 +185,13 @@ img.wrc {
     .home, .sites { padding-top: 40vh; }
     .email { padding-top: 40vh; }
 
-    .siteClient {
-        float: right;
-    }
 
-    img.coded-icon {
-        width: 18vw;
-        padding: 2vw 3vw 2vw 6vw;
-    }
-    img.coded {
-        width: 22.5vw;
-        padding: 2vw;
+.description {
+    width: 50vw;
+}
+
+    img.kubR {
+        width: 20em;
     }
 }
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -148,16 +218,15 @@ img.wrc {
     .home, .sites, .email {
         font-size: 1.1em;
     }
-
+    #designHead {
+        font-size: 7.5em;
+        letter-spacing: 1.4vw;
+    }
     .home, .sites { padding-top: 40vh; }
     .email { padding-top: 30vh; }
-    img.coded-icon {
-        width: 2vw;
-        padding: 2vw 3vw 2vw 6vw;
-    }
-    img.coded {
-        width: 25vw;
-        padding: 2vw;
+
+    img.kubR {
+        width: 15em;
     }
 }
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
@@ -180,26 +249,22 @@ img.wrc {
     #smallNav {
         display: none;
     }
-
+    #designHead {
+        font-size: 8em;
+        letter-spacing: 1.4vw;
+    }
     .home, .sites { padding-top: 40vh; }
-    .email { padding-top: 25vh; }
+    .contact { padding-top: 25vh; }
 
     .home, .sites, .email {
         font-size: .95em;
     }
-    #oxford {
-        padding-top: 4vw;
-    }
-    img.coded-icon {
-        width: 12vw;
-        padding: 2vw 3vw 2vw 6vw;
-    }
-    img.coded {
-        width: 27.5vw;
-        padding: 0 1vw 3vw 1vw;
-    }
+
     img.wrc {
         padding: 6vw;
+    }
+    img.kubR {
+        width: 10em;
     }
 }
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
@@ -222,28 +287,17 @@ img.wrc {
     #smallNav {
         display: none;
     }
-
+    #designHead {
+        font-size: 7em;
+        letter-spacing: 1.4vw;
+    }
     .home, .sites { padding-top: 35vh; }
-    .email { padding-top: 20vh; }
+    .contact { padding-top: 20vh; }
 
     .home, .sites, .email {
         font-size: .85em;
     }
     
-    .siteClient {
-        float: left;
-    }
-    #oxford {
-        padding-top: 10vw;
-    }
-    img.coded-icon {
-        width: 30vw;
-        padding: 2vw 8vw;
-    }
-    img.coded {
-        width: 35vw;
-        padding: 3vw; 
-    }
     img.wrc {
         padding: 7vw;
     }
@@ -270,26 +324,21 @@ img.wrc {
         font-size: 1em;
     }
     .home, .sites { padding-top: 20vh; }
-    .email { padding-top: 15vh; }
+    .contact { padding-top: 15vh; }
 
+    #designHead {
+        font-size: 4em;
+        letter-spacing: 1.4vw;
+    }
     .home, .sites, .email {
         font-size: .85em;
     }
-    img.coded-icon {
-        width: 22vw;
-        padding: 2vw 5vw;
-    }
-    img.coded {
-        width: 25vw;
-        padding: 7.5vw 4vw 0 0; 
-    }
+
     img.wrc {
         width: 50vw;
         padding: 10vw;
     }
-    img.copyedit {
-        width: 50vw;
-    }
+
     .email {
         padding-bottom: 5vh;
     }
