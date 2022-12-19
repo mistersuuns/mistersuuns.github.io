@@ -324,14 +324,22 @@ img.envelope {
         width: 10vw;
     }
     .navbar-nav {
-        padding-left: 8vw;
-        width: 91vw;
+        padding-left: 0vw;
+        width: 90vw;
     }  
     #bigNav {
         display: none;
     } 
     .nav-link {
-        font-size: 1em;
+        font-size: .7em;
+        margin: .05em;
+    }
+    ul {
+        background-image: url("wideROBERT-black20.png");
+        background-size: 80vw;
+        background-position: 10vw;
+        background-repeat: no-repeat;
+        float: right;
     }
     .home, .sites { padding-top: 20vh; }
     .contact { padding-top: 15vh; }
