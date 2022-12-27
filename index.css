@@ -1,12 +1,13 @@
 /* {
-    border: solid white .001px;
+    border: solid black .001px;
 } */
 
 /* animation css start */
+
 .btn-shine {
     transform: translate(-50%, -50%);
     color: pink;
-    background: linear-gradient(to right,rgb(203, 2, 89) 0, white 10%, rgb(203, 2, 89) 20%);
+    background: linear-gradient(to right, rgb(0,0,0, 0.8), white 10%, rgb(0,0,0, 0.8));
     background-position: 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -17,58 +18,97 @@
     font-size: 16px;
     text-decoration: none;
     white-space: nowrap;
-  }
-  @-moz-keyframes shine {
-    0% {background-position: 0;}
-    60% {background-position: 1000em;}
-    100% {background-position: 1000em;}
-  }
-  @-webkit-keyframes shine {
-    0% {background-position: 0;}
-    60% {background-position: 1000em;}
-    100% {background-position: 1000em;}
-  }
-  @-o-keyframes shine {
-    0% {background-position: 0;}
-    60% {background-position: 1000em;}
-    100% {background-position: 1000em;}
-  }
-  @keyframes shine {
-    0% {background-position: 0;}
-    60% {background-position: 1000em;}
-    100% {background-position: 1000em;}
-  }
-  
- /* animation css stop */
+}
+
+@-moz-keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 1000em;
+    }
+
+    100% {
+        background-position: 1000em;
+    }
+}
+
+@-webkit-keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 1000em;
+    }
+
+    100% {
+        background-position: 1000em;
+    }
+}
+
+@-o-keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 1000em;
+    }
+
+    100% {
+        background-position: 1000em;
+    }
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 1000em;
+    }
+
+    100% {
+        background-position: 1000em;
+    }
+}
+
+/* animation css stop */
 
 
-body, h6 {
+
+body,
+h6 {
     font-family: "Gill Sans";
     overflow-x: scroll;
     position: relative;
     font-size: min(16px);
     font-weight: 200;
     letter-spacing: .2vh;
-    color: black;
+    color: rgb(0,0,0, 0.8);
     background-color: white;
 }
-/* .background {
-    margin: 3rem;
-    position: absolute;
-    z-index: 0;
-    color: black;
-} */
+
+/* 
 ul {
     background-image: url("wideROBERT-black20.png");
     background-size: 65vw;
     background-position: 25vw;
     background-repeat: no-repeat;
     float: right;
-}
-.navbar, .navbar-nav, 
-.scrollspy, .card, .row, .col, [class*='col-'] {
-    margin: 0; 
-    padding: 0; 
+} */
+.navbar,
+.navbar-nav,
+.scrollspy,
+.card,
+.row,
+.col,
+[class*='col-'] {
+    margin: 0;
+    padding: 0;
     border: none;
 }
 
@@ -82,21 +122,19 @@ ul {
 
 .navbar-nav {
     justify-content: space-between;
-    padding: 3vh 0;
+    padding: 1em 0;
     font-weight: 100;
     letter-spacing: .4vw;
-    font-size: 2.5vh;
+    font-size: 1.5em;
     opacity: 1;
 }
 
 .nav-link {
+    font-family: "Hoefler Text";
     opacity: .95;
-    color:rgb(203, 2, 89);
-    border-color:rgb(203, 2, 89);
-    border-width: .005em;
-    border-radius: 2em;
-    border-style: solid;
+    color: rgb(0,0,0, 0.8);
 }
+
 /* nav nav nav nav nav */
 
 .scrollspy {
@@ -105,6 +143,7 @@ ul {
     scroll-padding: 0;
     scroll-snap-type: y mandatory;
 }
+
 .card {
     border: none;
     scroll-margin: 0;
@@ -113,37 +152,48 @@ ul {
     scroll-behavior: smooth;
     background-color: white;
 }
-.title, .wrc {
-    width:20em;
+
+.title,
+.wrc {
+    width: 20em;
     margin-top: 5em;
 }
+
 .siteClient {
     margin-top: 1em;
 }
+
 .card.words {
     padding-top: 40vh;
 }
+
 #designHead {
-    font-weight: 600;
-    color:rgb(203, 2, 89);
+    font-family: "Hoefler Text";
+    color: rgb(0,0,0, 0.8);
+    font-weight: 500;
+    /*
     border-color:rgb(203, 2, 89);
     border-width: .005em;
     border-radius: 1em;
-    border-style: solid;
+    border-style: solid; */
     font-size: 9em;
     letter-spacing: 1.4vw;
 }
+
 .rowtop {
     margin-top: 40vh;
 }
+
 #copyHead {
     font-size: 6vh;
     letter-spacing: 1vw;
 }
+
 #subhead {
     font-size: larger;
     letter-spacing: .5vw;
 }
+
 #oxford {
     padding-top: 2vw;
 }
@@ -151,12 +201,15 @@ ul {
 img.copyedit {
     padding: 2vw;
 }
+
 img.wrc {
     padding: 2vw 0vw;
 }
+
 #wrcc {
     width: 50em;
 }
+
 #totlPDV {
     width: 12.5em;
 }
@@ -164,11 +217,13 @@ img.wrc {
 .email {
     padding-bottom: 5vh;
 }
+
 #rdt1 {
     letter-spacing: .75vw;
     float: left;
     padding-bottom: 10em;
 }
+
 img.envelope {
     width: 10em;
     opacity: 40%;
@@ -177,33 +232,40 @@ img.envelope {
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 @media (min-width: 1200px) {
+
     #logo {
         height: 10vh;
     }
+
     .navbar-nav {
         padding-left: 8.3vw;
         width: 91.7vw;
     }
+
     .nav-link {
         font-size: .95em;
         font-weight: 100;
     }
-    #smallNav {
-        display: none;
+
+    .home,
+    .sites {
+        padding-top: 40vh;
     }
 
-    .home, .sites { padding-top: 40vh; }
-    .email { padding-top: 40vh; }
+    .email {
+        padding-top: 40vh;
+    }
 
 
-.description {
-    width: 50vw;
-}
+    .description {
+        width: 50vw;
+    }
 
     img.kubR {
         width: 20em;
     }
 }
+
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 
@@ -214,31 +276,41 @@ img.envelope {
     #logo {
         height: 10vh;
     }
+
     .navbar-nav {
         padding-left: 7.5vw;
-        width: 92vw;
+        width: 93vw;
     }
+
     .nav-link {
         font-size: .95em;
     }
-    #smallNav {
-        display: none;
-    }
 
-    .home, .sites, .email {
+    .home,
+    .sites,
+    .email {
         font-size: 1.1em;
     }
+
     #designHead {
         font-size: 7.5em;
         letter-spacing: 1.4vw;
     }
-    .home, .sites { padding-top: 40vh; }
-    .email { padding-top: 30vh; }
+
+    .home,
+    .sites {
+        padding-top: 40vh;
+    }
+
+    .email {
+        padding-top: 30vh;
+    }
 
     img.kubR {
         width: 15em;
     }
 }
+
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
 
@@ -247,36 +319,47 @@ img.envelope {
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 @media (min-width: 768px) and (max-width: 991px) {
     #logo {
-        height: 7.5vh;
+        width: 3em;
     }
+
     .navbar-nav {
         padding-left: 7.5vw;
         width: 92vw;
     }
+
     .nav-link {
         font-size: .95em;
     }
-    #smallNav {
-        display: none;
-    }
+
     #designHead {
         font-size: 8em;
         letter-spacing: 1.4vw;
     }
-    .home, .sites { padding-top: 40vh; }
-    .contact { padding-top: 25vh; }
 
-    .home, .sites, .email {
+    .home,
+    .sites {
+        padding-top: 40vh;
+    }
+
+    .contact {
+        padding-top: 25vh;
+    }
+
+    .home,
+    .sites,
+    .email {
         font-size: .95em;
     }
 
     img.wrc {
         padding: 6vw;
     }
+
     img.kubR {
-        width: 10em;
+        width: 15em;
     }
 }
+
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 
@@ -285,34 +368,44 @@ img.envelope {
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 @media (min-width: 576px) and (max-width: 767px) {
     #logo {
-        height: 7.5vh;
+        width: 7.5vw;
     }
+
     .navbar-nav {
-        padding-left: 8.3vw;
-        width: 91.25vw;
+        padding-left: 7.5vw;
+        width: 92.5vw;
     }
+
     .nav-link {
         font-size: .85em;
     }
-    #smallNav {
-        display: none;
-    }
+
     #designHead {
         font-size: 7em;
         letter-spacing: 1.4vw;
     }
-    .home, .sites { padding-top: 35vh; }
-    .contact { padding-top: 20vh; }
 
-    .home, .sites, .email {
+    .home,
+    .sites {
+        padding-top: 35vh;
+    }
+
+    .contact {
+        padding-top: 20vh;
+    }
+
+    .home,
+    .sites,
+    .email {
         font-size: .85em;
     }
-    
+
     img.wrc {
         padding: 7vw;
     }
 
 }
+
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSS5SSSSSSSSS */
 
@@ -321,34 +414,36 @@ img.envelope {
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
     #logo {
-        width: 10vw;
-    }
-    .navbar-nav {
-        padding-left: 0vw;
-        width: 90vw;
-    }  
-    #bigNav {
         display: none;
-    } 
+    }
+
+    .navbar-nav {
+        padding-left: 7.5vw;
+        width: 92.5vw;
+    }
+
     .nav-link {
         font-size: .7em;
         margin: .05em;
     }
-    ul {
-        background-image: url("wideROBERT-black20.png");
-        background-size: 80vw;
-        background-position: 10vw;
-        background-repeat: no-repeat;
-        float: right;
+
+    .home,
+    .sites {
+        padding-top: 20vh;
     }
-    .home, .sites { padding-top: 20vh; }
-    .contact { padding-top: 15vh; }
+
+    .contact {
+        padding-top: 15vh;
+    }
 
     #designHead {
         font-size: 4em;
         letter-spacing: 1.4vw;
     }
-    .home, .sites, .email {
+
+    .home,
+    .sites,
+    .email {
         font-size: .85em;
     }
 
@@ -360,9 +455,11 @@ img.envelope {
     .email {
         padding-bottom: 5vh;
     }
+
     #rdt1 {
         font-size: 1em;
     }
 }
+
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
