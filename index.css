@@ -1,6 +1,6 @@
-/* {
+* {
     border: solid black .001px;
-} */
+} 
 
 /* animation css start */
 
@@ -367,10 +367,10 @@ img.envelope {
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 @media (min-width: 576px) and (max-width: 767px) {
-    #logo {
-        width: 7.5vw;
-    }
 
+    #logo {
+        width: 3em;
+    }
     .navbar-nav {
         padding-left: 7.5vw;
         width: 92.5vw;
@@ -414,17 +414,15 @@ img.envelope {
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
     #logo {
-        display: none;
+        width: 3em;
     }
-
     .navbar-nav {
         padding-left: 7.5vw;
         width: 92.5vw;
     }
 
     .nav-link {
-        font-size: .7em;
-        margin: .05em;
+        font-size: .6em;
     }
 
     .home,
@@ -458,6 +456,9 @@ img.envelope {
 
     #rdt1 {
         font-size: 1em;
+    }
+    img.kubR {
+        width: 10em;
     }
 }
 
