@@ -171,11 +171,6 @@ ul {
     font-family: "Hoefler Text";
     color: rgb(0,0,0, 0.8);
     font-weight: 500;
-    /*
-    border-color:rgb(203, 2, 89);
-    border-width: .005em;
-    border-radius: 1em;
-    border-style: solid; */
     font-size: 9em;
     letter-spacing: 1.4vw;
 }
@@ -221,7 +216,7 @@ img.wrc {
 #rdt1 {
     letter-spacing: .75vw;
     float: left;
-    padding-bottom: 10em;
+    padding-bottom: 1em;
 }
 
 img.envelope {
@@ -261,8 +256,9 @@ img.envelope {
         width: 50vw;
     }
 
-    img.kubR {
+    .kubR {
         width: 20em;
+        padding-bottom: 3em;
     }
 }
 
@@ -306,8 +302,9 @@ img.envelope {
         padding-top: 30vh;
     }
 
-    img.kubR {
+    .kubR {
         width: 15em;
+        padding-bottom: 2em;
     }
 }
 
@@ -355,8 +352,9 @@ img.envelope {
         padding: 6vw;
     }
 
-    img.kubR {
+    .kubR {
         width: 15em;
+        padding-bottom: 3em;
     }
 }
 
@@ -403,7 +401,10 @@ img.envelope {
     img.wrc {
         padding: 7vw;
     }
-
+    .kubR {
+        width: 5em;
+        padding-bottom: 3em;
+    }
 }
 
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -451,14 +452,15 @@ img.envelope {
     }
 
     .email {
-        padding-bottom: 5vh;
+        padding-bottom: 1em;
     }
 
     #rdt1 {
-        font-size: 1em;
+        font-size: .5em;
     }
-    img.kubR {
-        width: 10em;
+    .kubR {
+        width: 5em;
+        padding-bottom: 3em;
     }
 }
 
