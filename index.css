@@ -217,6 +217,7 @@ img.wrc {
     letter-spacing: .75vw;
     float: left;
     padding-bottom: 1em;
+        font-weight: 600;
 }
 
 img.envelope {
@@ -230,7 +231,6 @@ img.envelope {
 
     #logo {
         height: 5vh;
-        padding: .05vh;
     }
 
     .navbar-nav {
@@ -257,9 +257,9 @@ img.envelope {
         width: 50vw;
     }
 
-    .kubR {
-        width: 20em;
-        padding-bottom: 3em;
+    #rdt1 {
+        font-size: 3em;
+        font-weight: 600;
     }
 }
 
@@ -271,7 +271,7 @@ img.envelope {
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
 @media (min-width: 992px) and (max-width: 1199px) {
     #logo {
-        height: 10vh;
+        height: 5vh;
     }
 
     .navbar-nav {
@@ -302,11 +302,10 @@ img.envelope {
     .email {
         padding-top: 30vh;
     }
-
-    .kubR {
-        width: 15em;
-        padding-bottom: 2em;
+    #rdt1 {
+        font-size: 3em;
     }
+
 }
 
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
@@ -353,10 +352,6 @@ img.envelope {
         padding: 6vw;
     }
 
-    .kubR {
-        width: 15em;
-        padding-bottom: 3em;
-    }
 }
 
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
@@ -402,10 +397,10 @@ img.envelope {
     img.wrc {
         padding: 7vw;
     }
-    .kubR {
-        width: 5em;
-        padding-bottom: 3em;
+    #rdt1 {
+        font-size: 3em;
     }
+
 }
 
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -457,12 +452,9 @@ img.envelope {
     }
 
     #rdt1 {
-        font-size: .5em;
+        font-size: 2em;
     }
-    .kubR {
-        width: 5em;
-        padding-bottom: 3em;
-    }
+
 }
 
 /* XS XS XS XS XS XS XS XS XS XS XS XS */
