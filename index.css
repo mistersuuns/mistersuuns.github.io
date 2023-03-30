@@ -169,10 +169,11 @@ ul {
 }
 
 #designHead {
-    font-family: "Inter";
-    color: #465362ea;
+    font-family:"Gill sans";
     font-weight: 500;
     font-size: 9em;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.35px #465362;
     letter-spacing: 1.4vw;
 }
 
