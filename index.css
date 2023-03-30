@@ -165,7 +165,7 @@ ul {
 }
 
 .card.words {
-    padding-top: 40vh;
+    padding-top: 30vh;
 }
 
 #designHead {
@@ -231,7 +231,7 @@ img.envelope {
 @media (min-width: 1200px) {
 
     #logo {
-        height: 5vh;
+        height: 3em;
     }
 
     .navbar-nav {
@@ -246,11 +246,11 @@ img.envelope {
 
     .home,
     .sites {
-        padding-top: 40vh;
+        padding-top: 30vh;
     }
 
     .email {
-        padding-top: 40vh;
+        padding-top: 30vh;
     }
 
 
@@ -272,7 +272,7 @@ img.envelope {
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
 @media (min-width: 992px) and (max-width: 1199px) {
     #logo {
-        height: 5vh;
+        height: 3em;
     }
 
     .navbar-nav {
@@ -297,7 +297,7 @@ img.envelope {
 
     .home,
     .sites {
-        padding-top: 40vh;
+        padding-top: 30vh;
     }
 
     .email {
@@ -336,7 +336,7 @@ img.envelope {
 
     .home,
     .sites {
-        padding-top: 40vh;
+        padding-top: 30vh;
     }
 
     .contact {
@@ -382,7 +382,7 @@ img.envelope {
 
     .home,
     .sites {
-        padding-top: 35vh;
+        padding-top: 30vh;
     }
 
     .contact {
@@ -412,7 +412,7 @@ img.envelope {
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
     #logo {
-        width: 3em;
+        width: 2em;
     }
     .navbar-nav {
         padding-left: 7.5vw;
@@ -453,7 +453,7 @@ img.envelope {
     }
 
     #rdt1 {
-        font-size: 2em;
+        font-size: 1.75em;
     }
 
 }
