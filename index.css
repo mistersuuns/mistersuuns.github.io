@@ -2,84 +2,6 @@
     border: solid black .001px;
 } */
 
-/* animation css start */
-/*
-.btn-shine {
-    transform: translate(-50%, -50%);
-    color: pink;
-    background: linear-gradient(to right, rgb(0,0,0, 0.8), rgb(203, 203, 203) 10%, rgb(0,0,0, 0.8));
-    background-position: 0;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 2500s infinite linear;
-    animation-fill-mode: forwards;
-    -webkit-text-size-adjust: none;
-    font-weight: 600;
-    font-size: 16px;
-    text-decoration: none;
-    white-space: nowrap;
-}
-*/
-
-@-moz-keyframes shine {
-    0% {
-        background-position: 0;
-    }
-
-    60% {
-        background-position: 1000em;
-    }
-
-    100% {
-        background-position: 1000em;
-    }
-}
-
-@-webkit-keyframes shine {
-    0% {
-        background-position: 0;
-    }
-
-    60% {
-        background-position: 1000em;
-    }
-
-    100% {
-        background-position: 1000em;
-    }
-}
-
-@-o-keyframes shine {
-    0% {
-        background-position: 0;
-    }
-
-    60% {
-        background-position: 1000em;
-    }
-
-    100% {
-        background-position: 1000em;
-    }
-}
-
-@keyframes shine {
-    0% {
-        background-position: 0;
-    }
-
-    60% {
-        background-position: 1000em;
-    }
-
-    100% {
-        background-position: 1000em;
-    }
-}
-
-/* animation css stop */
-
-
 
 body,
 h6 {
@@ -175,6 +97,9 @@ ul {
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 1.35px #465362;
     letter-spacing: 1.4vw;
+}
+#designHead, .description {
+    cursor: auto;
 }
 
 .rowtop {
