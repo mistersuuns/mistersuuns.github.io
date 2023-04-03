@@ -1,7 +1,6 @@
 /* {
     border: solid black .001px;
-} */
-
+}*/
 
 body,
 h6 {
@@ -76,18 +75,29 @@ ul {
     background-color: white;
 }
 
-.title,
+#greetings {
+    padding: 10vh 0 0 0;
+}
+.col.headparis {
+    padding: 7.5vh 0 0 0;
+}
+#headParis {
+    width: 6em;
+    border-radius: 15px;
+}
+
+.title {
+    width: 20em;
+    margin-top: 2.5em;
+}
+
 .wrc {
     width: 20em;
     margin-top: 5em;
 }
 
-.siteClient {
-    margin-top: 1em;
-}
-
-.card.words {
-    padding-top: 30vh;
+.row.sites {
+    padding-top: 10vh;
 }
 
 #designHead {
@@ -102,22 +112,9 @@ ul {
     cursor: auto;
 }
 
-.rowtop {
-    margin-top: 40vh;
-}
-
-#copyHead {
-    font-size: 6vh;
-    letter-spacing: 1vw;
-}
-
 #subhead {
     font-size: larger;
     letter-spacing: .5vw;
-}
-
-#oxford {
-    padding-top: 2vw;
 }
 
 img.copyedit {
@@ -147,11 +144,6 @@ img.wrc {
         font-weight: 600;
 }
 
-img.envelope {
-    width: 10em;
-    opacity: 40%;
-}
-
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 @media (min-width: 1200px) {
@@ -169,16 +161,6 @@ img.envelope {
         font-size: .95em;
         font-weight: 100;
     }
-
-    .home,
-    .sites {
-        padding-top: 30vh;
-    }
-
-    .email {
-        padding-top: 30vh;
-    }
-
 
     .description {
         width: 50vw;
@@ -221,14 +203,6 @@ img.envelope {
         letter-spacing: 1.4vw;
     }
 
-    .home,
-    .sites {
-        padding-top: 30vh;
-    }
-
-    .email {
-        padding-top: 30vh;
-    }
     #rdt1 {
         font-size: 3em;
     }
@@ -258,15 +232,6 @@ img.envelope {
     #designHead {
         font-size: 8em;
         letter-spacing: 1.4vw;
-    }
-
-    .home,
-    .sites {
-        padding-top: 30vh;
-    }
-
-    .contact {
-        padding-top: 25vh;
     }
 
     .home,
@@ -307,15 +272,6 @@ img.envelope {
     }
 
     .home,
-    .sites {
-        padding-top: 30vh;
-    }
-
-    .contact {
-        padding-top: 20vh;
-    }
-
-    .home,
     .sites,
     .email {
         font-size: .85em;
@@ -347,15 +303,6 @@ img.envelope {
 
     .nav-link {
         font-size: .6em;
-    }
-
-    .home,
-    .sites {
-        padding-top: 20vh;
-    }
-
-    .contact {
-        padding-top: 15vh;
     }
 
     #designHead {
