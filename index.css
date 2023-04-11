@@ -111,6 +111,9 @@ ul {
 #designHead, .description {
     cursor: auto;
 }
+.description {
+    padding-top: .75em;
+}
 
 #subhead {
     font-size: larger;
