@@ -1,6 +1,6 @@
 /* {
     border: solid black .001px;
-}*/
+} */
 
 body,
 h6 {
@@ -136,15 +136,22 @@ img.wrc {
     width: 12.5em;
 }
 
-.email {
-    padding-bottom: 5vh;
+#footer {
+    padding: 2em 0 0 0;
+    background-color:slategrey;
 }
 
-#rdt1 {
-    letter-spacing: .75vw;
-    float: left;
-    padding-bottom: 1em;
-        font-weight: 600;
+#footerText {
+    line-height: 2.25em;
+}
+#footerLink {
+    padding: .35em;
+    border: solid .05px white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -169,9 +176,14 @@ img.wrc {
         width: 50vw;
     }
 
-    #rdt1 {
-        font-size: 3em;
-        font-weight: 600;
+    #kub {
+        width: 5em;
+        padding: 1.5em .25em;
+        margin-right: 50vw;
+    }
+    #kubFoot {
+        width: 4em;
+        padding: .5em .25em;
     }
 }
 
@@ -196,8 +208,7 @@ img.wrc {
     }
 
     .home,
-    .sites,
-    .email {
+    .sites {
         font-size: 1.1em;
     }
 
@@ -205,9 +216,17 @@ img.wrc {
         font-size: 7.5em;
         letter-spacing: 1.4vw;
     }
-
-    #rdt1 {
-        font-size: 3em;
+    #footerKub {
+        padding: 0 0 0 0;
+    }
+    #kub {
+        width: 5em;
+        padding: 1em 0;
+        margin-right: 48vw;
+    }
+    #kubFoot {
+        width: 4em;
+        padding: .5em .25em;
     }
 
 }
@@ -233,18 +252,26 @@ img.wrc {
     }
 
     #designHead {
-        font-size: 8em;
+        font-size: 6em;
         letter-spacing: 1.4vw;
     }
 
     .home,
-    .sites,
-    .email {
+    .sites {
         font-size: .95em;
     }
 
     img.wrc {
         padding: 6vw;
+    }
+    #kub {
+        width: 5em;
+        padding: 1em 0;
+        margin-right: 48vw;
+    }
+    #kubFoot {
+        width: 5em;
+        padding: .5em .25em;
     }
 
 }
@@ -275,16 +302,24 @@ img.wrc {
     }
 
     .home,
-    .sites,
-    .email {
+    .sites {
         font-size: .85em;
     }
-
+    #pdvHome {
+        max-width: 50vw;
+    }
     img.wrc {
         padding: 7vw;
     }
-    #rdt1 {
-        font-size: 3em;
+
+    #kub {
+        width: 5em;
+        padding: 1em 0;
+        margin-right: 35vw;
+    }
+    #kubFoot {
+        width: 5em;
+        padding: .5em .25em;
     }
 
 }
@@ -314,8 +349,7 @@ img.wrc {
     }
 
     .home,
-    .sites,
-    .email {
+    .sites {
         font-size: .85em;
     }
 
@@ -324,12 +358,14 @@ img.wrc {
         padding: 10vw;
     }
 
-    .email {
-        padding-bottom: 1em;
+    #kub {
+        width: 5em;
+        padding: 1em .25em;
+        margin-right: 3.5vw;
     }
-
-    #rdt1 {
-        font-size: 1.75em;
+    #kubFoot {
+        width: 5em;
+        padding: .5em .25em;
     }
 
 }
