@@ -22,6 +22,11 @@ ul {
     background-repeat: no-repeat;
     float: right;
 } */
+.navbar {
+    border-bottom: 1px black solid;
+}
+
+
 .navbar,
 .navbar-nav,
 .scrollspy,
