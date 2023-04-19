@@ -337,15 +337,16 @@ li {
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
     #logo {
-        width: 2em;
+        width: 2.5em;
+        margin-right: .5em;
     }
     .navbar-nav {
-        padding-left: 7.5vw;
-        width: 92.5vw;
+        padding-left: 5vw;
+        width: 95vw;
     }
 
     .nav-link {
-        font-size: .6em;
+        font-size: .8em;
     }
 
     #designHead {
