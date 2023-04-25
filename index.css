@@ -108,11 +108,13 @@ ul {
 #designHead {
     font-family:"Gill sans";
     font-weight: 500;
-    font-size: 9em;
+    font-size: 6em;
     line-height: 1em;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 1.35px #465362;
-    letter-spacing: 1.4vw;
+    color: white;
+    letter-spacing: .01em;
+    padding: .01em .2em .01em .2em;
+    border-radius: .15em;
+    background-color: slategray;
 }
 #designHead, .description {
     cursor: auto;
@@ -178,6 +180,7 @@ li {
         font-weight: 100;
     }
 
+
     .description {
         width: 65vw;
     }
@@ -219,8 +222,8 @@ li {
     }
 
     #designHead {
-        font-size: 7.5em;
-        letter-spacing: 1.4vw;
+        font-size: 5.5em;
+        letter-spacing: .1em;
     }
     #footerKub {
         padding: 0 0 0 0;
@@ -258,8 +261,8 @@ li {
     }
 
     #designHead {
-        font-size: 6em;
-        letter-spacing: 1.4vw;
+        font-size: 5em;
+        letter-spacing: .1em;
     }
 
     .home,
@@ -303,8 +306,8 @@ li {
     }
 
     #designHead {
-        font-size: 7em;
-        letter-spacing: 1.4vw;
+        font-size: 5em;
+        letter-spacing: .1em;
     }
 
     .home,
@@ -351,8 +354,8 @@ li {
     }
 
     #designHead {
-        font-size: 4em;
-        letter-spacing: 1.4vw;
+        font-size: 3em;
+        letter-spacing: .1em;
     }
 
     .home,
