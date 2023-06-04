@@ -63,7 +63,9 @@ ul {
 }
 
 /* nav nav nav nav nav */
-
+#cms, #htmlcss, #webflow, #uiux {
+    scroll-margin-top: 3.25em;
+}
 .scrollspy {
     overflow: scroll;
     scroll-margin: 0;
