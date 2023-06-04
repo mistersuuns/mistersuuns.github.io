@@ -2,84 +2,6 @@
     border: solid black .001px;
 } */
 
-/* animation css start */
-
-.btn-shine {
-    transform: translate(-50%, -50%);
-    color: pink;
-    background: linear-gradient(to right, rgb(0,0,0, 0.8), rgb(203, 203, 203) 10%, rgb(0,0,0, 0.8));
-    background-position: 0;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 2500s infinite linear;
-    animation-fill-mode: forwards;
-    -webkit-text-size-adjust: none;
-    font-weight: 600;
-    font-size: 16px;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-@-moz-keyframes shine {
-    0% {
-        background-position: 0;
-    }
-
-    60% {
-        background-position: 1000em;
-    }
-
-    100% {
-        background-position: 1000em;
-    }
-}
-
-@-webkit-keyframes shine {
-    0% {
-        background-position: 0;
-    }
-
-    60% {
-        background-position: 1000em;
-    }
-
-    100% {
-        background-position: 1000em;
-    }
-}
-
-@-o-keyframes shine {
-    0% {
-        background-position: 0;
-    }
-
-    60% {
-        background-position: 1000em;
-    }
-
-    100% {
-        background-position: 1000em;
-    }
-}
-
-@keyframes shine {
-    0% {
-        background-position: 0;
-    }
-
-    60% {
-        background-position: 1000em;
-    }
-
-    100% {
-        background-position: 1000em;
-    }
-}
-
-/* animation css stop */
-
-
-
 body,
 h6 {
     font-family: "Gill Sans";
@@ -88,7 +10,7 @@ h6 {
     font-size: min(16px);
     font-weight: 200;
     letter-spacing: .2vh;
-    color: rgb(0,0,0, 0.8);
+    color: #465362ea;
     background-color: white;
 }
 
@@ -100,6 +22,11 @@ ul {
     background-repeat: no-repeat;
     float: right;
 } */
+.navbar {
+    border-bottom: 1px black solid;
+}
+
+
 .navbar,
 .navbar-nav,
 .scrollspy,
@@ -123,16 +50,16 @@ ul {
 .navbar-nav {
     justify-content: space-between;
     padding: 1em 0;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: .4vw;
     font-size: 1.5em;
     opacity: 1;
 }
 
 .nav-link {
-    font-family: "Hoefler Text";
-    opacity: .95;
-    color: rgb(0,0,0, 0.8);
+    font-family: "Gill sans";
+    color: #465362ea;
+    opacity: .90;
 }
 
 /* nav nav nav nav nav */
@@ -153,44 +80,52 @@ ul {
     background-color: white;
 }
 
-.title,
+#greetings {
+    padding: 10vh 0 0 0;
+}
+.col.headparis {
+    padding: 7.5vh 0 0 0;
+}
+#headParis {
+    width: 6em;
+    border-radius: 15px;
+}
+
+.title {
+    width: 20em;
+    margin-top: 2.5em;
+}
+
 .wrc {
     width: 20em;
     margin-top: 5em;
 }
 
-.siteClient {
-    margin-top: 1em;
-}
-
-.card.words {
-    padding-top: 40vh;
+.row.sites {
+    padding-top: 10vh;
 }
 
 #designHead {
-    font-family: "Hoefler Text";
-    color: rgb(0,0,0, 0.8);
+    font-family:"Gill sans";
     font-weight: 500;
-    font-size: 9em;
-    letter-spacing: 1.4vw;
+    font-size: 6em;
+    line-height: 1em;
+    color: white;
+    letter-spacing: .01em;
+    padding: .01em .2em .01em .2em;
+    border-radius: .15em;
+    background-color: slategray;
 }
-
-.rowtop {
-    margin-top: 40vh;
+#designHead, .description {
+    cursor: auto;
 }
-
-#copyHead {
-    font-size: 6vh;
-    letter-spacing: 1vw;
+.description {
+    padding-top: .75em;
 }
 
 #subhead {
     font-size: larger;
     letter-spacing: .5vw;
-}
-
-#oxford {
-    padding-top: 2vw;
 }
 
 img.copyedit {
@@ -209,19 +144,22 @@ img.wrc {
     width: 12.5em;
 }
 
-.email {
-    padding-bottom: 5vh;
+#footer {
+    padding: 2em 0 0 0;
+    background-color:slategrey;
 }
 
-#rdt1 {
-    letter-spacing: .75vw;
-    float: left;
-    padding-bottom: 1em;
+#footerText {
+    line-height: 2.25em;
 }
-
-img.envelope {
-    width: 10em;
-    opacity: 40%;
+#footerLink {
+    padding: .35em;
+    border: solid .05px white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
 }
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
@@ -229,7 +167,7 @@ img.envelope {
 @media (min-width: 1200px) {
 
     #logo {
-        height: 10vh;
+        height: 3em;
     }
 
     .navbar-nav {
@@ -242,23 +180,19 @@ img.envelope {
         font-weight: 100;
     }
 
-    .home,
-    .sites {
-        padding-top: 40vh;
-    }
-
-    .email {
-        padding-top: 40vh;
-    }
-
 
     .description {
-        width: 50vw;
+        width: 65vw;
     }
 
-    .kubR {
-        width: 20em;
-        padding-bottom: 3em;
+    #kub {
+        width: 5em;
+        padding: 1.5em .25em;
+        margin-right: 50vw;
+    }
+    #kubFoot {
+        width: 4em;
+        padding: .5em .25em;
     }
 }
 
@@ -270,7 +204,7 @@ img.envelope {
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
 @media (min-width: 992px) and (max-width: 1199px) {
     #logo {
-        height: 10vh;
+        height: 3em;
     }
 
     .navbar-nav {
@@ -283,29 +217,27 @@ img.envelope {
     }
 
     .home,
-    .sites,
-    .email {
+    .sites {
         font-size: 1.1em;
     }
 
     #designHead {
-        font-size: 7.5em;
-        letter-spacing: 1.4vw;
+        font-size: 5.5em;
+        letter-spacing: .1em;
+    }
+    #footerKub {
+        padding: 0 0 0 0;
+    }
+    #kub {
+        width: 5em;
+        padding: 1em 0;
+        margin-right: 48vw;
+    }
+    #kubFoot {
+        width: 4em;
+        padding: .5em .25em;
     }
 
-    .home,
-    .sites {
-        padding-top: 40vh;
-    }
-
-    .email {
-        padding-top: 30vh;
-    }
-
-    .kubR {
-        width: 15em;
-        padding-bottom: 2em;
-    }
 }
 
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
@@ -329,33 +261,28 @@ img.envelope {
     }
 
     #designHead {
-        font-size: 8em;
-        letter-spacing: 1.4vw;
+        font-size: 5em;
+        letter-spacing: .1em;
     }
 
     .home,
     .sites {
-        padding-top: 40vh;
-    }
-
-    .contact {
-        padding-top: 25vh;
-    }
-
-    .home,
-    .sites,
-    .email {
         font-size: .95em;
     }
 
     img.wrc {
         padding: 6vw;
     }
-
-    .kubR {
-        width: 15em;
-        padding-bottom: 3em;
+    #kub {
+        width: 5em;
+        padding: 1em 0;
+        margin-right: 48vw;
     }
+    #kubFoot {
+        width: 5em;
+        padding: .5em .25em;
+    }
+
 }
 
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
@@ -379,32 +306,31 @@ img.envelope {
     }
 
     #designHead {
-        font-size: 7em;
-        letter-spacing: 1.4vw;
+        font-size: 5em;
+        letter-spacing: .1em;
     }
 
     .home,
     .sites {
-        padding-top: 35vh;
-    }
-
-    .contact {
-        padding-top: 20vh;
-    }
-
-    .home,
-    .sites,
-    .email {
         font-size: .85em;
     }
-
+    #pdvHome {
+        max-width: 50vw;
+    }
     img.wrc {
         padding: 7vw;
     }
-    .kubR {
+
+    #kub {
         width: 5em;
-        padding-bottom: 3em;
+        padding: 1em 0;
+        margin-right: 35vw;
     }
+    #kubFoot {
+        width: 5em;
+        padding: .5em .25em;
+    }
+
 }
 
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
@@ -415,34 +341,25 @@ img.envelope {
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
     #logo {
-        width: 3em;
+        width: 2.5em;
+        margin-right: .5em;
     }
     .navbar-nav {
-        padding-left: 7.5vw;
-        width: 92.5vw;
+        padding-left: 5vw;
+        width: 95vw;
     }
 
     .nav-link {
-        font-size: .6em;
+        font-size: .8em;
+    }
+
+    #designHead {
+        font-size: 3em;
+        letter-spacing: .1em;
     }
 
     .home,
     .sites {
-        padding-top: 20vh;
-    }
-
-    .contact {
-        padding-top: 15vh;
-    }
-
-    #designHead {
-        font-size: 4em;
-        letter-spacing: 1.4vw;
-    }
-
-    .home,
-    .sites,
-    .email {
         font-size: .85em;
     }
 
@@ -451,17 +368,16 @@ img.envelope {
         padding: 10vw;
     }
 
-    .email {
-        padding-bottom: 1em;
+    #kub {
+        width: 5em;
+        padding: 1em .25em;
+        margin-right: 3.5vw;
+    }
+    #kubFoot {
+        width: 5em;
+        padding: .5em .25em;
     }
 
-    #rdt1 {
-        font-size: .5em;
-    }
-    .kubR {
-        width: 5em;
-        padding-bottom: 3em;
-    }
 }
 
 /* XS XS XS XS XS XS XS XS XS XS XS XS */

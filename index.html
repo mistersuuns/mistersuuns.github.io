@@ -27,6 +27,15 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"
         defer>
         </script>
+         <!-- Google tag (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-83D8HHVKZF"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'G-83D8HHVKZF');
+ </script>
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -38,7 +47,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
 
-    <link rel="shortcut icon" type="image/png" href="kubGrey.webp">
+    <link rel="shortcut icon" type="image/png" href="RT-transp.png">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
@@ -49,31 +58,94 @@
 
     <!--<div class="background">ROBERT</div>-->
     <div class="scrollspy">
-
         <nav class="navbar navbar-expand navbar-light">
             <ul class="navbar-nav " id="bigNav">
-
+                <li class=""><a href="#contact"><img id="logo" src="RToutlineGrey-pinkC.png"></a>
+                </li>
                 <li class=""><a class="nav-link active" href="#cms">cms</a>
                 </li>
                 <li class=""><a class="nav-link" href="#htmlcss">html</a></li>
                 <li class=""><a class="nav-link" href="#webflow">webflow</a></li>
                 <li class=""><a class="nav-link" href="#uiux">ui/ux</a>
                 </li>
-                <li class=""><a href="#contact"><img id="logo" src="kubGrey.webp"></a>
-                </li>
             </ul>
         </nav>
 
 
-        <div class="card code" id="cms">
+        <div class="container-fluid" id="greetings">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <br><br>
+                    <div class="row">
+                        <div class="col headparis">
+                            <img id="headParis" src="headParis-crop.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a style="font-weight:600"><br>I'm Robert.</a>
+                            <a id="test"><br>I turn ideas and pictures into designs and websites.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+
+        <div class="card" id="cms">
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-10">
                     <div class="row sites" id="home">
                         <div class="col">
-                            <a class="btn-shine" id="designHead">cms</a>
-                            <br><br>
-                            <br><br>
+                            <a id="designHead">cms - framer</a>
+                        </div>
+                    </div>
+                    <div class="row siteClient">
+                        <div class="col">
+                            <a href="https://lufieart.framer.website" target="_blank"><img class="title"
+                                    src="lufieArt horizontal.png"></a>
+                        </div>
+                    </div>
+                    <div class="row siteClient">
+                        <div class="col">
+                            <div class="description">Lufie is a pandemic abstract expressionist artist based in Toronto, Canada. Her work is colourfully optimistic and available for purchase both IRL and as NFTs.<br><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row siteClient">
+                        <div class="col-lg-4 col-md-6">
+                            <a href="https://lufieart.framer.website" target="_blank"><img class="copyedit"
+                                    src="lufieart-Home.png"></a>
+                                    <br><br>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="https://lufieart.framer.website/artworks" target="_blank"><img class="copyedit"
+                                    src="lufieart-Artworks.png"></a>
+                                    <br><br>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <a href="https://lufieart.framer.website/about" target="_blank"><img class="copyedit"
+                                    src="lufieart-About-mobile.png"></a>
+                                    <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="row sites" id="home">
+                        <div class="col">
+                            <a id="designHead">cms - webflow</a>
                         </div>
                     </div>
                     <div class="row siteClient">
@@ -83,24 +155,27 @@
                         </div>
                     </div>
                     <div class="row siteClient">
-                        <div class="col-8">
-                            <a class="description">A work-in-progress city magazine and guide to everything Nanaimo –
+                        <div class="col">
+                            <div class="description">A work-in-progress city magazine and guide to everything Nanaimo –
                                 past, present, and future. Find out
-                                what's going on. Discover hidden gems. Submit your own story. Connect.<br><br><br></a>
+                                what's going on. Discover hidden gems. Submit your own story. Connect.<br><br><br></div>
                         </div>
                     </div>
                     <div class="row siteClient">
                         <div class="col-lg-4 col-md-6">
                             <a href="https://nanaimolife.webflow.io" target="_blank"><img class="copyedit"
                                     src="nanaimolife-webflow-io-home.png"></a>
+                                    <br><br>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <a href="https://nanaimolife.webflow.io" target="_blank"><img class="copyedit"
+                            <a href="https://nanaimolife.webflow.io/eat-drink" target="_blank"><img class="copyedit"
                                     src="nanaimolife-webflow-io-eat-drink.png"></a>
+                                    <br><br>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <a href="https://nanaimolife.webflow.io" target="_blank"><img class="copyedit"
+                            <a href="https://nanaimolife.webflow.io/eat-drink/craft-fare" target="_blank"><img class="copyedit"
                                     src="nanaimolife-webflow-io-eat-drink-craft-fare.png"></a>
+                                    <br><br>
                         </div>
                     </div>
                 </div>
@@ -109,16 +184,16 @@
             </div>
         </div>
 
-        <div class="card code" id="htmlcss">
+
+
+        <div class="card" id="htmlcss">
             <div class="row">
                 <div class="col-1">
                 </div>
                 <div class="col-10">
                     <div class="row sites">
                         <div class="col">
-                            <a class="btn-shine" id="designHead">html-css</a>
-                            <br><br>
-                            <br><br>
+                            <a id="designHead">html-css</a>
                         </div>
                     </div>
                     <div class="row siteClient">
@@ -127,9 +202,9 @@
                         </div>
                     </div>
                     <div class="row siteClient">
-                        <div class="col-12">
-                            <a class="description">Business website for data analyst working in field of
-                                epidemiology.</a>
+                        <div class="col">
+                            <div class="description">Business website for data analyst working in field of
+                                epidemiology.</div>
                         </div>
                     </div>
                     <div class="row siteClient">
@@ -170,7 +245,7 @@
                     </div>
                     <div class="row siteClient">
                         <div class="col-8">
-                            <a class="description">Business website for bespoke cafe and bakery.<br><br><br></a>
+                            <div class="description">Business website for bespoke cafe and bakery.<br><br><br></div>
                         </div>
                     </div>
                     <div class="row siteClient">
@@ -185,16 +260,14 @@
             </div>
         </div>
 
-        <div class="card code" id="webflow">
+        <div class="card" id="webflow">
             <div class="row">
                 <div class="col-1">
                 </div>
                 <div class="col-10">
                     <div class="row sites">
                         <div class="col">
-                            <a class="btn-shine" id="designHead">webflow</a>
-                            <br><br>
-                            <br><br>
+                            <a id="designHead">webflow</a>
                         </div>
                     </div>
                     <div class="row siteClient">
@@ -204,24 +277,28 @@
                         </div>
                     </div>
                     <div class="row siteClient">
-                        <div class="col-8">
-                            <a class="description">Business website for real estate developer specializing in low-rise
+                        <div class="col">
+                            <div class="description">Business website for real estate developer specializing in
+                                low-rise
                                 condominium projects
-                                on Vancouver Island.<br><br><br></a>
+                                on Vancouver Island.<br><br><br></div>
                         </div>
                     </div>
                     <div class="row siteClient">
                         <div class="col-lg-4 col-md-6 col-s-8 col-xs-10">
                             <a href="https://www.principleproperty.ca/" target="_blank"><img class="copyedit"
                                     src="principle-home.png"></a>
+                                    <br><br>
                         </div>
                         <div class="col-lg-4 col-md-6 col-s-8 col-xs-10">
                             <a href="https://www.principleproperty.ca/projects" target="_blank"><img class="copyedit"
                                     src="principle-projects.png"></a>
+                                    <br><br>
                         </div>
                         <div class="col-lg-4 col-md-6 col-s-8 col-xs-10">
                             <a href="https://www.principleproperty.ca/current-projects" target="_blank"><img
                                     class="copyedit" src="principle-projectsCurrent.png"></a>
+                                    <br><br>
                         </div>
                     </div>
 
@@ -232,66 +309,69 @@
                         </div>
                     </div>
                     <div class="row siteClient">
-                        <div class="col-8">
-                            <a class="description">Business website for construction management company.<br><br><br></a>
+                        <div class="col">
+                            <div class="description">Business website for construction management
+                                company.<br><br><br>
+                            </div>
                         </div>
                     </div>
                     <div class="row siteClient">
                         <div class="col-lg-4 col-md-6">
                             <a href="https://www.parkshore.ca/" target="_blank"><img class="copyedit"
                                     src="parkshore-Home.png"></a>
+                                    <br><br>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <a href="https://www.parkshore.ca/projects" target="_blank"><img class="copyedit"
                                     src="parkshore-Projects.png"></a>
+                                    <br><br>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <a href="https://www.parkshore.ca/resources" target="_blank"><img class="copyedit"
                                     src="parkshore-Resources.png"></a>
+                                    <br><br>
                         </div>
                     </div>
 
                     <div class="row siteClient">
                         <div class="col">
-                            <a href="https://parkon.ca" target="_blank"><img class="title"
-                                    src="Parkon-Text-Logo.png"></a>
+                            <a><img class="title" src="Parkon-Text-Logo.png"></a>
                         </div>
                     </div>
                     <div class="row siteClient">
-                        <div class="col-8">
-                            <a class="description">Business website for construction company.<br><br><br></a>
+                        <div class="col">
+                            <div class="description">Business website for construction company.<br><br><br></div>
                         </div>
                     </div>
                     <div class="row siteClient">
                         <div class="col-lg-4 col-md-6">
-                            <a href="https://www.parkon.ca/" target="_blank"><img class="copyedit"
-                                    src="parkon-Home.png"></a>
+                            <a><img class="copyedit" src="parkon-Home.png"></a>
+                            <br><br>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <a href="https://www.parkon.ca/PROJECTS" target="_blank"><img class="copyedit"
-                                    src="parkon-projects.png"></a>
+                            <a><img class="copyedit" src="parkon-projects.png"></a>
+                            <br><br>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <a href="https://www.parkon.ca/services" target="_blank"><img class="copyedit"
-                                    src="parkon-Services.png"></a>
+                            <a><img class="copyedit" src="parkon-Services.png"></a>
+                            <br><br>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-1">
                 </div>
             </div>
         </div>
 
-        <div class="card code" id="uiux">
+        <div class="card" id="uiux">
             <div class="row">
                 <div class="col-1">
                 </div>
                 <div class="col-10">
                     <div class="row sites">
                         <div class="col">
-                            <a class="btn-shine" id="designHead">ui/ux</a>
-                            <br><br>
-                            <br><br>
+                            <a id="designHead">ui/ux</a>
                         </div>
                     </div>
                     <div class="row siteClient">
@@ -300,11 +380,13 @@
                         </div>
                     </div>
                     <div class="row siteClient">
-                        <div class="col-8">
-                            <a class="description">TOTL - Smartphone app providing user-centered tracking and analysis
+                        <div class="col">
+                            <div class="description">TOTL - Smartphone app providing user-centered tracking and
+                                analysis
                                 in a digestible journal,
-                                with timeline, communication, media, and expenses functionality, protected by banking
-                                level security and privacy.<br><br><br></a>
+                                with timeline, communication, media, and expenses functionality, protected by
+                                banking
+                                level security and privacy.<br><br><br></div>
                         </div>
                     </div>
                     <div class="row siteClient">
@@ -312,7 +394,8 @@
                             <a href="" target="_blank"><img class="copyedit" src="pinky-1.png"></a>
                         </div>
                         <div class="col-lg-3 col-md-4 col-s-6">
-                            <a href="" target="_blank"><img class="copyedit" src="totlPDVhomeScreen.png"></a>
+                            <a href="" target="_blank"><img class="copyedit" id="pdvHome"
+                                    src="totlPDVhomeScreen.png"></a>
                         </div>
                         <div class="col-lg-3 col-md-4 col-s-6">
                             <a href="" target="_blank"><img class="copyedit" src="1Lincoln.webp"></a>
@@ -329,53 +412,83 @@
 
 
 
-        <div class="card words">
+        <div class="card">
             <div class="row" id="webflow">
                 <div class="col-1"></div>
                 <div class="col-10">
                     <div class="row">
-                        <div class="col-md-8">
-                            <a class="btn-shine" id="designHead">copyedit</a>
+                        <div class="col">
                             <br><br>
-                            <a class="description">We're also exceptional researchers, writers, and editors.<br>
-                                Publications in IT, business, the arts, humanities, social science, and medicine.</a>
+                            <a id="designHead">copyedit</a>
+                            <br><br>
+                            <div class="description">We're also exceptional researchers, writers, and editors.<br>
+                                Publications in IT, business, the arts, humanities, social science, and medicine.
+                            </div>
                             <br><br> <br>
                             <h6 id="subhead"><a style="color: black !important"
-                                    href="https://www.robertturner.co/copyedit/" target="_blank">FULL COPY EDIT CV
-                                    HERE&nbsp;&nbsp;&nbsp;></a></h6>
-                            <br><br>
+                                    href="https://www.robertturner.co/copyedit/" target="_blank">GO TO COPY EDIT
+                                    PORTFOLIO&nbsp;&nbsp;&nbsp;></a></h6>
+                            <br><br><br><br>
                         </div>
                     </div>
                 </div>
                 <div class="col-1"></div>
             </div>
         </div>
-
-        <div class="card contact" id="contact">
+        <div id="footer">
             <div class="row">
                 <div class="col-1"></div>
-                <div class="col-10">
-                    <div class="row email">
-                        <div class="col">
-                            <a class="btn-shine" id="designHead">contact</a>
-                            <br><br>
-                        </div>
-                    </div>
+                <div class="col-10" id="contact">
                     <div class="row">
-                        <div class="col">
-                            <a href="mailto:rdt1@cornell.edu" target="_blank" id="rdt1">
-                                &nbsp;&nbsp;<img class="envelope" src="envelopeBlue.png"></a>
+                        <div class="col-lg-4 col-md-4">
+                            <a id="footerKub" href="https://robertturner.co">
+                                <img id="kubFoot" src="RToutline-white.png">
+                            </a>
                         </div>
-                        <div class="col kubR">
-                            <a href="mailto:rdt1@cornell.edu" target="_blank"><img
-                                    src="kub3.webp" /></a>
+                        <div class="col-lg-5 col-md-4">
+                            <br>
                         </div>
+                        <div class="col-lg-3 col-md-4">
+                            <ul>
+                                <li><a id="footerText">
+                                        <a id="footerLink" style="color: lightgray !important;" href="#cms">cms</a>
+                                    </a>
+                                </li>
+                                <li><a id="footerText">
+                                        <a id="footerLink" style="color: lightgray !important;" href="#htmlcss">html</a>
+                                    </a>
+                                </li>
+                                <li><a id="footerText">
+                                        <a id="footerLink" style="color: lightgray !important;"
+                                            href="#webflow">webflow</a>
+                                    </a>
+                                </li>
+                                <li><a id="footerText">
+                                        <a id="footerLink" style="color: lightgray !important;" href="#uiux">ui/ux</a>
+                                    </a>
+                                </li>
+                                <li><a id="footerText">
+                                        <a id="footerLink" style="color: lightgray !important;"
+                                            href="https://robertturner.co/copyedit">copyedit</a>
+                                    </a>
+                                </li>
+                                <li id="footerText">
+                                    <a id="footerLink" href="mailto:hello@robertturner.co" target="_blank"
+                                        style="color:lightgray !important">hello@robertturner.co
+                                    </a>
+                                </li>
+
+                                <br>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-1"></div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
