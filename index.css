@@ -116,10 +116,10 @@ ul {
     border-radius: .15em;
     background-color: slategray;
 }
-#designHead, .description {
+#designHead, .descript {
     cursor: auto;
 }
-.description {
+.descript {
     padding-top: .75em;
 }
 
@@ -181,7 +181,7 @@ li {
     }
 
 
-    .description {
+    .descript {
         width: 65vw;
     }
 
