@@ -10,7 +10,7 @@ h6 {
     font-size: min(16px);
     font-weight: 200;
     letter-spacing: .2vh;
-    color: #465362ea;
+    color: #465362;
     background-color: white;
 }
 
@@ -58,13 +58,13 @@ ul {
 
 .nav-link {
     font-family: "Gill sans";
-    color: #465362ea;
+    color: #131416ea;
     opacity: .90;
 }
 
 /* nav nav nav nav nav */
 #cms, #htmlcss, #webflow, #uiux {
-    scroll-margin-top: 3.25em;
+    scroll-margin-top: 5em;
 }
 .scrollspy {
     overflow: scroll;
