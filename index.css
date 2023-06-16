@@ -9,19 +9,11 @@ h6 {
     position: relative;
     font-size: min(16px);
     font-weight: 200;
-    letter-spacing: .2vh;
-    color: #465362;
+    letter-spacing: .1em;
+    color: #040404;
     background-color: white;
 }
 
-/* 
-ul {
-    background-image: url("wideROBERT-black20.png");
-    background-size: 65vw;
-    background-position: 25vw;
-    background-repeat: no-repeat;
-    float: right;
-} */
 .navbar {
     border-bottom: 1px black solid;
 }
@@ -58,8 +50,7 @@ ul {
 
 .nav-link {
     font-family: "Gill sans";
-    color: #131416ea;
-    opacity: .90;
+    color: #080808;
 }
 
 /* nav nav nav nav nav */
