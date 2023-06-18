@@ -95,13 +95,13 @@ h6 {
 }
 
 .row.sites {
-    padding-top: 10vh;
+    padding-top: 15vh;
 }
 
 #designHead {
     font-family:"Gill sans";
     font-weight: 500;
-    font-size: 5.25em;
+    font-size: 3em;
     line-height: 1em;
     color: white;
     letter-spacing: .01em;
@@ -215,8 +215,8 @@ li {
     }
 
     #designHead {
-        font-size: 5.5em;
-        letter-spacing: .1em;
+        font-size: 2.5em;
+        letter-spacing: .02em;
     }
     #footerKub {
         padding: 0 0 0 0;
@@ -254,8 +254,8 @@ li {
     }
 
     #designHead {
-        font-size: 5em;
-        letter-spacing: .1em;
+        font-size: 3em;
+        letter-spacing: .02em;
     }
 
     .home,
@@ -299,8 +299,8 @@ li {
     }
 
     #designHead {
-        font-size: 5em;
-        letter-spacing: .1em;
+        font-size: 3em;
+        letter-spacing: .02em;
     }
 
     .home,
@@ -348,7 +348,7 @@ li {
 
     #designHead {
         font-size: 3em;
-        letter-spacing: .1em;
+        letter-spacing: .02em;
     }
 
     .home,
