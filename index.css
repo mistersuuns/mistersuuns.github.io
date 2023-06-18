@@ -82,7 +82,6 @@ h6 {
 #headParis {
     width: 6em;
     border-radius: 15px;
-    margin-right: 1em;
 }
 
 .title {
@@ -96,7 +95,7 @@ h6 {
 }
 
 .row.sites {
-    padding-top: 22.5vh;
+    padding-top: 30vh;
 }
 
 #designHead {
