@@ -113,6 +113,7 @@ h6 {
     cursor: auto;
 }
 .descript {
+    letter-spacing: .04em;
     padding-top: .75em;
     line-height: 1.25em;
 }
