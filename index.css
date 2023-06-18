@@ -101,13 +101,13 @@ h6 {
 #designHead {
     font-family:"Gill sans";
     font-weight: 500;
-    font-size: 6em;
+    font-size: 5.25em;
     line-height: 1em;
     color: white;
     letter-spacing: .01em;
-    padding: .01em .2em .01em .2em;
-    border-radius: .15em;
-    background-color: slategray;
+    padding: 0 .1em .005em .1em;
+    border-radius: .35em;
+    background-color: rgba(112, 128, 144, 0.6);
 }
 #designHead, .descript {
     cursor: auto;
