@@ -9,7 +9,7 @@ h6 {
     position: relative;
     font-size: min(16px);
     font-weight: 200;
-    letter-spacing: .1em;
+    letter-spacing: .02em;
     color: #040404;
     background-color: white;
 }
@@ -77,11 +77,12 @@ h6 {
     padding: 10vh 0 0 0;
 }
 .col.headparis {
-    padding: 7.5vh 0 0 0;
+    padding: 15vh 0 0 0;
 }
 #headParis {
     width: 6em;
     border-radius: 15px;
+    margin-right: 1em;
 }
 
 .title {
@@ -95,7 +96,7 @@ h6 {
 }
 
 .row.sites {
-    padding-top: 15vh;
+    padding-top: 22.5vh;
 }
 
 #designHead {
@@ -114,6 +115,7 @@ h6 {
 }
 .descript {
     padding-top: .75em;
+    line-height: 1.25em;
 }
 
 #subhead {
