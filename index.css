@@ -350,13 +350,14 @@ li {
         margin-right: .5em;
     }
     .navbar-nav {
+        margin-top: .25em;
         padding-left: 1vw;
         width: 99vw;
     }
 
     .nav-link {
-        font-size: .65em;
-        margin-top: 0;
+        font-size: .6em;
+        margin-top: 0.35em;
     }
        
 
