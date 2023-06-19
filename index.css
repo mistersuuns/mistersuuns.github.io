@@ -16,8 +16,8 @@ h6 {
 
 .navbar {
     border-bottom: 1px black solid;
+    line-height: .9em;
 }
-
 
 .navbar,
 .navbar-nav,
@@ -41,7 +41,7 @@ h6 {
 
 .navbar-nav {
     justify-content: space-between;
-    padding: 1em 0;
+    margin: 1em 0 0 0;
     font-weight: 400;
     letter-spacing: .4vw;
     font-size: 1.5em;
@@ -49,8 +49,15 @@ h6 {
 }
 
 .nav-link {
+    margin-top: .75em;
     font-family: "Gill sans";
     color: #080808;
+}
+
+.nav-link.contact {
+    border: solid .1px;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.90);
 }
 
 /* nav nav nav nav nav */
@@ -253,6 +260,7 @@ li {
 
     .nav-link {
         font-size: .95em;
+        margin-top: 0.5em;
     }
 
     #designHead {
@@ -298,6 +306,8 @@ li {
 
     .nav-link {
         font-size: .85em;
+        margin-top: .25em;
+
     }
 
     #designHead {
@@ -346,7 +356,9 @@ li {
 
     .nav-link {
         font-size: .65em;
+        margin-top: 0;
     }
+       
 
     #designHead {
         font-size: 3em;
