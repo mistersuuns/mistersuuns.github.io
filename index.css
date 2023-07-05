@@ -309,7 +309,6 @@ li {
     .nav-link {
         font-size: .85em;
         margin-top: .25em;
-
     }
 
     #designHead {
@@ -362,7 +361,9 @@ li {
         margin-top: 0.35em;
     }
        
-
+    .col.headparis {
+        padding: 15vh 0 0 0;
+    }
     #designHead {
         font-size: 3em;
         letter-spacing: .02em;
