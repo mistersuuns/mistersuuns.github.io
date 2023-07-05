@@ -85,7 +85,7 @@ h6 {
     padding: 10vh 0 0 0;
 }
 .col.headparis {
-    padding: 15vh 0 0 0;
+    padding: 5vh 0 0 0;
 }
 #headParis {
     width: 6em;
@@ -103,7 +103,7 @@ h6 {
 }
 
 .row.sites {
-    padding-top: 30vh;
+    padding-top: 17.5vh;
 }
 
 #designHead {
@@ -189,11 +189,6 @@ li {
         width: 65vw;
     }
 
-    #kub {
-        width: 5em;
-        padding: 1.5em .25em;
-        margin-right: 50vw;
-    }
     #kubFoot {
         width: 4em;
         padding: .5em .25em;
@@ -232,11 +227,7 @@ li {
     #footerKub {
         padding: 0 0 0 0;
     }
-    #kub {
-        width: 5em;
-        padding: 1em 0;
-        margin-right: 48vw;
-    }
+
     #kubFoot {
         width: 4em;
         padding: .5em .25em;
@@ -327,11 +318,6 @@ li {
         padding: 7vw;
     }
 
-    #kub {
-        width: 5em;
-        padding: 1em 0;
-        margin-right: 35vw;
-    }
     #kubFoot {
         width: 5em;
         padding: .5em .25em;
@@ -347,18 +333,18 @@ li {
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
     #logo {
-        width: 2.5em;
-        margin-right: .5em;
+        width: 1.5em;
+        margin: .1em 1.25em 0 0;
     }
     .navbar-nav {
-        margin-top: .25em;
+        margin-top: .2em;
         padding-left: 1vw;
         width: 99vw;
     }
 
     .nav-link {
         font-size: .6em;
-        margin-top: 0.35em;
+        margin-top: 0.2em;
     }
        
     .col.headparis {
@@ -379,11 +365,6 @@ li {
         padding: 10vw;
     }
 
-    #kub {
-        width: 5em;
-        padding: 1em .25em;
-        margin-right: 3.5vw;
-    }
     #kubFoot {
         width: 5em;
         padding: .5em .25em;
