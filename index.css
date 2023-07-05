@@ -50,6 +50,9 @@ h6 {
 
 .nav-link {
     margin-top: .75em;
+    margin-left: .1em;
+    margin-bottom: .1em;
+    padding: .2em .2em .3em .2em;
     font-family: "Gill sans";
     border: solid .1px;
     border-radius: 7.5px;
@@ -333,7 +336,7 @@ li {
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
     #logo {
-        width: 1.5em;
+        width: 3em;
         margin: .1em 1.25em 0 0;
     }
     .navbar-nav {
@@ -344,7 +347,7 @@ li {
 
     .nav-link {
         font-size: .6em;
-        margin-top: 0.2em;
+        margin-top: 0.7em;
     }
        
     .col.headparis {
