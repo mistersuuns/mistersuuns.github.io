@@ -167,6 +167,10 @@ img.wrc {
 li {
     list-style-type: none;
 }
+.row.footer {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
