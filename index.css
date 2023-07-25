@@ -88,7 +88,7 @@ h6 {
     padding: 10vh 0 0 0;
 }
 .col.headparis {
-    padding: 5vh 0 0 0;
+    padding: 12.5vh 0 0 0;
 }
 #headParis {
     width: 6em;
@@ -111,14 +111,14 @@ h6 {
 
 #designHead {
     font-family:"Gill sans";
-    font-weight: 500;
-    font-size: 3em;
+    font-weight: 300;
+    font-size: 2.9em;
     line-height: 1em;
     color: white;
     letter-spacing: .01em;
-    padding: 0 .1em .005em .1em;
+    padding: 0 .2em .05em .2em;
     border-radius: .35em;
-    background-color: rgba(112, 128, 144, 0.6);
+    background-color: rgba(0, 0, 0, 0.812);
 }
 #designHead, .descript {
     cursor: auto;
