@@ -65,6 +65,7 @@ h6 {
 }
 .nav-link.active {
     background-color: #FF006E;
+    offset: 4em;
 }
 
 /* nav nav nav nav nav */
