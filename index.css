@@ -13,6 +13,11 @@ h6 {
     color: #040404;
     background-color: white;
 }
+h3, h4, h5 {
+    font-size: 90%;
+    color: rgb(0, 0, 0, .6);
+    font-weight: 300;
+}
 
 .navbar {
     border-bottom: 1px black solid;
@@ -58,6 +63,13 @@ h6 {
     border-radius: 7.5px;
 }
 
+img.logo-link:hover,
+.nav-link:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+}
+
 .nav-link.contact {
     border: solid .1px;
     border-radius: 7.5px;
@@ -65,7 +77,6 @@ h6 {
 }
 .nav-link.active {
     background-color: #FF006E;
-    offset: 4em;
 }
 
 /* nav nav nav nav nav */
@@ -100,7 +111,7 @@ h6 {
 }
 
 .title {
-    width: 20em;
+    width: 10em;
     margin-top: 2.5em;
 }
 
@@ -125,8 +136,14 @@ h6 {
     background-color: rgba(0, 0, 0, 0.812);
 }
 #designHead, .descript {
-    cursor: auto;
+    cursor: crosshair;
 }
+#border-black {
+    padding: .15em;
+    border: .01px solid black;
+    border-radius: .5em;
+}
+
 .descript {
     letter-spacing: .04em;
     padding-top: .75em;
@@ -181,10 +198,13 @@ li {
 @media (min-width: 1200px) {
 
     #logo {
-        height: 3em;
+        height: 2em;
         margin-bottom: .25em;
     }
-
+    .title {
+        max-width: 9em;
+        margin-top: 2.5em;
+    }
     .navbar-nav {
         padding-left: 8.3vw;
         width: 91.7vw;
@@ -199,7 +219,9 @@ li {
     .descript {
         width: 65vw;
     }
-
+    img.totl {
+        max-width: 10em;
+    }
     #kubFoot {
         width: 4em;
         padding: .5em .25em;
@@ -235,6 +257,7 @@ li {
         font-size: 2.5em;
         letter-spacing: .02em;
     }
+
     #footerKub {
         padding: 0 0 0 0;
     }
@@ -271,7 +294,9 @@ li {
         font-size: 3em;
         letter-spacing: .02em;
     }
-
+ h3, h4, h5, h6 {
+        font-size: 90%;
+    }
     .home,
     .sites {
         font-size: .95em;
@@ -317,7 +342,9 @@ li {
         font-size: 3em;
         letter-spacing: .02em;
     }
-
+    h3, h4, h5, h6 {
+        font-size: 85%;
+    }
     .home,
     .sites {
         font-size: .85em;
@@ -352,6 +379,9 @@ li {
         padding-left: 1vw;
         width: 99vw;
     }
+    #research_writing {
+        font-size: .75em;
+    }
 
     .nav-link {
         font-size: .6em;
@@ -365,7 +395,9 @@ li {
         font-size: 3em;
         letter-spacing: .02em;
     }
-
+    h3, h4, h5, h6 {
+        font-size: 80%;
+    }
     .home,
     .sites {
         font-size: .85em;
