@@ -144,6 +144,14 @@ img.logo-link:hover,
     border: .01px solid black;
     border-radius: .5em;
 }
+#price-item {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    padding: .5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: .5em;
+}
 
 .descript {
     letter-spacing: .04em;
@@ -153,7 +161,7 @@ img.logo-link:hover,
 
 #subhead {
     font-size: larger;
-    letter-spacing: .5vw;
+    letter-spacing: .2em;
 }
 
 img.copyedit {
