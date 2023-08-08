@@ -147,11 +147,13 @@ img.logo-link:hover,
 #price-item {
     text-transform: uppercase;
     letter-spacing: .15em;
+    line-height:2.2em;
     padding: .5em;
     color: white;
-    background-color: rgba(0, 0, 0, 0.514);
+    background-color: rgba(0, 0, 0, 0.615);
     border-radius: .5em;
 }
+h3 { margin-bottom: 1em;}
 
 .descript {
     letter-spacing: .04em;
