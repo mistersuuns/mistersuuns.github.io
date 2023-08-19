@@ -99,6 +99,19 @@ img.logo-link:hover,
     scroll-behavior: smooth;
     background-color: white;
 }
+#quoteBlock {
+    padding: .5em;
+    margin: 0 1em 1.5em 0;
+    border: solid .1px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: slategray;
+}
+
+#quote {
+    font-style: italic;
+}
 
 #greetings {
     padding: 10vh 0 0 0;
