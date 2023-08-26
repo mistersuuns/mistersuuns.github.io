@@ -399,30 +399,34 @@ li {
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
     #logo {
-        width: 3em;
+        width: 2.25em;
         margin: .1em 1.25em 0 0;
     }
     .navbar-nav {
         margin-top: .2em;
-        padding-left: 1vw;
+        padding-left: .5vw;
         width: 99vw;
+        margin-bottom: .1em;
     }
 
     .nav-link {
-        margin-top: .5em;
+        letter-spacing: .075em;
+        margin-top: .7em;
         margin-left: .05em;
-        margin-right: .05em;
+        margin-right: .008em;
         margin-bottom: .05em;
-        padding: .05em .01em .1em .01em;
+        padding: .08em 0 .1em 0;
+        border-radius: .3em;
+        font-size: .6em;
+    }
+   .nav-link.contact {
+        border: solid .1px;
+        border-radius: .3em;
+        background-color: rgba(0, 0, 0, 0.812);
     }
 
     #research_writing {
         font-size: .75em;
-    }
-
-    .nav-link {
-        font-size: .6em;
-        margin-top: 0.7em;
     }
        
     .col.headparis {
