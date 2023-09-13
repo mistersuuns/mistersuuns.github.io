@@ -18,7 +18,9 @@ h3, h4, h5 {
     color: rgb(0, 0, 0, .6);
     font-weight: 300;
 }
-
+.row.top {
+    width: 100vw;
+}
 .navbar {
     border-bottom: 1px black solid;
     line-height: .9em;
@@ -38,15 +40,13 @@ h3, h4, h5 {
 
 /* nav nav nav nav nav */
 .navbar {
+    width: 83.333vw;
     position: fixed;
     z-index: 1;
-    width: 100%;
     background: white;
 }
 
 .navbar-nav {
-    justify-content: space-between;
-    margin: 1em 0 0 0;
     letter-spacing: .075em;
     font-size: 1.65em;
     opacity: 1;
@@ -54,14 +54,16 @@ h3, h4, h5 {
 
 .nav-link {
     margin-top: .75em;
-    margin-left: .1em;
     margin-bottom: .1em;
     padding: .2em .2em .3em .2em;
     font-family: "Gill sans";
     border: solid .1px;
     border-radius: 7.5px;
 }
-
+#logo {
+    margin-top: .25em;
+    width: 4em;
+}
 img.logo-link:hover,
 .nav-link:hover {
     cursor: pointer;
@@ -225,23 +227,19 @@ li {
 @media (min-width: 1200px) {
 
     #logo {
-        height: 2em;
+        width: 5em;
         margin-bottom: .25em;
     }
     .title {
         max-width: 9em;
         margin-top: 2.5em;
     }
-    .navbar-nav {
-        padding-left: 8.3vw;
-        width: 91.7vw;
-    }
 
     .nav-link {
-        font-size: .95em;
+        margin-left: 1em;
+        font-size: 1.1em;
         font-weight: 100;
     }
-
 
     .descript {
         width: 65vw;
@@ -262,15 +260,10 @@ li {
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
 /* LG LG LG LG LG LG LG LG LG LG LG LG */
 @media (min-width: 992px) and (max-width: 1199px) {
-    #logo {
-        height: 3em;
-    }
 
-    .navbar-nav {
-        padding-left: 7.5vw;
-        width: 93vw;
+    .nav-link {
+        margin-left: .75em;
     }
-
     .home,
     .sites {
         font-size: 1.1em;
@@ -299,16 +292,9 @@ li {
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 /* MD MD MD MD MD MD MD MD MD MD MD MD */
 @media (min-width: 768px) and (max-width: 991px) {
-    #logo {
-        width: 3em;
-    }
-
-    .navbar-nav {
-        padding-left: 7.5vw;
-        width: 92vw;
-    }
 
     .nav-link {
+        margin-left: .5em;
         font-size: .95em;
         margin-top: 0.5em;
     }
@@ -348,14 +334,6 @@ li {
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 @media (min-width: 576px) and (max-width: 767px) {
 
-    #logo {
-        width: 3em;
-    }
-    .navbar-nav {
-        padding-left: 5vw;
-        width: 95vw;
-    }
-
     .nav-link {
         font-size: .75em;
         font-weight: 300;
@@ -394,16 +372,6 @@ li {
 /* XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
-    #logo {
-        width: 2.25em;
-        margin: .1em 1.25em 0 0;
-    }
-    .navbar-nav {
-        margin-top: .2em;
-        padding-left: 2vw;
-        width: 98vw;
-        margin-bottom: .1em;
-    }
 
     .nav-link {
         letter-spacing: .055em;
