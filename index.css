@@ -1,6 +1,6 @@
 /* {
     border: solid black .001px;
-} */
+}*/
 
 body,
 h6 {
@@ -37,13 +37,16 @@ h3, h4, h5 {
     padding: 0;
     border: none;
 }
-
+#header {
+    z-index: 1;
+    background-color: white;
+}
 /* nav nav nav nav nav */
 .navbar {
     width: 83.333vw;
     position: fixed;
     z-index: 1;
-    background: white;
+    background-color: white;
 }
 
 .navbar-nav {
@@ -53,7 +56,7 @@ h3, h4, h5 {
 }
 
 .nav-link {
-    margin-top: .75em;
+    margin-top: .5em;
     margin-bottom: .1em;
     padding: .2em .2em .3em .2em;
     font-family: "Gill sans";
@@ -61,7 +64,7 @@ h3, h4, h5 {
     border-radius: 7.5px;
 }
 #logo {
-    margin-top: .25em;
+    margin-top: ;
     width: 4em;
 }
 img.logo-link:hover,
