@@ -56,7 +56,7 @@ h3, h4, h5 {
 }
 
 .nav-link {
-    margin-top: .5em;
+    margin-top: .25em;
     margin-bottom: .1em;
     padding: .2em .2em .3em .2em;
     font-family: "Gill sans";
@@ -299,7 +299,7 @@ li {
     .nav-link {
         margin-left: .5em;
         font-size: .95em;
-        margin-top: 0.5em;
+        margin-top: 0.25em;
     }
 
     #designHead {
@@ -380,7 +380,7 @@ li {
         letter-spacing: .055em;
         font-size: .55em;
         font-weight: 325;
-        margin-top: .5em;
+        margin-top: .25em;
         margin-left: .05em;
         margin-right: .008em;
         margin-bottom: .05em;
