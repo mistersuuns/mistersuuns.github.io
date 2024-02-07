@@ -45,7 +45,7 @@ h3, h4, h5 {
     width: 83.333vw;
     position: fixed;
     z-index: 1;
-    background-image: linear-gradient(to bottom, white 0%, white 90%, rgba(255, 255, 255, 0.91) 93%, white 96%,rgba(255, 255, 255, 0.25) 98%, rgba(255, 255, 255, 0.025) 100%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.925) 80%, rgba(255, 255, 255, 0.9) 90%, rgba(255, 255, 255, 0.506) 95%, rgba(255, 255, 255, 0.25) 97.5%, rgba(255, 255, 255, 0.1) 100%);
 }
 
 .navbar-nav {
