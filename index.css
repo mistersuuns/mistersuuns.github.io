@@ -84,7 +84,7 @@ img.logo-link:hover,
 }
 
 /* nav nav nav nav nav */
-#cms, #htmlcss, #webflow, #uiux {
+#greetings, #quotes, #framer, #webflow, #htmlcss, #copyedit, #pricing {
     scroll-margin-top: 5em;
 }
 .scrollspy {
@@ -116,15 +116,24 @@ img.logo-link:hover,
     font-style: italic;
 }
 
-#greetings {
-    padding: 10vh 0 0 0;
+#greetings, #quotes, #framer, #webflow, #htmlcss, #copyedit, #pricing {
+    padding: 5vh 0 5vh 0;
 }
+
+#quotes, #webflow, #copyedit {
+    background-color: aliceblue;
+}
+
 .col.headparis {
-    padding: 12.5vh 0 0 0;
+    padding: 15vh 0 0 0;
 }
 #headParis {
     width: 6em;
     border-radius: 15px;
+}
+.col.wordsParis {
+    padding-top: .5em;
+    padding-bottom: 12.5vh;
 }
 
 .title {
@@ -141,9 +150,9 @@ img.logo-link:hover,
     margin-top: 5em;
 }
 
-.row.sites {
+/* .row.sites {
     padding-top: 17.5vh;
-}
+} */
 
 #designHead {
     font-family:"Gill sans";
