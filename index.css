@@ -50,20 +50,19 @@ h3, h4, h5 {
 
 .navbar-nav {
     letter-spacing: .075em;
-    font-size: 1.65em;
+    font-size: 1.6em;
     opacity: 1;
 }
 
 .nav-link {
     margin-top: .25em;
     margin-bottom: .1em;
-    padding: .2em .2em .3em .2em;
+    padding: .75em 1.5em;
     font-family: "Gill sans";
     border: solid .1px;
-    border-radius: 7.5px;
+    border-radius: 20px;
 }
 #logo {
-    margin-top: ;
     width: 4em;
 }
 img.logo-link:hover,
@@ -74,12 +73,10 @@ img.logo-link:hover,
 }
 
 .nav-link.contact {
-    border: solid .1px;
-    border-radius: 7.5px;
     background-color: rgba(0, 0, 0, 0.812);
 }
 .nav-link.active {
-    background-color: #FF006E;
+    background-color:rgba(54, 151, 183, 0.75);
     color: white !important;
 }
 
@@ -103,13 +100,13 @@ img.logo-link:hover,
     background-color: white;
 }
 #quoteBlock {
-    padding: .5em;
+    padding: 1em;
     margin: 0 1em 1.5em 0;
     border: solid .1px;
     border-radius: 10px;
     font-size: 1em;
     color: white;
-    background-color: slategray;
+    background-color:rgba(54, 151, 183, 0.5);
 }
 
 #quote {
@@ -163,7 +160,7 @@ img.logo-link:hover,
     letter-spacing: .05em;
     padding: 0 .2em .05em .2em;
     border-radius: .35em;
-    background-color: rgba(0, 0, 0, 0.812);
+    background-color:rgba(54, 151, 183, 0.75);
 }
 #designHead, .descript {
     cursor: crosshair;
