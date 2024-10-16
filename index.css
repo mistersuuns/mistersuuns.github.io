@@ -74,6 +74,10 @@ h5 {
 }
 #logo {
   width: 4em;
+border: solid .1px slategrey;
+border-radius: 10px;
+padding: .2em;
+margin: .2em;
 }
 img.logo-link:hover,
 .nav-link:hover {
