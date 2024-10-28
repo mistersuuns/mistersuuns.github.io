@@ -75,8 +75,8 @@ h5 {
 #logo {
   width: 4em;
 }
-img.logo-link:hover,
-.nav-link:hover {
+
+.nav-link:hover, #logo-bottom:hover {
   cursor: pointer;
   transform: scale(1.07);
   transition: transform 0.3s ease;
@@ -91,6 +91,14 @@ img.logo-link:hover,
 }
 
 /* nav nav nav nav nav */
+
+#logo-bottom {
+  border: solid .1px slategrey;
+border-radius: 10px;
+padding: .2em;
+margin: .35em;
+}
+
 #greetings,
 #quotes,
 #ngos,
