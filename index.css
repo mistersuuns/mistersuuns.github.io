@@ -273,7 +273,7 @@ li {
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 @media (min-width: 1200px) {
   #logo {
-    width: 5em;
+    width: 10em;
     margin-bottom: 0.25em;
   }
   .title {
