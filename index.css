@@ -416,8 +416,8 @@ li {
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
   .nav-link {
-    letter-spacing: 0.055em;
-    font-size: 0.55em;
+    letter-spacing: 0.05em;
+    font-size: 0.75em;
     font-weight: 325;
     margin-top: 0.25em 0.05em 0.008em 0.05em;
     padding: 0.08em 0 0.1em 0;
