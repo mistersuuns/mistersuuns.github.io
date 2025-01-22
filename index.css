@@ -23,7 +23,6 @@ h5 {
   width: 100vw;
 }
 .navbar {
-  border-bottom: 1px black solid;
   line-height: 0.9em;
 }
 
@@ -47,7 +46,6 @@ h5 {
   position: fixed;
   z-index: 1;
   background: white;
-  border-bottom: black solid .25px;
   /*background-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.95) 0%,
@@ -73,9 +71,6 @@ h5 {
   font-family: "Gill sans";
   border: solid 0.1px;
   border-radius: 20px;
-}
-#logo {
-  width: 4em;
 }
 
 .nav-link:hover, #logo-bottom:hover {
@@ -312,10 +307,13 @@ li {
   .sites {
     font-size: 1.1em;
   }
-
+ 
   #designHead {
     font-size: 2.5em;
     letter-spacing: 0.02em;
+  }
+  #logo {
+    width: 15em;
   }
 
   #footerKub {
@@ -344,6 +342,11 @@ li {
     font-size: 3em;
     letter-spacing: 0.02em;
   }
+
+  #logo {
+    width: 17em;
+  }
+
   h3,
   h4,
   h5,
@@ -388,6 +391,11 @@ li {
     font-size: 3em;
     letter-spacing: 0.02em;
   }
+
+  #logo {
+    width: 12em;
+  }
+
   h3,
   h4,
   h5,
@@ -444,6 +452,11 @@ li {
     font-size: 3em;
     letter-spacing: 0.02em;
   }
+
+  #logo {
+    width: 12em;
+  }
+
   h3,
   h4,
   h5,
