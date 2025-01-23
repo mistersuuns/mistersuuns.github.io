@@ -58,7 +58,7 @@ h5 {
 }
 
 .navbar-nav {
-  letter-spacing: 0.075em;
+  letter-spacing: 0.05em;
   font-size: 1.2em;
   line-height: .9em;
   opacity: 1;
@@ -67,7 +67,7 @@ h5 {
 .nav-link {
   margin-top: 0.25em;
   margin-bottom: 0.1em;
-  padding: 0.5em 1.5em;
+  padding: 0.25em 1.75em;
   font-family: "Gill sans";
   border: solid 0.1px;
   border-radius: 20px;
@@ -127,7 +127,6 @@ margin: .35em;
   border: solid 0.1px;
   border-radius: 10px;
   font-size: 1em;
-  color: white;
   background-color: rgba(54, 151, 183, 0.5);
 }
 
@@ -249,6 +248,7 @@ img.wrc {
 
 #footerText {
   line-height: 2.25em;
+  font-weight: 100;
 }
 #footerLink {
   padding: 0.35em;
