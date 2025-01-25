@@ -39,10 +39,13 @@ h5 {
 }
 #header {
   z-index: 1;
+  
 }
 /* nav nav nav nav nav */
 .navbar {
-  width: 83.333vw;
+  padding-left: 8%;
+  padding-right: 8%;
+  border-bottom: .5px solid black;
   position: fixed;
   z-index: 1;
   background: white;
@@ -77,6 +80,8 @@ h5 {
   cursor: pointer;
   transform: scale(1.07);
   transition: transform 0.3s ease;
+  background-color: rgba(54, 151, 183, 0.8);
+  color: white !important;
 }
 
 .nav-link.contact {
@@ -148,7 +153,7 @@ margin: .35em;
 #quotes,
 #services,
 #realCity {
-  background-color: aliceblue;
+  background-color: rgba(114, 165, 210, 0.543);
 }
 
 .col.headparis {
@@ -237,13 +242,15 @@ img.wrc {
   width: 50em;
 }
 
+
 #totlPDV {
   width: 12.5em;
 }
 
 #footer {
   padding: 2em 0 0 0;
-  background-color: slategrey;
+  background-color: rgba(54, 151, 183, 0.8);
+  border-top: black solid 1px;
 }
 
 #footerText {
@@ -268,7 +275,7 @@ li {
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 @media (min-width: 1200px) {
   #logo {
-    width: 10em;
+    width: 15em;
     margin-bottom: 0.25em;
   }
   .title {
@@ -279,7 +286,6 @@ li {
   .nav-link {
     margin-left: 1em;
     font-size: 1.1em;
-    font-weight: 100;
   }
 
   .descript {
@@ -302,6 +308,9 @@ li {
 @media (min-width: 992px) and (max-width: 1199px) {
   .nav-link {
     margin-left: 0.75em;
+  }
+  #nav-link {
+    font-weight: 300;
   }
   .home,
   .sites {
@@ -378,6 +387,10 @@ li {
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 @media (min-width: 576px) and (max-width: 767px) {
+  .navbar {
+    width: 100%;
+  }
+
   .nav-link {
     font-size: 0.75em;
     font-weight: 300;
