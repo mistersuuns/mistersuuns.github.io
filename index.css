@@ -157,7 +157,7 @@ margin: .35em;
 }
 
 .row.hero {
-  padding: 20vh 0 0 0;
+  padding: 20vh 0 10vh 0;
 }
 #headParis {
   width: 6em;
@@ -305,9 +305,7 @@ li {
   .nav-link {
     margin-left: 0.75em;
   }
-  #nav-link {
-    font-weight: 300;
-  }
+
   .home,
   .sites {
     font-size: 1.1em;
