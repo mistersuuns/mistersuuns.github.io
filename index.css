@@ -43,8 +43,11 @@ h5 {
 }
 /* nav nav nav nav nav */
 .navbar {
+  width: 100%;
   padding-left: 8%;
   padding-right: 8%;
+  padding-top: .5em;
+  padding-bottom: .5em;
   border-bottom: .5px solid black;
   position: fixed;
   z-index: 1;
@@ -70,10 +73,10 @@ h5 {
 .nav-link {
   margin-top: 0.25em;
   margin-bottom: 0.1em;
-  padding: 0.25em 1.75em;
+  padding: 0.5em 2em;
   font-family: "Gill sans";
   border: solid 0.1px;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .nav-link:hover, #logo-bottom:hover {
@@ -84,9 +87,6 @@ h5 {
   color: white !important;
 }
 
-.nav-link.contact {
-  background-color: rgba(250, 3, 48, 1.0);
-}
 .nav-link.active {
   background-color: rgba(54, 151, 183, 0.8);
   color: white !important;
@@ -150,22 +150,18 @@ margin: .35em;
   padding: 5vh 0 5vh 0;
 }
 
-#quotes,
-#services,
-#realCity {
-  background-color: rgba(114, 165, 210, 0.543);
+#ngos,
+#artCoffee
+ {
+  background-color: rgba(54, 151, 183, 0.8);
 }
 
-.col.headparis {
-  padding: 15vh 0 0 0;
+.row.hero {
+  padding: 20vh 0 0 0;
 }
 #headParis {
   width: 6em;
   border-radius: 15px;
-}
-.col.wordsParis {
-  padding-top: 0.5em;
-  padding-bottom: 12.5vh;
 }
 
 .title {
@@ -242,7 +238,6 @@ img.wrc {
   width: 50em;
 }
 
-
 #totlPDV {
   width: 12.5em;
 }
@@ -250,7 +245,7 @@ img.wrc {
 #footer {
   padding: 2em 0 0 0;
   background-color: rgba(54, 151, 183, 0.8);
-  border-top: black solid 1px;
+  /*border-top: black solid 1px;*/
 }
 
 #footerText {
@@ -270,14 +265,15 @@ li {
   display: flex;
   justify-content: space-between;
 }
+#logo {
+  width: 4em;
+  margin-bottom: 0.25em;
+}
 
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 /* XL XL XL XL XL XL XL XL XL XL XL XL */
 @media (min-width: 1200px) {
-  #logo {
-    width: 15em;
-    margin-bottom: 0.25em;
-  }
+
   .title {
     max-width: 9em;
     margin-top: 2.5em;
@@ -321,9 +317,6 @@ li {
     font-size: 2.5em;
     letter-spacing: 0.02em;
   }
-  #logo {
-    width: 15em;
-  }
 
   #footerKub {
     padding: 0 0 0 0;
@@ -350,10 +343,6 @@ li {
   #designHead {
     font-size: 3em;
     letter-spacing: 0.02em;
-  }
-
-  #logo {
-    width: 17em;
   }
 
   h3,
@@ -405,10 +394,6 @@ li {
     letter-spacing: 0.02em;
   }
 
-  #logo {
-    width: 12em;
-  }
-
   h3,
   h4,
   h5,
@@ -438,6 +423,7 @@ li {
 /* XS XS XS XS XS XS XS XS XS */
 /* XS XS XS XS XS XS XS XS XS */
 @media (max-width: 575px) {
+
   .nav-link {
     letter-spacing: 0.05em;
     font-size: 0.75em;
@@ -464,10 +450,6 @@ li {
   #designHead {
     font-size: 3em;
     letter-spacing: 0.02em;
-  }
-
-  #logo {
-    width: 12em;
   }
 
   h3,
