@@ -4,7 +4,7 @@
 
 body,
 h6 {
-  font-family: "Gill Sans";
+  font-family: "Gill sans";
   overflow-x: scroll;
   position: relative;
   font-size: min(16px);
@@ -16,7 +16,7 @@ h3,
 h4,
 h5 {
   font-size: 90%;
-  color: rgb(0, 0, 0, 0.6);
+  color: #00000099;
   font-weight: 325;
 }
 .row.top {
@@ -83,12 +83,12 @@ h5 {
   cursor: pointer;
   transform: scale(1.07);
   transition: transform 0.3s ease;
-  background-color: rgba(54, 151, 183, 0.8);
+  background-color: #0404047e;
   color: white !important;
 }
 
 .nav-link.active {
-  background-color: rgba(54, 151, 183, 0.8);
+  background-color: #0404047e;
   color: white !important;
 }
 
@@ -129,10 +129,10 @@ margin: .35em;
 #quoteBlock {
   padding: 1em;
   margin: 0 1em 1.5em 0;
-  border: solid 0.1px;
+  /* border: solid 0.1px; */
   border-radius: 10px;
   font-size: 1em;
-  background-color: rgba(54, 151, 183, 0.5);
+  background-color: #dcdcdc;
 }
 
 #quote {
@@ -153,7 +153,7 @@ margin: .35em;
 #ngos,
 #artCoffee
  {
-  background-color: rgba(54, 151, 183, 0.8);
+  background-color: #e8e8e8;
 }
 
 .row.hero {
@@ -191,7 +191,7 @@ margin: .35em;
   letter-spacing: 0.05em;
   padding: 0 0.2em 0.05em 0.2em;
   border-radius: 0.35em;
-  background-color: rgba(54, 151, 183, 0.75);
+  background-color:  #0404047e;
 }
 #designHead,
 .descript {
@@ -244,7 +244,7 @@ img.wrc {
 
 #footer {
   padding: 2em 0 0 0;
-  background-color: rgba(54, 151, 183, 0.8);
+  background-color: #bbbbbb;
   /*border-top: black solid 1px;*/
 }
 
